@@ -1,0 +1,8 @@
+/* Landscape 1920x1080 overrides for the gfx kit (load after gfx.css). Text safe area x 120-1800, y 80-1000. */
+#gfx-vignette { background: linear-gradient(180deg, rgba(0,0,0,.40) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 85%, rgba(0,0,0,.35) 100%); }
+#gfx-captions { width: 1920px; height: 1080px; }
+.cap-group { left: 160px; width: 1600px; top: 840px; height: 130px; }
+#gfx-hook { left: 160px; width: 1600px; top: 110px; }
+.hook-sub { font-size: 64px; }
+#gfx-lt { left: 120px; top: 600px; width: 1200px; }
+.leak-bar { width: 3200px; height: 1700px; top: -300px; }

@@ -38,7 +38,7 @@
     g.id = "cap-" + (++uid);
     if (opt.y != null) g.style.top = opt.y + "px";
     const chars = words.join(" ").length + (keywordIndex >= 0 ? 3 : 0);
-    const size = opt.size || Math.max(54, Math.min(88, Math.floor(880 / (chars * 0.56))));
+    const size = opt.size || Math.max(54, Math.min(window.GFX_CAP_MAX || 88, Math.floor((window.GFX_CAP_W || 880) / (chars * 0.56))));
     g.style.fontSize = size + "px";
     const els = words.map((w, i) => {
       const s = document.createElement("span");
@@ -150,7 +150,7 @@
     const tl = T(), root = $(opt.el || "#gfx-leak");
     const bar = root.querySelector(".leak-bar"), glow = root.querySelector(".leak-glow");
     const dur = opt.dur || 0.42, rtl = opt.dir === "left";
-    const x0 = rtl ? 1300 : -2900, x1 = rtl ? -2900 : 1300;
+    const W = window.GFX_WIPE || [-2900, 1300]; const x0 = rtl ? W[1] : W[0], x1 = rtl ? W[0] : W[1];
     tl.set(bar, { opacity: 1, skewX: -14 }, t - dur / 2);
     tl.fromTo(bar, { x: x0 }, { x: x1, duration: dur, ease: "power2.inOut", immediateRender: false }, t - dur / 2);
     tl.set(bar, { opacity: 0 }, t + dur / 2);
