@@ -10,6 +10,9 @@
   const host = (id) => { const h = $(id); if (!h) throw new Error("GFX3: missing host " + id); return h; };
   const mk = (cls, parent, html) => { const e = document.createElement("div"); e.className = cls; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; };
   const FT = (el, from, to, at) => T().fromTo(el, from, { ...to, immediateRender: false }, at);
+  // intentional layering (sheen over letters, masked rows over a panel): tell `hyperframes check`
+  const allow = (...els) => els.forEach(e => [e, ...e.querySelectorAll("*")].forEach(x => {
+    x.setAttribute("data-layout-allow-occlusion", ""); x.setAttribute("data-layout-allow-overlap", ""); x.setAttribute("data-layout-allow-overflow", ""); }));
   const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
   // ---------- title builder (shared by openTitle and outroTag) ----------
@@ -23,7 +26,7 @@
     const sheen = document.createElement("span"); sheen.className = "g3-sheen";
     sheen.style.padding = "0 .06em"; sheen.style.boxSizing = "border-box";
     sheen.innerHTML = parts.map(([c]) => `<span class="g3-ch">${c === " " ? "&nbsp;" : esc(c)}</span>`).join("");
-    word.appendChild(sheen);
+    word.appendChild(sheen); allow(wrap);
     return { wrap, word, chars, sheen };
   }
   // letters track in from the centre (x spread + fade + slight rise); returns settle time
@@ -36,7 +39,7 @@
     return t + c * (o.stagger ?? 0.06) + dur * 0.6;
   }
   function sweep(sheen, t, dur = 1.1) {
-    FT(sheen, { backgroundPosition: "150% 0" }, { backgroundPosition: "-50% 0", duration: dur, ease: "power2.inOut" }, t);
+    FT(sheen, { webkitMaskPosition: "150% 0", maskPosition: "150% 0" }, { webkitMaskPosition: "-50% 0", maskPosition: "-50% 0", duration: dur, ease: "power2.inOut" }, t);
   }
 
   // ---------- 1. letterbox ----------
@@ -109,12 +112,12 @@
     const top0 = opt.top ?? 282;
     const panel = mk("g3-h-panel", root);
     const title = mk("g3-h-title", root); title.textContent = opt.title || "15+ YEARS ACROSS";
-    const rule = mk("g3-h-rule", root);
+    const rule = mk("g3-h-rule", root); allow(panel);
     const rows = names.map((n, i) => {
       const r = mk("g3-h-row", root); r.style.top = (top0 + i * step) + "px";
       const inner = mk("g3-h-in", r,
         `<div class="g3-h-num">${String(i + 1).padStart(2, "0")}</div><div class="g3-h-dash" style="width:30px;margin-right:20px"></div><div class="g3-h-name">${esc(n)}</div>`);
-      return { inner, dash: inner.children[1], name: inner.children[2] };
+      allow(r); return { inner, dash: inner.children[1], name: inner.children[2] };
     });
     const tl = T(), end = t + dur, first = t + (opt.firstAt ?? beat);
     tl.set([panel, title], { opacity: 0 }, 0);

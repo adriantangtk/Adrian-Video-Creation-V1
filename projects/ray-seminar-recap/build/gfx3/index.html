@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>GFX3 test</title>
+<script src="vendor/gsap.min.js"></script>
+<link rel="stylesheet" href="gfx3.css" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+  #root { width: 1920px; height: 1080px; position: relative; overflow: hidden; background: #000; }
+  .shot { position: absolute; inset: 0; overflow: hidden; }
+  .shot img { position: absolute; left: -40px; top: -24px; width: 2000px; height: 1128px; object-fit: cover; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="20" data-fps="30" data-width="1920" data-height="1080">
+  <!-- test footage (photos) -->
+  <div id="s1" class="shot clip" data-start="4.8" data-duration="2.8" data-track-index="0"><img id="p1" src="test/p01.jpg" alt="" /></div>
+  <div id="s2" class="shot clip" data-start="7.6" data-duration="4.4" data-track-index="1"><img id="p2" src="test/p02.jpg" alt="" /></div>
+  <div id="s3" class="shot clip" data-start="12" data-duration="3.6" data-track-index="2"><img id="p3" src="test/p04.jpg" alt="" /></div>
+  <div id="s4" class="shot clip" data-start="15.6" data-duration="4.4" data-track-index="3"><img id="p4" src="test/p06.jpg" alt="" /></div>
+
+  <!-- GFX3 hosts (one per layer; each spans the part of the video it is used in) -->
+  <div id="g3-vignette" class="g3-host clip" data-start="0" data-duration="20" data-track-index="4"></div>
+  <div id="g3-grain" class="g3-host clip" data-start="0" data-duration="20" data-track-index="5"></div>
+  <div id="g3-chapter" class="g3-host clip" data-start="4.8" data-duration="2.8" data-track-index="6"></div>
+  <div id="g3-houses" class="g3-host clip" data-start="7.6" data-duration="4.4" data-track-index="7"></div>
+  <div id="g3-lt" class="g3-host clip" data-start="12" data-duration="3.6" data-track-index="8"></div>
+  <div id="g3-captions" class="g3-host clip" data-start="12" data-duration="3.6" data-track-index="9" data-track-kind="captions"></div>
+  <div id="g3-outro" class="g3-host clip" data-start="15.6" data-duration="4.4" data-track-index="10"></div>
+  <div id="g3-open" class="g3-host clip" data-start="0" data-duration="4.8" data-track-index="11"></div>
+  <div id="g3-matte" class="g3-host clip" data-start="0" data-duration="20" data-track-index="12"></div>
+  <div id="g3-leak" class="g3-host clip" data-start="0" data-duration="20" data-track-index="13"></div>
+  <div id="g3-flash" class="g3-host clip" data-start="0" data-duration="20" data-track-index="14"></div>
+  <div id="g3-black" class="g3-host clip" data-start="0" data-duration="20" data-track-index="15"></div>
+</div>
+<script src="gfx3.js"></script>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  GFX3.use(tl);
+
+  GFX3.grain(0, 20);
+
+  // 0-4.8 cold open on black, impact + white flash at 4.8
+  GFX3.openTitle(0, 4.8);
+
+  // 4.8-7.6 venue + chapter card, under a 2.39 matte
+  GFX3.letterbox(4.8, 7.7);
+  GFX3.kenBurns("#p1", 4.8, 2.8, { from: 1.0, to: 1.06 });
+  GFX3.chapter(5.0, "ENERGISE", { index: "01", total: "03" });
+
+  // 7.6 light-leak cut -> houses list over a busy crowd shot
+  GFX3.leak(7.6);
+  GFX3.kenBurns("#p2", 7.6, 4.4, { from: 1.02, to: 1.08, x: -30 });
+  GFX3.housesList(7.7, 4.3);
+
+  // 12-15.6 Rein: lower third + soundbite captions
+  GFX3.kenBurns("#p3", 12, 3.6, { from: 1.04, to: 1.1, x: -20, origin: "60% 50%" });
+  GFX3.lowerThird3(12.2, 3.3, { name: "REIN", full: "Reinald Goh", tag: "UHNW Clienteling Expert" });
+  const bite = [["What's",0.5,0.7],["your",0.7,0.85],["favourite",0.85,1.3],["watch?",1.3,1.7],["Let",2.0,2.1],["me",2.1,2.2],["offer",2.2,2.5],["you.",2.5,2.9]]
+    .map(([w, start, end]) => ({ w, start, end }));
+  GFX3.captions3(bite, { offset: 12, keywords: ["watch?", "offer"] });
+
+  // 15.6-20 outro over the final wide, fade to black
+  GFX3.leak(15.6, { dir: "left", dur: 0.7, peak: 0.7 });
+  GFX3.letterbox(15.6, null);
+  GFX3.kenBurns("#p4", 15.6, 4.4, { from: 1.0, to: 1.05 });
+  GFX3.outroTag(15.8, 4.2);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
