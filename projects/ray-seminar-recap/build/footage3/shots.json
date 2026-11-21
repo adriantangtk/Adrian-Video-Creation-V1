@@ -1,0 +1,1537 @@
+{
+ "format": "1920x1080 30fps, grade eq contrast 1.06 sat 1.12 gamma 1.03 + unsharp 0.45, crf14 g6, no audio",
+ "sharpnessNote": "score = mean Laplacian variance of the 6 sharpest 320x270 tiles on 1080p output frames (10 fps), median over the shot; native 1:1 crops score lower than downscaled wides but were checked by eye",
+ "bites": [
+  {
+   "name": "hook",
+   "wav": "media/v3/bite-1.wav",
+   "mp4": null,
+   "dur": 5.834,
+   "text": "Serving the richest of the richest does not require you to be the loudest.",
+   "words": [
+    {
+     "w": "Serving",
+     "start": 0.15,
+     "end": 0.8
+    },
+    {
+     "w": "the",
+     "start": 0.8,
+     "end": 1.14
+    },
+    {
+     "w": "richest",
+     "start": 1.14,
+     "end": 1.83
+    },
+    {
+     "w": "of",
+     "start": 1.83,
+     "end": 2.06
+    },
+    {
+     "w": "the",
+     "start": 2.06,
+     "end": 2.4
+    },
+    {
+     "w": "richest",
+     "start": 2.4,
+     "end": 2.94
+    },
+    {
+     "w": "does",
+     "start": 3.15,
+     "end": 3.45
+    },
+    {
+     "w": "not",
+     "start": 3.45,
+     "end": 3.7
+    },
+    {
+     "w": "require",
+     "start": 3.7,
+     "end": 4.28
+    },
+    {
+     "w": "you",
+     "start": 4.28,
+     "end": 4.54
+    },
+    {
+     "w": "to",
+     "start": 4.57,
+     "end": 4.68
+    },
+    {
+     "w": "be",
+     "start": 4.68,
+     "end": 4.8
+    },
+    {
+     "w": "the",
+     "start": 4.8,
+     "end": 4.98
+    },
+    {
+     "w": "loudest.",
+     "start": 4.98,
+     "end": 5.42
+    }
+   ],
+   "source": "20261120_133610.mp4 15.16-18.14 + 18.79-21.65",
+   "note": "portrait source shows no speaker: cover with stage shots"
+  },
+  {
+   "name": "prada",
+   "wav": "media/v3/bite-prada.wav",
+   "mp4": "media/v3/bite-prada.mp4",
+   "dur": 2.767,
+   "text": "He started in Prada as a management trainee.",
+   "words": [
+    {
+     "w": "He",
+     "start": 0.03,
+     "end": 0.14
+    },
+    {
+     "w": "started",
+     "start": 0.14,
+     "end": 0.63
+    },
+    {
+     "w": "in",
+     "start": 0.63,
+     "end": 0.77
+    },
+    {
+     "w": "Prada",
+     "start": 0.77,
+     "end": 1.12
+    },
+    {
+     "w": "as",
+     "start": 1.12,
+     "end": 1.26
+    },
+    {
+     "w": "a",
+     "start": 1.26,
+     "end": 1.33
+    },
+    {
+     "w": "management",
+     "start": 1.33,
+     "end": 2.03
+    },
+    {
+     "w": "trainee.",
+     "start": 2.03,
+     "end": 2.71
+    }
+   ],
+   "source": "20261120_145350_132.mp4 2.52-5.29 (host intro; one continuous phrase, no internal pause >0.22 s)",
+   "note": "mp4 is the wide ballroom (host tiny on stage, LED shows the Reinald Goh slide); whisper hears \"training\", word timings from whisper on the final cut"
+  },
+  {
+   "name": "watch",
+   "wav": "media/v3/bite-3.wav",
+   "mp4": "media/v3/bite-3.mp4",
+   "dur": 3.6,
+   "text": "What's your favourite watch across all these brands that you've worn? Let me offer you.",
+   "words": [
+    {
+     "w": "What's",
+     "start": 0.14,
+     "end": 0.27
+    },
+    {
+     "w": "your",
+     "start": 0.27,
+     "end": 0.45
+    },
+    {
+     "w": "favourite",
+     "start": 0.45,
+     "end": 0.85
+    },
+    {
+     "w": "watch",
+     "start": 0.85,
+     "end": 1.0
+    },
+    {
+     "w": "across",
+     "start": 1.02,
+     "end": 1.21
+    },
+    {
+     "w": "all",
+     "start": 1.21,
+     "end": 1.31
+    },
+    {
+     "w": "these",
+     "start": 1.31,
+     "end": 1.48
+    },
+    {
+     "w": "brands",
+     "start": 1.48,
+     "end": 1.72
+    },
+    {
+     "w": "that",
+     "start": 1.72,
+     "end": 1.86
+    },
+    {
+     "w": "you've",
+     "start": 1.86,
+     "end": 2.06
+    },
+    {
+     "w": "worn?",
+     "start": 2.06,
+     "end": 2.3
+    },
+    {
+     "w": "Let",
+     "start": 2.45,
+     "end": 2.71
+    },
+    {
+     "w": "me",
+     "start": 2.71,
+     "end": 2.82
+    },
+    {
+     "w": "offer",
+     "start": 2.82,
+     "end": 3.12
+    },
+    {
+     "w": "you.",
+     "start": 3.12,
+     "end": 3.5
+    }
+   ],
+   "source": "20261120_145314_520.mp4 9.28-11.60 + 11.90-13.15 (Ray quoting a client)",
+   "note": "mp4 copied from media/land/bite-3.mp4 (3.567 s, landscape 1080p)"
+  }
+ ],
+ "shots": [
+  {
+   "file": "media/v3/s01.mp4",
+   "dur": 3.0,
+   "source": "20261120_145350_132.mp4",
+   "offset": 26.4,
+   "framing": "full",
+   "category": "stage",
+   "description": "grand ballroom wide: chandelier ceiling, LED wall showing the Reinald Goh slide, full tables",
+   "sharpness": {
+    "score": 1283,
+    "min": 1219,
+    "relToClipBest": 0.865,
+    "shakeJitter": 0.07,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s02.mp4",
+   "dur": 3.0,
+   "source": "20261120_145350_132.mp4",
+   "offset": 40.0,
+   "framing": "push:0.55,0.45,1.5",
+   "category": "stage",
+   "description": "slow push-in across the ballroom toward the RISE 2.0 LED wall and stage",
+   "sharpness": {
+    "score": 887,
+    "min": 604,
+    "relToClipBest": 0.929,
+    "shakeJitter": 0.12,
+    "grade": "A"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s03.mp4",
+   "dur": 2.5,
+   "source": "20261120_145350_132.mp4",
+   "offset": 67.4,
+   "framing": "push:0.5,0.45,1.35",
+   "category": "stage",
+   "description": "ballroom wide, colourful side screens, ceiling sculpture, push-in",
+   "sharpness": {
+    "score": 1050,
+    "min": 794,
+    "relToClipBest": 0.838,
+    "shakeJitter": 0.06,
+    "grade": "A"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s04.mp4",
+   "dur": 2.5,
+   "source": "20261120_145533_118.mp4",
+   "offset": 6.9,
+   "framing": "full",
+   "category": "stage",
+   "description": "wide pan of packed ballroom, RISE 2.0 LED wall and colour screens",
+   "sharpness": {
+    "score": 1190,
+    "min": 1116,
+    "relToClipBest": 0.927,
+    "shakeJitter": 0.12,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s05.mp4",
+   "dur": 3.0,
+   "source": "20261120_145533_118.mp4",
+   "offset": 40.0,
+   "framing": "full",
+   "category": "stage",
+   "description": "wide hall, LED wall and ceiling, full house",
+   "sharpness": {
+    "score": 1006,
+    "min": 912,
+    "relToClipBest": 0.77,
+    "shakeJitter": 0.23,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s06.mp4",
+   "dur": 3.0,
+   "source": "20261120_145533_118.mp4",
+   "offset": 55.5,
+   "framing": "full",
+   "category": "stage",
+   "description": "audience on their feet facing the giant RISE 2.0 logo, speaker on stage",
+   "sharpness": {
+    "score": 509,
+    "min": 422,
+    "relToClipBest": 0.369,
+    "shakeJitter": 0.26,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "outro"
+  },
+  {
+   "file": "media/v3/s07.mp4",
+   "dur": 2.0,
+   "source": "20261120_145516_455.mp4",
+   "offset": 0.3,
+   "framing": "full",
+   "category": "stage",
+   "description": "standing crowd in front of RISE 2.0 stage, speaker in blue suit",
+   "sharpness": {
+    "score": 383,
+    "min": 183,
+    "relToClipBest": 0.216,
+    "shakeJitter": 0.5,
+    "grade": "C"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "outro"
+  },
+  {
+   "file": "media/v3/s08.mp4",
+   "dur": 2.5,
+   "source": "20261120_145516_455.mp4",
+   "offset": 4.4,
+   "framing": "full",
+   "category": "stage",
+   "description": "standing room, RISE 2.0 LED wall, ceiling",
+   "sharpness": {
+    "score": 801,
+    "min": 440,
+    "relToClipBest": 0.496,
+    "shakeJitter": 0.23,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s09.mp4",
+   "dur": 2.5,
+   "source": "20261120_145516_455.mp4",
+   "offset": 17.6,
+   "framing": "full",
+   "category": "stage",
+   "description": "whole room on its feet, RISE 2.0 backdrop and ceiling",
+   "sharpness": {
+    "score": 807,
+    "min": 504,
+    "relToClipBest": 0.685,
+    "shakeJitter": 0.29,
+    "grade": "A"
+   },
+   "motion": "handheld",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s10.mp4",
+   "dur": 2.5,
+   "source": "20261120_133744.mp4",
+   "offset": 4.6,
+   "framing": "full",
+   "category": "stage",
+   "description": "ONE TEAM, ONE SHARED PURPOSE, ONE HSBC on the LED wall over the audience",
+   "sharpness": {
+    "score": 751,
+    "min": 706,
+    "relToClipBest": 0.809,
+    "shakeJitter": 0.23,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s11.mp4",
+   "dur": 2.5,
+   "source": "20261120_133744.mp4",
+   "offset": 13.7,
+   "framing": "push:0.5,0.4,1.3",
+   "category": "stage",
+   "description": "push-in on ONE HSBC LED wall and RISE 2.0 logo",
+   "sharpness": {
+    "score": 667,
+    "min": 568,
+    "relToClipBest": 0.977,
+    "shakeJitter": 0.22,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "hook"
+  },
+  {
+   "file": "media/v3/s12.mp4",
+   "dur": 3.0,
+   "source": "20261120_145412_424.mp4",
+   "offset": 2.7,
+   "framing": "full",
+   "category": "stage",
+   "description": "Serving the Next Generation of Asian Wealth on red LED wall, packed room",
+   "sharpness": {
+    "score": 963,
+    "min": 905,
+    "relToClipBest": 0.953,
+    "shakeJitter": 0.09,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "hook"
+  },
+  {
+   "file": "media/v3/s13.mp4",
+   "dur": 3.0,
+   "source": "20261120_145412_424.mp4",
+   "offset": 10.0,
+   "framing": "push:0.5,0.62,1.45",
+   "category": "stage",
+   "description": "push-in on Serving the Next Generation of Asian Wealth / RISE 2.0",
+   "sharpness": {
+    "score": 725,
+    "min": 457,
+    "relToClipBest": 0.865,
+    "shakeJitter": 0.07,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "hook"
+  },
+  {
+   "file": "media/v3/s14.mp4",
+   "dur": 2.5,
+   "source": "20261120_134405.mp4",
+   "offset": 2.1,
+   "framing": "full",
+   "category": "stage",
+   "description": "pan across LED wall and chandeliers, speaker slide",
+   "sharpness": {
+    "score": 760,
+    "min": 666,
+    "relToClipBest": 0.678,
+    "shakeJitter": 0.28,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s15.mp4",
+   "dur": 2.5,
+   "source": "20261120_134405.mp4",
+   "offset": 19.1,
+   "framing": "full",
+   "category": "audience",
+   "description": "attendees at tables (laptops out) under the sculpture wall, slide on side screen",
+   "sharpness": {
+    "score": 1253,
+    "min": 1059,
+    "relToClipBest": 1.001,
+    "shakeJitter": 0.48,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s16.mp4",
+   "dur": 2.5,
+   "source": "20261120_134523.mp4",
+   "offset": 13.4,
+   "framing": "full",
+   "category": "stage",
+   "description": "MEET YOUR SPEAKERS: three speakers on the RISE 2.0 stage",
+   "sharpness": {
+    "score": 657,
+    "min": 611,
+    "relToClipBest": 0.892,
+    "shakeJitter": 0.55,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s17.mp4",
+   "dur": 2.5,
+   "source": "20261120_134523.mp4",
+   "offset": 25.7,
+   "framing": "full",
+   "category": "stage",
+   "description": "stage wide, speakers slide and RISE 2.0 logo",
+   "sharpness": {
+    "score": 667,
+    "min": 633,
+    "relToClipBest": 0.947,
+    "shakeJitter": 0.55,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s18.mp4",
+   "dur": 3.0,
+   "source": "20261120_145245_505.mp4",
+   "offset": 11.2,
+   "framing": "full",
+   "category": "stage",
+   "description": "low angle on the stage: lectern with HSBC logo, stage lights, RISE 2.0 LED",
+   "sharpness": {
+    "score": 1611,
+    "min": 1509,
+    "relToClipBest": 0.764,
+    "shakeJitter": 0.09,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "hook"
+  },
+  {
+   "file": "media/v3/s19.mp4",
+   "dur": 2.5,
+   "source": "20261120_145245_505.mp4",
+   "offset": 21.1,
+   "framing": "push:0.35,0.55,1.3",
+   "category": "stage",
+   "description": "low-angle push toward the lectern and RISE 2.0 wall",
+   "sharpness": {
+    "score": 1346,
+    "min": 641,
+    "relToClipBest": 0.792,
+    "shakeJitter": 0.11,
+    "grade": "A"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "hook"
+  },
+  {
+   "file": "media/v3/s20.mp4",
+   "dur": 3.0,
+   "source": "20261120_145446_427.mp4",
+   "offset": 7.2,
+   "framing": "full",
+   "category": "venue",
+   "description": "grand ballroom pan: chandelier ceiling, red LED screens, full tables",
+   "sharpness": {
+    "score": 1263,
+    "min": 1197,
+    "relToClipBest": 0.935,
+    "shakeJitter": 0.19,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s21.mp4",
+   "dur": 2.5,
+   "source": "20261120_145427_076.mp4",
+   "offset": 4.9,
+   "framing": "full",
+   "category": "stage",
+   "description": "ballroom wide with colour-cycling screens and LED wall",
+   "sharpness": {
+    "score": 893,
+    "min": 701,
+    "relToClipBest": 0.697,
+    "shakeJitter": 0.14,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s22.mp4",
+   "dur": 1.5,
+   "source": "20261120_141325.mp4",
+   "offset": 0.1,
+   "framing": "full",
+   "category": "rein",
+   "description": "Rein (black, standing) and host (seated) on the RISE 2.0 stage, 1 Question slide",
+   "sharpness": {
+    "score": 827,
+    "min": 700,
+    "relToClipBest": 1.563,
+    "shakeJitter": 0.93,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s23.mp4",
+   "dur": 3.0,
+   "source": "20261120_135429.mp4",
+   "offset": 6.2,
+   "framing": "crop:200,380",
+   "category": "rein",
+   "description": "host at the HSBC lectern beside Rein's bio slide (Tiffany, Gucci, Dior, Celine; LVMH, Kering & Prada groups) - native 1:1 crop, pairs with the Prada bite",
+   "sharpness": {
+    "score": 169,
+    "min": 154,
+    "relToClipBest": 0.936,
+    "shakeJitter": 0.17,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s24.mp4",
+   "dur": 3.0,
+   "source": "20261120_135429.mp4",
+   "offset": 30.2,
+   "framing": "push:0.18,0.45,1.9",
+   "category": "rein",
+   "description": "push-in from the wide hall to Rein's speaker slide; ends on the WORKED FOR logos row (Dior, Celine, Gucci, Saint Laurent, Prada) - brand logos visible at the end",
+   "sharpness": {
+    "score": 358,
+    "min": 139,
+    "relToClipBest": 0.967,
+    "shakeJitter": 0.14,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s25.mp4",
+   "dur": 2.5,
+   "source": "20261120_135429.mp4",
+   "offset": 39.8,
+   "framing": "full",
+   "category": "rein",
+   "description": "LED wall wide with the Reinald Goh slide and RISE 2.0 logo, host at lectern, full house",
+   "sharpness": {
+    "score": 753,
+    "min": 704,
+    "relToClipBest": 0.805,
+    "shakeJitter": 0.18,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s26.mp4",
+   "dur": 3.0,
+   "source": "20261120_145314_520.mp4",
+   "offset": 8.3,
+   "framing": "crop:1000,140",
+   "category": "rein",
+   "description": "Rein (black) standing, host seated, under the RISE 2.0 logo with the watch question slide - native 1:1 crop",
+   "sharpness": {
+    "score": 341,
+    "min": 285,
+    "relToClipBest": 0.728,
+    "shakeJitter": 0.09,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s27.mp4",
+   "dur": 3.0,
+   "source": "20261120_145314_520.mp4",
+   "offset": 19.0,
+   "framing": "push:0.5,0.25,1.8",
+   "category": "rein",
+   "description": "push-in on the watch question slide, Rein and host on stage",
+   "sharpness": {
+    "score": 633,
+    "min": 437,
+    "relToClipBest": 0.867,
+    "shakeJitter": 0.06,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s28.mp4",
+   "dur": 2.5,
+   "source": "20261120_145314_520.mp4",
+   "offset": 24.6,
+   "framing": "full",
+   "category": "rein",
+   "description": "wide: tables watching Rein and host, 1 Question That Unravelled More Than Asked slides",
+   "sharpness": {
+    "score": 1252,
+    "min": 1121,
+    "relToClipBest": 0.859,
+    "shakeJitter": 0.11,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s29.mp4",
+   "dur": 3.0,
+   "source": "20261120_145231_886.mp4",
+   "offset": 11.4,
+   "framing": "full",
+   "category": "rein",
+   "description": "Rein draws the value-over-time chart on screen while the host sits beside the RISE 2.0 logo",
+   "sharpness": {
+    "score": 853,
+    "min": 760,
+    "relToClipBest": 0.883,
+    "shakeJitter": 0.11,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s30.mp4",
+   "dur": 2.5,
+   "source": "20261120_145231_886.mp4",
+   "offset": 5.4,
+   "framing": "crop:1500,640",
+   "category": "rein",
+   "description": "Rein at the whiteboard sketching the chart - native 1:1 crop",
+   "sharpness": {
+    "score": 185,
+    "min": 133,
+    "relToClipBest": 0.643,
+    "shakeJitter": 0.2,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s31.mp4",
+   "dur": 3.0,
+   "source": "20261120_145231_886.mp4",
+   "offset": 15.0,
+   "framing": "push:0.6,0.5,1.5",
+   "category": "rein",
+   "description": "push-in on the host and the RISE 2.0 logo while Rein draws",
+   "sharpness": {
+    "score": 538,
+    "min": 340,
+    "relToClipBest": 0.621,
+    "shakeJitter": 0.14,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  },
+  {
+   "file": "media/v3/s32.mp4",
+   "dur": 2.5,
+   "source": "20261120_134008.mp4",
+   "offset": 8.1,
+   "framing": "full",
+   "category": "audience",
+   "description": "hands up across the room, ONE HSBC LED wall",
+   "sharpness": {
+    "score": 574,
+    "min": 426,
+    "relToClipBest": 0.554,
+    "shakeJitter": 0.46,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s33.mp4",
+   "dur": 1.6,
+   "source": "20261120_134008.mp4",
+   "offset": 13.8,
+   "framing": "full",
+   "category": "audience",
+   "description": "attendees waving and cheering at tables",
+   "sharpness": {
+    "score": 780,
+    "min": 530,
+    "relToClipBest": 0.721,
+    "shakeJitter": 1.05,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s34.mp4",
+   "dur": 2.5,
+   "source": "20261120_134008.mp4",
+   "offset": 4.5,
+   "framing": "full",
+   "category": "audience",
+   "description": "pan over the packed tables toward the LED wall",
+   "sharpness": {
+    "score": 672,
+    "min": 506,
+    "relToClipBest": 0.656,
+    "shakeJitter": 0.6,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s35.mp4",
+   "dur": 2.5,
+   "source": "20261120_134008.mp4",
+   "offset": 23.8,
+   "framing": "full",
+   "category": "audience",
+   "description": "From Service To Experience slide over the audience",
+   "sharpness": {
+    "score": 695,
+    "min": 526,
+    "relToClipBest": 0.734,
+    "shakeJitter": 1.02,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s36.mp4",
+   "dur": 2.5,
+   "source": "20261120_145305_655.mp4",
+   "offset": 3.3,
+   "framing": "full",
+   "category": "audience",
+   "description": "close on attendees at the tables",
+   "sharpness": {
+    "score": 861,
+    "min": 493,
+    "relToClipBest": 0.526,
+    "shakeJitter": 0.55,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s37.mp4",
+   "dur": 2.5,
+   "source": "20261120_133644.mp4",
+   "offset": 27.0,
+   "framing": "full",
+   "category": "audience",
+   "description": "attendees at round tables, engaged",
+   "sharpness": {
+    "score": 1258,
+    "min": 911,
+    "relToClipBest": 0.96,
+    "shakeJitter": 0.59,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s38.mp4",
+   "dur": 2.5,
+   "source": "20261120_133644.mp4",
+   "offset": 17.4,
+   "framing": "full",
+   "category": "audience",
+   "description": "packed tables toward the RISE 2.0 screen (light stand in frame)",
+   "sharpness": {
+    "score": 517,
+    "min": 360,
+    "relToClipBest": 0.409,
+    "shakeJitter": 2.35,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s39.mp4",
+   "dur": 2.5,
+   "source": "20261120_133644.mp4",
+   "offset": 21.3,
+   "framing": "full",
+   "category": "audience",
+   "description": "wide room, RISE 2.0 logo on the LED wall",
+   "sharpness": {
+    "score": 494,
+    "min": 411,
+    "relToClipBest": 0.433,
+    "shakeJitter": 0.76,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s40.mp4",
+   "dur": 2.5,
+   "source": "20261120_145550_634.mp4",
+   "offset": 29.5,
+   "framing": "full",
+   "category": "audience",
+   "description": "tables full of attendees under the chandelier ceiling",
+   "sharpness": {
+    "score": 1196,
+    "min": 612,
+    "relToClipBest": 0.414,
+    "shakeJitter": 0.32,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s41.mp4",
+   "dur": 2.5,
+   "source": "20261120_145550_634.mp4",
+   "offset": 36.4,
+   "framing": "full",
+   "category": "audience",
+   "description": "tables under the chandelier ceiling, red pillars",
+   "sharpness": {
+    "score": 1046,
+    "min": 594,
+    "relToClipBest": 0.31,
+    "shakeJitter": 0.37,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "energise"
+  },
+  {
+   "file": "media/v3/s42.mp4",
+   "dur": 2.5,
+   "source": "20261120_145550_634.mp4",
+   "offset": 0.9,
+   "framing": "full",
+   "category": "venue",
+   "description": "REGISTRATION sign and RISE 2.0 desk",
+   "sharpness": {
+    "score": 2081,
+    "min": 1112,
+    "relToClipBest": 0.606,
+    "shakeJitter": 1.11,
+    "grade": "A"
+   },
+   "motion": "static",
+   "hasBackdrop": false,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s43.mp4",
+   "dur": 2.5,
+   "source": "20261120_145550_634.mp4",
+   "offset": 3.4,
+   "framing": "full",
+   "category": "venue",
+   "description": "guests checking in at registration",
+   "sharpness": {
+    "score": 2220,
+    "min": 1478,
+    "relToClipBest": 0.823,
+    "shakeJitter": 2.29,
+    "grade": "A"
+   },
+   "motion": "handheld",
+   "hasBackdrop": false,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s44.mp4",
+   "dur": 2.0,
+   "source": "20261120_145550_634.mp4",
+   "offset": 13.5,
+   "framing": "full",
+   "category": "venue",
+   "description": "walking into the ballroom, RISE 2.0 LED ahead",
+   "sharpness": {
+    "score": 890,
+    "min": 658,
+    "relToClipBest": 0.363,
+    "shakeJitter": 0.81,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s45.mp4",
+   "dur": 2.5,
+   "source": "20261120_145550_634.mp4",
+   "offset": 16.0,
+   "framing": "full",
+   "category": "venue",
+   "description": "chandelier ceiling sweep over the ballroom and LED wall",
+   "sharpness": {
+    "score": 928,
+    "min": 653,
+    "relToClipBest": 0.304,
+    "shakeJitter": 0.69,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s46.mp4",
+   "dur": 2.5,
+   "source": "20261120_145446_427.mp4",
+   "offset": 11.1,
+   "framing": "full",
+   "category": "venue",
+   "description": "ballroom ceiling, red screens, packed tables",
+   "sharpness": {
+    "score": 1245,
+    "min": 1077,
+    "relToClipBest": 0.854,
+    "shakeJitter": 0.25,
+    "grade": "A"
+   },
+   "motion": "pan",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s47.mp4",
+   "dur": 2.5,
+   "source": "20261120_145455_851.mp4",
+   "offset": 0.8,
+   "framing": "full",
+   "category": "party",
+   "description": "crowd up and mingling/dancing, stage beams on red pillars (darker, softer)",
+   "sharpness": {
+    "score": 347,
+    "min": 298,
+    "relToClipBest": 0.601,
+    "shakeJitter": 0.44,
+    "grade": "C"
+   },
+   "motion": "pan",
+   "hasBackdrop": false,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s48.mp4",
+   "dur": 2.0,
+   "source": "20261120_145455_851.mp4",
+   "offset": 10.3,
+   "framing": "full",
+   "category": "party",
+   "description": "crowd on their feet, guest in white shirt dancing toward camera, chandeliers",
+   "sharpness": {
+    "score": 488,
+    "min": 304,
+    "relToClipBest": 0.615,
+    "shakeJitter": 0.68,
+    "grade": "B"
+   },
+   "motion": "pan",
+   "hasBackdrop": false,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s49.mp4",
+   "dur": 2.0,
+   "source": "20261120_145516_455.mp4",
+   "offset": 31.0,
+   "framing": "full",
+   "category": "party",
+   "description": "guests dancing between the tables",
+   "sharpness": {
+    "score": 746,
+    "min": 442,
+    "relToClipBest": 0.576,
+    "shakeJitter": 0.83,
+    "grade": "B"
+   },
+   "motion": "handheld",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s50.mp4",
+   "dur": 2.0,
+   "source": "20261120_145516_455.mp4",
+   "offset": 36.6,
+   "framing": "full",
+   "category": "party",
+   "description": "woman dancing, smiling at camera",
+   "sharpness": {
+    "score": 841,
+    "min": 374,
+    "relToClipBest": 0.401,
+    "shakeJitter": 1.66,
+    "grade": "A"
+   },
+   "motion": "handheld",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s51.mp4",
+   "dur": 2.0,
+   "source": "20261120_145516_455.mp4",
+   "offset": 40.6,
+   "framing": "full",
+   "category": "party",
+   "description": "guests dancing together",
+   "sharpness": {
+    "score": 582,
+    "min": 339,
+    "relToClipBest": 0.361,
+    "shakeJitter": 1.21,
+    "grade": "B"
+   },
+   "motion": "handheld",
+   "hasBackdrop": false,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s52.mp4",
+   "dur": 2.5,
+   "source": "20261120_145516_455.mp4",
+   "offset": 48.8,
+   "framing": "full",
+   "category": "party",
+   "description": "room standing and moving, red light pillars",
+   "sharpness": {
+    "score": 627,
+    "min": 304,
+    "relToClipBest": 0.446,
+    "shakeJitter": 0.82,
+    "grade": "B"
+   },
+   "motion": "handheld",
+   "hasBackdrop": false,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s53.mp4",
+   "dur": 1.5,
+   "source": "20261120_145533_118.mp4",
+   "offset": 45.0,
+   "framing": "full",
+   "category": "party",
+   "description": "audience rising to their feet, RISE 2.0 logo",
+   "sharpness": {
+    "score": 654,
+    "min": 407,
+    "relToClipBest": 0.35,
+    "shakeJitter": 0.29,
+    "grade": "B"
+   },
+   "motion": "static",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s54.mp4",
+   "dur": 3.0,
+   "source": "media/v3/photos/ph25.jpg (photo, Ken Burns)",
+   "offset": 0,
+   "framing": "photo-push",
+   "category": "puzzle",
+   "description": "slow push on the lit RISE 2.0 / Energise, Excite, Excel puzzle board",
+   "sharpness": {
+    "score": 565,
+    "min": 345,
+    "grade": "A"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "open"
+  },
+  {
+   "file": "media/v3/s55.mp4",
+   "dur": 3.0,
+   "source": "media/v3/photos/ph21.jpg (photo, Ken Burns)",
+   "offset": 0,
+   "framing": "photo-push",
+   "category": "puzzle",
+   "description": "slow push on the giant RISE 2.0 puzzle piece held up on stage (ONE TEAM, ONE HSBC LED behind)",
+   "sharpness": {
+    "score": 1600,
+    "min": 1290,
+    "grade": "A"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "excel"
+  },
+  {
+   "file": "media/v3/s56.mp4",
+   "dur": 3.0,
+   "source": "media/v3/photos/ph07.jpg (photo, Ken Burns)",
+   "offset": 0,
+   "framing": "photo-push",
+   "category": "stage",
+   "description": "slow push on the giant HSBC RISE 2.0 logo, host on stage (IWPB Wealth Conference 2026)",
+   "sharpness": {
+    "score": 177,
+    "min": 137,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "outro"
+  },
+  {
+   "file": "media/v3/s57.mp4",
+   "dur": 3.0,
+   "source": "media/v3/photos/ph16.jpg (photo, Ken Burns)",
+   "offset": 0,
+   "framing": "photo-push",
+   "category": "rein",
+   "description": "slow push on Rein's WORKED FOR slide (brand logos visible) with Rein on stage",
+   "sharpness": {
+    "score": 575,
+    "min": 405,
+    "grade": "B"
+   },
+   "motion": "push",
+   "hasBackdrop": true,
+   "bestFor": "excite"
+  }
+ ],
+ "photos": [
+  {
+   "file": "media/v3/photos/ph01.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_132910.jpg",
+   "category": "venue",
+   "description": "empty ballroom before doors: RISE 2.0 screen and stage lights"
+  },
+  {
+   "file": "media/v3/photos/ph02.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_132916.jpg",
+   "category": "venue",
+   "description": "ballroom filling up under the chandelier ceiling"
+  },
+  {
+   "file": "media/v3/photos/ph03.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_132932.jpg",
+   "category": "venue",
+   "description": "ballroom tables filling, ceiling sculpture"
+  },
+  {
+   "file": "media/v3/photos/ph04.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133106.jpg",
+   "category": "stage",
+   "description": "host on stage in front of the giant HSBC RISE 2.0 logo (IWPB Wealth Conference 2026)"
+  },
+  {
+   "file": "media/v3/photos/ph05.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133115.jpg",
+   "category": "stage",
+   "description": "host close, RISE 2.0 logo behind"
+  },
+  {
+   "file": "media/v3/photos/ph06.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133120(0).jpg",
+   "category": "stage",
+   "description": "host walking the stage under the RISE 2.0 logo"
+  },
+  {
+   "file": "media/v3/photos/ph07.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133122.jpg",
+   "category": "stage",
+   "description": "host centre stage, RISE 2.0 logo (clean brand frame)"
+  },
+  {
+   "file": "media/v3/photos/ph08.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133726.jpg",
+   "category": "stage",
+   "description": "RISE 2.0 LED wall over a full house"
+  },
+  {
+   "file": "media/v3/photos/ph09.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133730.jpg",
+   "category": "audience",
+   "description": "packed tables, attendees engaged"
+  },
+  {
+   "file": "media/v3/photos/ph10.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133733.jpg",
+   "category": "stage",
+   "description": "stage and RISE 2.0 wall from the tables"
+  },
+  {
+   "file": "media/v3/photos/ph11.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133739.jpg",
+   "category": "stage",
+   "description": "ONE TEAM, ONE SHARED PURPOSE, ONE HSBC LED wall over audience"
+  },
+  {
+   "file": "media/v3/photos/ph12.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_133826.jpg",
+   "category": "stage",
+   "description": "ONE TEAM, ONE SHARED PURPOSE, ONE HSBC, red LED wall"
+  },
+  {
+   "file": "media/v3/photos/ph13.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_134513.jpg",
+   "category": "rein",
+   "description": "MEET YOUR SPEAKERS slide: Ethan Lin and Reinald Goh, RISE 2.0"
+  },
+  {
+   "file": "media/v3/photos/ph14.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_135741.jpg",
+   "category": "rein",
+   "description": "Rein on stage beside YOUR SPEAKER Reinald Goh slide (worked for Tiffany & Co., Dior...)"
+  },
+  {
+   "file": "media/v3/photos/ph15.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_135743.jpg",
+   "category": "rein",
+   "description": "Rein on stage, RISE 2.0 logo and his speaker slide"
+  },
+  {
+   "file": "media/v3/photos/ph16.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_135750.jpg",
+   "category": "rein",
+   "description": "Reinald Goh slide listing the luxury houses (Dior, Celine, Gucci, Prada...), Rein on stage"
+  },
+  {
+   "file": "media/v3/photos/ph17.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_141308.jpg",
+   "category": "rein",
+   "description": "1 Question That Unravelled More Than Asked slides, packed room"
+  },
+  {
+   "file": "media/v3/photos/ph18.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_141312.jpg",
+   "category": "rein",
+   "description": "Rein seated on stage, RISE 2.0 logo, host beside"
+  },
+  {
+   "file": "media/v3/photos/ph19.jpg",
+   "w": 3840,
+   "h": 2160,
+   "source": "20261120_145505_807.jpg",
+   "category": "stage",
+   "description": "grand wide of the RISE 2.0 stage and LED wall (Insta360 watermark cropped out)"
+  },
+  {
+   "file": "media/v3/photos/ph20.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5521.HEIC",
+   "category": "puzzle",
+   "description": "speakers on stage holding the giant RISE 2.0 puzzle piece: Energise, Excite, Excel"
+  },
+  {
+   "file": "media/v3/photos/ph21.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5522.HEIC",
+   "category": "puzzle",
+   "description": "RISE 2.0 / Energise, Excite, Excel puzzle piece on stage, ONE TEAM ONE HSBC LED"
+  },
+  {
+   "file": "media/v3/photos/ph22.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5523.HEIC",
+   "category": "puzzle",
+   "description": "puzzle piece reveal on stage, RISE 2.0 LED behind, camera crew"
+  },
+  {
+   "file": "media/v3/photos/ph23.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5524.HEIC",
+   "category": "puzzle",
+   "description": "puzzle piece on stage with speakers, wider"
+  },
+  {
+   "file": "media/v3/photos/ph24.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5525.HEIC",
+   "category": "puzzle",
+   "description": "puzzle piece being assembled on stage"
+  },
+  {
+   "file": "media/v3/photos/ph25.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5529.HEIC",
+   "category": "puzzle",
+   "description": "RISE 2.0 Energise Excite Excel lit puzzle board (city skyline)"
+  },
+  {
+   "file": "media/v3/photos/ph26.jpg",
+   "w": 3213,
+   "h": 1807,
+   "source": "IMG_5530.HEIC",
+   "category": "puzzle",
+   "description": "RISE 2.0 puzzle board, glowing frame, angled"
+  }
+ ],
+ "heroes": [
+  "s54",
+  "s02",
+  "s45",
+  "s19",
+  "s55",
+  "s56",
+  "s07",
+  "s53"
+ ],
+ "rejected": [
+  "20261120_150930_281.mp4: Insta360 compilation with AI Director watermark, already edited, 1080p",
+  "portrait videos 133610, 135721, 141401, 144001, 144352, IMG_5526.MOV, IMG_5531.MOV: centre 16:9 crop < 1080 px tall",
+  "133644 0-14 s: speaker over heads, out of focus",
+  "134523 2-7 s: standing crowd, motion smear; 145516 43-46/60+ and 145533 44/62+: whip pans / floor",
+  "145350_132 76-84 s and 145427 60+ s: camera pointed at floor/phone screen",
+  "141325 8-21 s, 145455 6-9 s: soft during fast pan",
+  "photos 133116, 133120, 133123, 135755: soft/motion blur; 141625, 143956, 143959, 144346 portrait"
+ ],
+ "contactSheets": [
+  "build/footage3/sheet-1.jpg",
+  "build/footage3/sheet-2.jpg",
+  "build/footage3/sheet-3.jpg",
+  "build/footage3/sheet-4.jpg",
+  "build/footage3/sheet-5.jpg"
+ ]
+}

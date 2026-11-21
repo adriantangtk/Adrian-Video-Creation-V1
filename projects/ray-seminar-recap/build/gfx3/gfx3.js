@@ -50,6 +50,7 @@
     const top = mk("g3-bar top", root), bot = mk("g3-bar bot", root);
     top.style.height = bot.style.height = h + "px";
     const i = opt.inDur ?? 0.9, o = opt.outDur ?? 0.7;
+    T().set([top, bot], { scaleY: 0 }, 0); // hidden until t0 (several letterboxes can share the host)
     FT([top, bot], { scaleY: 0 }, { scaleY: 1, duration: i, ease: "expo.inOut" }, t0);
     if (t1 != null) FT([top, bot], { scaleY: 1 }, { scaleY: 0, duration: o, ease: "expo.inOut" }, t1 - o);
     return h;

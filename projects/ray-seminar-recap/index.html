@@ -3,194 +3,113 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1920, height=1080" />
-<title>Ray seminar recap</title>
+<title>RISE 2.0 recap</title>
 <script src="vendor/gsap.min.js"></script>
-<link rel="stylesheet" href="gfx.css" />
-<link rel="stylesheet" href="gfx-land.css" />
+<link rel="stylesheet" href="gfx3.css" />
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #111; }
-  #root { width: 1920px; height: 1080px; position: relative; overflow: hidden; background: #111; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+  #root { width: 1920px; height: 1080px; position: relative; overflow: hidden; background: #000; }
   .shot { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
-  #fade { position: absolute; inset: 0; background: #000; opacity: 0; z-index: 90; }
-  .media { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; }
+  .media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="48.08" data-fps="30" data-width="1920" data-height="1080">
-  <div id="s0" class="shot"><video id="m0" class="media clip" src="media/land/b04.mp4" data-start="0" data-duration="2" muted playsinline preload="auto"></video></div>
-  <div id="s1" class="shot"><video id="m1" class="media clip" src="media/land/b38.mp4" data-start="2" data-duration="1.92" muted playsinline preload="auto"></video></div>
-  <div id="s2" class="shot"><img id="m2" class="media clip" src="media/photos/p05.jpg" data-start="3.92" data-duration="1.92" alt=""></div>
-  <div id="s3" class="shot"><video id="m3" class="media clip" src="media/land/b01.mp4" data-start="5.84" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s4" class="shot"><video id="m4" class="media clip" src="media/land/b02.mp4" data-start="6.32" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s5" class="shot"><video id="m5" class="media clip" src="media/land/b06.mp4" data-start="6.8" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s6" class="shot"><video id="m6" class="media clip" src="media/land/b05.mp4" data-start="7.28" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s7" class="shot"><video id="m7" class="media clip" src="media/land/b07.mp4" data-start="7.76" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s8" class="shot"><video id="m8" class="media clip" src="media/land/b03.mp4" data-start="8.24" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s9" class="shot"><video id="m9" class="media clip" src="media/land/b25.mp4" data-start="8.72" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s10" class="shot"><video id="m10" class="media clip" src="media/land/b11.mp4" data-start="9.2" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s11" class="shot"><video id="m11" class="media clip" src="media/land/b12.mp4" data-start="9.68" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s12" class="shot"><video id="m12" class="media clip" src="media/land/b18.mp4" data-start="10.64" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s13" class="shot"><img id="m13" class="media clip" src="media/photos/p03.jpg" data-start="11.6" data-duration="0.96" alt=""></div>
-  <div id="s14" class="shot"><video id="m14" class="media clip" src="media/land/b20.mp4" data-start="12.56" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s15" class="shot"><video id="m15" class="media clip" src="media/land/b21.mp4" data-start="13.52" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s16" class="shot"><img id="m16" class="media clip" src="media/photos/p04.jpg" data-start="14.48" data-duration="0.96" alt=""></div>
-  <div id="s17" class="shot"><video id="m17" class="media clip" src="media/land/b23.mp4" data-start="15.44" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s18" class="shot"><video id="m18" class="media clip" src="media/land/b24.mp4" data-start="15.92" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s19" class="shot"><video id="m19" class="media clip" src="media/land/b26.mp4" data-start="16.4" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s20" class="shot"><video id="m20" class="media clip" src="media/land/b27.mp4" data-start="16.88" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s21" class="shot"><video id="m21" class="media clip" src="media/land/b19.mp4" data-start="17.36" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s22" class="shot"><video id="m22" class="media clip" src="media/land/b10.mp4" data-start="17.84" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s23" class="shot"><video id="m23" class="media clip" src="media/land/b40.mp4" data-start="18.32" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s24" class="shot"><video id="m24" class="media clip" src="media/land/b13.mp4" data-start="18.8" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s25" class="shot"><video id="m25" class="media clip" src="media/land/b22.mp4" data-start="19.28" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s26" class="shot"><img id="m26" class="media clip" src="media/photos/p09.jpg" data-start="20.24" data-duration="0.96" alt=""></div>
-  <div id="s27" class="shot"><video id="m27" class="media clip" src="media/land/bite-2.mp4" data-start="21.2" data-duration="3.6" muted playsinline preload="auto"></video></div>
-  <div id="s28" class="shot"><img id="m28" class="media clip" src="media/photos/p08.jpg" data-start="24.8" data-duration="1.04" alt=""></div>
-  <div id="s29" class="shot"><video id="m29" class="media clip" src="media/land/b31.mp4" data-start="25.84" data-duration="1.04" muted playsinline preload="auto"></video></div>
-  <div id="s30" class="shot"><video id="m30" class="media clip" src="media/land/bite-3.mp4" data-start="26.88" data-duration="3.6" muted playsinline preload="auto"></video></div>
-  <div id="s31" class="shot"><video id="m31" class="media clip" src="media/land/b32.mp4" data-start="30.48" data-duration="1.2" muted playsinline preload="auto"></video></div>
-  <div id="s32" class="shot"><video id="m32" class="media clip" src="media/land/b37.mp4" data-start="31.68" data-duration="1.04" muted playsinline preload="auto"></video></div>
-  <div id="s33" class="shot"><video id="m33" class="media clip" src="media/land/b28.mp4" data-start="32.72" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s34" class="shot"><video id="m34" class="media clip" src="media/land/b29.mp4" data-start="33.2" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s35" class="shot"><video id="m35" class="media clip" src="media/land/b30.mp4" data-start="33.68" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s36" class="shot"><video id="m36" class="media clip" src="media/land/b31.mp4" data-start="34.16" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s37" class="shot"><video id="m37" class="media clip" src="media/land/b32.mp4" data-start="34.64" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s38" class="shot"><video id="m38" class="media clip" src="media/land/b33.mp4" data-start="35.12" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s39" class="shot"><video id="m39" class="media clip" src="media/land/b34.mp4" data-start="35.6" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s40" class="shot"><video id="m40" class="media clip" src="media/land/b35.mp4" data-start="36.08" data-duration="0.48" muted playsinline preload="auto"></video></div>
-  <div id="s41" class="shot"><video id="m41" class="media clip" src="media/land/b36.mp4" data-start="36.56" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s42" class="shot"><video id="m42" class="media clip" src="media/land/b37.mp4" data-start="37.52" data-duration="0.96" muted playsinline preload="auto"></video></div>
-  <div id="s43" class="shot"><img id="m43" class="media clip" src="media/photos/p01.jpg" data-start="38.48" data-duration="0.96" alt=""></div>
-  <div id="s44" class="shot"><img id="m44" class="media clip" src="media/photos/p07.jpg" data-start="39.44" data-duration="0.96" alt=""></div>
-  <div id="s45" class="shot"><video id="m45" class="media clip" src="media/land/b34.mp4" data-start="40.4" data-duration="0.48" data-media-start="1" muted playsinline preload="auto"></video></div>
-  <div id="s46" class="shot"><video id="m46" class="media clip" src="media/land/b30.mp4" data-start="40.88" data-duration="0.48" data-media-start="1" muted playsinline preload="auto"></video></div>
-  <div id="s47" class="shot"><video id="m47" class="media clip" src="media/land/b35.mp4" data-start="41.36" data-duration="0.48" data-media-start="1" muted playsinline preload="auto"></video></div>
-  <div id="s48" class="shot"><video id="m48" class="media clip" src="media/land/b28.mp4" data-start="41.84" data-duration="0.48" data-media-start="1" muted playsinline preload="auto"></video></div>
-  <div id="s49" class="shot"><video id="m49" class="media clip" src="media/land/b38.mp4" data-start="42.32" data-duration="1.92" data-media-start="0.4" muted playsinline preload="auto"></video></div>
-  <div id="s50" class="shot"><img id="m50" class="media clip" src="media/photos/p06.jpg" data-start="44.24" data-duration="3.84" alt=""></div>
+<div id="root" data-composition-id="main" data-start="0" data-duration="51.84" data-fps="30" data-width="1920" data-height="1080">
+  <div class="shot"><video id="m0" class="media clip" src="media/v3/s54.mp4" data-start="0" data-duration="3" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m1" class="media clip" src="media/v3/s01.mp4" data-start="3" data-duration="2.76" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m2" class="media clip" src="media/v3/s02.mp4" data-start="5.76" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m3" class="media clip" src="media/v3/s19.mp4" data-start="7.68" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m4" class="media clip" src="media/v3/s56.mp4" data-start="9.6" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m5" class="media clip" src="media/v3/s20.mp4" data-start="11.52" data-duration="2.88" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m6" class="media clip" src="media/v3/s42.mp4" data-start="14.4" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m7" class="media clip" src="media/v3/s44.mp4" data-start="15.36" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m8" class="media clip" src="media/v3/s45.mp4" data-start="16.32" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m9" class="media clip" src="media/v3/s03.mp4" data-start="17.28" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m10" class="media clip" src="media/v3/s32.mp4" data-start="18.24" data-duration="0.48" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m11" class="media clip" src="media/v3/s33.mp4" data-start="18.72" data-duration="0.48" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m12" class="media clip" src="media/v3/s15.mp4" data-start="19.2" data-duration="0.48" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m13" class="media clip" src="media/v3/s36.mp4" data-start="19.68" data-duration="0.48" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m14" class="media clip" src="media/v3/s10.mp4" data-start="20.16" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m15" class="media clip" src="media/v3/s04.mp4" data-start="21.12" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m16" class="media clip" src="media/v3/s37.mp4" data-start="22.08" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m17" class="media clip" src="media/v3/s16.mp4" data-start="23.04" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m18" class="media clip" src="media/v3/s23.mp4" data-start="24.96" data-duration="2.88" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m19" class="media clip" src="media/v3/s24.mp4" data-start="27.84" data-duration="2.88" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m20" class="media clip" src="media/v3/s26.mp4" data-start="30.72" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m21" class="media clip" src="media/v3/s27.mp4" data-start="32.64" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m22" class="media clip" src="media/v3/s06.mp4" data-start="34.56" data-duration="2.88" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m23" class="media clip" src="media/v3/s55.mp4" data-start="37.44" data-duration="1.92" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m24" class="media clip" src="media/v3/s48.mp4" data-start="39.36" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m25" class="media clip" src="media/v3/s50.mp4" data-start="40.32" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m26" class="media clip" src="media/v3/s49.mp4" data-start="41.28" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m27" class="media clip" src="media/v3/s51.mp4" data-start="42.24" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m28" class="media clip" src="media/v3/s09.mp4" data-start="43.2" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m29" class="media clip" src="media/v3/s53.mp4" data-start="44.16" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><video id="m30" class="media clip" src="media/v3/s08.mp4" data-start="45.12" data-duration="0.96" muted playsinline preload="auto"></video></div>
+  <div class="shot"><img id="m31" class="media clip" src="media/v3/photos/ph08.jpg" data-start="46.08" data-duration="5.76" alt=""></div>
 
-  <div id="gfx-vignette" class="clip" data-start="0" data-duration="44.24" data-track-index="5"></div>
-  <div id="gfx-hook" class="clip" data-start="0" data-duration="5.84" data-track-index="6">
-    <div class="hook-kicker">SALES SEMINAR · 20.11.2026</div>
-    <div class="hook-rule"></div>
-    <div class="hook-sub">with <b>Rein</b>, ex-Prada</div>
-  </div>
-  <div id="gfx-lt" class="clip" data-start="26.88" data-duration="3.6" data-track-index="7">
-    <div class="lt-bar"></div>
-    <div class="lt-mask name"><div class="lt-name">REIN</div></div>
-    <div class="lt-mask tag"><div class="lt-tag">Ex-Prada · 12 yrs training luxury sales</div></div>
-  </div>
-  <div id="gfx-captions" class="clip" data-start="0" data-duration="44.24" data-track-index="8" data-track-kind="captions"></div>
-  <div id="gfx-leak" class="clip" data-start="0" data-duration="44.24" data-track-index="9"><div class="leak-glow"></div><div class="leak-bar"></div></div>
-  <div id="gfx-flash" class="clip" data-start="0" data-duration="48.08" data-track-index="10"></div>
-  <div id="fade" class="clip" data-start="0" data-duration="48.08" data-track-index="11"></div>
-  <audio id="music" src="sfx/music.wav" data-start="2" data-volume="0.8"></audio>
-  <audio id="v1" data-role="voice" src="media/bite-1.wav" data-start="0" data-volume="1"></audio>
-  <audio id="v2" data-role="voice" src="media/bite-2.wav" data-start="21.2" data-volume="1"></audio>
-  <audio id="v3" data-role="voice" src="media/bite-3.wav" data-start="26.88" data-volume="1"></audio>
-  <audio id="fx0" src="sfx/sx-whoosh-soft.wav" data-start="1.920" data-volume="0.35"></audio>
-  <audio id="fx1" src="sfx/sx-whoosh-soft.wav" data-start="3.840" data-volume="0.35"></audio>
-  <audio id="fx2" src="sfx/sx-impact-bass-2.wav" data-start="5.480" data-volume="0.5"></audio>
-  <audio id="fx3" src="sfx/sx-impact-bass-2.wav" data-start="32.360" data-volume="0.5"></audio>
-  <audio id="fx4" src="sfx/sx-whoosh.wav" data-start="5.720" data-volume="0.45"></audio>
-  <audio id="fx5" src="sfx/sx-whoosh.wav" data-start="21.080" data-volume="0.4"></audio>
-  <audio id="fx6" src="sfx/sx-whoosh.wav" data-start="32.600" data-volume="0.45"></audio>
-  <audio id="fx7" src="sfx/sx-pop.wav" data-start="27.130" data-volume="0.5"></audio>
-  <audio id="fx8" src="sfx/sx-whoosh-soft.wav" data-start="26.780" data-volume="0.4"></audio>
+  <div id="g3-vignette" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="4"></div>
+  <div id="g3-grain" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="5"></div>
+  <div id="g3-chapter" class="g3-host clip" data-start="11.5" data-duration="26" data-track-index="6"></div>
+  <div id="g3-houses" class="g3-host clip" data-start="27.8" data-duration="3.3" data-track-index="7"></div>
+  <div id="g3-lt" class="g3-host clip" data-start="31" data-duration="3.5" data-track-index="8"></div>
+  <div id="g3-captions" class="g3-host clip" data-start="5.6" data-duration="29" data-track-index="9" data-track-kind="captions"></div>
+  <div id="g3-outro" class="g3-host clip" data-start="46.2" data-duration="5.64" data-track-index="10"></div>
+  <div id="g3-open" class="g3-host clip" data-start="0" data-duration="5.9" data-track-index="11"></div>
+  <div id="g3-matte" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="12"></div>
+  <div id="g3-leak" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="13"></div>
+  <div id="g3-flash" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="14"></div>
+  <div id="g3-black" class="g3-host clip" data-start="0" data-duration="51.84" data-track-index="15"></div>
+  <audio id="music" src="sfx/music3.wav" data-start="0" data-volume="0.85"></audio>
+  <audio id="v-hook" data-role="voice" src="media/v3/bite-1.wav" data-start="5.7" data-volume="1"></audio>
+  <audio id="v-prada" data-role="voice" src="media/v3/bite-prada.wav" data-start="25" data-volume="1"></audio>
+  <audio id="v-watch" data-role="voice" src="media/v3/bite-3.wav" data-start="30.95" data-volume="1"></audio>
+  <audio id="fx0" src="sfx/sx-whoosh-soft.wav" data-start="11.300" data-volume="0.35"></audio>
+  <audio id="fx1" src="sfx/sx-whoosh-soft.wav" data-start="22.800" data-volume="0.35"></audio>
+  <audio id="fx2" src="sfx/sx-whoosh-soft.wav" data-start="34.300" data-volume="0.35"></audio>
+  <audio id="fx3" src="sfx/sx-whoosh-soft.wav" data-start="45.800" data-volume="0.3"></audio>
+  <audio id="fx4" src="sfx/sx-click-hi.wav" data-start="28.170" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx5" src="sfx/sx-click-hi.wav" data-start="28.440" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx6" src="sfx/sx-click-hi.wav" data-start="28.710" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx7" src="sfx/sx-click-hi.wav" data-start="28.980" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx8" src="sfx/sx-click-hi.wav" data-start="29.250" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx9" src="sfx/sx-click-hi.wav" data-start="29.520" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx10" src="sfx/sx-click-hi.wav" data-start="29.790" data-volume="0.22" data-duration="0.2"></audio>
+  <audio id="fx11" src="sfx/sx-pop.wav" data-start="31.100" data-volume="0.35"></audio>
 </div>
-<script>window.GFX_CAP_W = 1500; window.GFX_CAP_MAX = 96; window.GFX_WIPE = [-3800, 2400];</script>
-<script src="gfx.js"></script>
+<script src="gfx3.js"></script>
 <script>
 const tl = gsap.timeline({ paused: true });
-GFX.use(tl);
-GFX.kenBurns("#m0", 0, 2, { from: 1, to: 1.06 });
-GFX.whipIn("#s1", 2, "right");
-GFX.punchIn("#m1", 2.96);
-GFX.whipIn("#s2", 3.92, "left");
-GFX.kenBurns("#m2", 3.92, 1.92, { from: 1.02, to: 1.12 });
-GFX.whipIn("#s3", 5.84, "right");
-GFX.punchIn("#m3", 5.84);
-GFX.flash(5.84);
-GFX.whipIn("#s4", 6.32, "left");
-GFX.whipIn("#s5", 6.8, "right");
-GFX.whipIn("#s6", 7.28, "left");
-GFX.punchIn("#m6", 7.28);
-GFX.whipIn("#s7", 7.76, "right");
-GFX.whipIn("#s8", 8.24, "left");
-GFX.whipIn("#s9", 8.72, "right");
-GFX.punchIn("#m9", 8.72);
-GFX.whipIn("#s10", 9.2, "left");
-GFX.whipIn("#s11", 9.68, "right");
-GFX.whipIn("#s12", 10.64, "left");
-GFX.whipIn("#s13", 11.6, "right");
-GFX.kenBurns("#m13", 11.6, 0.96, { from: 1.04, to: 1.16 });
-GFX.whipIn("#s14", 12.56, "left");
-GFX.whipIn("#s15", 13.52, "right");
-GFX.whipIn("#s16", 14.48, "left");
-GFX.kenBurns("#m16", 14.48, 0.96, { from: 1.04, to: 1.16 });
-GFX.whipIn("#s17", 15.44, "right");
-GFX.whipIn("#s18", 15.92, "left");
-GFX.punchIn("#m18", 15.92);
-GFX.whipIn("#s19", 16.4, "right");
-GFX.whipIn("#s20", 16.88, "left");
-GFX.whipIn("#s21", 17.36, "right");
-GFX.punchIn("#m21", 17.36);
-GFX.whipIn("#s22", 17.84, "left");
-GFX.whipIn("#s23", 18.32, "right");
-GFX.whipIn("#s24", 18.8, "left");
-GFX.punchIn("#m24", 18.8);
-GFX.whipIn("#s25", 19.28, "right");
-GFX.whipIn("#s26", 20.24, "left");
-GFX.kenBurns("#m26", 20.24, 0.96, { from: 1.04, to: 1.16 });
-GFX.kenBurns("#m27", 21.2, 3.6, { from: 1, to: 1.1 });
-GFX.flash(21.2);
-GFX.whipIn("#s28", 24.8, "right");
-GFX.kenBurns("#m28", 24.8, 1.04, { from: 1.05, to: 1.15 });
-GFX.whipIn("#s29", 25.84, "left");
-GFX.punchIn("#m29", 26.34);
-GFX.kenBurns("#m30", 26.88, 3.6, { from: 1, to: 1.08 });
-GFX.redWipe(26.88);
-GFX.whipIn("#s31", 30.48, "up");
-GFX.kenBurns("#m31", 30.48, 1.2, { from: 1, to: 1.1 });
-GFX.whipIn("#s32", 31.68, "right");
-GFX.punchIn("#m32", 32.18);
-GFX.whipIn("#s33", 32.72, "left");
-GFX.punchIn("#m33", 32.72);
-GFX.flash(32.72);
-GFX.whipIn("#s34", 33.2, "right");
-GFX.whipIn("#s35", 33.68, "left");
-GFX.punchIn("#m35", 33.68);
-GFX.whipIn("#s36", 34.16, "right");
-GFX.whipIn("#s37", 34.64, "left");
-GFX.punchIn("#m37", 34.64);
-GFX.whipIn("#s38", 35.12, "right");
-GFX.whipIn("#s39", 35.6, "left");
-GFX.punchIn("#m39", 35.6);
-GFX.whipIn("#s40", 36.08, "right");
-GFX.whipIn("#s41", 36.56, "left");
-GFX.whipIn("#s42", 37.52, "right");
-GFX.whipIn("#s43", 38.48, "left");
-GFX.kenBurns("#m43", 38.48, 0.96, { from: 1.05, to: 1.18 });
-GFX.whipIn("#s44", 39.44, "right");
-GFX.kenBurns("#m44", 39.44, 0.96, { from: 1.05, to: 1.18 });
-GFX.whipIn("#s45", 40.4, "left");
-GFX.punchIn("#m45", 40.4);
-GFX.whipIn("#s46", 40.88, "right");
-GFX.whipIn("#s47", 41.36, "left");
-GFX.punchIn("#m47", 41.36);
-GFX.whipIn("#s48", 41.84, "right");
-GFX.whipIn("#s49", 42.32, "left");
-GFX.kenBurns("#m49", 42.32, 1.92, { from: 1, to: 1.12 });
-GFX.whipIn("#s50", 44.24, "left");
-GFX.kenBurns("#m50", 44.24, 3.84, { from: 1, to: 1.1 });
-GFX.captionsFromWords([{"w":"Serving","start":0.15,"end":0.8},{"w":"the","start":0.8,"end":1.14},{"w":"richest","start":1.14,"end":1.83},{"w":"of","start":1.83,"end":2.06},{"w":"the","start":2.06,"end":2.4},{"w":"richest","start":2.4,"end":2.94},{"w":"does","start":3.15,"end":3.45},{"w":"not","start":3.45,"end":3.7},{"w":"require","start":3.7,"end":4.28},{"w":"you","start":4.28,"end":4.54},{"w":"to","start":4.57,"end":4.68},{"w":"be","start":4.68,"end":4.8},{"w":"the","start":4.8,"end":4.98},{"w":"loudest.","start":4.98,"end":5.42}], { offset: 0, keywords: ["loudest"] });
-GFX.captionsFromWords([{"w":"The","start":0.13,"end":0.2},{"w":"industry","start":0.2,"end":0.73},{"w":"noticed","start":0.73,"end":1.1},{"w":"him.","start":1.1,"end":1.4},{"w":"He","start":1.63,"end":1.78},{"w":"was","start":1.78,"end":2.01},{"w":"headhunted","start":2.01,"end":2.63},{"w":"six","start":2.64,"end":2.78},{"w":"times","start":2.78,"end":3.02},{"w":"in","start":3.02,"end":3.11},{"w":"a","start":3.11,"end":3.15},{"w":"row.","start":3.15,"end":3.49}], { offset: 21.2, keywords: ["headhunted"] });
-GFX.captionsFromWords([{"w":"What's","start":0.14,"end":0.27},{"w":"your","start":0.27,"end":0.45},{"w":"favourite","start":0.45,"end":0.85},{"w":"watch","start":0.85,"end":1},{"w":"across","start":1.02,"end":1.21},{"w":"all","start":1.21,"end":1.31},{"w":"these","start":1.31,"end":1.48},{"w":"brands","start":1.48,"end":1.72},{"w":"that","start":1.72,"end":1.86},{"w":"you've","start":1.86,"end":2.06},{"w":"worn?","start":2.06,"end":2.3},{"w":"Let","start":2.45,"end":2.71},{"w":"me","start":2.71,"end":2.82},{"w":"offer","start":2.82,"end":3.12},{"w":"you.","start":3.12,"end":3.5}], { offset: 26.88, keywords: ["offer"] });
-GFX.hookTitle(0.15, 5.4);
-GFX.lowerThird(27.08, 3.2, { name: "REIN", tag: "Ex-Prada · 12 yrs training luxury sales" });
-tl.set('#fade', { opacity: 0 }, 0);
-tl.to('#fade', { opacity: 1, duration: 1.3, ease: 'power1.in' }, 46.68);
+GFX3.use(tl);
+GFX3.kenBurns("#m0", 0, 3, { from: 1, to: 1.06 });
+GFX3.kenBurns("#m1", 3, 2.76, { from: 1.03, to: 1.08 });
+GFX3.kenBurns("#m6", 14.4, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m7", 15.36, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m8", 16.32, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m9", 17.28, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m14", 20.16, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m15", 21.12, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m16", 22.08, 0.96, { from: 1, to: 1.04 });
+GFX3.kenBurns("#m31", 46.08, 5.76, { from: 1.02, to: 1.12 });
+GFX3.captions3([{"w":"Serving","start":0.15,"end":0.8},{"w":"the","start":0.8,"end":1.14},{"w":"richest","start":1.14,"end":1.83},{"w":"of","start":1.83,"end":2.06},{"w":"the","start":2.06,"end":2.4},{"w":"richest","start":2.4,"end":2.94},{"w":"does","start":3.15,"end":3.45},{"w":"not","start":3.45,"end":3.7},{"w":"require","start":3.7,"end":4.28},{"w":"you","start":4.28,"end":4.54},{"w":"to","start":4.57,"end":4.68},{"w":"be","start":4.68,"end":4.8},{"w":"the","start":4.8,"end":4.98},{"w":"loudest.","start":4.98,"end":5.42}], { offset: 5.7, keywords: ["loudest"], y: 800 });
+GFX3.captions3([{"w":"He","start":0.03,"end":0.14},{"w":"started","start":0.14,"end":0.63},{"w":"in","start":0.63,"end":0.77},{"w":"Prada","start":0.77,"end":1.12},{"w":"as","start":1.12,"end":1.26},{"w":"a","start":1.26,"end":1.33},{"w":"management","start":1.33,"end":2.03},{"w":"trainee.","start":2.03,"end":2.71}], { offset: 25, keywords: ["Prada"] });
+GFX3.captions3([{"w":"What's","start":0.14,"end":0.27},{"w":"your","start":0.27,"end":0.45},{"w":"favourite","start":0.45,"end":0.85},{"w":"watch","start":0.85,"end":1},{"w":"across","start":1.02,"end":1.21},{"w":"all","start":1.21,"end":1.31},{"w":"these","start":1.31,"end":1.48},{"w":"brands","start":1.48,"end":1.72},{"w":"that","start":1.72,"end":1.86},{"w":"you've","start":1.86,"end":2.06},{"w":"worn?","start":2.06,"end":2.3},{"w":"Let","start":2.45,"end":2.71},{"w":"me","start":2.71,"end":2.82},{"w":"offer","start":2.82,"end":3.12},{"w":"you.","start":3.12,"end":3.5}], { offset: 30.95, keywords: ["offer"] });
+
+GFX3.grain(0, 51.84, { opacity: 0.08 });
+GFX3.openTitle(0.3, 5.46, { bg: 0.62 });
+GFX3.letterbox(5.76, 23.04);
+GFX3.letterbox(34.56, null);
+GFX3.flash(11.52, { peak: 0.85 });
+GFX3.chapter(11.6, "ENERGISE", { index: "01" });
+GFX3.leak(23.04, { dir: "right" });
+GFX3.chapter(23.1, "EXCITE", { index: "02" });
+const houses = GFX3.housesList(27.9, 3.0, null, { title: "15+ YEARS ACROSS", beat: 0.27 });
+GFX3.lowerThird3(31.05, 3.3, { name: "REIN", full: "Reinald Goh", tag: "UHNW Clienteling Expert" });
+GFX3.flash(34.56, { peak: 0.9 });
+GFX3.chapter(34.64, "EXCEL", { index: "03" });
+GFX3.leak(46.08, { dir: "left", peak: 0.7 });
+GFX3.outroTag(46.3, 5.54);
 
 window.__timelines = window.__timelines || {};
 window.__timelines["main"] = tl;

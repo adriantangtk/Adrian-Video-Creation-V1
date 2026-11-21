@@ -60,7 +60,7 @@
 
 /* ---------- houses list ---------- */
 .g3-h-panel { position: absolute; left: 0; top: 0; width: 1240px; height: 1080px; opacity: 0;
-  background: linear-gradient(90deg, rgba(12,10,10,.90) 0%, rgba(12,10,10,.82) 45%, rgba(12,10,10,.45) 75%, rgba(12,10,10,0) 100%); }
+  background: linear-gradient(90deg, rgba(10,8,8,.97) 0%, rgba(10,8,8,.95) 52%, rgba(10,8,8,.7) 72%, rgba(10,8,8,0) 100%); }
 .g3-h-title { position: absolute; left: 160px; top: 196px; white-space: nowrap; font: 500 22px/1 "Inter", sans-serif;
   letter-spacing: .42em; color: var(--g3-gold); opacity: 0; }
 .g3-h-rule { position: absolute; left: 160px; top: 240px; width: 560px; height: 1px; background: linear-gradient(90deg, var(--g3-gold), rgba(201,164,106,0)); transform: scaleX(0); transform-origin: 0 50%; }
