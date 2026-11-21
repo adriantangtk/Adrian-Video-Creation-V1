@@ -29,7 +29,7 @@ Wealth/banking sales seminar. Drive transcripts:
 ## Owner decisions (confirmed)
 - Format: HYBRID - beat-cut event montage like the reference + 2-3 captioned soundbites from Ray. ~45 s.
 - Hook: "Serving the richest of the richest does not require you to be the loudest." (clip 1a1VX3...)
-- End card: owner's personal handle (not yet given - placeholder in draft, ask at review).
+- End card: @adriantang
 - Footage cleared for public posting (speakers + audience).
 - Multi-agent build: one agent downloads/trims clips + finds soundbite timestamps, one sources music + builds
   beat grid, one builds captions/motion graphics/outro; lead assembles, drafts, checks stills.
