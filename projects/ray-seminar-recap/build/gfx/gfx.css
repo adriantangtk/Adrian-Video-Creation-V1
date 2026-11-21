@@ -1,0 +1,75 @@
+/* ray-seminar-recap graphics kit — paste into the final index.html <style> (or link gfx.css).
+   Brand: red #DB0011, white #FFFFFF, charcoal #1A1A1A. Safe zone x 60-940, y 250-1440. */
+@font-face { font-family: "Inter"; font-weight: 500; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 700; src: url("fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 400; src: url("fonts/newsreader-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 500; src: url("fonts/newsreader-latin-500-normal.woff2") format("woff2"); }
+
+:root { --gfx-red: #DB0011; --gfx-white: #FFFFFF; --gfx-char: #1A1A1A; }
+
+/* ---------- z-order (higher = on top) ----------
+   footage/photos 1-9 | #gfx-vignette 20 | #gfx-hook 30 | #gfx-lt 32 | #gfx-captions 40
+   #gfx-leak 60 | #gfx-flash 70 | #gfx-outro 80 */
+
+/* soft top/bottom darkening so white type reads on any footage (sits above footage only) */
+#gfx-vignette { position: absolute; inset: 0; z-index: 20; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,.42) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 52%, rgba(0,0,0,.50) 78%, rgba(0,0,0,.30) 100%); }
+
+/* ---------- 1. captions ---------- */
+#gfx-captions { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; z-index: 40;
+  pointer-events: none; overflow: visible; }
+.cap-group { position: absolute; left: 60px; width: 880px; top: 1190px; height: 140px;
+  display: flex; align-items: center; justify-content: center; flex-wrap: nowrap; gap: 0 22px;
+  font-family: "Inter", sans-serif; font-weight: 700; color: #FFF; letter-spacing: -0.02em; line-height: 1;
+  opacity: 0; overflow: visible; }
+.cap-w { display: inline-block; position: relative; opacity: 0; white-space: nowrap; padding: 10px 0 14px;
+  text-shadow: 0 3px 6px rgba(0,0,0,.55), 0 8px 30px rgba(0,0,0,.55); }
+.cap-w.key { isolation: isolate; color: #FFF; padding: 10px 22px 14px; text-shadow: none; }
+.cap-w.key::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--gfx-red);
+  border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.cap-group.pill { background: rgba(26,26,26,.86); border-radius: 26px; width: auto; left: 50%; }
+
+/* ---------- 2. hook title ---------- */
+#gfx-hook { position: absolute; left: 60px; top: 300px; width: 880px; z-index: 30; text-align: center; pointer-events: none; }
+.hook-kicker { display: inline-block; background: var(--gfx-red); color: #FFF; font-family: "Inter", sans-serif;
+  font-weight: 600; font-size: 28px; letter-spacing: .28em; padding: 14px 18px 14px 26px; line-height: 1; }
+.hook-rule { width: 520px; height: 2px; margin: 34px auto 0; background: rgba(255,255,255,.85); transform-origin: 50% 50%; }
+.hook-sub { margin-top: 26px; color: #FFF; font-family: "Newsreader", serif; font-weight: 400; font-size: 58px;
+  letter-spacing: -0.01em; line-height: 1.1; text-shadow: 0 4px 24px rgba(0,0,0,.6); }
+.hook-sub b { font-weight: 500; }
+
+/* ---------- 3. transitions ---------- */
+#gfx-flash { position: absolute; inset: 0; z-index: 70; background: #FFF; opacity: 0; pointer-events: none; }
+#gfx-leak { position: absolute; inset: 0; z-index: 60; pointer-events: none; overflow: hidden; }
+.leak-bar { position: absolute; top: -300px; left: 0; width: 1700px; height: 2520px; opacity: 0;
+  background: linear-gradient(90deg, rgba(219,0,17,0) 0%, rgba(219,0,17,.55) 14%, #DB0011 26%, #DB0011 74%, rgba(255,80,60,.6) 86%, rgba(255,160,120,0) 100%); }
+.leak-glow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen;
+  background: radial-gradient(ellipse 70% 45% at 85% 30%, rgba(255,90,60,.85), rgba(219,0,17,.35) 45%, rgba(219,0,17,0) 75%); }
+
+/* ---------- 5. lower third ---------- */
+#gfx-lt { position: absolute; left: 60px; top: 930px; width: 880px; height: 200px; z-index: 32; pointer-events: none; }
+.lt-bar { position: absolute; left: 0; top: 6px; width: 10px; height: 176px; background: var(--gfx-red); transform-origin: 50% 0%; }
+.lt-mask { position: absolute; left: 38px; overflow: hidden; }
+.lt-mask.name { top: -4px; height: 116px; padding-top: 4px; }
+.lt-mask.tag { top: 118px; height: 64px; padding-left: 3px; }
+.lt-name { font-family: "Inter", sans-serif; font-weight: 700; font-size: 100px; line-height: 108px; color: #FFF;
+  letter-spacing: .06em; text-shadow: 0 4px 24px rgba(0,0,0,.5); }
+.lt-tag { display: inline-block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 32px; line-height: 64px;
+  color: #FFF; background: rgba(26,26,26,.82); padding: 0 22px; letter-spacing: .01em; white-space: nowrap; }
+
+/* ---------- 6. outro card ---------- */
+#gfx-outro { position: absolute; inset: 0; z-index: 80; background: #FFF; opacity: 0; pointer-events: none; }
+.out-kicker { position: absolute; left: 60px; width: 880px; top: 560px; text-align: center; font-family: "Inter", sans-serif;
+  font-weight: 600; font-size: 26px; letter-spacing: .32em; color: var(--gfx-red); padding-left: .32em; }
+.out-title { position: absolute; left: 60px; width: 880px; top: 630px; text-align: center; color: var(--gfx-char); }
+.out-line { overflow: hidden; padding: 0 0 6px; }
+.out-line > span { display: inline-block; }
+.out-line.serif > span { font-family: "Newsreader", serif; font-weight: 400; font-size: 92px; line-height: 1.08; letter-spacing: -0.015em; }
+.out-line.bold > span { font-family: "Inter", sans-serif; font-weight: 700; font-size: 118px; line-height: 1.04; letter-spacing: -0.035em; }
+.out-rule { position: absolute; left: 420px; width: 160px; top: 1040px; height: 6px; background: var(--gfx-red); transform-origin: 50% 50%; }
+.out-counter { position: absolute; left: 60px; width: 880px; top: 1090px; text-align: center; font-family: "JetBrains Mono", monospace;
+  font-weight: 700; font-size: 104px; line-height: 1; color: var(--gfx-red); letter-spacing: .02em; }
+.out-handle { position: absolute; left: 60px; width: 880px; top: 1300px; text-align: center; font-family: "Inter", sans-serif;
+  font-weight: 600; font-size: 52px; color: var(--gfx-char); letter-spacing: .01em; }

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>GFX test</title>
+<script src="vendor/gsap.min.js"></script>
+<link rel="stylesheet" href="gfx.css" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #111; }
+  #root { width: 1080px; height: 1920px; position: relative; overflow: hidden; }
+  /* placeholder "footage": stand-ins for <video>/<img> the lead provides */
+  .shot { position: absolute; inset: 0; overflow: hidden; }
+  .ph { position: absolute; inset: -40px; display: flex; align-items: center; justify-content: center;
+    font-family: "Inter", sans-serif; font-weight: 600; font-size: 40px; color: rgba(255,255,255,.55); letter-spacing: .2em; }
+  #s0 .ph { background: radial-gradient(ellipse at 50% 35%, #8a7766 0%, #4a3f38 40%, #1e1a18 100%); }
+  #s1 .ph { background: linear-gradient(160deg, #6b5a4a, #2d2622 60%, #151210); }
+  #s2 .ph { background: radial-gradient(circle at 30% 60%, #9c8d80, #514840 45%, #23201d); }
+  #s3 .ph { background: linear-gradient(200deg, #b7a999 0%, #6f655b 40%, #2a2521 100%); }
+  #s4 .ph { background: radial-gradient(ellipse at 55% 40%, #9a8574 0%, #54473d 45%, #1d1916 100%); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="14.8" data-fps="30" data-width="1080" data-height="1920">
+  <!-- footage placeholders (lead: replace each .ph with a <video>/<img>) -->
+  <div id="s0" class="shot clip" data-start="0" data-duration="3.8" data-track-index="0"><div class="ph" id="p0">HOOK · RAY ON STAGE</div></div>
+  <div id="s1" class="shot clip" data-start="3.8" data-duration="1.2" data-track-index="1"><div class="ph" id="p1">SHOT A</div></div>
+  <div id="s2" class="shot clip" data-start="5" data-duration="1.2" data-track-index="2"><div class="ph" id="p2">SHOT B</div></div>
+  <div id="s3" class="shot clip" data-start="6.2" data-duration="1.4" data-track-index="3"><div class="ph" id="p3">PHOTO · KEN BURNS</div></div>
+  <div id="s4" class="shot clip" data-start="7.6" data-duration="3.4" data-track-index="4"><div class="ph" id="p4">SOUNDBITE · RAY</div></div>
+
+  <div id="gfx-vignette" class="clip" data-start="0" data-duration="11" data-track-index="5"></div>
+
+  <div id="gfx-hook" class="clip" data-start="0" data-duration="3.8" data-track-index="6">
+    <div class="hook-kicker">SALES SEMINAR · 20.11.2026</div>
+    <div class="hook-rule"></div>
+    <div class="hook-sub">with <b>Ray</b>, ex-Prada</div>
+  </div>
+
+  <div id="gfx-lt" class="clip" data-start="7.6" data-duration="3.4" data-track-index="7">
+    <div class="lt-bar"></div>
+    <div class="lt-mask name"><div class="lt-name">RAY</div></div>
+    <div class="lt-mask tag"><div class="lt-tag">Ex-Prada · 12 yrs training luxury sales</div></div>
+  </div>
+
+  <div id="gfx-captions" class="clip" data-start="0" data-duration="11" data-track-index="8" data-track-kind="captions"></div>
+
+  <div id="gfx-leak" class="clip" data-start="0" data-duration="11" data-track-index="9"><div class="leak-glow"></div><div class="leak-bar"></div></div>
+  <div id="gfx-flash" class="clip" data-start="0" data-duration="11" data-track-index="10"></div>
+
+  <div id="gfx-outro" class="clip" data-start="11" data-duration="3.8" data-track-index="11">
+    <div class="out-kicker">SALES SEMINAR · WITH RAY</div>
+    <div class="out-title">
+      <div class="out-line serif"><span>The art of</span></div>
+      <div class="out-line serif"><span>serving the</span></div>
+      <div class="out-line bold"><span>ULTRA-RICH</span></div>
+    </div>
+    <div class="out-rule"></div>
+    <div class="out-counter">20.11.2026</div>
+    <div class="out-handle">@adriantang</div>
+  </div>
+</div>
+<script src="gfx.js"></script>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  GFX.use(tl);
+
+  // --- hook 0-3.8: title + captions on the soundbite (fake whisper timings) ---
+  GFX.kenBurns("#p0", 0, 3.8, { from: 1.0, to: 1.08 });
+  GFX.hookTitle(0.1, 3.7);
+  const hook = [["Serving",0.15,0.5],["the",0.5,0.6],["richest",0.6,1.0],["of",1.05,1.12],["the",1.12,1.2],["richest",1.2,1.6],
+    ["does",1.75,1.9],["not",1.9,2.05],["require",2.05,2.4],["you",2.45,2.55],["to",2.55,2.62],["be",2.62,2.75],["the",2.8,2.9],["loudest.",2.9,3.4]]
+    .map(([w, start, end]) => ({ w, start, end }));
+  GFX.captionsFromWords(hook, { keywords: ["richest", "loudest"], hold: 0.35 });
+
+  // --- montage 3.8-7.6 ---
+  GFX.whipIn("#s1", 3.8, "right");
+  GFX.punchIn("#p1", 4.4);
+  GFX.whip("#s1", "#s2", 5.0, "right");
+  GFX.flash(6.2);
+  GFX.kenBurns("#p3", 6.2, 1.4, { from: 1.05, to: 1.18, x: 60, y: -30 });
+  GFX.redWipe(7.6);
+
+  // --- soundbite 7.6-11 with lower third + captions ---
+  GFX.kenBurns("#p4", 7.6, 3.4, { from: 1.0, to: 1.06 });
+  GFX.lowerThird(7.9, 3.0, { name: "RAY", tag: "Ex-Prada · 12 yrs training luxury sales" });
+  const sb = [["What's",8.4,8.6],["your",8.6,8.75],["favourite",8.75,9.2],["watch?",9.2,9.6],["Let",9.9,10.0],["me",10.0,10.1],["offer",10.1,10.4],["you…",10.4,10.7]]
+    .map(([w, start, end]) => ({ w, start, end }));
+  GFX.captionsFromWords(sb, { keywords: ["favourite", "offer"] });
+
+  // --- outro 11-14.8 ---
+  GFX.outro(11, { counter: "20.11.2026", handle: "@adriantang" });
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
