@@ -1,0 +1,679 @@
+{
+ "bites": [
+  {
+   "file": "media/bite-1.mp4",
+   "wav": "media/bite-1.wav",
+   "dur": 5.833,
+   "text": "Serving the richest of the richest does not require you to be the loudest.",
+   "keyword": "loudest",
+   "words": [
+    {
+     "w": "Serving",
+     "start": 0.15,
+     "end": 0.8
+    },
+    {
+     "w": "the",
+     "start": 0.8,
+     "end": 1.14
+    },
+    {
+     "w": "richest",
+     "start": 1.14,
+     "end": 1.83
+    },
+    {
+     "w": "of",
+     "start": 1.83,
+     "end": 2.06
+    },
+    {
+     "w": "the",
+     "start": 2.06,
+     "end": 2.4
+    },
+    {
+     "w": "richest",
+     "start": 2.4,
+     "end": 2.94
+    },
+    {
+     "w": "does",
+     "start": 3.15,
+     "end": 3.45
+    },
+    {
+     "w": "not",
+     "start": 3.45,
+     "end": 3.7
+    },
+    {
+     "w": "require",
+     "start": 3.7,
+     "end": 4.28
+    },
+    {
+     "w": "you",
+     "start": 4.28,
+     "end": 4.54
+    },
+    {
+     "w": "to",
+     "start": 4.57,
+     "end": 4.68
+    },
+    {
+     "w": "be",
+     "start": 4.68,
+     "end": 4.8
+    },
+    {
+     "w": "the",
+     "start": 4.8,
+     "end": 4.98
+    },
+    {
+     "w": "loudest.",
+     "start": 4.98,
+     "end": 5.42
+    }
+   ],
+   "source": "20261120_133610.mp4 15.16-18.14 + 18.79-21.65",
+   "note": "camera on the audience/room; speaker not visible - cover with b-roll or stage shots if wanted"
+  },
+  {
+   "file": "media/bite-2.mp4",
+   "wav": "media/bite-2.wav",
+   "dur": 3.567,
+   "text": "The industry noticed him. He was headhunted six times in a row.",
+   "keyword": "headhunted",
+   "words": [
+    {
+     "w": "The",
+     "start": 0.13,
+     "end": 0.2
+    },
+    {
+     "w": "industry",
+     "start": 0.2,
+     "end": 0.73
+    },
+    {
+     "w": "noticed",
+     "start": 0.73,
+     "end": 1.1
+    },
+    {
+     "w": "him.",
+     "start": 1.1,
+     "end": 1.4
+    },
+    {
+     "w": "He",
+     "start": 1.63,
+     "end": 1.78
+    },
+    {
+     "w": "was",
+     "start": 1.78,
+     "end": 2.01
+    },
+    {
+     "w": "headhunted",
+     "start": 2.01,
+     "end": 2.63
+    },
+    {
+     "w": "six",
+     "start": 2.64,
+     "end": 2.78
+    },
+    {
+     "w": "times",
+     "start": 2.78,
+     "end": 3.02
+    },
+    {
+     "w": "in",
+     "start": 3.02,
+     "end": 3.11
+    },
+    {
+     "w": "a",
+     "start": 3.11,
+     "end": 3.15
+    },
+    {
+     "w": "row.",
+     "start": 3.15,
+     "end": 3.49
+    }
+   ],
+   "source": "20261120_145350_132.mp4 23.48-24.92 + 25.68-27.82 (host intro, not Ray's voice)",
+   "note": "wide hall, host tiny on stage; whisper mishears 'headhunted' (room echo), words corrected by hand"
+  },
+  {
+   "file": "media/bite-3.mp4",
+   "wav": "media/bite-3.wav",
+   "dur": 3.6,
+   "text": "What's your favourite watch across all these brands that you've worn? Let me offer you.",
+   "keyword": "offer",
+   "words": [
+    {
+     "w": "What's",
+     "start": 0.14,
+     "end": 0.27
+    },
+    {
+     "w": "your",
+     "start": 0.27,
+     "end": 0.45
+    },
+    {
+     "w": "favourite",
+     "start": 0.45,
+     "end": 0.85
+    },
+    {
+     "w": "watch",
+     "start": 0.85,
+     "end": 1.0
+    },
+    {
+     "w": "across",
+     "start": 1.02,
+     "end": 1.21
+    },
+    {
+     "w": "all",
+     "start": 1.21,
+     "end": 1.31
+    },
+    {
+     "w": "these",
+     "start": 1.31,
+     "end": 1.48
+    },
+    {
+     "w": "brands",
+     "start": 1.48,
+     "end": 1.72
+    },
+    {
+     "w": "that",
+     "start": 1.72,
+     "end": 1.86
+    },
+    {
+     "w": "you've",
+     "start": 1.86,
+     "end": 2.06
+    },
+    {
+     "w": "worn?",
+     "start": 2.06,
+     "end": 2.3
+    },
+    {
+     "w": "Let",
+     "start": 2.45,
+     "end": 2.71
+    },
+    {
+     "w": "me",
+     "start": 2.71,
+     "end": 2.82
+    },
+    {
+     "w": "offer",
+     "start": 2.82,
+     "end": 3.12
+    },
+    {
+     "w": "you.",
+     "start": 3.12,
+     "end": 3.5
+    }
+   ],
+   "source": "20261120_145314_520.mp4 9.28-11.60 + 11.90-13.15 (Ray quoting a client)",
+   "note": "Ray + host on stage, medium-wide; words corrected by hand from whisper"
+  }
+ ],
+ "broll": [
+  {
+   "file": "media/broll/b01.mp4",
+   "dur": 2.0,
+   "category": "arrival",
+   "description": "REGISTRATION sign and front desk",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_145550_634.mp4 @0.0s"
+  },
+  {
+   "file": "media/broll/b02.mp4",
+   "dur": 2.0,
+   "category": "arrival",
+   "description": "guests checking in at registration desk",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_145550_634.mp4 @4.2s"
+  },
+  {
+   "file": "media/broll/b03.mp4",
+   "dur": 2.0,
+   "category": "venue",
+   "description": "walking into the ballroom, RISE 2.0 screens ahead",
+   "energy": 4,
+   "bestFor": "hook",
+   "source": "20261120_145550_634.mp4 @13.3s"
+  },
+  {
+   "file": "media/broll/b04.mp4",
+   "dur": 2.0,
+   "category": "venue",
+   "description": "wide ballroom pan, chandeliers and LED wall",
+   "energy": 4,
+   "bestFor": "hook",
+   "source": "20261120_145550_634.mp4 @18.0s"
+  },
+  {
+   "file": "media/broll/b05.mp4",
+   "dur": 2.0,
+   "category": "venue",
+   "description": "grand ballroom, sculpted ceiling, red stage screens",
+   "energy": 3,
+   "bestFor": "hook",
+   "source": "20261120_145446_427.mp4 @2.0s"
+  },
+  {
+   "file": "media/broll/b06.mp4",
+   "dur": 2.0,
+   "category": "venue",
+   "description": "full ballroom, ceiling and colourful screens",
+   "energy": 3,
+   "bestFor": "hook",
+   "source": "20261120_145533_118.mp4 @16.0s"
+  },
+  {
+   "file": "media/broll/b07.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "attendees at round tables",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_145550_634.mp4 @37.0s"
+  },
+  {
+   "file": "media/broll/b08.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "packed tables mid-session",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_141325.mp4 @5.0s"
+  },
+  {
+   "file": "media/broll/b09.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "close on attendees listening",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_141325.mp4 @17.0s"
+  },
+  {
+   "file": "media/broll/b10.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "attendees with laptops, slide on screen",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_134405.mp4 @18.0s"
+  },
+  {
+   "file": "media/broll/b11.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "hands raised across the room",
+   "energy": 4,
+   "bestFor": "body",
+   "source": "20261120_134008.mp4 @11.0s"
+  },
+  {
+   "file": "media/broll/b12.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "speaker in blue suit on stage behind audience heads",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_133644.mp4 @2.0s"
+  },
+  {
+   "file": "media/broll/b13.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "speaker gesturing to the room",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_133644.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b14.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "two speakers on stage, RISE 2.0 backdrop (portrait source)",
+   "energy": 3,
+   "bestFor": "hook",
+   "source": "20261120_135721.mp4 @2.0s"
+  },
+  {
+   "file": "media/broll/b15.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "two speakers chatting on stage (portrait source)",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_141401.mp4 @1.0s"
+  },
+  {
+   "file": "media/broll/b16.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "stage conversation, slide beside (portrait source)",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_144001.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b17.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "speaker on stage, Follow Up System slide",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_144352.mp4 @12.0s"
+  },
+  {
+   "file": "media/broll/b18.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "speaker drawing chart on screen, host seated",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_145231_886.mp4 @4.0s"
+  },
+  {
+   "file": "media/broll/b19.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "low-angle stage with lights and lectern",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_145245_505.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b20.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "MEET YOUR SPEAKERS, group on stage",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_134523.mp4 @10.0s"
+  },
+  {
+   "file": "media/broll/b21.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "speakers walking on stage, speaker slide",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_134523.mp4 @20.0s"
+  },
+  {
+   "file": "media/broll/b22.mp4",
+   "dur": 2.0,
+   "category": "speakers",
+   "description": "two speakers on RISE 2.0 stage",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_141325.mp4 @0.5s"
+  },
+  {
+   "file": "media/broll/b23.mp4",
+   "dur": 2.0,
+   "category": "details",
+   "description": "ONE TEAM ONE SHARED PURPOSE ONE HSBC on red screens",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_133744.mp4 @4.0s"
+  },
+  {
+   "file": "media/broll/b24.mp4",
+   "dur": 2.0,
+   "category": "details",
+   "description": "From Service To Experience slide over audience",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_134008.mp4 @19.0s"
+  },
+  {
+   "file": "media/broll/b25.mp4",
+   "dur": 2.0,
+   "category": "details",
+   "description": "Serving the Next Generation of Asian Wealth red screens",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_145412_424.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b26.mp4",
+   "dur": 2.0,
+   "category": "details",
+   "description": "huge LED wall with speaker slide",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_135429.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b27.mp4",
+   "dur": 2.0,
+   "category": "details",
+   "description": "speaker profile slide on main LED",
+   "energy": 2,
+   "bestFor": "body",
+   "source": "20261120_145427_076.mp4 @18.0s"
+  },
+  {
+   "file": "media/broll/b28.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "crowd on their feet, dancing",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145455_851.mp4 @2.0s"
+  },
+  {
+   "file": "media/broll/b29.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "crowd dancing between tables",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145455_851.mp4 @6.0s"
+  },
+  {
+   "file": "media/broll/b30.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "guest dancing toward camera",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145455_851.mp4 @10.5s"
+  },
+  {
+   "file": "media/broll/b31.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "crowd standing facing stage",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145516_455.mp4 @0.5s"
+  },
+  {
+   "file": "media/broll/b32.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "room on its feet dancing",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145516_455.mp4 @8.0s"
+  },
+  {
+   "file": "media/broll/b33.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "guests dancing close",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145516_455.mp4 @36.0s"
+  },
+  {
+   "file": "media/broll/b34.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "woman dancing and smiling at camera",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145516_455.mp4 @37.6s"
+  },
+  {
+   "file": "media/broll/b35.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "guests dancing together",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_145516_455.mp4 @40.5s"
+  },
+  {
+   "file": "media/broll/b36.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "attendees standing and cheering",
+   "energy": 5,
+   "bestFor": "party",
+   "source": "20261120_134523.mp4 @2.5s"
+  },
+  {
+   "file": "media/broll/b37.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "audience standing with arms up",
+   "energy": 4,
+   "bestFor": "party",
+   "source": "20261120_145533_118.mp4 @28.0s"
+  },
+  {
+   "file": "media/broll/b38.mp4",
+   "dur": 2.0,
+   "category": "party",
+   "description": "audience standing toward the stage",
+   "energy": 5,
+   "bestFor": "outro",
+   "source": "20261120_145533_118.mp4 @56.0s"
+  },
+  {
+   "file": "media/broll/b39.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "wide room from the tables (portrait source)",
+   "energy": 3,
+   "bestFor": "body",
+   "source": "20261120_133610.mp4 @2.0s"
+  },
+  {
+   "file": "media/broll/b40.mp4",
+   "dur": 2.0,
+   "category": "audience",
+   "description": "attendees waving and taking photos",
+   "energy": 4,
+   "bestFor": "body",
+   "source": "20261120_134008.mp4 @13.0s"
+  }
+ ],
+ "photos": [
+  {
+   "file": "media/photos/p01.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "venue: stage and RISE 2.0 LED wall before doors, empty hall"
+  },
+  {
+   "file": "media/photos/p02.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "venue: ballroom filling up, tables and chandeliers"
+  },
+  {
+   "file": "media/photos/p03.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "speaker in blue suit on stage in front of giant RISE 2.0 logo"
+  },
+  {
+   "file": "media/photos/p04.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "speaker close-ish, RISE 2.0 logo, gesturing"
+  },
+  {
+   "file": "media/photos/p05.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "speaker walking stage, RISE 2.0 logo (strong outro/brand frame)"
+  },
+  {
+   "file": "media/photos/p06.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "full house from the back, stage lit"
+  },
+  {
+   "file": "media/photos/p07.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "ONE TEAM, ONE SHARED PURPOSE, ONE HSBC red screens over audience"
+  },
+  {
+   "file": "media/photos/p08.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "MEET YOUR SPEAKERS slide, speakers on stage"
+  },
+  {
+   "file": "media/photos/p09.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "two speakers on stage, RISE 2.0 logo and speaker bio"
+  },
+  {
+   "file": "media/photos/p10.jpg",
+   "w": 2160,
+   "h": 1620,
+   "description": "1 Question That Unravelled More Than Asked slides, packed room"
+  },
+  {
+   "file": "media/photos/p11.jpg",
+   "w": 1620,
+   "h": 2160,
+   "description": "portrait: watch-collection question slide 'How do you master the winding across so many different houses?'"
+  },
+  {
+   "file": "media/photos/p12.jpg",
+   "w": 1620,
+   "h": 2160,
+   "description": "portrait: Follow Up System / The Rhythm of Care slide"
+  }
+ ],
+ "contactSheets": "build/footage/sheet-*.jpg"
+}
