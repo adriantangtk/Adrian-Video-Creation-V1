@@ -1,0 +1,103 @@
+/* GFX3: RISE 2.0 cinematic title system. LANDSCAPE 1920x1080. Text safe x 120-1800, y 80-1000.
+   Palette: HSBC red #DB0011, white, charcoal #1A1A1A, warm gold accent #C9A46A. Fonts local only. */
+@font-face { font-family: "Inter"; font-weight: 400; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url("fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 400; src: url("fonts/newsreader-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 500; src: url("fonts/newsreader-latin-500-normal.woff2") format("woff2"); }
+
+:root { --g3-red: #DB0011; --g3-white: #FFFFFF; --g3-char: #1A1A1A; --g3-gold: #C9A46A; --g3-gold-hi: #F3DDB0; }
+
+/* hosts: every host is a full-frame .clip spanning the part of the video it is used in.
+   z-order: footage 1-9 | #g3-vignette 20 | #g3-grain 22 | #g3-chapter 30 | #g3-houses 31 | #g3-lt 32
+            #g3-captions 40 | #g3-outro 50 | #g3-open 55 | #g3-matte 60 | #g3-leak 65 | #g3-flash 70 | #g3-black 75 */
+.g3-host { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; overflow: hidden; }
+#g3-vignette { z-index: 20; background:
+  radial-gradient(ellipse 75% 70% at 50% 48%, rgba(0,0,0,0) 55%, rgba(0,0,0,.42) 100%); }
+#g3-grain { z-index: 22; background-image: url("grain/noise.png"); background-size: 512px 512px;
+  mix-blend-mode: overlay; opacity: .10; }
+#g3-chapter { z-index: 30; } #g3-houses { z-index: 31; } #g3-lt { z-index: 32; }
+#g3-captions { z-index: 40; } #g3-outro { z-index: 50; } #g3-open { z-index: 55; }
+#g3-matte { z-index: 60; } #g3-leak { z-index: 65; } #g3-flash { z-index: 70; background: #FFF; opacity: 0; }
+#g3-black { z-index: 75; background: #000; opacity: 0; }
+
+.g3-abs { position: absolute; }
+.g3-mask { overflow: hidden; display: block; }
+
+/* ---------- letterbox ---------- */
+.g3-bar { position: absolute; left: 0; width: 1920px; background: #000; transform: scaleY(0); }
+.g3-bar.top { top: 0; transform-origin: 50% 0; } .g3-bar.bot { bottom: 0; transform-origin: 50% 100%; }
+
+/* ---------- open title ---------- */
+.g3-open-bg { position: absolute; inset: 0; background: #000; opacity: 0; }
+.g3-open-wrap { position: absolute; left: 0; width: 1920px; top: 0; height: 1080px; }
+.g3-rule { position: absolute; height: 1px; background: linear-gradient(90deg, rgba(201,164,106,0), var(--g3-gold) 20%, var(--g3-gold-hi) 50%, var(--g3-gold) 80%, rgba(201,164,106,0)); transform: scaleX(0); }
+.g3-kicker { position: absolute; left: 0; width: 1920px; text-align: center; white-space: nowrap;
+  font: 500 22px/1 "Inter", sans-serif; letter-spacing: .52em; text-indent: .52em; color: rgba(255,255,255,.82); opacity: 0; }
+.g3-big { position: absolute; left: 0; width: 1920px; text-align: center; white-space: nowrap; line-height: 1; }
+.g3-word { display: inline-block; position: relative; padding: 0 .06em; }
+.g3-ch { display: inline-block; opacity: 0; }
+.g3-ch.gold { color: var(--g3-gold); }
+.g3-sheen { position: absolute; left: 0; top: 0; width: 100%; height: 100%; white-space: nowrap; color: transparent;
+  background: linear-gradient(105deg, rgba(255,255,255,0) 42%, rgba(255,244,222,.95) 50%, rgba(255,255,255,0) 58%) no-repeat;
+  background-size: 300% 100%; background-position: 150% 0; -webkit-background-clip: text; background-clip: text; }
+.g3-sheen .g3-ch { opacity: 1; }
+.g3-title-serif { font-family: "Newsreader", serif; font-weight: 400; letter-spacing: .02em; color: #FFF; }
+
+/* ---------- chapter ---------- */
+.g3-ch-scrim { position: absolute; inset: 0; opacity: 0;
+  background: radial-gradient(ellipse 60% 45% at 50% 52%, rgba(10,8,8,.62) 0%, rgba(10,8,8,.30) 55%, rgba(10,8,8,0) 100%); }
+.g3-ch-index { position: absolute; left: 0; width: 1920px; top: 352px; text-align: center; white-space: nowrap;
+  font: 500 22px/1 "JetBrains Mono", monospace; letter-spacing: .3em; text-indent: .3em; color: var(--g3-gold); opacity: 0; }
+.g3-ch-index b { color: #FFF; font-weight: 500; }
+.g3-ch-word { position: absolute; left: 0; width: 1920px; top: 410px; height: 230px; text-align: center; overflow: hidden; }
+.g3-ch-word span { display: inline-block; font: 700 200px/230px "Inter", sans-serif; letter-spacing: .16em; text-indent: .16em;
+  color: #FFF; text-shadow: 0 10px 60px rgba(0,0,0,.35); }
+.g3-ch-line { position: absolute; left: 900px; width: 120px; top: 672px; height: 4px; background: var(--g3-red); transform: scaleX(0); }
+
+/* ---------- houses list ---------- */
+.g3-h-panel { position: absolute; left: 0; top: 0; width: 1240px; height: 1080px; opacity: 0;
+  background: linear-gradient(90deg, rgba(12,10,10,.90) 0%, rgba(12,10,10,.82) 45%, rgba(12,10,10,.45) 75%, rgba(12,10,10,0) 100%); }
+.g3-h-title { position: absolute; left: 160px; top: 196px; white-space: nowrap; font: 500 22px/1 "Inter", sans-serif;
+  letter-spacing: .42em; color: var(--g3-gold); opacity: 0; }
+.g3-h-rule { position: absolute; left: 160px; top: 240px; width: 560px; height: 1px; background: linear-gradient(90deg, var(--g3-gold), rgba(201,164,106,0)); transform: scaleX(0); transform-origin: 0 50%; }
+.g3-h-row { position: absolute; left: 160px; height: 76px; width: 1000px; overflow: hidden; }
+.g3-h-in { position: absolute; left: 0; top: 0; height: 76px; display: flex; align-items: center; white-space: nowrap; }
+.g3-h-num { width: 74px; font: 500 18px/1 "JetBrains Mono", monospace; letter-spacing: .1em; color: var(--g3-gold); }
+.g3-h-dash { width: 0; height: 3px; background: var(--g3-red); margin-right: 0; }
+.g3-h-name { font: 500 58px/76px "Newsreader", serif; letter-spacing: .12em; color: #FFF; text-transform: uppercase; }
+
+/* ---------- lower third ---------- */
+.g3-lt-grad { position: absolute; left: 0; top: 560px; width: 1300px; height: 520px; opacity: 0;
+  background: radial-gradient(ellipse 70% 60% at 10% 70%, rgba(10,8,8,.68) 0%, rgba(10,8,8,.35) 50%, rgba(10,8,8,0) 100%); }
+.g3-lt-bar { position: absolute; left: 120px; top: 680px; width: 3px; height: 150px; background: var(--g3-red); transform: scaleY(0); transform-origin: 50% 100%; }
+.g3-lt-name { position: absolute; left: 150px; top: 672px; height: 86px; overflow: hidden; }
+.g3-lt-name span { display: block; font: 700 76px/86px "Inter", sans-serif; letter-spacing: .14em; color: #FFF; }
+.g3-lt-sub { position: absolute; left: 152px; top: 768px; height: 64px; overflow: hidden; white-space: nowrap; }
+.g3-lt-sub > div { display: flex; align-items: center; height: 64px; }
+.g3-lt-full { font: 400 38px/1 "Newsreader", serif; color: #FFF; letter-spacing: .01em; }
+.g3-lt-sep { width: 36px; height: 1px; background: var(--g3-gold); margin: 0 22px; }
+.g3-lt-tag { font: 500 20px/1 "Inter", sans-serif; letter-spacing: .3em; color: var(--g3-gold-hi); text-transform: uppercase; }
+
+/* ---------- captions ---------- */
+.g3-cap { position: absolute; left: 120px; width: 1680px; top: 858px; height: 104px; display: flex; align-items: center;
+  justify-content: center; gap: 0 22px; white-space: nowrap; opacity: 0;
+  font: 700 72px/1 "Inter", sans-serif; letter-spacing: -.01em; color: #FFF; }
+.g3-cap-w { display: inline-block; opacity: 0; text-shadow: 0 2px 4px rgba(0,0,0,.55), 0 6px 26px rgba(0,0,0,.55); }
+.g3-cap-w.key { color: #FF1F33; text-shadow: 0 2px 4px rgba(0,0,0,.7), 0 6px 26px rgba(0,0,0,.6); }
+.g3-cap-scrim { position: absolute; left: 0; top: 700px; width: 1920px; height: 380px; opacity: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.38) 55%, rgba(0,0,0,.5) 100%); }
+
+/* ---------- outro ---------- */
+.g3-o-scrim { position: absolute; inset: 0; opacity: 0;
+  background: radial-gradient(ellipse 62% 52% at 50% 50%, rgba(8,6,6,.66) 0%, rgba(8,6,6,.38) 60%, rgba(8,6,6,.15) 100%); }
+.g3-o-line { position: absolute; left: 0; width: 1920px; top: 628px; text-align: center; white-space: nowrap; }
+.g3-o-line span { display: inline-block; opacity: 0; font: 400 46px/1 "Newsreader", serif; letter-spacing: .06em; color: #FFF; margin: 0 .3em; }
+.g3-o-line span i { font-style: normal; color: var(--g3-red); }
+
+/* ---------- light leak ---------- */
+.g3-leak { position: absolute; left: -900px; top: 340px; width: 1800px; height: 400px; opacity: 0; mix-blend-mode: screen;
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255,236,210,.95) 0%, rgba(255,120,90,.75) 14%, rgba(219,0,17,.55) 34%, rgba(219,0,17,0) 70%); }
+.g3-leak.streak { top: 528px; height: 24px; background: linear-gradient(90deg, rgba(255,60,60,0), rgba(255,220,200,.9) 50%, rgba(255,60,60,0)); }
