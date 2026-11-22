@@ -69,151 +69,171 @@
   .pill4 div { width:380px; padding:26px 20px; border-radius:18px; background:rgba(11,21,51,.82); border-top:8px solid var(--gold);
         font-size:36px; font-weight:700; line-height:1.15; opacity:0; text-align:center; }
   /* end card */
+  .wall { display:grid; grid-template-columns:repeat(8, 196px); gap:14px; justify-content:center; }
+  .wall div { height:104px; background:#fff; border-radius:14px; display:flex; align-items:center; justify-content:center; opacity:0;
+        box-shadow:0 10px 30px rgba(0,0,0,.35); }
+  .wall img { max-width:168px; max-height:76px; object-fit:contain; }
   #logo { position:absolute; left:610px; top:200px; width:700px; opacity:0; }
   #bar { position:absolute; left:0; top:0; height:6px; width:1920px; background:var(--gold); transform-origin:left center; }
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="tt-reel" data-start="0" data-duration="150.0" data-fps="30" data-width="1920" data-height="1080">
-  <video id="base" class="full clip" src="media/base150.mp4" muted playsinline data-start="0" data-duration="150.0" data-track-index="0"></video>
-  <div id="vig" class="full clip" data-start="0" data-duration="150.0" data-track-index="1"></div>
-  <div id="leak" class="clip" data-start="0" data-duration="150.0" data-track-index="2"></div>
-  <div id="lbT" class="lb clip" data-start="0" data-duration="150.0" data-track-index="3"></div>
-  <div id="lbB" class="lb clip" data-start="0" data-duration="150.0" data-track-index="4"></div>
-    <div class="cap clip" id="cap0" data-start="3.09" data-duration="1.41" data-track-index="5"><span>HIGHEST ENERGY</span></div>
-  <div class="cap clip gold" id="cap1" data-start="4.5" data-duration="1.35" data-track-index="5"><span>WINS.</span></div>
-  <div class="cap clip" id="cap2" data-start="5.88" data-duration="1.1" data-track-index="5"><span>HIGHEST ENERGY</span></div>
-  <div class="cap clip gold" id="cap3" data-start="6.98" data-duration="0.97" data-track-index="5"><span>WINS.</span></div>
-  <div class="cap clip" id="cap4" data-start="15.7" data-duration="0.75" data-track-index="5"><span>IN LIFE,</span></div>
-  <div class="cap clip" id="cap5" data-start="16.45" data-duration="0.75" data-track-index="5"><span>THERE IS NO</span></div>
-  <div class="cap clip gold" id="cap6" data-start="17.2" data-duration="0.9" data-track-index="5"><span>FAILURE.</span></div>
-  <div class="cap clip" id="cap7" data-start="18.1" data-duration="0.62" data-track-index="5"><span>THERE IS ONLY</span></div>
-  <div class="cap clip gold" id="cap8" data-start="18.72" data-duration="1.68" data-track-index="5"><span>FEEDBACK.</span></div>
-  <div class="cap clip" id="cap9" data-start="30.92" data-duration="1.18" data-track-index="5"><span>TEAM ONE,</span></div>
-  <div class="cap clip gold" id="cap10" data-start="32.1" data-duration="2.3" data-track-index="5"><span>MAKE SOME NOISE!</span></div>
-  <div class="cap clip" id="cap11" data-start="67.77" data-duration="1.33" data-track-index="5"><span>YOU CAN ALL BE</span></div>
-  <div class="cap clip gold" id="cap12" data-start="69.1" data-duration="1.41" data-track-index="5"><span>EXCELLENT.</span></div>
-  <div class="cap clip" id="cap13" data-start="70.51" data-duration="0.84" data-track-index="5"><span>JUST MAKE THE</span></div>
-  <div class="cap clip gold" id="cap14" data-start="71.35" data-duration="1.2" data-track-index="5"><span>DECISION</span></div>
-  <div class="cap clip" id="cap15" data-start="72.55" data-duration="0.4" data-track-index="5"><span>TO BE</span></div>
-  <div class="cap clip gold" id="cap16" data-start="72.95" data-duration="1.6" data-track-index="5"><span>EXCELLENT.</span></div>
-  <div class="cap clip" id="cap17" data-start="75.35" data-duration="0.93" data-track-index="5"><span>WHEN I FAIL,</span></div>
-  <div class="cap clip gold" id="cap18" data-start="76.28" data-duration="1.02" data-track-index="5"><span>I LEARN.</span></div>
-  <div class="cap clip" id="cap19" data-start="77.3" data-duration="1.0" data-track-index="5"><span>IT'S NOT THE END.</span></div>
-  <div class="cap clip" id="cap20" data-start="78.3" data-duration="0.9" data-track-index="5"><span>MY EFFORT &amp; ATTITUDE</span></div>
-  <div class="cap clip" id="cap21" data-start="79.2" data-duration="0.5" data-track-index="5"><span>DETERMINE</span></div>
-  <div class="cap clip gold" id="cap22" data-start="79.7" data-duration="1.9" data-track-index="5"><span>EVERYTHING.</span></div>
-  <div class="cap clip" id="cap23" data-start="97.65" data-duration="1.32" data-track-index="5"><span>HOW WE DO ANYTHING</span></div>
-  <div class="cap clip" id="cap24" data-start="98.97" data-duration="0.79" data-track-index="5"><span>IS HOW WE DO</span></div>
-  <div class="cap clip gold" id="cap25" data-start="99.76" data-duration="1.46" data-track-index="5"><span>EVERYTHING.</span></div>
-  <div class="cap clip" id="cap26" data-start="108.4" data-duration="0.88" data-track-index="5"><span>CHANGE YOUR MINDSET,</span></div>
-  <div class="cap clip gold" id="cap27" data-start="109.28" data-duration="1.62" data-track-index="5"><span>CHANGE YOUR ACTIONS.</span></div>
-  <div class="cap clip" id="cap28" data-start="119.434" data-duration="1.34" data-track-index="5"><span>GIVE YOURSELF A HUGE</span></div>
-  <div class="cap clip gold" id="cap29" data-start="120.774" data-duration="2.0" data-track-index="5"><span>ROUND OF APPLAUSE!</span></div>
-  <div class="lab clip" id="lab0" data-start="8.004" data-duration="1.8" data-track-index="6"><i></i><div><span>TEAM BUILDING</span></div></div>
-  <div class="lab clip" id="lab1" data-start="9.862" data-duration="1.8" data-track-index="6"><i></i><div><span>LEADERSHIP WORKSHOPS</span></div></div>
-  <div class="lab clip" id="lab2" data-start="11.719" data-duration="1.8" data-track-index="6"><i></i><div><span>ENERGISERS</span></div></div>
-  <div class="lab clip" id="lab3" data-start="13.577" data-duration="1.8" data-track-index="6"><i></i><div><span>ADVENTURE &amp; RETREATS</span></div></div>
-  <div class="lab clip" id="lab4" data-start="52.586" data-duration="1.8" data-track-index="6"><i></i><div><span>LEADERSHIP DEVELOPMENT</span><small>Clarity, confidence and practical tools</small></div></div>
-  <div class="lab clip" id="lab5" data-start="54.444" data-duration="1.8" data-track-index="6"><i></i><div><span>CORPORATE TRAINING</span><small>Aligning people, processes and culture</small></div></div>
-  <div class="lab clip" id="lab6" data-start="56.301" data-duration="1.8" data-track-index="6"><i></i><div><span>TEAM BUILDING</span><small>Teams that perform together</small></div></div>
-  <div class="lab clip" id="lab7" data-start="58.159" data-duration="1.8" data-track-index="6"><i></i><div><span>SALES &amp; BUSINESS DEVELOPMENT</span><small>Stronger pipelines, consistent growth</small></div></div>
-  <div id="hk0" class="big clip" data-start="0.12" data-duration="2.78" data-track-index="21" style="top:250px;font-size:92px"><span class="">WHAT IF</span></div>
-  <div id="hk1" class="big clip" data-start="0.45" data-duration="2.45" data-track-index="22" style="top:345px;font-size:210px"><span class="">MONDAY</span></div>
-  <div id="hk2" class="big clip" data-start="1.15" data-duration="1.75" data-track-index="23" style="top:575px;font-size:92px"><span class="">FELT LIKE</span></div>
-  <div id="hk3" class="big clip" data-start="1.55" data-duration="1.35" data-track-index="24" style="top:670px;font-size:220px"><span class="g">THIS?</span></div>
-  <div id="tagMT" class="lt clip" data-start="15.514" data-duration="1.75" data-track-index="25" style=""><b>Michael Teoh</b><small>Founder &amp; CEO, Thriving Talents</small></div>
-  <div id="it5" class="big clip" data-start="20.55" data-duration="2.25" data-track-index="26" style="top:300px;font-size:120px">KEYNOTES THAT<br><span class="g">MOVE ROOMS.</span></div>
-  <div id="stDim" class="dim clip" data-start="22.865" data-duration="7.35" data-track-index="27" style=""></div>
-  <div id="stHead" class="big clip" data-start="22.965" data-duration="7.2" data-track-index="28" style="top:150px;font-size:70px"><span class="kick">SINCE 2012</span>HELPING PEOPLE GROW.<br><span class="g">HELPING ORGANIZATIONS THRIVE.</span></div>
-  <div id="stRow" class="big clip" data-start="24.065" data-duration="6.1" data-track-index="29" style="top:520px;opacity:1;text-shadow:none;background:none"><div class="stats"><div class="stat"><b>0K+</b><small>Training sessions</small></div><div class="stat"><b>0+</b><small>Expert coaches</small></div><div class="stat"><b>0+</b><small>Countries reached</small></div><div class="stat"><b>RM0M+</b><small>Value delivered</small></div></div></div>
-  <div id="it9" class="big clip" data-start="34.6" data-duration="3.0" data-track-index="30" style="top:330px;font-size:130px">ONE ROOM.<br><span class="g">ONE ENERGY.</span></div>
-  <div id="it10" class="big clip" data-start="37.825" data-duration="1.8" data-track-index="31" style="top:300px;font-size:110px"><span class="kick">60+ EXPERT COACHES</span>MEET THE PEOPLE<br><span class="g">BEHIND THE ENERGY.</span></div>
-  <div id="trT0" class="lt clip" data-start="39.683" data-duration="1.8" data-track-index="32" style=""><b>Winnie Lim</b><small>Thriving Talents</small></div>
-  <div id="trT1" class="lt clip" data-start="43.398" data-duration="1.8" data-track-index="33" style=""><b>Ong Shu Yi</b><small>NLP Master Trainer, Thriving Talents</small></div>
-  <div id="trT2" class="lt clip" data-start="48.971" data-duration="1.8" data-track-index="34" style=""><b>Michael Teoh</b><small>Founder &amp; CEO, Thriving Talents</small></div>
-  <div id="it14" class="big clip" data-start="60.167" data-duration="3.5" data-track-index="35" style="top:300px;font-size:116px"><span class="kick">WHY CLIENTS CHOOSE US</span>EXPERIENTIAL LEARNING<br><span class="g">THAT STICKS.</span></div>
-  <div id="it15" class="big clip" data-start="63.917" data-duration="3.4" data-track-index="36" style="top:360px;font-size:84px">SIMULATIONS · CHALLENGES<br><span class="g">REAL-WORLD SCENARIOS</span></div>
-  <div id="awBg" class="navy clip" data-start="82.308" data-duration="3.72" data-track-index="37" style=""></div>
-  <div id="awHead" class="big clip" data-start="82.408" data-duration="3.6" data-track-index="38" style="top:90px;font-size:82px"><span class="kick">HR VENDORS OF THE YEAR 2026 · MALAYSIA</span>3 AWARDS. ONE NIGHT.</div>
-  <div id="awCards" class="big clip" data-start="82.808" data-duration="3.2" data-track-index="39" style="top:280px;opacity:1;text-shadow:none;background:none"><div class="cards"><div class="card"><img src="assets/hrv-gold.png"><div class="m">GOLD · Best Team Building</div></div><div class="card"><img src="assets/hrv-silver.png"><div class="m">SILVER · Management Training</div></div><div class="card"><img src="assets/hrv-bronze.png"><div class="m">BRONZE · Instructional Design</div></div></div></div>
-  <div id="it19" class="big clip" data-start="86.158" data-duration="3.4" data-track-index="40" style="top:780px;font-size:76px"><span class="kick">15TH STAR OUTSTANDING BUSINESS AWARDS</span><span style="display:inline-block;padding:12px 30px;background:var(--gold);color:var(--navy);border-radius:14px">BEST EMPLOYER</span></div>
-  <div id="tlBg" class="navy clip" data-start="89.738" data-duration="7.35" data-track-index="41" style=""></div>
-  <div id="tlHead" class="big clip" data-start="89.838" data-duration="7.2" data-track-index="42" style="top:90px;font-size:84px"><span class="kick">A DECADE OF EXCELLENCE</span>AWARD-WINNING <span class="g">SINCE 2022</span></div>
-  <div id="tlRow" class="big clip" data-start="90.338" data-duration="6.7" data-track-index="43" style="top:260px;opacity:1;text-shadow:none;text-align:left;background:none"><div class="tline"><div class="yr"><div class="ph"><img src="assets/web/Image-5-4.jpg"></div><b>2022</b><small>CXP Best Customer Experience<br>HR Vendors of the Year</small></div><div class="yr"><div class="ph"><img src="assets/web/Image-5-3.jpg"></div><b>2024</b><small>Best Management Training Provider<br>Malaysia Role Model Enterprise</small></div><div class="yr"><div class="ph"><img src="assets/web/Image-5-6.jpg"></div><b>2025</b><small>Best Sales Training (Gold)<br>Leader of the Year · SOBA Best Employer</small></div><div class="yr"><div class="ph"><img src="assets/hrv-gold.png"></div><b>2026</b><small>Gold · Best Team Building<br>+ Silver &amp; Bronze</small></div></div></div>
-  <div id="it23" class="big clip" data-start="99.4" data-duration="5.0" data-track-index="44" style="top:250px;font-size:88px">TRUSTED BY FORTUNE 500 BRANDS<br>&amp; LEADING ORGANISATIONS<br><span class="g">ACROSS 43+ COUNTRIES</span></div>
-  <div id="it24" class="big clip" data-start="104.649" data-duration="3.3" data-track-index="45" style="top:280px;font-size:150px">HIGHEST ENERGY<br><span class="g">WINS.</span></div>
-  <div id="it25" class="big clip" data-start="112.179" data-duration="3.4" data-track-index="46" style="top:320px;font-size:110px">TURN TEAMS INTO<br><span class="g">HIGH-PERFORMING UNITS.</span></div>
-  <div id="it26" class="big clip" data-start="115.879" data-duration="3.4" data-track-index="47" style="top:340px;font-size:88px">THEY DON'T JUST WORK TOGETHER.<br><span class="g">THEY PERFORM TOGETHER.</span></div>
-  <div id="it27" class="big clip" data-start="127.09" data-duration="7.0" data-track-index="48" style="top:330px;font-size:100px">WHEN PEOPLE GROW,<br><span class="g">ORGANIZATIONS MOVE FORWARD.</span></div>
-  <div id="it28" class="big clip" data-start="134.421" data-duration="3.5" data-track-index="49" style="top:290px;font-size:170px">YOUR TEAM<br><span class="g">IS NEXT.</span></div>
-  <div id="it29" class="big clip" data-start="138.121" data-duration="3.5" data-track-index="50" style="top:320px;font-size:130px">LET'S MAKE MONDAY<br><span class="g">FEEL LIKE THIS.</span></div>
-  <div id="endBg" class="navy clip" data-start="141.751" data-duration="8.249" data-track-index="51" style=""></div>
-  <div id="endT" class="big clip" data-start="142.551" data-duration="7.449" data-track-index="52" style="top:500px;line-height:1.5;letter-spacing:0"><span style="font-size:40px;font-weight:600;color:#D9DEEA">Award-winning corporate training · Since 2012</span><br><span style="font-size:34px;font-weight:500;color:#D9DEEA">Leadership · Team Building · Corporate Training · Sales</span></div>
-  <div id="endCta" class="big clip" data-start="143.151" data-duration="6.849" data-track-index="53" style="top:660px;font-size:64px;letter-spacing:-.01em"><span style="display:inline-block;padding:22px 56px;background:var(--gold);color:var(--navy);border-radius:999px">thrivingtalents.com</span><br><span style="display:inline-block;margin-top:26px;font-size:44px;color:#fff">WhatsApp +60 11-5415 7656</span></div>
-  <div id="credit" class="big clip" data-start="143.751" data-duration="6.249" data-track-index="54" style="top:1000px;font-size:22px;font-weight:500;color:rgba(217,222,234,.7);letter-spacing:0;text-shadow:none">Music: “Inspiring Progress” by Soundrider/Dope · CC BY 3.0 · jamendo.com</div>
-  <img id="logo" class="clip" src="assets/tt-logo.svg" data-start="141.751" data-duration="8.249" data-track-index="90">
-  <div id="flash" class="full clip" data-start="0" data-duration="150.0" data-track-index="98"></div>
-  <div id="bar" class="clip" data-start="0" data-duration="150.0" data-track-index="99"></div>
-  <audio id="music" src="music/bed150.wav" data-start="0" data-duration="150.0" data-volume="0.55"></audio>
-  <audio id="nat" src="media/base150-nat.wav" data-start="0" data-duration="150.0" data-volume="0.28"></audio>
-    <audio id="v1-energy" src="voice/v1-energy.wav" data-role="voice" data-start="3.0" data-duration="4.1" data-volume="1.0"></audio>
-  <audio id="v2-feedback" src="voice/v2-feedback.wav" data-role="voice" data-start="15.6" data-duration="3.95" data-volume="1.0"></audio>
-  <audio id="v3-noise" src="voice/v3-noise.wav" data-role="voice" data-start="30.9" data-duration="4.2" data-volume="1.0"></audio>
-  <audio id="v4-excellent" src="voice/v4-excellent.wav" data-role="voice" data-start="67.75" data-duration="5.75" data-volume="1.0"></audio>
-  <audio id="v7-fail" src="voice/v7-fail.wav" data-role="voice" data-start="75.28" data-duration="5.34" data-volume="1.0"></audio>
-  <audio id="v5-everything" src="voice/v5-everything.wav" data-role="voice" data-start="97.42" data-duration="3.3" data-volume="1.0"></audio>
-  <audio id="v8-mindset" src="voice/v8-mindset.wav" data-role="voice" data-start="108.1" data-duration="2.0" data-volume="1.0"></audio>
-  <audio id="v6-applause" src="voice/v6-applause.wav" data-role="voice" data-start="119.41" data-duration="3.15" data-volume="1.0"></audio>
+<div id="root" data-composition-id="tt-reel" data-start="0" data-duration="182.0" data-fps="30" data-width="1920" data-height="1080">
+  <video id="base" class="full clip" src="media/base180.mp4" muted playsinline data-start="0" data-duration="182.0" data-track-index="0"></video>
+  <div id="vig" class="full clip" data-start="0" data-duration="182.0" data-track-index="1"></div>
+  <div id="leak" class="clip" data-start="0" data-duration="182.0" data-track-index="2"></div>
+  <div id="lbT" class="lb clip" data-start="0" data-duration="182.0" data-track-index="3"></div>
+  <div id="lbB" class="lb clip" data-start="0" data-duration="182.0" data-track-index="4"></div>
+    <div class="cap clip" id="cap0" data-start="3.39" data-duration="1.41" data-track-index="5"><span>HIGHEST ENERGY</span></div>
+  <div class="cap clip gold" id="cap1" data-start="4.8" data-duration="1.35" data-track-index="5"><span>WINS.</span></div>
+  <div class="cap clip" id="cap2" data-start="6.18" data-duration="1.1" data-track-index="5"><span>HIGHEST ENERGY</span></div>
+  <div class="cap clip gold" id="cap3" data-start="7.28" data-duration="0.97" data-track-index="5"><span>WINS.</span></div>
+  <div class="cap clip" id="cap4" data-start="10.874" data-duration="0.75" data-track-index="5"><span>IN LIFE,</span></div>
+  <div class="cap clip" id="cap5" data-start="11.624" data-duration="0.75" data-track-index="5"><span>THERE IS NO</span></div>
+  <div class="cap clip gold" id="cap6" data-start="12.374" data-duration="0.9" data-track-index="5"><span>FAILURE.</span></div>
+  <div class="cap clip" id="cap7" data-start="13.274" data-duration="0.62" data-track-index="5"><span>THERE IS ONLY</span></div>
+  <div class="cap clip gold" id="cap8" data-start="13.894" data-duration="1.68" data-track-index="5"><span>FEEDBACK.</span></div>
+  <div class="cap clip" id="cap9" data-start="43.62" data-duration="1.18" data-track-index="5"><span>TEAM ONE,</span></div>
+  <div class="cap clip gold" id="cap10" data-start="44.8" data-duration="2.3" data-track-index="5"><span>MAKE SOME NOISE!</span></div>
+  <div class="cap clip" id="cap11" data-start="91.031" data-duration="1.33" data-track-index="5"><span>YOU CAN ALL BE</span></div>
+  <div class="cap clip gold" id="cap12" data-start="92.361" data-duration="1.41" data-track-index="5"><span>EXCELLENT.</span></div>
+  <div class="cap clip" id="cap13" data-start="93.771" data-duration="0.84" data-track-index="5"><span>JUST MAKE THE</span></div>
+  <div class="cap clip gold" id="cap14" data-start="94.611" data-duration="1.2" data-track-index="5"><span>DECISION</span></div>
+  <div class="cap clip" id="cap15" data-start="95.811" data-duration="0.4" data-track-index="5"><span>TO BE</span></div>
+  <div class="cap clip gold" id="cap16" data-start="96.211" data-duration="1.6" data-track-index="5"><span>EXCELLENT.</span></div>
+  <div class="cap clip" id="cap17" data-start="98.481" data-duration="0.93" data-track-index="5"><span>WHEN I FAIL,</span></div>
+  <div class="cap clip gold" id="cap18" data-start="99.411" data-duration="1.02" data-track-index="5"><span>I LEARN.</span></div>
+  <div class="cap clip" id="cap19" data-start="100.431" data-duration="1.0" data-track-index="5"><span>IT'S NOT THE END.</span></div>
+  <div class="cap clip" id="cap20" data-start="101.431" data-duration="0.9" data-track-index="5"><span>MY EFFORT &amp; ATTITUDE</span></div>
+  <div class="cap clip" id="cap21" data-start="102.331" data-duration="0.5" data-track-index="5"><span>DETERMINE</span></div>
+  <div class="cap clip gold" id="cap22" data-start="102.831" data-duration="1.88" data-track-index="5"><span>EVERYTHING.</span></div>
+  <div class="cap clip" id="cap23" data-start="127.125" data-duration="1.32" data-track-index="5"><span>HOW WE DO ANYTHING</span></div>
+  <div class="cap clip" id="cap24" data-start="128.445" data-duration="0.79" data-track-index="5"><span>IS HOW WE DO</span></div>
+  <div class="cap clip gold" id="cap25" data-start="129.235" data-duration="1.46" data-track-index="5"><span>EVERYTHING.</span></div>
+  <div class="cap clip" id="cap26" data-start="142.145" data-duration="0.88" data-track-index="5"><span>CHANGE YOUR MINDSET,</span></div>
+  <div class="cap clip gold" id="cap27" data-start="143.025" data-duration="1.62" data-track-index="5"><span>CHANGE YOUR ACTIONS.</span></div>
+  <div class="cap clip" id="cap28" data-start="145.331" data-duration="1.34" data-track-index="5"><span>GIVE YOURSELF A HUGE</span></div>
+  <div class="cap clip gold" id="cap29" data-start="146.671" data-duration="2.0" data-track-index="5"><span>ROUND OF APPLAUSE!</span></div>
+  <div class="lab clip" id="lab0" data-start="25.821" data-duration="1.8" data-track-index="6"><i></i><div><span>TEAM BUILDING</span></div></div>
+  <div class="lab clip" id="lab1" data-start="27.701" data-duration="1.8" data-track-index="6"><i></i><div><span>ENERGISERS</span></div></div>
+  <div class="lab clip" id="lab2" data-start="29.582" data-duration="1.8" data-track-index="6"><i></i><div><span>LEADERSHIP WORKSHOPS</span></div></div>
+  <div class="lab clip" id="lab3" data-start="31.44" data-duration="1.8" data-track-index="6"><i></i><div><span>ADVENTURE &amp; OUTDOOR</span></div></div>
+  <div class="lab clip" id="lab4" data-start="33.321" data-duration="1.8" data-track-index="6"><i></i><div><span>LIVE EVENTS</span></div></div>
+  <div class="lab clip" id="lab5" data-start="35.201" data-duration="1.8" data-track-index="6"><i></i><div><span>AMAZING RACES</span></div></div>
+  <div class="lab clip" id="lab6" data-start="66.595" data-duration="3.711" data-track-index="6"><i></i><div><span>LEADERSHIP DEVELOPMENT</span><small>Clarity, confidence and practical tools</small></div></div>
+  <div class="lab clip" id="lab7" data-start="70.356" data-duration="3.712" data-track-index="6"><i></i><div><span>CORPORATE TRAINING</span><small>Aligning people, processes and culture</small></div></div>
+  <div class="lab clip" id="lab8" data-start="74.118" data-duration="3.689" data-track-index="6"><i></i><div><span>TEAM BUILDING</span><small>Teams that perform together</small></div></div>
+  <div class="lab clip" id="lab9" data-start="77.857" data-duration="3.688" data-track-index="6"><i></i><div><span>SALES &amp; BUSINESS DEVELOPMENT</span><small>Stronger pipelines, consistent growth</small></div></div>
+  <div id="hk0" class="big clip" data-start="0.12" data-duration="2.83" data-track-index="21" style="top:250px;font-size:92px;background:none"><span class="">WHAT IF</span></div>
+  <div id="hk1" class="big clip" data-start="0.45" data-duration="2.5" data-track-index="22" style="top:345px;font-size:210px;background:none"><span class="">MONDAY</span></div>
+  <div id="hk2" class="big clip" data-start="1.15" data-duration="1.8" data-track-index="23" style="top:575px;font-size:92px;background:none"><span class="">FELT LIKE</span></div>
+  <div id="hk3" class="big clip" data-start="1.55" data-duration="1.4" data-track-index="24" style="top:670px;font-size:220px;background:none"><span class="g">THIS?</span></div>
+  <div id="tagMT" class="lt clip" data-start="10.204" data-duration="1.75" data-track-index="25" style=""><b>Michael Teoh</b><small>Founder &amp; CEO, Thriving Talents</small></div>
+  <div id="stDim" class="dim clip" data-start="17.856" data-duration="7.915" data-track-index="26" style=""></div>
+  <div id="stHead" class="big clip" data-start="17.956" data-duration="7.765" data-track-index="27" style="top:150px;font-size:70px;background:none"><span class="kick">SINCE 2012</span>HELPING PEOPLE GROW.<br><span class="g">HELPING ORGANIZATIONS THRIVE.</span></div>
+  <div id="stRow" class="big clip" data-start="18.856" data-duration="6.865" data-track-index="28" style="top:520px;opacity:1;text-shadow:none;background:none"><div class="stats"><div class="stat"><b>0K+</b><small>Training sessions</small></div><div class="stat"><b>0+</b><small>Expert coaches</small></div><div class="stat"><b>0+</b><small>Countries reached</small></div><div class="stat"><b>RM0M+</b><small>Value delivered</small></div></div></div>
+  <div id="wallBg" class="navy clip" data-start="36.595" data-duration="6.855" data-track-index="29" style=""></div>
+  <div id="wallHead" class="big clip" data-start="36.695" data-duration="6.755" data-track-index="30" style="top:70px;font-size:74px;background:none"><span class="kick">ORGANIZATIONS THAT TAKE GROWTH SERIOUSLY</span>TRUSTED BY <span class="g">LEADING BRANDS</span></div>
+  <div id="wall" class="big clip" data-start="36.995" data-duration="6.455" data-track-index="31" style="top:300px;opacity:1;text-shadow:none;background:none;left:80px;width:1760px"><div class="wall"><div><img src="assets/logos/AmBank.png"></div><div><img src="assets/logos/uob.webp"></div><div><img src="assets/logos/Hong_Leong_Bank.svg-scaled.png"></div><div><img src="assets/logos/Prudential-Logo.jpg"></div><div><img src="assets/logos/SL_CLR_RGB-3.png"></div><div><img src="assets/logos/Etiqa_Insurance_and_Takaful.png"></div><div><img src="assets/logos/unnamed-qzxjp51arqrs93tp06k5h0ab3g6ad0cewfeimjd3wg.png"></div><div><img src="assets/logos/images-4.png"></div><div><img src="assets/logos/Novartis-Logo.svg.png"></div><div><img src="assets/logos/Abbott-Logo-500x281-1.webp"></div><div><img src="assets/logos/107300973-1694714293835-Untitled-3-scaled.jpg"></div><div><img src="assets/logos/images-12.jpg"></div><div><img src="assets/logos/Schlumberger.svg-scaled.png"></div><div><img src="assets/logos/FrieslandCampina_Logo_2020.svg-scaled.png"></div><div><img src="assets/logos/22bbd905004dd3a3c3edbcfeea3972ba.png"></div><div><img src="assets/logos/KLK-OLEO-Header-Logo-1.png"></div><div><img src="assets/logos/KPJ-Logo-1024x213-1.png"></div><div><img src="assets/logos/CelcomDigi-Logo.webp"></div><div><img src="assets/logos/Principal_AM_full_rgb_sm.png"></div><div><img src="assets/logos/af09cf72aa26ff6edf5448756f4554dc.webp"></div><div><img src="assets/logos/images-1.png"></div><div><img src="assets/logos/images-2.png"></div><div><img src="assets/logos/images-3.png"></div><div><img src="assets/logos/images-5.png"></div><div><img src="assets/logos/images-6.png"></div><div><img src="assets/logos/975930ca-7c97-11ef-b217-c62686c7f5fd.png"></div><div><img src="assets/logos/WhatsApp-Image-2026-04-27-at-3.12.56-PM.jpeg"></div><div><img src="assets/logos/CHINHIN.webp"></div><div><img src="assets/logos/46b240181043e1393532f7f93c420c2066aae9e55e5e5.jpg"></div><div><img src="assets/logos/223780_12d2616ef2d2431b936fb504f0fc7bc4mv2.png"></div><div><img src="assets/logos/images-11.jpg"></div><div><img src="assets/logos/converted_image.png"></div></div></div>
+  <div id="it11" class="big clip" data-start="51.695" data-duration="1.8" data-track-index="32" style="top:300px;font-size:110px"><span class="kick">60+ EXPERT COACHES</span>MEET THE PEOPLE<br><span class="g">BEHIND THE ENERGY.</span></div>
+  <div id="trT0" class="lt clip" data-start="53.111" data-duration="1.75" data-track-index="33" style=""><b>Winnie Lim</b><small>Thriving Talents</small></div>
+  <div id="trT1" class="lt clip" data-start="55.456" data-duration="1.75" data-track-index="34" style=""><b>Shu-Tze Tan</b><small>Organisational &amp; People Strategist</small></div>
+  <div id="trT2" class="lt clip" data-start="57.802" data-duration="1.75" data-track-index="35" style=""><b>Kenny Wong</b><small>Certified Colored Brain Trainer</small></div>
+  <div id="trT3" class="lt clip" data-start="60.147" data-duration="1.75" data-track-index="36" style=""><b>Fariz Ishak</b><small>Talent Management &amp; First Aid Specialist</small></div>
+  <div id="trT4" class="lt clip" data-start="62.004" data-duration="1.75" data-track-index="37" style=""><b>Ong Shu Yi</b><small>NLP Master Trainer</small></div>
+  <div id="trT5" class="lt clip" data-start="64.35" data-duration="1.75" data-track-index="38" style=""><b>Marziana Zain</b><small>Consultant &amp; Facilitator</small></div>
+  <div id="it18" class="big clip" data-start="81.695" data-duration="3.6" data-track-index="39" style="top:300px;font-size:116px"><span class="kick">WHY CLIENTS CHOOSE US</span>EXPERIENTIAL LEARNING<br><span class="g">THAT STICKS.</span></div>
+  <div id="it19" class="big clip" data-start="85.495" data-duration="4.816" data-track-index="40" style="top:360px;font-size:84px">SIMULATIONS · CHALLENGES<br><span class="g">REAL-WORLD SCENARIOS</span></div>
+  <div id="awBg" class="navy clip" data-start="105.976" data-duration="5.569" data-track-index="41" style=""></div>
+  <div id="awHead" class="big clip" data-start="106.076" data-duration="5.419" data-track-index="42" style="top:90px;font-size:82px;background:none"><span class="kick">HR VENDORS OF THE YEAR 2026 · MALAYSIA</span>3 AWARDS. ONE NIGHT.</div>
+  <div id="awCards" class="big clip" data-start="106.376" data-duration="5.119" data-track-index="43" style="top:280px;opacity:1;text-shadow:none;background:none"><div class="cards"><div class="card"><img src="assets/hrv-gold.png"><div class="m">GOLD · Best Team Building</div></div><div class="card"><img src="assets/hrv-silver.png"><div class="m">SILVER · Management Training</div></div><div class="card"><img src="assets/hrv-bronze.png"><div class="m">BRONZE · Instructional Design</div></div></div></div>
+  <div id="it23" class="big clip" data-start="111.895" data-duration="6.071" data-track-index="44" style="top:780px;font-size:76px;background:none"><span class="kick">15TH STAR OUTSTANDING BUSINESS AWARDS</span><span style="display:inline-block;padding:12px 30px;background:var(--gold);color:var(--navy);border-radius:14px">BEST EMPLOYER</span></div>
+  <div id="tlBg" class="navy clip" data-start="118.166" data-duration="8.379" data-track-index="45" style=""></div>
+  <div id="tlHead" class="big clip" data-start="118.266" data-duration="8.229" data-track-index="46" style="top:90px;font-size:84px;background:none"><span class="kick">A DECADE OF EXCELLENCE</span>AWARD-WINNING <span class="g">SINCE 2022</span></div>
+  <div id="tlRow" class="big clip" data-start="118.666" data-duration="7.829" data-track-index="47" style="top:260px;opacity:1;text-shadow:none;text-align:left;background:none"><div class="tline"><div class="yr"><div class="ph"><img src="assets/web/Image-5-4.jpg"></div><b>2022</b><small>CXP Best Customer Experience<br>HR Vendors of the Year</small></div><div class="yr"><div class="ph"><img src="assets/web/Image-5-3.jpg"></div><b>2024</b><small>Best Management Training Provider<br>Malaysia Role Model Enterprise</small></div><div class="yr"><div class="ph"><img src="assets/web/Image-5-6.jpg"></div><b>2025</b><small>Best Sales Training (Gold)<br>Leader of the Year · SOBA Best Employer</small></div><div class="yr"><div class="ph"><img src="assets/hrv-gold.png"></div><b>2026</b><small>Gold · Best Team Building<br>+ Silver &amp; Bronze</small></div></div></div>
+  <div id="it27" class="big clip" data-start="130.821" data-duration="3.6" data-track-index="48" style="top:320px;font-size:110px">TURN TEAMS INTO<br><span class="g">HIGH-PERFORMING UNITS.</span></div>
+  <div id="it28" class="big clip" data-start="134.467" data-duration="3.6" data-track-index="49" style="top:340px;font-size:88px">THEY DON'T JUST WORK TOGETHER.<br><span class="g">THEY PERFORM TOGETHER.</span></div>
+  <div id="it29" class="big clip" data-start="138.321" data-duration="3.174" data-track-index="50" style="top:320px;font-size:120px">TRUSTED ACROSS<br><span class="g">43+ COUNTRIES</span></div>
+  <div id="it30" class="big clip" data-start="141.615" data-duration="1.8" data-track-index="51" style="top:280px;font-size:150px">HIGHEST ENERGY<br><span class="g">WINS.</span></div>
+  <div id="it31" class="big clip" data-start="156.795" data-duration="6.9" data-track-index="52" style="top:330px;font-size:100px">WHEN PEOPLE GROW,<br><span class="g">ORGANIZATIONS MOVE FORWARD.</span></div>
+  <div id="it32" class="big clip" data-start="164.119" data-duration="3.5" data-track-index="53" style="top:290px;font-size:170px">YOUR TEAM<br><span class="g">IS NEXT.</span></div>
+  <div id="it33" class="big clip" data-start="167.857" data-duration="3.638" data-track-index="54" style="top:320px;font-size:130px">LET'S MAKE MONDAY<br><span class="g">FEEL LIKE THIS.</span></div>
+  <div id="endBg" class="navy clip" data-start="171.595" data-duration="10.405" data-track-index="55" style=""></div>
+  <div id="endT" class="big clip" data-start="172.395" data-duration="9.605" data-track-index="56" style="top:500px;line-height:1.5;letter-spacing:0;background:none"><span style="font-size:40px;font-weight:600;color:#D9DEEA">Award-winning corporate training · Since 2012</span><br><span style="font-size:34px;font-weight:500;color:#D9DEEA">Leadership · Team Building · Corporate Training · Sales</span></div>
+  <div id="endCta" class="big clip" data-start="172.995" data-duration="9.005" data-track-index="57" style="top:660px;font-size:64px;letter-spacing:-.01em;background:none"><span style="display:inline-block;padding:22px 56px;background:var(--gold);color:var(--navy);border-radius:999px">thrivingtalents.com</span><br><span style="display:inline-block;margin-top:26px;font-size:44px;color:#fff">WhatsApp +60 11-5415 7656</span></div>
+  <div id="credit" class="big clip" data-start="173.595" data-duration="8.405" data-track-index="58" style="top:1000px;font-size:22px;font-weight:500;color:rgba(217,222,234,.7);letter-spacing:0;text-shadow:none;background:none">Music: “Ambient Uplift” by Soundrider/Dope · CC BY 3.0 · jamendo.com</div>
+  <img id="logo" class="clip" src="assets/tt-logo.svg" data-start="171.595" data-duration="10.405" data-track-index="90">
+  <div id="flash" class="full clip" data-start="0" data-duration="182.0" data-track-index="98"></div>
+  <div id="bar" class="clip" data-start="0" data-duration="182.0" data-track-index="99"></div>
+  <audio id="music" src="music/bed180.wav" data-start="0" data-duration="182.0" data-volume="0.55"></audio>
+  <audio id="nat" src="media/base180-nat.wav" data-start="0" data-duration="182.0" data-volume="0.28"></audio>
+    <audio id="v1-energy" src="voice/v1-energy.wav" data-role="voice" data-start="3.3" data-duration="4.1" data-volume="1.0"></audio>
+  <audio id="v2-feedback" src="voice/v2-feedback.wav" data-role="voice" data-start="10.774" data-duration="3.95" data-volume="1.0"></audio>
+  <audio id="v3-noise" src="voice/v3-noise.wav" data-role="voice" data-start="43.6" data-duration="4.2" data-volume="1.0"></audio>
+  <audio id="v4-excellent" src="voice/v4-excellent.wav" data-role="voice" data-start="91.011" data-duration="5.75" data-volume="1.0"></audio>
+  <audio id="v7-fail" src="voice/v7-fail.wav" data-role="voice" data-start="98.411" data-duration="5.34" data-volume="1.0"></audio>
+  <audio id="v5-everything" src="voice/v5-everything.wav" data-role="voice" data-start="126.895" data-duration="3.3" data-volume="1.0"></audio>
+  <audio id="v8-mindset" src="voice/v8-mindset.wav" data-role="voice" data-start="141.845" data-duration="2.0" data-volume="1.0"></audio>
+  <audio id="v6-applause" src="voice/v6-applause.wav" data-role="voice" data-start="145.307" data-duration="3.15" data-volume="1.0"></audio>
   <audio id="fx0" src="sfx/sx-impact-bass-2.wav" data-start="0.0" data-volume="0.5" data-duration="2.0"></audio>
   <audio id="fx1" src="sfx/sx-glitch-3.wav" data-start="0.02" data-volume="0.25" data-duration="0.9"></audio>
   <audio id="fx2" src="sfx/sx-pop.wav" data-start="1.2" data-volume="0.5" data-duration="0.4"></audio>
   <audio id="fx3" src="sfx/sx-pop-3.wav" data-start="1.6" data-volume="0.6" data-duration="0.4"></audio>
   <audio id="fx4" src="sfx/sx-whoosh-cinematic.wav" data-start="2.8" data-volume="0.5" data-duration="1.2"></audio>
-  <audio id="fx5" src="sfx/sx-riser.wav" data-start="5.9" data-volume="0.45" data-duration="2.1"></audio>
-  <audio id="fx6" src="sfx/sx-impact-bass-1.wav" data-start="7.954" data-volume="0.5" data-duration="1.6"></audio>
-  <audio id="fx7" src="sfx/sx-pop.wav" data-start="8.054" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx8" src="sfx/sx-pop-2.wav" data-start="9.912" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx9" src="sfx/sx-pop-3.wav" data-start="11.769" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx10" src="sfx/sx-pop-4.wav" data-start="13.627" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx11" src="sfx/sx-pop.wav" data-start="52.636" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx12" src="sfx/sx-pop-2.wav" data-start="54.494" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx13" src="sfx/sx-pop-3.wav" data-start="56.351" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx14" src="sfx/sx-pop-4.wav" data-start="58.209" data-volume="0.42" data-duration="0.4"></audio>
-  <audio id="fx15" src="sfx/sx-whoosh-soft.wav" data-start="15.284" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx16" src="sfx/sx-whoosh-soft.wav" data-start="30.145" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx17" src="sfx/sx-whoosh-soft.wav" data-start="52.436" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx18" src="sfx/sx-whoosh-soft.wav" data-start="89.588" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx19" src="sfx/sx-whoosh-soft.wav" data-start="111.879" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx20" src="sfx/sx-whoosh-soft.wav" data-start="126.74" data-volume="0.45" data-duration="0.8"></audio>
-  <audio id="fx21" src="sfx/sx-click-hi.wav" data-start="24.065" data-volume="0.35" data-duration="0.3"></audio>
-  <audio id="fx22" src="sfx/sx-click-hi.wav" data-start="24.515" data-volume="0.35" data-duration="0.3"></audio>
-  <audio id="fx23" src="sfx/sx-click-hi.wav" data-start="24.965" data-volume="0.35" data-duration="0.3"></audio>
-  <audio id="fx24" src="sfx/sx-click-hi.wav" data-start="25.415" data-volume="0.35" data-duration="0.3"></audio>
-  <audio id="fx25" src="sfx/sx-whoosh-cinematic.wav" data-start="37.625" data-volume="0.45" data-duration="1.2"></audio>
-  <audio id="fx26" src="sfx/sx-whoosh-cinematic.wav" data-start="59.917" data-volume="0.45" data-duration="1.2"></audio>
-  <audio id="fx27" src="sfx/sx-riser.wav" data-start="80.208" data-volume="0.42" data-duration="2.1"></audio>
-  <audio id="fx28" src="sfx/sx-impact-bass-2.wav" data-start="81.948" data-volume="0.5" data-duration="1.8"></audio>
-  <audio id="fx29" src="sfx/sx-pop-2.wav" data-start="82.858" data-volume="0.55" data-duration="0.4"></audio>
-  <audio id="fx30" src="sfx/sx-pop-3.wav" data-start="83.358" data-volume="0.55" data-duration="0.4"></audio>
-  <audio id="fx31" src="sfx/sx-pop-4.wav" data-start="83.858" data-volume="0.55" data-duration="0.4"></audio>
-  <audio id="fx32" src="sfx/sx-sparkle.wav" data-start="84.208" data-volume="0.45" data-duration="1.4"></audio>
-  <audio id="fx33" src="sfx/sx-sparkle.wav" data-start="86.208" data-volume="0.35" data-duration="1.4"></audio>
-  <audio id="fx34" src="sfx/sx-click.wav" data-start="90.338" data-volume="0.35" data-duration="0.25"></audio>
-  <audio id="fx35" src="sfx/sx-click.wav" data-start="90.888" data-volume="0.35" data-duration="0.25"></audio>
-  <audio id="fx36" src="sfx/sx-click.wav" data-start="91.438" data-volume="0.35" data-duration="0.25"></audio>
-  <audio id="fx37" src="sfx/sx-click.wav" data-start="91.988" data-volume="0.35" data-duration="0.25"></audio>
-  <audio id="fx38" src="sfx/sx-impact-bass-1.wav" data-start="104.549" data-volume="0.45" data-duration="1.4"></audio>
-  <audio id="fx39" src="sfx/sx-riser.wav" data-start="132.221" data-volume="0.42" data-duration="2.1"></audio>
-  <audio id="fx40" src="sfx/sx-impact-bass-2.wav" data-start="133.961" data-volume="0.5" data-duration="1.8"></audio>
-  <audio id="fx41" src="sfx/sx-impact-bass-2.wav" data-start="141.391" data-volume="0.5" data-duration="2.0"></audio>
-  <audio id="fx42" src="sfx/sx-sparkle.wav" data-start="142.351" data-volume="0.45" data-duration="1.4"></audio>
-  <audio id="fx43" src="sfx/sx-chime.wav" data-start="143.151" data-volume="0.3" data-duration="1.5"></audio>
+  <audio id="fx5" src="sfx/sx-riser.wav" data-start="23.721" data-volume="0.45" data-duration="2.1"></audio>
+  <audio id="fx6" src="sfx/sx-impact-bass-1.wav" data-start="25.771" data-volume="0.5" data-duration="1.6"></audio>
+  <audio id="fx7" src="sfx/sx-pop.wav" data-start="25.871" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx8" src="sfx/sx-pop-2.wav" data-start="27.751" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx9" src="sfx/sx-pop-3.wav" data-start="29.632" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx10" src="sfx/sx-pop-4.wav" data-start="31.49" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx11" src="sfx/sx-pop.wav" data-start="33.371" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx12" src="sfx/sx-pop-2.wav" data-start="35.251" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx13" src="sfx/sx-pop-3.wav" data-start="66.645" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx14" src="sfx/sx-pop-4.wav" data-start="70.406" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx15" src="sfx/sx-pop.wav" data-start="74.168" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx16" src="sfx/sx-pop-2.wav" data-start="77.907" data-volume="0.4" data-duration="0.4"></audio>
+  <audio id="fx17" src="sfx/sx-whoosh-soft.wav" data-start="9.974" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx18" src="sfx/sx-whoosh-soft.wav" data-start="36.445" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx19" src="sfx/sx-whoosh-soft.wav" data-start="51.445" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx20" src="sfx/sx-whoosh-soft.wav" data-start="66.445" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx21" src="sfx/sx-whoosh-soft.wav" data-start="118.016" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx22" src="sfx/sx-whoosh-soft.wav" data-start="156.445" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx23" src="sfx/sx-click-hi.wav" data-start="18.856" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx24" src="sfx/sx-click-hi.wav" data-start="19.456" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx25" src="sfx/sx-click-hi.wav" data-start="20.056" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx26" src="sfx/sx-click-hi.wav" data-start="20.656" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx27" src="sfx/sx-click-soft.wav" data-start="37.045" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx28" src="sfx/sx-click-soft.wav" data-start="37.925" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx29" src="sfx/sx-click-soft.wav" data-start="38.805" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx30" src="sfx/sx-click-soft.wav" data-start="39.685" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx31" src="sfx/sx-click-soft.wav" data-start="40.565" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx32" src="sfx/sx-click-soft.wav" data-start="41.445" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx33" src="sfx/sx-click-soft.wav" data-start="42.325" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx34" src="sfx/sx-click-soft.wav" data-start="43.205" data-volume="0.18" data-duration="0.15"></audio>
+  <audio id="fx35" src="sfx/sx-whoosh-cinematic.wav" data-start="51.495" data-volume="0.45" data-duration="1.2"></audio>
+  <audio id="fx36" src="sfx/sx-whoosh-cinematic.wav" data-start="81.495" data-volume="0.45" data-duration="1.2"></audio>
+  <audio id="fx37" src="sfx/sx-riser.wav" data-start="103.876" data-volume="0.42" data-duration="2.1"></audio>
+  <audio id="fx38" src="sfx/sx-impact-bass-2.wav" data-start="105.616" data-volume="0.5" data-duration="1.8"></audio>
+  <audio id="fx39" src="sfx/sx-pop-2.wav" data-start="106.905" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx40" src="sfx/sx-pop-3.wav" data-start="107.857" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx41" src="sfx/sx-pop-4.wav" data-start="108.785" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx42" src="sfx/sx-sparkle.wav" data-start="109.085" data-volume="0.45" data-duration="1.4"></audio>
+  <audio id="fx43" src="sfx/sx-sparkle.wav" data-start="111.895" data-volume="0.35" data-duration="1.4"></audio>
+  <audio id="fx44" src="sfx/sx-click.wav" data-start="119.118" data-volume="0.35" data-duration="0.25"></audio>
+  <audio id="fx45" src="sfx/sx-click.wav" data-start="120.512" data-volume="0.35" data-duration="0.25"></audio>
+  <audio id="fx46" src="sfx/sx-click.wav" data-start="121.905" data-volume="0.35" data-duration="0.25"></audio>
+  <audio id="fx47" src="sfx/sx-click.wav" data-start="123.321" data-volume="0.35" data-duration="0.25"></audio>
+  <audio id="fx48" src="sfx/sx-impact-bass-1.wav" data-start="141.545" data-volume="0.45" data-duration="1.4"></audio>
+  <audio id="fx49" src="sfx/sx-riser.wav" data-start="162.019" data-volume="0.4" data-duration="2.1"></audio>
+  <audio id="fx50" src="sfx/sx-impact-bass-2.wav" data-start="163.759" data-volume="0.5" data-duration="1.8"></audio>
+  <audio id="fx51" src="sfx/sx-impact-bass-2.wav" data-start="171.235" data-volume="0.5" data-duration="2.0"></audio>
+  <audio id="fx52" src="sfx/sx-sparkle.wav" data-start="172.195" data-volume="0.45" data-duration="1.4"></audio>
+  <audio id="fx53" src="sfx/sx-chime.wav" data-start="172.995" data-volume="0.3" data-duration="1.5"></audio>
 </div>
 <script>
   const tl = gsap.timeline({ paused: true });
   tl.set("#flash", { opacity: 0 }, 0); tl.set("#leak", { opacity: 0 }, 0); tl.set("#base", { scale: 1 }, 0);
-  tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 150.0, ease: "none" }, 0);
+  tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 182.0, ease: "none" }, 0);
   
 document.querySelectorAll(".cap").forEach(el => { const s=+el.dataset.start, d=+el.dataset.duration;
   tl.fromTo(el,{opacity:0,scale:.7,y:16},{opacity:1,scale:1,y:0,duration:.16,ease:"back.out(2.2)"},s);
@@ -221,105 +241,143 @@ document.querySelectorAll(".cap").forEach(el => { const s=+el.dataset.start, d=+
 document.querySelectorAll(".lab").forEach(el => { const s=+el.dataset.start;
   tl.fromTo(el.querySelector("i"),{scaleY:0},{scaleY:1,duration:.18,ease:"power3.out"},s);
   tl.fromTo(el,{opacity:0,x:-90},{opacity:1,x:0,duration:.26,ease:"expo.out"},s);
-  tl.to(el,{opacity:0,x:60,duration:.15,ease:"power2.in"},s+1.64); });
+  tl.to(el,{opacity:0,x:60,duration:.15,ease:"power2.in"},s+(+el.dataset.duration)-.16); });
 
-  tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},7.984);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},82.28800000000001);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},134.301);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},104.57900000000001);
-  tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},15.133999999999999);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},15.484);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},29.995);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},30.345000000000002);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},52.286);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},52.635999999999996);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},89.438);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},89.788);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},111.729);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},112.079);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},126.59);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},126.94);
-  tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},8.468);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},9.397);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},10.326);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},11.255);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},12.183);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},13.112);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},14.041);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},14.97);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},30.759);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},31.688);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},32.617);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},33.546);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},34.475);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},35.403);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},36.332);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},37.261);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},105.063);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},105.992);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},106.921);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},107.85);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},108.779);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},109.707);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},110.636);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},111.565);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},112.494);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},113.423);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},114.351);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},115.28);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},116.209);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},117.138);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},118.067);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},118.995);
-  tl.fromTo([".lb"],{scaleY:0},{scaleY:1,duration:.4,ease:"power2.out",immediateRender:false},67.447);tl.to([".lb"],{scaleY:0,duration:.3,ease:"power2.in"},81.95800000000001);
+  tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},25.801);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},105.956);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},141.575);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},171.575);
+  tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},9.824);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},10.174000000000001);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},36.295);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},36.644999999999996);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},51.295);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},51.644999999999996);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},66.295);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},66.645);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},117.866);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},118.216);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},156.295);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},156.645);
+  tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},26.285);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},27.214);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},28.166);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},29.095);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},30.047);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},30.975);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},31.904);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},32.856);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},33.785);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},34.714);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},35.666);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},46.904);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},47.856);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},48.785);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},49.714);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},50.666);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},141.595);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},142.524);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},143.476);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},144.405);
+  tl.fromTo([".lb"],{scaleY:0},{scaleY:1,duration:.4,ease:"power2.out",immediateRender:false},90.511);tl.to([".lb"],{scaleY:0,duration:.3,ease:"power2.in"},105.626);
     tl.fromTo("#hk0", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 0.12);
-  tl.to("#hk0", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.to("#hk0", {opacity:0, duration:.14, ease:"power2.in"}, 2.810);
   tl.fromTo("#hk1", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 0.45);
-  tl.to("#hk1", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.to("#hk1", {opacity:0, duration:.14, ease:"power2.in"}, 2.810);
   tl.fromTo("#hk2", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 1.15);
-  tl.to("#hk2", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.to("#hk2", {opacity:0, duration:.14, ease:"power2.in"}, 2.810);
   tl.fromTo("#hk3", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 1.55);
-  tl.to("#hk3", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
-  tl.fromTo("#tagMT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 15.514);
-  tl.to("#tagMT", {opacity:0, duration:.14, ease:"power2.in"}, 17.124);
-  tl.fromTo("#it5", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 20.55);
-  tl.to("#it5", {scale:1.04, duration:1.65, ease:"none"}, 20.95);
-  tl.to("#it5", {opacity:0, duration:.14, ease:"power2.in"}, 22.660);
-  tl.fromTo("#stDim", {opacity:0}, {opacity:1, duration:.3}, 22.865);
-  tl.to("#stDim", {opacity:0, duration:.14, ease:"power2.in"}, 30.075);
-  tl.fromTo("#stHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 22.965);
-  tl.to("#stHead", {opacity:0, duration:.14, ease:"power2.in"}, 30.025);
-  tl.fromTo("#stRow", {opacity:0}, {opacity:1, duration:.3}, 24.065);
-  tl.to("#stRow", {opacity:0, duration:.14, ease:"power2.in"}, 30.025);
-  tl.fromTo("#stRow .stat:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 24.065);
-  tl.fromTo("#stRow .stat:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 24.515);
-  tl.fromTo("#stRow .stat:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 24.965);
-  tl.fromTo("#stRow .stat:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 25.415);
-  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(1) b"); tl.fromTo(o,{v:0},{v:5,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"K+";}},24.065); tl.call(()=>{el.textContent="5K+";},null,25.075000000000003); })();
-  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(2) b"); tl.fromTo(o,{v:0},{v:60,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},24.515); tl.call(()=>{el.textContent="60+";},null,25.525000000000002); })();
-  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(3) b"); tl.fromTo(o,{v:0},{v:43,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},24.965); tl.call(()=>{el.textContent="43+";},null,25.975); })();
-  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(4) b"); tl.fromTo(o,{v:0},{v:10,duration:1.0,ease:"power2.out",onUpdate:()=>{el.textContent="RM"+Math.round(o.v).toLocaleString("en-US")+"M+";}},25.415); tl.call(()=>{el.textContent="RM10M+";},null,26.425); })();
-  tl.fromTo("#it9", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 34.6);
-  tl.to("#it9", {scale:1.04, duration:2.40, ease:"none"}, 35.0);
-  tl.to("#it9", {opacity:0, duration:.14, ease:"power2.in"}, 37.460);
-  tl.fromTo("#it10", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 37.825);
-  tl.to("#it10", {scale:1.04, duration:1.20, ease:"none"}, 38.225);
-  tl.to("#it10", {opacity:0, duration:.14, ease:"power2.in"}, 39.485);
-  tl.fromTo("#trT0", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 39.683);
-  tl.to("#trT0", {opacity:0, duration:.14, ease:"power2.in"}, 41.343);
-  tl.fromTo("#trT1", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 43.398);
-  tl.to("#trT1", {opacity:0, duration:.14, ease:"power2.in"}, 45.058);
-  tl.fromTo("#trT2", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 48.971);
-  tl.to("#trT2", {opacity:0, duration:.14, ease:"power2.in"}, 50.631);
-  tl.fromTo("#it14", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 60.167);
-  tl.to("#it14", {scale:1.04, duration:2.90, ease:"none"}, 60.567);
-  tl.to("#it14", {opacity:0, duration:.14, ease:"power2.in"}, 63.527);
-  tl.fromTo("#it15", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 63.917);
-  tl.to("#it15", {scale:1.04, duration:2.80, ease:"none"}, 64.31700000000001);
-  tl.to("#it15", {opacity:0, duration:.14, ease:"power2.in"}, 67.177);
-  tl.fromTo("#awBg", {opacity:0}, {opacity:1, duration:.3}, 82.308);
-  tl.to("#awBg", {opacity:0, duration:.14, ease:"power2.in"}, 85.888);
-  tl.fromTo("#awHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 82.408);
-  tl.to("#awHead", {opacity:0, duration:.14, ease:"power2.in"}, 85.868);
-  tl.fromTo("#awCards", {opacity:0}, {opacity:1, duration:.3}, 82.808);
-  tl.to("#awCards", {opacity:0, duration:.14, ease:"power2.in"}, 85.868);
-  tl.fromTo("#awCards .card:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 82.858);
-  tl.fromTo("#awCards .card:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 83.358);
-  tl.fromTo("#awCards .card:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 83.858);
-  tl.fromTo("#it19", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 86.158);
-  tl.to("#it19", {scale:1.04, duration:2.80, ease:"none"}, 86.558);
-  tl.to("#it19", {opacity:0, duration:.14, ease:"power2.in"}, 89.418);
-  tl.fromTo("#tlBg", {opacity:0}, {opacity:1, duration:.3}, 89.738);
-  tl.to("#tlBg", {opacity:0, duration:.14, ease:"power2.in"}, 96.948);
-  tl.fromTo("#tlHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 89.838);
-  tl.to("#tlHead", {opacity:0, duration:.14, ease:"power2.in"}, 96.898);
-  tl.fromTo("#tlRow", {opacity:0}, {opacity:1, duration:.3}, 90.338);
-  tl.to("#tlRow", {opacity:0, duration:.14, ease:"power2.in"}, 96.898);
-  tl.fromTo("#tlRow .yr:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 90.338);
-  tl.fromTo("#tlRow .yr:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 90.888);
-  tl.fromTo("#tlRow .yr:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 91.438);
-  tl.fromTo("#tlRow .yr:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 91.988);
-  tl.fromTo("#it23", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 99.4);
-  tl.to("#it23", {scale:1.04, duration:4.40, ease:"none"}, 99.80000000000001);
-  tl.to("#it23", {opacity:0, duration:.14, ease:"power2.in"}, 104.260);
-  tl.fromTo("#it24", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 104.649);
-  tl.to("#it24", {scale:1.04, duration:2.70, ease:"none"}, 105.049);
-  tl.to("#it24", {opacity:0, duration:.14, ease:"power2.in"}, 107.809);
-  tl.fromTo("#it25", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 112.179);
-  tl.to("#it25", {scale:1.04, duration:2.80, ease:"none"}, 112.57900000000001);
-  tl.to("#it25", {opacity:0, duration:.14, ease:"power2.in"}, 115.439);
-  tl.fromTo("#it26", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 115.879);
-  tl.to("#it26", {scale:1.04, duration:2.80, ease:"none"}, 116.27900000000001);
-  tl.to("#it26", {opacity:0, duration:.14, ease:"power2.in"}, 119.139);
-  tl.fromTo("#it27", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 127.09);
-  tl.to("#it27", {scale:1.04, duration:6.40, ease:"none"}, 127.49000000000001);
-  tl.to("#it27", {opacity:0, duration:.14, ease:"power2.in"}, 133.950);
-  tl.fromTo("#it28", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 134.421);
-  tl.to("#it28", {scale:1.04, duration:2.90, ease:"none"}, 134.821);
-  tl.to("#it28", {opacity:0, duration:.14, ease:"power2.in"}, 137.781);
-  tl.fromTo("#it29", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 138.121);
-  tl.to("#it29", {scale:1.04, duration:2.90, ease:"none"}, 138.52100000000002);
-  tl.to("#it29", {opacity:0, duration:.14, ease:"power2.in"}, 141.481);
-  tl.fromTo("#endBg", {opacity:0}, {opacity:1, duration:.3}, 141.751);
-  tl.fromTo("#endT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 142.551);
-  tl.fromTo("#endCta", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 143.151);
-  tl.fromTo("#credit", {opacity:0}, {opacity:1, duration:.3}, 143.751);
-  tl.fromTo("#logo", { opacity: 0, scale: .82 }, { opacity: 1, scale: 1, duration: .6, ease: "expo.out" }, 141.901);
+  tl.to("#hk3", {opacity:0, duration:.14, ease:"power2.in"}, 2.810);
+  tl.fromTo("#tagMT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 10.204);
+  tl.to("#tagMT", {opacity:0, duration:.14, ease:"power2.in"}, 11.814);
+  tl.fromTo("#stDim", {opacity:0}, {opacity:1, duration:.3}, 17.856);
+  tl.to("#stDim", {opacity:0, duration:.14, ease:"power2.in"}, 25.631);
+  tl.fromTo("#stHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 17.956);
+  tl.to("#stHead", {opacity:0, duration:.14, ease:"power2.in"}, 25.581);
+  tl.fromTo("#stRow", {opacity:0}, {opacity:1, duration:.3}, 18.856);
+  tl.to("#stRow", {opacity:0, duration:.14, ease:"power2.in"}, 25.581);
+  tl.fromTo("#stRow .stat:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 18.856);
+  tl.fromTo("#stRow .stat:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 19.456);
+  tl.fromTo("#stRow .stat:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 20.056);
+  tl.fromTo("#stRow .stat:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 20.656);
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(1) b"); tl.fromTo(o,{v:0},{v:5,duration:1.2,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"K+";}},18.856); tl.call(()=>{el.textContent="5K+";},null,20.066000000000003); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(2) b"); tl.fromTo(o,{v:0},{v:60,duration:1.2,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},19.456); tl.call(()=>{el.textContent="60+";},null,20.666); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(3) b"); tl.fromTo(o,{v:0},{v:43,duration:1.2,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},20.056); tl.call(()=>{el.textContent="43+";},null,21.266000000000002); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(4) b"); tl.fromTo(o,{v:0},{v:10,duration:1.2,ease:"power2.out",onUpdate:()=>{el.textContent="RM"+Math.round(o.v).toLocaleString("en-US")+"M+";}},20.656); tl.call(()=>{el.textContent="RM10M+";},null,21.866); })();
+  tl.fromTo("#wallBg", {opacity:0}, {opacity:1, duration:.3}, 36.595);
+  tl.to("#wallBg", {opacity:0, duration:.14, ease:"power2.in"}, 43.310);
+  tl.fromTo("#wallHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 36.695);
+  tl.to("#wallHead", {opacity:0, duration:.14, ease:"power2.in"}, 43.310);
+  tl.fromTo("#wall", {opacity:0}, {opacity:1, duration:.3}, 36.995);
+  tl.to("#wall", {opacity:0, duration:.14, ease:"power2.in"}, 43.310);
+  tl.fromTo("#wall div:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.045);
+  tl.fromTo("#wall div:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.1);
+  tl.fromTo("#wall div:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.155);
+  tl.fromTo("#wall div:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.21);
+  tl.fromTo("#wall div:nth-child(5)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.265);
+  tl.fromTo("#wall div:nth-child(6)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.32);
+  tl.fromTo("#wall div:nth-child(7)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.375);
+  tl.fromTo("#wall div:nth-child(8)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.43);
+  tl.fromTo("#wall div:nth-child(9)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.485);
+  tl.fromTo("#wall div:nth-child(10)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.54);
+  tl.fromTo("#wall div:nth-child(11)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.595);
+  tl.fromTo("#wall div:nth-child(12)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.65);
+  tl.fromTo("#wall div:nth-child(13)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.705);
+  tl.fromTo("#wall div:nth-child(14)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.76);
+  tl.fromTo("#wall div:nth-child(15)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.815);
+  tl.fromTo("#wall div:nth-child(16)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.87);
+  tl.fromTo("#wall div:nth-child(17)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.925);
+  tl.fromTo("#wall div:nth-child(18)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 37.98);
+  tl.fromTo("#wall div:nth-child(19)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.035);
+  tl.fromTo("#wall div:nth-child(20)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.09);
+  tl.fromTo("#wall div:nth-child(21)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.145);
+  tl.fromTo("#wall div:nth-child(22)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.2);
+  tl.fromTo("#wall div:nth-child(23)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.255);
+  tl.fromTo("#wall div:nth-child(24)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.31);
+  tl.fromTo("#wall div:nth-child(25)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.365);
+  tl.fromTo("#wall div:nth-child(26)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.42);
+  tl.fromTo("#wall div:nth-child(27)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.475);
+  tl.fromTo("#wall div:nth-child(28)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.53);
+  tl.fromTo("#wall div:nth-child(29)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.585);
+  tl.fromTo("#wall div:nth-child(30)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.64);
+  tl.fromTo("#wall div:nth-child(31)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.695);
+  tl.fromTo("#wall div:nth-child(32)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.75);
+  tl.fromTo("#it11", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 51.695);
+  tl.to("#it11", {scale:1.04, duration:1.20, ease:"none"}, 52.095);
+  tl.to("#it11", {opacity:0, duration:.14, ease:"power2.in"}, 53.355);
+  tl.fromTo("#trT0", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 53.111);
+  tl.to("#trT0", {opacity:0, duration:.14, ease:"power2.in"}, 54.721);
+  tl.fromTo("#trT1", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 55.456);
+  tl.to("#trT1", {opacity:0, duration:.14, ease:"power2.in"}, 57.066);
+  tl.fromTo("#trT2", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 57.802);
+  tl.to("#trT2", {opacity:0, duration:.14, ease:"power2.in"}, 59.412);
+  tl.fromTo("#trT3", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 60.147);
+  tl.to("#trT3", {opacity:0, duration:.14, ease:"power2.in"}, 61.757);
+  tl.fromTo("#trT4", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 62.004);
+  tl.to("#trT4", {opacity:0, duration:.14, ease:"power2.in"}, 63.614);
+  tl.fromTo("#trT5", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 64.35);
+  tl.to("#trT5", {opacity:0, duration:.14, ease:"power2.in"}, 65.960);
+  tl.fromTo("#it18", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 81.695);
+  tl.to("#it18", {scale:1.04, duration:3.00, ease:"none"}, 82.095);
+  tl.to("#it18", {opacity:0, duration:.14, ease:"power2.in"}, 85.155);
+  tl.fromTo("#it19", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 85.495);
+  tl.to("#it19", {scale:1.04, duration:4.22, ease:"none"}, 85.89500000000001);
+  tl.to("#it19", {opacity:0, duration:.14, ease:"power2.in"}, 90.171);
+  tl.fromTo("#awBg", {opacity:0}, {opacity:1, duration:.3}, 105.976);
+  tl.to("#awBg", {opacity:0, duration:.14, ease:"power2.in"}, 111.405);
+  tl.fromTo("#awHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 106.076);
+  tl.to("#awHead", {opacity:0, duration:.14, ease:"power2.in"}, 111.355);
+  tl.fromTo("#awCards", {opacity:0}, {opacity:1, duration:.3}, 106.376);
+  tl.to("#awCards", {opacity:0, duration:.14, ease:"power2.in"}, 111.355);
+  tl.fromTo("#awCards .card:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 106.905);
+  tl.fromTo("#awCards .card:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 107.857);
+  tl.fromTo("#awCards .card:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 108.785);
+  tl.fromTo("#it23", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 111.895);
+  tl.to("#it23", {scale:1.04, duration:5.47, ease:"none"}, 112.295);
+  tl.to("#it23", {opacity:0, duration:.14, ease:"power2.in"}, 117.826);
+  tl.fromTo("#tlBg", {opacity:0}, {opacity:1, duration:.3}, 118.166);
+  tl.to("#tlBg", {opacity:0, duration:.14, ease:"power2.in"}, 126.405);
+  tl.fromTo("#tlHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 118.266);
+  tl.to("#tlHead", {opacity:0, duration:.14, ease:"power2.in"}, 126.355);
+  tl.fromTo("#tlRow", {opacity:0}, {opacity:1, duration:.3}, 118.666);
+  tl.to("#tlRow", {opacity:0, duration:.14, ease:"power2.in"}, 126.355);
+  tl.fromTo("#tlRow .yr:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 119.118);
+  tl.fromTo("#tlRow .yr:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 120.512);
+  tl.fromTo("#tlRow .yr:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 121.905);
+  tl.fromTo("#tlRow .yr:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 123.321);
+  tl.fromTo("#it27", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 130.821);
+  tl.to("#it27", {scale:1.04, duration:3.00, ease:"none"}, 131.221);
+  tl.to("#it27", {opacity:0, duration:.14, ease:"power2.in"}, 134.281);
+  tl.fromTo("#it28", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 134.467);
+  tl.to("#it28", {scale:1.04, duration:3.00, ease:"none"}, 134.86700000000002);
+  tl.to("#it28", {opacity:0, duration:.14, ease:"power2.in"}, 137.927);
+  tl.fromTo("#it29", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 138.321);
+  tl.to("#it29", {scale:1.04, duration:2.57, ease:"none"}, 138.721);
+  tl.to("#it29", {opacity:0, duration:.14, ease:"power2.in"}, 141.355);
+  tl.fromTo("#it30", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 141.615);
+  tl.to("#it30", {scale:1.04, duration:1.20, ease:"none"}, 142.01500000000001);
+  tl.to("#it30", {opacity:0, duration:.14, ease:"power2.in"}, 143.275);
+  tl.fromTo("#it31", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 156.795);
+  tl.to("#it31", {scale:1.04, duration:6.30, ease:"none"}, 157.195);
+  tl.to("#it31", {opacity:0, duration:.14, ease:"power2.in"}, 163.555);
+  tl.fromTo("#it32", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 164.119);
+  tl.to("#it32", {scale:1.04, duration:2.90, ease:"none"}, 164.519);
+  tl.to("#it32", {opacity:0, duration:.14, ease:"power2.in"}, 167.479);
+  tl.fromTo("#it33", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 167.857);
+  tl.to("#it33", {scale:1.04, duration:3.04, ease:"none"}, 168.257);
+  tl.to("#it33", {opacity:0, duration:.14, ease:"power2.in"}, 171.355);
+  tl.fromTo("#endBg", {opacity:0}, {opacity:1, duration:.3}, 171.595);
+  tl.fromTo("#endT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 172.395);
+  tl.fromTo("#endCta", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 172.995);
+  tl.fromTo("#credit", {opacity:0}, {opacity:1, duration:.3}, 173.595);
+  tl.fromTo("#logo", { opacity: 0, scale: .82 }, { opacity: 1, scale: 1, duration: .6, ease: "expo.out" }, 171.745);
   window.__timelines = window.__timelines || {};
   window.__timelines["tt-reel"] = tl;
   tl.seek(0);

@@ -1,0 +1,37 @@
+[
+ {
+  "file": "media/nov26/cag_20261114_164349.mp4",
+  "in": 6.0,
+  "beats": 3
+ },
+ {
+  "file": "media/trainers/cag/cag_120243.mp4",
+  "in": 1.0,
+  "beats": 5
+ },
+ {
+  "file": "media/tr3/shutze/VID20241022091524.mp4",
+  "in": 0.3,
+  "beats": 5
+ },
+ {
+  "file": "media/tr2/kenny/IMG_0770.MOV",
+  "in": 4.5,
+  "beats": 5
+ },
+ {
+  "file": "media/tr2/firstaid/IMG_2154.jpg",
+  "in": null,
+  "beats": 4
+ },
+ {
+  "file": "media/tr3/shuyi/broll_C0068.MP4",
+  "in": 0.5,
+  "beats": 5
+ },
+ {
+  "file": "media/tr3/marz/VID20230314094227.mp4",
+  "in": 11.0,
+  "beats": 6
+ }
+]

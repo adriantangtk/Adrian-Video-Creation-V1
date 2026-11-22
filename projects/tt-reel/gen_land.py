@@ -16,8 +16,9 @@ def track():
 for i, (a, b, t, g) in enumerate(S.CAPS):
     blocks.append(f'<div class="cap clip{" gold" if g else ""}" id="cap{i}" data-start="{a}" data-duration="{round(b-a,3)}" data-track-index="5"><span>{esc(t)}</span></div>')
 # ---------- module labels ----------
-for i, (a, t, sub) in enumerate(S.LABELS):
-    blocks.append(f'<div class="lab clip" id="lab{i}" data-start="{a}" data-duration="1.8" data-track-index="6"><i></i><div><span>{esc(t)}</span>'
+for i, lab in enumerate(S.LABELS):
+    a, t, sub = lab[:3]; ld = lab[3] if len(lab) > 3 else 1.8
+    blocks.append(f'<div class="lab clip" id="lab{i}" data-start="{a}" data-duration="{ld}" data-track-index="6"><i></i><div><span>{esc(t)}</span>'
                   + (f'<small>{esc(sub)}</small>' if sub else '') + '</div></div>')
 # ---------- free items ----------
 for k, it in enumerate(S.ITEMS):
@@ -51,7 +52,7 @@ document.querySelectorAll(".cap").forEach(el => { const s=+el.dataset.start, d=+
 document.querySelectorAll(".lab").forEach(el => { const s=+el.dataset.start;
   tl.fromTo(el.querySelector("i"),{scaleY:0},{scaleY:1,duration:.18,ease:"power3.out"},s);
   tl.fromTo(el,{opacity:0,x:-90},{opacity:1,x:0,duration:.26,ease:"expo.out"},s);
-  tl.to(el,{opacity:0,x:60,duration:.15,ease:"power2.in"},s+1.64); });
+  tl.to(el,{opacity:0,x:60,duration:.15,ease:"power2.in"},s+(+el.dataset.duration)-.16); });
 '''
 flash_js = "".join(f'tl.fromTo("#flash",{{opacity:.8}},{{opacity:0,duration:.35,ease:"power2.out",immediateRender:false}},{t});' for t in S.FLASH)
 leak_js = "".join(f'tl.fromTo("#leak",{{opacity:0,x:-500}},{{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false}},{t-0.3});'
@@ -135,6 +136,10 @@ html = f'''<!doctype html>
   .pill4 div {{ width:380px; padding:26px 20px; border-radius:18px; background:rgba(11,21,51,.82); border-top:8px solid var(--gold);
         font-size:36px; font-weight:700; line-height:1.15; opacity:0; text-align:center; }}
   /* end card */
+  .wall {{ display:grid; grid-template-columns:repeat(8, 196px); gap:14px; justify-content:center; }}
+  .wall div {{ height:104px; background:#fff; border-radius:14px; display:flex; align-items:center; justify-content:center; opacity:0;
+        box-shadow:0 10px 30px rgba(0,0,0,.35); }}
+  .wall img {{ max-width:168px; max-height:76px; object-fit:contain; }}
   #logo {{ position:absolute; left:610px; top:200px; width:700px; opacity:0; }}
   #bar {{ position:absolute; left:0; top:0; height:6px; width:1920px; background:var(--gold); transform-origin:left center; }}
 </style>

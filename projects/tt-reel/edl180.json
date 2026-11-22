@@ -1,0 +1,721 @@
+{
+ "fps": 30,
+ "size": [
+  1920,
+  1080
+ ],
+ "shots": [
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015136670.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 0.6
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_110918.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 3.2
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075426549.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 12.4
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1045.MOV",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 14.2
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_014957264.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 7.2
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075153223.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 6.4
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_113506110.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 2.2
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015050579.mp4",
+   "dur": 0.1161,
+   "grade": "bw",
+   "in": 10.4
+  },
+  {
+   "file": "assets/web/Event.jpg",
+   "dur": 2.0898,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015136670.mp4",
+   "dur": 1.3932,
+   "nat": 0.8,
+   "in": 5.6,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075153223.mp4",
+   "dur": 0.9288,
+   "nat": 0.5,
+   "in": 4.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075426549.mp4",
+   "dur": 0.9288,
+   "nat": 0.5,
+   "in": 9.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1045.MOV",
+   "dur": 0.9288,
+   "nat": 0.4,
+   "in": 10.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_110918.mp4",
+   "dur": 0.9288,
+   "nat": 0.4,
+   "in": 1.6,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_014957264.mp4",
+   "dur": 0.9288,
+   "nat": 0.4,
+   "in": 3.6,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015050579.mp4",
+   "dur": 1.0682,
+   "in": 13.2,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/mt-img1057.mov",
+   "dur": 1.881,
+   "zoom": 1.25,
+   "fx": 0.62,
+   "in": 1.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/mt-alliance.mov",
+   "dur": 1.973,
+   "in": 30.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/rise_20261120_133644.mp4",
+   "dur": 1.997,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/trainers/rise/rise_142344.mp4",
+   "dur": 1.881,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/IMG_20241128_142909-1-scaled.jpg",
+   "dur": 1.858,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/D3I08044-1-scaled.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/rise_20261120_134405.mp4",
+   "dur": 1.88,
+   "in": 3.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_110220.mp4",
+   "dur": 1.881,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_160213.mp4",
+   "dur": 0.465,
+   "in": 5.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075153223.mp4",
+   "dur": 0.928,
+   "nat": 0.3,
+   "in": 20.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_033022217.mp4",
+   "dur": 0.952,
+   "nat": 0.3,
+   "in": 0.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1064.MOV",
+   "dur": 0.929,
+   "in": 19.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_111045.mp4",
+   "dur": 0.952,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/IMG-20250722-WA0006.jpg",
+   "dur": 0.929,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct22d2/20251022_155716.mp4",
+   "dur": 0.929,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/MOS06378-scaled.jpg",
+   "dur": 0.929,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/Crossing_Chorus_T10.mov",
+   "dur": 0.952,
+   "in": 10.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct22d2/IMG_1087.MOV",
+   "dur": 0.928,
+   "in": 10.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct22d2/IMG_1100.MOV",
+   "dur": 0.952,
+   "in": 15.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/Talent_Audition_01.mov",
+   "dur": 0.929,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/Collaboration_CrossTeam_Creative_Challenge.mov",
+   "dur": 0.465,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/rise_20261120_133744.mp4",
+   "dur": 2.809,
+   "in": 5.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/rise_20261120_134523.mp4",
+   "dur": 2.81,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/trainers/rise/rise_135457.mp4",
+   "dur": 1.904,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015050579.mp4",
+   "dur": 0.905,
+   "nat": 0.3,
+   "in": 20.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_014957264.mp4",
+   "dur": 0.953,
+   "in": 15.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_011755220.mp4",
+   "dur": 0.928,
+   "in": 3.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015136670.mp4",
+   "dur": 0.952,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_031400225.mp4",
+   "dur": 0.929,
+   "in": 3.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/VID_20250917_110858.mp4",
+   "dur": 0.929,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/VID_20250917_163614.mp4",
+   "dur": 0.952,
+   "in": 0.6,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1074.MOV",
+   "dur": 0.929,
+   "in": 7.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/cag_20261114_164349.mp4",
+   "dur": 1.416,
+   "in": 6.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/trainers/cag/cag_120243.mp4",
+   "dur": 2.345,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/tr3/shutze/VID20241022091524.mp4",
+   "dur": 2.346,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/tr2/kenny/IMG_0770.MOV",
+   "dur": 2.345,
+   "in": 4.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/tr2/firstaid/IMG_2154.jpg",
+   "dur": 1.857,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/tr3/shuyi/broll_C0068.MP4",
+   "dur": 2.346,
+   "in": 0.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/tr3/marz/VID20230314094227.mp4",
+   "dur": 2.345,
+   "in": 11.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/kpjttt-140534.mp4",
+   "dur": 1.881,
+   "in": 7.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/mtalk-125203.mp4",
+   "dur": 1.88,
+   "in": 58.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/jan26/20260125_113946.mp4",
+   "dur": 1.858,
+   "in": 28.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_160151.mp4",
+   "dur": 1.904,
+   "in": 8.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075426549.mp4",
+   "dur": 1.858,
+   "in": 44.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_033034607.mp4",
+   "dur": 1.881,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep18d2/20250918_171722.mp4",
+   "dur": 1.857,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_103214.mp4",
+   "dur": 1.881,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/IMG_20260415_144847-scaled.jpg",
+   "dur": 0.929,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/Bukit_Bintang_Tourist_Guide_T10.mov",
+   "dur": 0.952,
+   "in": 8.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/Freeze_Frame_Challenge.mov",
+   "dur": 0.929,
+   "in": 3.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_033113845.mp4",
+   "dur": 0.952,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_070557700.mp4",
+   "dur": 0.928,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_20261121_081604.mp4",
+   "dur": 0.929,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_032749664.mp4",
+   "dur": 0.952,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_033046985.mp4",
+   "dur": 0.952,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/race26/C05_Ice_Ice_Malaysia_T10.mov",
+   "dur": 1.393,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_011811672.mp4",
+   "dur": 2.81,
+   "speed": 0.4,
+   "in": 6.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/photos/still_zurich_handshake_energiser.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_045739213.mp4",
+   "dur": 1.857,
+   "speed": 0.6,
+   "in": 8.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_211645.mp4",
+   "dur": 1.881,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/Image-5-1.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/photos/uob_20261121_092022.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/Image-5-5.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_094427.mp4",
+   "dur": 1.393,
+   "speed": 0.5,
+   "in": 6.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/soba-img0912.mov",
+   "dur": 5.619,
+   "speed": 0.6,
+   "grade": "cool",
+   "in": 5.0
+  },
+  {
+   "file": "media/voice/soba-img0912.mov",
+   "dur": 3.297,
+   "in": 22.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/soba-img0912.mov",
+   "dur": 3.274,
+   "in": 62.0,
+   "grade": "warm"
+  },
+  {
+   "file": "assets/web/Image-5-2.jpg",
+   "dur": 8.429,
+   "grade": "cool",
+   "still": true
+  },
+  {
+   "file": "media/clients/jan26/20260125_160002.mp4",
+   "dur": 1.881,
+   "fx": 0.3,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1045.MOV",
+   "dur": 1.881,
+   "in": 15.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_113506110.mp4",
+   "dur": 1.857,
+   "in": 3.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_152714.mp4",
+   "dur": 1.788,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075153223.mp4",
+   "dur": 1.022,
+   "speed": 1.6,
+   "in": 8.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075153223.mp4",
+   "dur": 0.952,
+   "speed": 0.45,
+   "in": 10.2,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep25d1/20250925_152742.mp4",
+   "dur": 1.881,
+   "in": 8.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep26d2/20250926_101906.mp4",
+   "dur": 1.857,
+   "in": 4.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep26d2/20250926_103756.mp4",
+   "dur": 1.881,
+   "in": 8.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015136670.mp4",
+   "dur": 0.465,
+   "in": 13.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zoct21d1/IMG_1045.MOV",
+   "dur": 0.464,
+   "in": 20.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_110918.mp4",
+   "dur": 0.488,
+   "in": 24.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_015050579.mp4",
+   "dur": 0.464,
+   "in": 6.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261121_014957264.mp4",
+   "dur": 0.464,
+   "in": 21.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep26d2/video6257767053919262675.mp4",
+   "dur": 0.465,
+   "in": 6.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/wsb_PXL_20261120_075426549.mp4",
+   "dur": 0.488,
+   "in": 30.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_113457097.mp4",
+   "dur": 0.464,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/voice/mt-vid20250513.mp4",
+   "dur": 3.274,
+   "zoom": 1.3,
+   "fx": 0.45,
+   "fy": 0.3,
+   "in": 33.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/jan26/20260125_160002.mp4",
+   "dur": 1.416,
+   "fx": 0.3,
+   "in": 6.5,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_114722714.mp4",
+   "dur": 1.394,
+   "in": 10.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/shuyi/1enF_IMG_8170.MOV",
+   "dur": 1.416,
+   "in": 1.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/zsep17d1/20250917_211622.mp4",
+   "dur": 3.738,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/photos/wsb_PXL_20261121_014528213.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/photos/still_fwd_hands_up_hall.jpg",
+   "dur": 1.881,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/photos/fwd_20260125_154323.jpg",
+   "dur": 1.858,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/jan26/20260125_154133.mp4",
+   "dur": 1.904,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/photos/wsb_PXL_20261120_074833824.jpg",
+   "dur": 1.857,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/jan26/20260125_114043.mp4",
+   "dur": 1.881,
+   "in": 2.0,
+   "grade": "warm"
+  },
+  {
+   "file": "media/clients/photos/still_zurich_hands_up.jpg",
+   "dur": 1.858,
+   "still": true,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/uob_PXL_20261120_113506110.mp4",
+   "dur": 1.88,
+   "in": 0.3,
+   "grade": "warm"
+  },
+  {
+   "file": "media/nov26/photos/uob_PXL_20261121_001503006.jpg",
+   "dur": 10.405,
+   "grade": "cool",
+   "still": true
+  }
+ ]
+}
