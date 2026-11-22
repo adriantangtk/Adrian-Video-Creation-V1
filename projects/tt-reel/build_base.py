@@ -22,7 +22,8 @@ edl = json.load(open(edl_path))
 fps = edl.get("fps", 30)
 W, H = 1080, 1920
 root = os.path.dirname(os.path.abspath(__file__))  # file paths are relative to the project
-tmp = tempfile.mkdtemp(prefix="ttbase_", dir=os.path.join(root, "media"))
+import hashlib
+tmp = os.path.join(root, "media", "segcache"); os.makedirs(tmp, exist_ok=True)
 GRADES = {
     "warm": "eq=contrast=1.08:saturation=1.18:gamma=0.98,colorbalance=rs=0.04:bs=-0.04:rh=0.03:bh=-0.03",
     "cool": "eq=contrast=1.08:saturation=1.08,colorbalance=bs=0.04:rs=-0.02",
@@ -37,13 +38,14 @@ for i, s in enumerate(edl["shots"]):
     z = float(s.get("zoom", 1.0))
     fx, fy = float(s.get("fx", 0.5)), float(s.get("fy", 0.5))
     grade = GRADES[s.get("grade", "warm")]
-    seg = os.path.join(tmp, f"s{i:03d}.mp4")
+    key = hashlib.md5((json.dumps(s, sort_keys=True) + str(draft) + str(fps)).encode()).hexdigest()[:12]
+    seg = os.path.join(tmp, f"v_{key}.mp4")
     if s.get("still"):
         # photo: cover-crop + slow push-in over the shot
         n = max(1, round(dur * fps))
         vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
               f"zoompan=z='{z}+0.06*on/{n}':x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':d={n}:s={W}x{H}:fps={fps}")
-        inp = ["-loop", "1", "-t", f"{dur:.3f}", "-i", src]
+        inp = ["-i", src]
     else:
         span = dur * speed
         inp = ["-ss", f"{float(s['in']):.3f}", "-t", f"{span + 0.2:.3f}", "-i", src]
@@ -63,10 +65,12 @@ for i, s in enumerate(edl["shots"]):
     cmd = ["ffmpeg", "-y", "-loglevel", "error", *inp, "-filter_complex", f"[0:v]{vf}[v]", "-map", "[v]",
            "-an", "-c:v", "libx264", "-preset", "veryfast" if draft else "medium", "-crf", "22" if draft else "17",
            "-g", "1", "-r", str(fps), seg]
-    subprocess.run(cmd, check=True)
+    if not os.path.exists(seg):
+        subprocess.run(cmd[:-1] + [seg + ".tmp.mp4"], check=True)
+        os.replace(seg + ".tmp.mp4", seg)
     segs.append(seg)
     if float(s.get("nat", 0)) > 0 and not s.get("still"):
-        a = os.path.join(tmp, f"a{i:03d}.wav")
+        a = os.path.join(tmp, f"a_{key}.wav")
         span = dur * speed
         tempo = []
         sp = speed
@@ -81,7 +85,7 @@ for i, s in enumerate(edl["shots"]):
     t += dur
     print(f"\rshot {i+1}/{len(edl['shots'])}", end="", flush=True)
 print()
-lst = os.path.join(tmp, "list.txt")
+lst = os.path.join(tmp, os.path.basename(out) + ".list.txt")
 open(lst, "w").write("".join(f"file '{p}'\n" for p in segs))
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out], check=True)
 if nat:
