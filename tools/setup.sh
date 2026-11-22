@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Makes sure the two things the renderer needs are present: FFmpeg and Playwright Chromium.
+# Makes sure the renderer needs (FFmpeg, Playwright Chromium) and yt-dlp are present.
 # Runs automatically at the start of every Claude Code session (see .claude/settings.json).
 # Safe to run again: it skips anything already installed.
 cd "$(dirname "$0")/.." || exit 0
@@ -23,5 +23,11 @@ if ! can_launch; then
     npx --yes playwright install --with-deps chromium >/dev/null 2>&1 || npx --yes playwright install chromium >/dev/null 2>&1
   fi
   can_launch && log "playwright ready" || log "WARNING: playwright Chromium will not start"
+fi
+
+if ! command -v yt-dlp >/dev/null 2>&1; then
+  log "installing yt-dlp"
+  { pip install -q -U yt-dlp || pip3 install -q -U yt-dlp || pip install -q -U --break-system-packages yt-dlp; } >/dev/null 2>&1
+  command -v yt-dlp >/dev/null 2>&1 && log "yt-dlp ready" || log "WARNING: could not install yt-dlp"
 fi
 exit 0
