@@ -274,8 +274,34 @@
    "grade": "warm"
   },
   {
-   "file": "media/nov26/cag_20261114_164349.mp4",
-   "in": 11.0,
+   "file": "media/shuyi/1dE9_IMG_3712.MOV",
+   "in": 3.0,
+   "zoom": 1.15,
+   "fx": 0.6,
+   "dur": 1.8576,
+   "grade": "warm"
+  },
+  {
+   "file": "media/shuyi/1enF_IMG_3891.MOV",
+   "in": 10.0,
+   "zoom": 1.3,
+   "fx": 0.97,
+   "blur": [
+    [
+     0,
+     300,
+     230,
+     660
+    ]
+   ],
+   "dur": 1.8576,
+   "grade": "warm"
+  },
+  {
+   "file": "media/shuyi/1enF_IMG_4011.MOV",
+   "in": 12.0,
+   "zoom": 1.5,
+   "fx": 1.0,
    "dur": 1.8576,
    "grade": "warm"
   },
@@ -288,20 +314,8 @@
    "grade": "warm"
   },
   {
-   "file": "media/nov26/rise_20261120_133644.mp4",
-   "in": 1.0,
-   "dur": 1.8576,
-   "grade": "warm"
-  },
-  {
    "file": "media/voice/mt-img1057.mov",
    "in": 7.0,
-   "dur": 1.8576,
-   "grade": "warm"
-  },
-  {
-   "file": "assets/web/IMG_20241128_142909-1-scaled.jpg",
-   "still": true,
    "dur": 1.8576,
    "grade": "warm"
   },

@@ -58,7 +58,7 @@ add(N+"wsb_PXL_20261120_075426549.mp4", 23.5, 2)
 # S5-S6 COACHES (replaced by trainer_shots.json when available)
 sec("coaches")
 if TR:
-    for s in TR: add(s["file"], s.get("in"), s["beats"], **{k: v for k, v in s.items() if k in ("zoom", "fx", "fy", "speed", "grade")})
+    for s in TR: add(s["file"], s.get("in"), s["beats"], **{k: v for k, v in s.items() if k in ("zoom", "fx", "fy", "speed", "grade", "blur")})
 else:
     add(C+"zsep18d2/20250918_104103.mp4", 32.0, 4)
     add(C+"zsep25d1/20250925_110313.mp4", 2.0, 4)
