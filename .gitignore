@@ -7,3 +7,4 @@ exports/.video-only.mp4
 *.tmp
 .DS_Store
 projects/tt-reel/music/*.wav
+__pycache__/
