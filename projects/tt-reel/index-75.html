@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="vendor/gsap.min.js"></script>
+<style>
+  @font-face { font-family: "Inter"; src: url("fonts/inter-latin-500-normal.woff2"); font-weight: 500; }
+  @font-face { font-family: "Inter"; src: url("fonts/inter-latin-600-normal.woff2"); font-weight: 600; }
+  @font-face { font-family: "Inter"; src: url("fonts/inter-latin-700-normal.woff2"); font-weight: 700; }
+  :root { --navy:#0B1533; --navy2:#141F4A; --gold:#F5B623; --amber:#E8961E; --blue:#2F6BFF; --mist:#D9DEEA; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:var(--navy); }
+  #root { width:100%; height:100%; position:relative; overflow:hidden; font-family:"Inter", Arial, sans-serif; color:#fff; }
+  .full { position:absolute; inset:0; width:1920px; height:1080px; }
+  #base { object-fit:cover; transform-origin:50% 50%; }
+  #vig { background: radial-gradient(ellipse at 50% 50%, rgba(11,21,51,0) 55%, rgba(11,21,51,.55) 100%),
+          linear-gradient(180deg, rgba(11,21,51,.35) 0%, rgba(11,21,51,0) 22%, rgba(11,21,51,0) 62%, rgba(11,21,51,.7) 100%); }
+  #flash { background:#fff; opacity:0; }
+  #leak { position:absolute; top:-200px; left:0; width:1100px; height:1480px; opacity:0; mix-blend-mode:screen;
+          background: radial-gradient(ellipse at 50% 50%, rgba(255,170,60,.9) 0%, rgba(255,120,30,.45) 35%, rgba(255,90,20,0) 70%); }
+  .lb { position:absolute; left:0; width:1920px; height:120px; background:#000; transform:scaleY(0); }
+  #lbT { top:0; transform-origin:top; } #lbB { bottom:0; transform-origin:bottom; }
+  /* captions */
+  .cap { position:absolute; left:160px; width:1600px; top:850px; text-align:center; opacity:0; }
+  .cap span { display:inline-block; padding:14px 34px 17px; border-radius:20px; background:rgba(11,21,51,.84);
+        font-weight:700; font-size:62px; line-height:1; letter-spacing:-.02em; box-shadow:0 10px 40px rgba(0,0,0,.35); }
+  .cap.gold span { background:var(--gold); color:var(--navy); font-size:76px; }
+  /* labels */
+  .lab { position:absolute; left:120px; top:110px; opacity:0; display:flex; align-items:center; gap:22px; }
+  .lab i { display:block; width:12px; height:104px; background:var(--gold); border-radius:3px; }
+  .lab span { display:block; font-weight:700; font-size:72px; letter-spacing:-.02em; line-height:1; text-shadow:0 6px 30px rgba(0,0,0,.6); }
+  .lab small { display:block; margin-top:8px; font-size:30px; font-weight:600; color:var(--mist); letter-spacing:.02em; text-shadow:0 4px 20px rgba(0,0,0,.7); }
+  /* big centred type */
+  .big { position:absolute; left:160px; width:1600px; text-align:center; font-weight:700; letter-spacing:-.03em; line-height:.98;
+        text-shadow:0 6px 30px rgba(0,0,0,.75), 0 0 2px rgba(0,0,0,.5); opacity:0; padding:46px 0 50px;
+        background: radial-gradient(ellipse 62% 58% at 50% 50%, rgba(8,14,36,.78) 0%, rgba(8,14,36,.45) 55%, rgba(8,14,36,0) 100%); }
+  .g { color:var(--gold); }
+  .kick { display:block; font-size:30px; font-weight:600; letter-spacing:.3em; color:var(--gold); margin-bottom:18px; }
+  .panel { position:absolute; opacity:0; }
+  .dim { position:absolute; inset:0; width:1920px; height:1080px; background:rgba(11,21,51,.78); opacity:0; }
+  .navy { position:absolute; inset:0; width:1920px; height:1080px; background:radial-gradient(ellipse at 50% 40%, #1B2A63 0%, var(--navy) 65%); opacity:0; }
+  /* lower third */
+  .lt { position:absolute; left:120px; top:800px; opacity:0; padding:18px 30px 20px; background:rgba(11,21,51,.86);
+        border-left:10px solid var(--gold); border-radius:6px; }
+  .lt b { display:block; font-size:46px; font-weight:700; }
+  .lt small { display:block; margin-top:6px; font-size:27px; font-weight:500; color:var(--mist); }
+  /* stats */
+  .stats { display:flex; justify-content:center; gap:46px; }
+  .stat { width:340px; text-align:center; opacity:0; }
+  .stat b { display:block; font-size:118px; font-weight:700; color:var(--gold); letter-spacing:-.04em; line-height:1; }
+  .stat small { display:block; margin-top:10px; font-size:32px; font-weight:600; color:#fff; }
+  /* award cards */
+  .cards { display:flex; justify-content:center; gap:44px; }
+  .card { width:480px; height:480px; border-radius:24px; overflow:hidden; position:relative; opacity:0;
+        box-shadow:0 30px 80px rgba(0,0,0,.6), 0 0 0 4px rgba(245,182,35,.7); }
+  .card img { width:100%; height:100%; object-fit:cover; }
+  .card .m { position:absolute; left:0; right:0; bottom:0; padding:16px 10px; text-align:center; font-weight:700; font-size:32px;
+        background:linear-gradient(0deg, rgba(11,21,51,.96), rgba(11,21,51,0)); }
+  /* timeline */
+  .tline { display:flex; justify-content:center; gap:28px; }
+  .yr { width:400px; opacity:0; }
+  .yr .ph { width:400px; height:280px; border-radius:16px; overflow:hidden; box-shadow:0 0 0 3px rgba(245,182,35,.6); }
+  .yr .ph img { width:100%; height:100%; object-fit:cover; }
+  .yr b { display:block; margin-top:16px; font-size:60px; color:var(--gold); font-weight:700; }
+  .yr small { display:block; margin-top:6px; font-size:28px; font-weight:600; line-height:1.25; color:#fff; }
+  /* pillars */
+  .pill4 { display:flex; justify-content:center; gap:24px; }
+  .pill4 div { width:380px; padding:26px 20px; border-radius:18px; background:rgba(11,21,51,.82); border-top:8px solid var(--gold);
+        font-size:36px; font-weight:700; line-height:1.15; opacity:0; text-align:center; }
+  /* end card */
+  #logo { position:absolute; left:610px; top:200px; width:700px; opacity:0; }
+  #bar { position:absolute; left:0; top:0; height:6px; width:1920px; background:var(--gold); transform-origin:left center; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="tt-reel" data-start="0" data-duration="75.0" data-fps="30" data-width="1920" data-height="1080">
+  <video id="base" class="full clip" src="media/base75l.mp4" muted playsinline data-start="0" data-duration="75.0" data-track-index="0"></video>
+  <div id="vig" class="full clip" data-start="0" data-duration="75.0" data-track-index="1"></div>
+  <div id="leak" class="clip" data-start="0" data-duration="75.0" data-track-index="2"></div>
+  <div id="lbT" class="lb clip" data-start="0" data-duration="75.0" data-track-index="3"></div>
+  <div id="lbB" class="lb clip" data-start="0" data-duration="75.0" data-track-index="4"></div>
+    <div class="cap clip" id="cap0" data-start="3.09" data-duration="1.41" data-track-index="5"><span>HIGHEST ENERGY</span></div>
+  <div class="cap clip gold" id="cap1" data-start="4.5" data-duration="1.35" data-track-index="5"><span>WINS.</span></div>
+  <div class="cap clip" id="cap2" data-start="5.88" data-duration="1.1" data-track-index="5"><span>HIGHEST ENERGY</span></div>
+  <div class="cap clip gold" id="cap3" data-start="6.98" data-duration="0.97" data-track-index="5"><span>WINS.</span></div>
+  <div class="cap clip" id="cap4" data-start="15.7" data-duration="0.75" data-track-index="5"><span>IN LIFE,</span></div>
+  <div class="cap clip" id="cap5" data-start="16.45" data-duration="0.75" data-track-index="5"><span>THERE IS NO</span></div>
+  <div class="cap clip gold" id="cap6" data-start="17.2" data-duration="0.9" data-track-index="5"><span>FAILURE.</span></div>
+  <div class="cap clip" id="cap7" data-start="18.1" data-duration="0.62" data-track-index="5"><span>THERE IS ONLY</span></div>
+  <div class="cap clip gold" id="cap8" data-start="18.72" data-duration="1.68" data-track-index="5"><span>FEEDBACK.</span></div>
+  <div class="cap clip" id="cap9" data-start="22.92" data-duration="1.18" data-track-index="5"><span>TEAM ONE,</span></div>
+  <div class="cap clip gold" id="cap10" data-start="24.1" data-duration="2.3" data-track-index="5"><span>MAKE SOME NOISE!</span></div>
+  <div class="cap clip" id="cap11" data-start="30.62" data-duration="1.33" data-track-index="5"><span>YOU CAN ALL BE</span></div>
+  <div class="cap clip gold" id="cap12" data-start="31.95" data-duration="1.41" data-track-index="5"><span>EXCELLENT.</span></div>
+  <div class="cap clip" id="cap13" data-start="33.36" data-duration="0.84" data-track-index="5"><span>JUST MAKE THE</span></div>
+  <div class="cap clip gold" id="cap14" data-start="34.2" data-duration="1.2" data-track-index="5"><span>DECISION</span></div>
+  <div class="cap clip" id="cap15" data-start="35.4" data-duration="0.4" data-track-index="5"><span>TO BE</span></div>
+  <div class="cap clip gold" id="cap16" data-start="35.8" data-duration="1.6" data-track-index="5"><span>EXCELLENT.</span></div>
+  <div class="cap clip" id="cap17" data-start="45.63" data-duration="1.32" data-track-index="5"><span>HOW WE DO ANYTHING</span></div>
+  <div class="cap clip" id="cap18" data-start="46.95" data-duration="0.79" data-track-index="5"><span>IS HOW WE DO</span></div>
+  <div class="cap clip gold" id="cap19" data-start="47.74" data-duration="1.46" data-track-index="5"><span>EVERYTHING.</span></div>
+  <div class="cap clip" id="cap20" data-start="52.56" data-duration="1.34" data-track-index="5"><span>GIVE YOURSELF A HUGE</span></div>
+  <div class="cap clip gold" id="cap21" data-start="53.9" data-duration="2.0" data-track-index="5"><span>ROUND OF APPLAUSE!</span></div>
+  <div class="lab clip" id="lab0" data-start="8.0" data-duration="1.8" data-track-index="6"><i></i><div><span>TEAM BUILDING</span></div></div>
+  <div class="lab clip" id="lab1" data-start="9.86" data-duration="1.8" data-track-index="6"><i></i><div><span>ENERGISERS</span></div></div>
+  <div class="lab clip" id="lab2" data-start="11.72" data-duration="1.8" data-track-index="6"><i></i><div><span>TEAM CULTURE</span></div></div>
+  <div class="lab clip" id="lab3" data-start="13.58" data-duration="1.8" data-track-index="6"><i></i><div><span>RETREATS</span></div></div>
+  <div id="hk0" class="big clip" data-start="0.12" data-duration="2.78" data-track-index="21" style="top:250px;font-size:92px;background:none"><span class="">WHAT IF</span></div>
+  <div id="hk1" class="big clip" data-start="0.45" data-duration="2.45" data-track-index="22" style="top:345px;font-size:210px;background:none"><span class="">MONDAY</span></div>
+  <div id="hk2" class="big clip" data-start="1.15" data-duration="1.75" data-track-index="23" style="top:575px;font-size:92px;background:none"><span class="">FELT LIKE</span></div>
+  <div id="hk3" class="big clip" data-start="1.55" data-duration="1.35" data-track-index="24" style="top:670px;font-size:220px;background:none"><span class="g">THIS?</span></div>
+  <div id="tagMT" class="lt clip" data-start="15.5" data-duration="1.75" data-track-index="25" style=""><b>Michael Teoh</b><small>Founder &amp; CEO, Thriving Talents</small></div>
+  <div id="it5" class="big clip" data-start="20.55" data-duration="2.25" data-track-index="26" style="top:300px;font-size:120px">KEYNOTES THAT<br><span class="g">MOVE ROOMS.</span></div>
+  <div id="it6" class="big clip" data-start="26.45" data-duration="3.75" data-track-index="27" style="top:310px;font-size:130px">ONE ROOM.<br><span class="g">ONE ENERGY.</span></div>
+  <div id="awBg" class="navy clip" data-start="37.72" data-duration="3.72" data-track-index="28" style=""></div>
+  <div id="awHead" class="big clip" data-start="37.82" data-duration="3.6" data-track-index="29" style="top:90px;font-size:82px;background:none"><span class="kick">HR VENDORS OF THE YEAR 2026 · MALAYSIA</span>3 AWARDS. ONE NIGHT.</div>
+  <div id="awCards" class="big clip" data-start="38.12" data-duration="3.3" data-track-index="30" style="top:280px;opacity:1;text-shadow:none;background:none"><div class="cards"><div class="card"><img src="assets/hrv-gold.png"><div class="m">GOLD · Best Team Building</div></div><div class="card"><img src="assets/hrv-silver.png"><div class="m">SILVER · Management Training</div></div><div class="card"><img src="assets/hrv-bronze.png"><div class="m">BRONZE · Instructional Design</div></div></div></div>
+  <div id="it10" class="big clip" data-start="41.6" data-duration="3.4" data-track-index="31" style="top:780px;font-size:76px;background:none"><span class="kick">15TH STAR OUTSTANDING BUSINESS AWARDS</span><span style="display:inline-block;padding:12px 30px;background:var(--gold);color:var(--navy);border-radius:14px">BEST EMPLOYER</span></div>
+  <div id="stDim" class="dim clip" data-start="49.25" data-duration="3.3" data-track-index="32" style=""></div>
+  <div id="stHead" class="big clip" data-start="49.3" data-duration="3.25" data-track-index="33" style="top:170px;font-size:72px;background:none"><span class="kick">SINCE 2012</span>AWARD-WINNING <span class="g">CORPORATE TRAINING</span></div>
+  <div id="stRow" class="big clip" data-start="49.55" data-duration="3.0" data-track-index="34" style="top:480px;opacity:1;text-shadow:none;background:none"><div class="stats"><div class="stat"><b>0K+</b><small>Training sessions</small></div><div class="stat"><b>0+</b><small>Expert coaches</small></div><div class="stat"><b>0+</b><small>Countries reached</small></div><div class="stat"><b>RM0M+</b><small>Value delivered</small></div></div></div>
+  <div id="it14" class="big clip" data-start="56.05" data-duration="3.85" data-track-index="35" style="top:310px;font-size:96px">TRUSTED BY FORTUNE 500 BRANDS<br><span class="g">ACROSS 43+ COUNTRIES</span></div>
+  <div id="it15" class="big clip" data-start="60.05" data-duration="3.45" data-track-index="36" style="top:290px;font-size:170px">YOUR TEAM<br><span class="g">IS NEXT.</span></div>
+  <div id="it16" class="big clip" data-start="63.8" data-duration="3.5" data-track-index="37" style="top:320px;font-size:130px">LET'S MAKE MONDAY<br><span class="g">FEEL LIKE THIS.</span></div>
+  <div id="endBg" class="navy clip" data-start="67.45" data-duration="7.55" data-track-index="38" style=""></div>
+  <div id="endT" class="big clip" data-start="68.25" data-duration="6.75" data-track-index="39" style="top:500px;line-height:1.5;letter-spacing:0;background:none"><span style="font-size:40px;font-weight:600;color:#D9DEEA">Award-winning corporate training · Since 2012</span><br><span style="font-size:34px;font-weight:500;color:#D9DEEA">Leadership · Team Building · Corporate Training · Sales</span></div>
+  <div id="endCta" class="big clip" data-start="68.85" data-duration="6.15" data-track-index="40" style="top:660px;font-size:64px;letter-spacing:-.01em;background:none"><span style="display:inline-block;padding:22px 56px;background:var(--gold);color:var(--navy);border-radius:999px">thrivingtalents.com</span><br><span style="display:inline-block;margin-top:26px;font-size:44px;color:#fff">WhatsApp +60 11-5415 7656</span></div>
+  <div id="credit" class="big clip" data-start="69.45" data-duration="5.55" data-track-index="41" style="top:1000px;font-size:22px;font-weight:500;color:rgba(217,222,234,.7);letter-spacing:0;text-shadow:none;background:none">Music: “Inspiring Progress” by Soundrider/Dope · CC BY 3.0 · jamendo.com</div>
+  <img id="logo" class="clip" src="assets/tt-logo.svg" data-start="67.45" data-duration="7.55" data-track-index="90">
+  <div id="flash" class="full clip" data-start="0" data-duration="75.0" data-track-index="98"></div>
+  <div id="bar" class="clip" data-start="0" data-duration="75.0" data-track-index="99"></div>
+  <audio id="music" src="music/bed75.wav" data-start="0" data-duration="75.0" data-volume="0.55"></audio>
+  <audio id="nat" src="media/base75l-nat.wav" data-start="0" data-duration="75.0" data-volume="0.28"></audio>
+    <audio id="v1-energy" src="voice/v1-energy.wav" data-role="voice" data-start="3.0" data-duration="4.1" data-volume="1.0"></audio>
+  <audio id="v2-feedback" src="voice/v2-feedback.wav" data-role="voice" data-start="15.6" data-duration="3.95" data-volume="1.0"></audio>
+  <audio id="v3-noise" src="voice/v3-noise.wav" data-role="voice" data-start="22.9" data-duration="4.2" data-volume="1.0"></audio>
+  <audio id="v4-excellent" src="voice/v4-excellent.wav" data-role="voice" data-start="30.6" data-duration="5.75" data-volume="1.0"></audio>
+  <audio id="v5-everything" src="voice/v5-everything.wav" data-role="voice" data-start="45.4" data-duration="3.3" data-volume="1.0"></audio>
+  <audio id="v6-applause" src="voice/v6-applause.wav" data-role="voice" data-start="52.536" data-duration="3.15" data-volume="1.0"></audio>
+  <audio id="fx0" src="sfx/sx-impact-bass-2.wav" data-start="0.0" data-volume="0.5" data-duration="2.0"></audio>
+  <audio id="fx1" src="sfx/sx-whoosh.wav" data-start="0.45" data-volume="0.45" data-duration="0.6"></audio>
+  <audio id="fx2" src="sfx/sx-pop.wav" data-start="1.2" data-volume="0.5" data-duration="0.4"></audio>
+  <audio id="fx3" src="sfx/sx-pop-3.wav" data-start="1.6" data-volume="0.6" data-duration="0.4"></audio>
+  <audio id="fx4" src="sfx/sx-whoosh-cinematic.wav" data-start="2.8" data-volume="0.5" data-duration="1.2"></audio>
+  <audio id="fx5" src="sfx/sx-riser.wav" data-start="5.9" data-volume="0.45" data-duration="2.1"></audio>
+  <audio id="fx6" src="sfx/sx-impact-bass-1.wav" data-start="7.95" data-volume="0.5" data-duration="1.6"></audio>
+  <audio id="fx7" src="sfx/sx-pop.wav" data-start="8.05" data-volume="0.42" data-duration="0.4"></audio>
+  <audio id="fx8" src="sfx/sx-pop-2.wav" data-start="9.9" data-volume="0.42" data-duration="0.4"></audio>
+  <audio id="fx9" src="sfx/sx-pop-3.wav" data-start="11.76" data-volume="0.42" data-duration="0.4"></audio>
+  <audio id="fx10" src="sfx/sx-pop-4.wav" data-start="13.62" data-volume="0.42" data-duration="0.4"></audio>
+  <audio id="fx11" src="sfx/sx-whoosh-soft.wav" data-start="15.3" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx12" src="sfx/sx-impact-bass-2.wav" data-start="22.5" data-volume="0.45" data-duration="1.6"></audio>
+  <audio id="fx13" src="sfx/sx-whoosh-soft.wav" data-start="30.15" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx14" src="sfx/sx-riser.wav" data-start="35.6" data-volume="0.42" data-duration="2.1"></audio>
+  <audio id="fx15" src="sfx/sx-impact-bass-2.wav" data-start="37.36" data-volume="0.5" data-duration="1.8"></audio>
+  <audio id="fx16" src="sfx/sx-pop-2.wav" data-start="38.17" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx17" src="sfx/sx-pop-3.wav" data-start="38.67" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx18" src="sfx/sx-pop-4.wav" data-start="39.17" data-volume="0.55" data-duration="0.4"></audio>
+  <audio id="fx19" src="sfx/sx-sparkle.wav" data-start="39.5" data-volume="0.45" data-duration="1.4"></audio>
+  <audio id="fx20" src="sfx/sx-whoosh-cinematic.wav" data-start="41.3" data-volume="0.45" data-duration="1.2"></audio>
+  <audio id="fx21" src="sfx/sx-sparkle.wav" data-start="41.7" data-volume="0.35" data-duration="1.4"></audio>
+  <audio id="fx22" src="sfx/sx-whoosh.wav" data-start="49.1" data-volume="0.45" data-duration="0.6"></audio>
+  <audio id="fx23" src="sfx/sx-click-hi.wav" data-start="49.55" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx24" src="sfx/sx-click-hi.wav" data-start="49.85" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx25" src="sfx/sx-click-hi.wav" data-start="50.15" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx26" src="sfx/sx-click-hi.wav" data-start="50.45" data-volume="0.35" data-duration="0.3"></audio>
+  <audio id="fx27" src="sfx/sx-whoosh-soft.wav" data-start="52.45" data-volume="0.45" data-duration="0.8"></audio>
+  <audio id="fx28" src="sfx/sx-whoosh.wav" data-start="55.95" data-volume="0.45" data-duration="0.6"></audio>
+  <audio id="fx29" src="sfx/sx-impact-bass-2.wav" data-start="59.62" data-volume="0.5" data-duration="1.8"></audio>
+  <audio id="fx30" src="sfx/sx-whoosh-cinematic.wav" data-start="63.6" data-volume="0.45" data-duration="1.2"></audio>
+  <audio id="fx31" src="sfx/sx-impact-bass-2.wav" data-start="67.09" data-volume="0.5" data-duration="2.0"></audio>
+  <audio id="fx32" src="sfx/sx-sparkle.wav" data-start="68.0" data-volume="0.45" data-duration="1.4"></audio>
+  <audio id="fx33" src="sfx/sx-chime.wav" data-start="69.0" data-volume="0.3" data-duration="1.5"></audio>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  tl.set("#flash", { opacity: 0 }, 0); tl.set("#leak", { opacity: 0 }, 0); tl.set("#base", { scale: 1 }, 0);
+  tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 75.0, ease: "none" }, 0);
+  
+document.querySelectorAll(".cap").forEach(el => { const s=+el.dataset.start, d=+el.dataset.duration;
+  tl.fromTo(el,{opacity:0,scale:.7,y:16},{opacity:1,scale:1,y:0,duration:.16,ease:"back.out(2.2)"},s);
+  tl.to(el,{opacity:0,duration:.06},s+d-.06); });
+document.querySelectorAll(".lab").forEach(el => { const s=+el.dataset.start;
+  tl.fromTo(el.querySelector("i"),{scaleY:0},{scaleY:1,duration:.18,ease:"power3.out"},s);
+  tl.fromTo(el,{opacity:0,x:-90},{opacity:1,x:0,duration:.26,ease:"expo.out"},s);
+  tl.to(el,{opacity:0,x:60,duration:.15,ease:"power2.in"},s+1.64); });
+
+  tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},7.98);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},37.7);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},59.98);tl.fromTo("#flash",{opacity:.8},{opacity:0,duration:.35,ease:"power2.out",immediateRender:false},67.43);
+  tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},15.129999999999999);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},15.48);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},22.57);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},22.92);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},44.86);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},45.209999999999994);tl.fromTo("#leak",{opacity:0,x:-500},{opacity:.85,x:200,duration:.35,ease:"power1.in",immediateRender:false},52.290000000000006);tl.to("#leak",{opacity:0,x:700,duration:.45,ease:"power1.out"},52.64);
+  tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},8.468);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},9.397);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},10.326);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},11.255);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},12.183);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},13.112);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},14.041);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},14.97);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},23.329);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},24.258);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},25.187);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},26.115);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},27.044);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},27.973);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},28.902);tl.fromTo("#base",{scale:1.045},{scale:1,duration:.32,ease:"power2.out",immediateRender:false},29.831);
+  tl.fromTo([".lb"],{scaleY:0},{scaleY:1,duration:.4,ease:"power2.out",immediateRender:false},30.3);tl.to([".lb"],{scaleY:0,duration:.3,ease:"power2.in"},37.35);
+    tl.fromTo("#hk0", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 0.12);
+  tl.to("#hk0", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.fromTo("#hk1", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 0.45);
+  tl.to("#hk1", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.fromTo("#hk2", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 1.15);
+  tl.to("#hk2", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.fromTo("#hk3", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 1.55);
+  tl.to("#hk3", {opacity:0, duration:.14, ease:"power2.in"}, 2.760);
+  tl.fromTo("#tagMT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 15.5);
+  tl.to("#tagMT", {opacity:0, duration:.14, ease:"power2.in"}, 17.110);
+  tl.fromTo("#it5", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 20.55);
+  tl.to("#it5", {scale:1.04, duration:1.65, ease:"none"}, 20.95);
+  tl.to("#it5", {opacity:0, duration:.14, ease:"power2.in"}, 22.660);
+  tl.fromTo("#it6", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 26.45);
+  tl.to("#it6", {scale:1.04, duration:3.15, ease:"none"}, 26.849999999999998);
+  tl.to("#it6", {opacity:0, duration:.14, ease:"power2.in"}, 30.060);
+  tl.fromTo("#awBg", {opacity:0}, {opacity:1, duration:.3}, 37.72);
+  tl.to("#awBg", {opacity:0, duration:.14, ease:"power2.in"}, 41.300);
+  tl.fromTo("#awHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 37.82);
+  tl.to("#awHead", {opacity:0, duration:.14, ease:"power2.in"}, 41.280);
+  tl.fromTo("#awCards", {opacity:0}, {opacity:1, duration:.3}, 38.12);
+  tl.to("#awCards", {opacity:0, duration:.14, ease:"power2.in"}, 41.280);
+  tl.fromTo("#awCards .card:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.17);
+  tl.fromTo("#awCards .card:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 38.67);
+  tl.fromTo("#awCards .card:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 39.17);
+  tl.fromTo("#it10", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 41.6);
+  tl.to("#it10", {scale:1.04, duration:2.80, ease:"none"}, 42.0);
+  tl.to("#it10", {opacity:0, duration:.14, ease:"power2.in"}, 44.860);
+  tl.fromTo("#stDim", {opacity:0}, {opacity:1, duration:.3}, 49.25);
+  tl.to("#stDim", {opacity:0, duration:.14, ease:"power2.in"}, 52.410);
+  tl.fromTo("#stHead", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 49.3);
+  tl.to("#stHead", {opacity:0, duration:.14, ease:"power2.in"}, 52.410);
+  tl.fromTo("#stRow", {opacity:0}, {opacity:1, duration:.3}, 49.55);
+  tl.to("#stRow", {opacity:0, duration:.14, ease:"power2.in"}, 52.410);
+  tl.fromTo("#stRow .stat:nth-child(1)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 49.55);
+  tl.fromTo("#stRow .stat:nth-child(2)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 49.85);
+  tl.fromTo("#stRow .stat:nth-child(3)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 50.15);
+  tl.fromTo("#stRow .stat:nth-child(4)", {opacity:0, y:40, scale:.8}, {opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)"}, 50.45);
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(1) b"); tl.fromTo(o,{v:0},{v:5,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"K+";}},49.55); tl.call(()=>{el.textContent="5K+";},null,50.459999999999994); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(2) b"); tl.fromTo(o,{v:0},{v:60,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},49.85); tl.call(()=>{el.textContent="60+";},null,50.76); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(3) b"); tl.fromTo(o,{v:0},{v:43,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=""+Math.round(o.v).toLocaleString("en-US")+"+";}},50.15); tl.call(()=>{el.textContent="43+";},null,51.059999999999995); })();
+  (() => { const o={v:0}, el=document.querySelector("#stRow .stat:nth-child(4) b"); tl.fromTo(o,{v:0},{v:10,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent="RM"+Math.round(o.v).toLocaleString("en-US")+"M+";}},50.45); tl.call(()=>{el.textContent="RM10M+";},null,51.36); })();
+  tl.fromTo("#it14", {opacity:0, rotationX:-70, y:60, transformPerspective:900}, {opacity:1, rotationX:0, y:0, duration:.5, ease:"back.out(1.4)"}, 56.05);
+  tl.to("#it14", {scale:1.04, duration:3.25, ease:"none"}, 56.449999999999996);
+  tl.to("#it14", {opacity:0, duration:.14, ease:"power2.in"}, 59.760);
+  tl.fromTo("#it15", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 60.05);
+  tl.to("#it15", {scale:1.04, duration:2.85, ease:"none"}, 60.449999999999996);
+  tl.to("#it15", {opacity:0, duration:.14, ease:"power2.in"}, 63.360);
+  tl.fromTo("#it16", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 63.8);
+  tl.to("#it16", {scale:1.04, duration:2.90, ease:"none"}, 64.2);
+  tl.to("#it16", {opacity:0, duration:.14, ease:"power2.in"}, 67.160);
+  tl.fromTo("#endBg", {opacity:0}, {opacity:1, duration:.3}, 67.45);
+  tl.fromTo("#endT", {opacity:0, y:70}, {opacity:1, y:0, duration:.38, ease:"expo.out"}, 68.25);
+  tl.fromTo("#endCta", {opacity:0, scale:1.35, filter:"blur(12px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:.32, ease:"expo.out"}, 68.85);
+  tl.fromTo("#credit", {opacity:0}, {opacity:1, duration:.3}, 69.45);
+  tl.fromTo("#logo", { opacity: 0, scale: .82 }, { opacity: 1, scale: 1, duration: .6, ease: "expo.out" }, 67.60000000000001);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["tt-reel"] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

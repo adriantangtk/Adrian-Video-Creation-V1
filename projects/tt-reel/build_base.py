@@ -20,7 +20,7 @@ edl_path, out = sys.argv[1], sys.argv[2]
 draft = "--draft" in sys.argv
 edl = json.load(open(edl_path))
 fps = edl.get("fps", 30)
-W, H = 1080, 1920
+W, H = edl.get("size", [1080, 1920])
 root = os.path.dirname(os.path.abspath(__file__))  # file paths are relative to the project
 import hashlib
 tmp = os.path.join(root, "media", "segcache"); os.makedirs(tmp, exist_ok=True)
@@ -30,6 +30,17 @@ GRADES = {
     "bw": "hue=s=0,eq=contrast=1.25:gamma=0.95",
     "none": "null",
 }
+_asp = {}
+def aspect(src):
+    if src not in _asp:
+        r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                            "stream=width,height:stream_side_data=rotation", "-of", "json", src], capture_output=True, text=True)
+        st = json.loads(r.stdout)["streams"][0]
+        w, h = st["width"], st["height"]
+        rot = abs(int(float(next((d.get("rotation", 0) for d in st.get("side_data_list", []) if "rotation" in d), 0))))
+        if rot in (90, 270): w, h = h, w
+        _asp[src] = w / h
+    return _asp[src]
 segs, nat = [], []
 t = 0.0
 for i, s in enumerate(edl["shots"]):
@@ -38,21 +49,24 @@ for i, s in enumerate(edl["shots"]):
     z = float(s.get("zoom", 1.0))
     fx, fy = float(s.get("fx", 0.5)), float(s.get("fy", 0.5))
     grade = GRADES[s.get("grade", "warm")]
-    key = hashlib.md5((json.dumps(s, sort_keys=True) + str(draft) + str(fps)).encode()).hexdigest()[:12]
+    key = hashlib.md5((json.dumps(s, sort_keys=True) + str(draft) + str(fps) + f"{W}x{H}v2").encode()).hexdigest()[:12]
+    fit = s.get("fit") or ("blur" if aspect(src) < (W / H) * 0.75 else "cover")
+    FG = f"scale={W}*{z}:{H}*{z}:force_original_aspect_ratio=decrease"
+    BG = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=40:3,eq=brightness=-0.18:saturation=0.8"
     seg = os.path.join(tmp, f"v_{key}.mp4")
     if s.get("still"):
         # photo: cover-crop + slow push-in over the shot
         n = max(1, round(dur * fps))
-        vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
-              f"zoompan=z='{z}+0.06*on/{n}':x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':d={n}:s={W}x{H}:fps={fps}")
+        pre = (f"split[a][b];[a]{BG}[bg];[b]{FG}[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,scale={W*2}:{H*2},"
+               if fit == "blur" else f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},")
+        vf = (pre + f"zoompan=z='{z}+0.06*on/{n}':x='(iw-iw/zoom)*{fx}':y='(ih-ih/zoom)*{fy}':d={n}:s={W}x{H}:fps={fps}")
         inp = ["-i", src]
     else:
         span = dur * speed
         inp = ["-ss", f"{float(s['in']):.3f}", "-t", f"{span + 0.2:.3f}", "-i", src]
         speedf = f"setpts=(PTS-STARTPTS)/{speed},fps={fps},trim=duration={dur:.3f}"
-        if s.get("fit") == "blur":
-            vf = (f"{speedf},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                  f"boxblur=30:3,eq=brightness=-0.12[bg];[b]scale={W}*{z}:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2")
+        if fit == "blur":
+            vf = f"{speedf},split[a][b];[a]{BG}[bg];[b]{FG}[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2"
         else:
             cw, ch = f"{W}*{z}", f"{H}*{z}"
             vf = (f"{speedf},scale='max({cw},{ch}*iw/ih)':'max({ch},{cw}*ih/iw)',"
