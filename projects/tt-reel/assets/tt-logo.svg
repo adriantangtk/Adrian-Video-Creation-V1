@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="920" height="320">
+  <!-- Rebuilt Thriving Talents mark: gold outline star, blue lightning bolt, spaced wordmark -->
+  <g transform="translate(170 165)">
+    <polygon points="0,-140 33,-45 133,-43 53,17 82,113 0,56 -82,113 -53,17 -133,-43 -33,-45"
+             fill="none" stroke="#F5B623" stroke-width="16" stroke-linejoin="miter"/>
+    <polygon points="38,-92 -42,18 -2,18 -30,98 52,-14 12,-14" fill="#2F6BFF"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#FFFFFF">
+    <text x="300" y="128" font-size="92" font-weight="500" letter-spacing="22">THRIVING</text>
+    <text x="300" y="228" font-size="92" font-weight="500" letter-spacing="22">TALENTS</text>
+    <text x="304" y="290" font-size="38" font-weight="400" letter-spacing="15" fill="#D9DEEA">REFINING PEOPLE</text>
+  </g>
+</svg>
