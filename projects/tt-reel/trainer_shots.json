@@ -1,0 +1,44 @@
+[
+ {
+  "file": "media/nov26/cag_20261114_164349.mp4",
+  "in": 6.0,
+  "beats": 4
+ },
+ {
+  "file": "media/trainers/cag/cag_120243.mp4",
+  "in": 1.0,
+  "beats": 4
+ },
+ {
+  "file": "media/trainers/cag/cag_142754.mp4",
+  "in": 0.5,
+  "beats": 4
+ },
+ {
+  "file": "media/nov26/cag_20261114_164349.mp4",
+  "in": 11.0,
+  "beats": 4
+ },
+ {
+  "file": "media/voice/mt-vid20250513.mp4",
+  "in": 160.0,
+  "beats": 4,
+  "zoom": 1.25,
+  "fy": 0.3
+ },
+ {
+  "file": "media/nov26/rise_20261120_133644.mp4",
+  "in": 1.0,
+  "beats": 4
+ },
+ {
+  "file": "media/voice/mt-img1057.mov",
+  "in": 7.0,
+  "beats": 4
+ },
+ {
+  "file": "assets/web/IMG_20241128_142909-1-scaled.jpg",
+  "in": null,
+  "beats": 4
+ }
+]

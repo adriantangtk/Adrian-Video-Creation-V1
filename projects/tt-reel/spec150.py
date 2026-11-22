@@ -58,7 +58,7 @@ it(s0 + 1.2, 6.1, '<div class="stats"><div class="stat"><b>0K+</b><small>Trainin
 it(34.6, 3.0, 'ONE ROOM.<br><span class="g">ONE ENERGY.</span>', "top:330px;font-size:130px", anim="up")
 # coaches title
 c0 = M["coaches"]
-it(c0 + 0.1, 2.6, '<span class="kick">60+ EXPERT COACHES</span>MEET THE PEOPLE<br><span class="g">BEHIND THE ENERGY.</span>', "top:300px;font-size:110px", anim="tilt")
+it(c0 + 0.1, 1.8, '<span class="kick">60+ EXPERT COACHES</span>MEET THE PEOPLE<br><span class="g">BEHIND THE ENERGY.</span>', "top:300px;font-size:110px", anim="tilt")
 TRAINER_TAGS = json.load(open("trainer_tags.json")) if os.path.exists("trainer_tags.json") else []
 for k, (t, name, role) in enumerate(TRAINER_TAGS):
     it(t, 1.8, f"<b>{name}</b><small>{role}</small>", cls="lt", anim="up", id=f"trT{k}", drift=False)
