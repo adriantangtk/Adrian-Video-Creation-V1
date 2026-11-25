@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"InterB";src:url("fonts/inter-latin-700-normal.woff2") format("woff2");font-weight:700}
+@font-face{font-family:"InterS";src:url("fonts/inter-latin-600-normal.woff2") format("woff2");font-weight:600}
+@font-face{font-family:"InterR";src:url("fonts/inter-latin-400-normal.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"NewsR";src:url("fonts/newsreader-latin-500-normal.woff2") format("woff2");font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#07070c}
+#root{width:1920px;height:1080px;position:relative;overflow:hidden;background:#07070c;color:#fff}
+.shot{position:absolute;inset:0;overflow:hidden;background:#07070c}
+.bgq{background:radial-gradient(ellipse at 30% 40%,#1b1830 0%,#0b0b14 70%)}
+.bgn{background:linear-gradient(160deg,#101C3E,#0a1128)}
+.bgt{background:radial-gradient(ellipse at 50% 30%,#171a33 0%,#08080f 75%)}
+.bgs{background:linear-gradient(90deg,#08080f 0%,#0d0d18 55%,#08080f 100%)}
+img.ph{position:absolute;left:-40px;top:-22px;width:2000px;height:1125px;object-fit:cover;filter:contrast(1.1) saturate(.8) brightness(.8);transform-origin:50% 35%}
+img.ph.dim{filter:contrast(1.1) saturate(.6) brightness(.36)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 45%,rgba(0,0,0,.65) 100%),linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.72) 100%)}
+.vm{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover;filter:contrast(1.06) saturate(.9)}
+.spl{position:absolute;right:0;top:0;height:1080px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 18%);mask-image:linear-gradient(90deg,transparent 0,#000 18%)}
+.spl img{height:1080px;display:block;filter:contrast(1.08) saturate(.9);transform-origin:50% 30%}
+.vig2{position:absolute;inset:0;background:radial-gradient(ellipse at 75% 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,.5) 100%)}
+.lg{position:absolute;left:460px;top:250px;width:1000px}
+.capA{position:absolute;left:110px;top:690px;width:1500px;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:86px;line-height:1.08;color:#FF2437;-webkit-text-stroke:2px #FF2437;text-shadow:0 0 28px rgba(255,26,40,.5),0 3px 14px rgba(0,0,0,.9);letter-spacing:-.01em}
+.capA.split{top:300px;width:900px;font-size:92px}
+.capA .sub{font-family:"InterS",Arial,sans-serif;font-size:42px;color:#fff;-webkit-text-stroke:0;text-shadow:0 2px 12px rgba(0,0,0,.85);margin-top:24px;font-weight:600;line-height:1.25}
+.capB{position:absolute;left:0;width:1920px;top:760px;text-align:center;font-family:"NewsR",Georgia,serif;font-weight:500;font-size:180px;line-height:1;color:#FF2437;text-shadow:0 0 34px rgba(255,26,40,.6),0 4px 20px rgba(0,0,0,.8)}
+.tag{position:absolute;left:110px;top:880px;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:54px;color:#fff;letter-spacing:.04em;text-shadow:0 3px 16px rgba(0,0,0,.9);display:flex;align-items:center}
+.tag i{display:block;width:12px;height:70px;background:#FF2437;margin-right:26px;box-shadow:0 0 22px rgba(255,26,40,.7)}
+.qwrap{position:absolute;inset:0}
+.qm{position:absolute;left:150px;top:90px;font-family:"NewsR",Georgia,serif;font-size:420px;line-height:1;color:#D9B76B;opacity:.9}
+.qbar{position:absolute;left:150px;top:420px;width:8px;height:300px;background:#FF2437;transform-origin:top;box-shadow:0 0 24px rgba(255,26,40,.6)}
+.qt{position:absolute;left:200px;top:400px;width:1560px}
+.ql{font-family:"NewsR",Georgia,serif;font-weight:500;font-size:84px;line-height:1.22;color:#F6F1E6}
+.qa{position:absolute;left:200px;top:790px;font-family:"InterB",Arial,sans-serif;font-size:44px;letter-spacing:.14em;color:#D9B76B}
+.qs{position:absolute;left:200px;top:860px;font-family:"InterR",Arial,sans-serif;font-size:34px;color:#9aa0b4}
+.twrap,.swrap{position:absolute;inset:0}
+.tt{position:absolute;left:0;width:1920px;top:120px;text-align:center;font-family:"InterB",Arial,sans-serif;font-size:50px;letter-spacing:.3em;color:#D9B76B}
+.tline{position:absolute;left:260px;top:540px;width:1400px;height:6px;background:linear-gradient(90deg,#FF2437,#D9B76B);transform-origin:left;border-radius:3px}
+.tn{position:absolute;top:0;width:0;height:1080px}
+.dot{position:absolute;left:-18px;top:525px;width:36px;height:36px;border-radius:50%;background:#07070c;border:7px solid #FF2437;box-shadow:0 0 22px rgba(255,36,55,.7)}
+.tlab{position:absolute;left:-215px;width:430px;text-align:center}
+.tlab.up{bottom:590px}.tlab.dn{top:590px}
+.tlab b{display:block;font-family:"NewsR",Georgia,serif;font-weight:500;font-size:84px;color:#D9B76B;line-height:1}
+.tlab span{display:block;margin-top:10px;font-family:"InterS",Arial,sans-serif;font-size:32px;line-height:1.25;color:#fff}
+.sgrid{position:absolute;left:160px;top:250px;width:1600px;display:grid;grid-template-columns:1fr 1fr;row-gap:70px}
+.sc{width:800px;text-align:center}
+.sn{font-family:"NewsR",Georgia,serif;font-weight:500;font-size:170px;line-height:1;color:#D9B76B}
+.sl{margin-top:20px;font-family:"InterB",Arial,sans-serif;font-size:42px;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.bwrap{position:absolute;inset:0}
+.bk{position:absolute;left:120px;top:330px;display:flex;gap:50px;align-items:center}
+.bk img{height:430px;box-shadow:0 24px 70px rgba(0,0,0,.7)}
+.bt{position:absolute;left:1060px;top:300px;width:800px}
+.bh{font-family:"NewsR",Georgia,serif;font-size:130px;line-height:1.05;color:#fff}
+.bl{margin-top:34px;font-family:"InterS",Arial,sans-serif;font-size:46px;line-height:1.4;color:#D9B76B}
+.endname{position:absolute;left:110px;top:380px;font-family:"NewsR",Georgia,serif;font-size:140px;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.8)}
+.endsub{position:absolute;left:114px;top:560px;font-family:"InterB",Arial,sans-serif;font-size:52px;line-height:1.5;color:#D9B76B;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.endsub b{color:#fff}
+.fadeo{position:absolute;inset:0;background:#000;opacity:0}
+.scrim2{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(0,0,0,.5) 78%,rgba(0,0,0,.95) 100%)}
+.blk{position:absolute;inset:0;background:#000;opacity:0}
+.vc2{top:790px;font-size:88px}
+.endkick2{position:absolute;left:110px;top:170px;width:1000px;font-family:"InterB",Arial,sans-serif;font-size:92px;line-height:1.08;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.8)}
+.endkick2 b{color:#FFD21F;font-weight:700}
+.cdt{position:absolute;left:100px;width:1720px;top:50%;transform:translateY(-50%);text-align:center;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:124px;line-height:1.1;color:#fff;letter-spacing:-.01em;text-shadow:0 6px 30px rgba(0,0,0,.9)}
+.cdt b{color:#FFD21F;font-weight:700}
+.cdt .sm{font-size:92px;line-height:1.18}
+img.ph.dim{filter:contrast(1.12) saturate(.7) brightness(.34)}
+.pw{position:absolute;left:0;width:1920px;top:470px;text-align:center;font-family:"InterB",Arial,sans-serif;font-size:96px;letter-spacing:.38em;color:#D9B76B}
+.mt{position:absolute;left:0;width:1920px;top:250px;text-align:center;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:250px;line-height:.98;color:#fff}
+.bigq{position:absolute;inset:0}
+.bqm{position:absolute;left:150px;top:60px;font-family:"NewsR",Georgia,serif;font-size:420px;line-height:1;color:#D9B76B}
+.bqt{position:absolute;left:0;width:1920px;top:260px;text-align:center;font-family:"NewsR",Georgia,serif;font-weight:500;font-size:176px;line-height:1.08;color:#F6F1E6}
+.bqt b{color:#FFD21F;font-weight:500}
+.bqa{position:absolute;left:0;width:1920px;top:900px;text-align:center;font-family:"InterB",Arial,sans-serif;font-size:46px;letter-spacing:.3em;color:#D9B76B}
+
+.bgb{background:#050508}
+.vm{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+.scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 72%,rgba(0,0,0,1) 88%)}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+.vc{position:absolute;left:60px;width:1800px;top:700px;text-align:center;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:112px;line-height:1.05;color:#fff;letter-spacing:-.01em;text-shadow:0 4px 22px rgba(0,0,0,.95),0 0 3px rgba(0,0,0,.9)}
+.vc b{color:#FFD21F;font-weight:700;text-shadow:0 0 30px rgba(255,200,0,.45),0 4px 22px rgba(0,0,0,.95)}
+.tw1{position:absolute;left:0;width:1920px;top:250px;text-align:center;font-family:"InterB",Arial,sans-serif;font-size:64px;letter-spacing:.5em;color:#D9B76B}
+.tw2{position:absolute;left:0;width:1920px;top:340px;text-align:center;font-family:"InterB",Arial,sans-serif;font-weight:700;font-size:210px;line-height:.98;color:#fff}
+.tw3{position:absolute;left:0;width:1920px;top:810px;text-align:center;font-family:"InterS",Arial,sans-serif;font-size:56px;letter-spacing:.12em;color:#FF2437}
+.twbar{position:absolute;left:560px;top:790px;width:800px;height:8px;background:#FF2437;transform-origin:left;box-shadow:0 0 24px rgba(255,36,55,.7)}
+.endkick{position:absolute;left:110px;top:250px;font-family:"InterB",Arial,sans-serif;font-size:170px;line-height:1;color:#FFD21F;text-shadow:0 0 40px rgba(255,200,0,.4)}
+.endname2{position:absolute;left:114px;top:600px;font-family:"NewsR",Georgia,serif;font-size:120px;color:#fff}
+.endsub2{position:absolute;left:118px;top:770px;font-family:"InterB",Arial,sans-serif;font-size:50px;line-height:1.5;color:#D9B76B}
+.endsub2 b{color:#fff}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="110.4" data-fps="30" data-width="1920" data-height="1080">
+<div id="sc0" class="shot clip bgb" data-start="0.00" data-duration="3.668" data-track-index="0"></div>
+<div id="cd0" class="cdt clip" data-start="0.00" data-duration="3.668" data-track-index="10" >BULLIED EVERY DAY<br>FOR <b>TEN YEARS.</b></div>
+<div id="sc1" class="shot clip " data-start="3.67" data-duration="3.668" data-track-index="0"><img class="ph dim" id="sc1i" src="img/courage.jpg"><div class="vig"></div></div>
+<div id="cd1" class="cdt clip" data-start="3.67" data-duration="3.668" data-track-index="11" >AT 22, HE BEAT <b>63,000</b><br>ENTRANTS FROM <b>164 COUNTRIES.</b></div>
+<div id="sc2" class="shot clip " data-start="7.34" data-duration="1.834" data-track-index="0"><img class="ph dim" id="sc2i" src="img/mountain.jpg"><div class="vig"></div></div>
+<div id="cd2" class="cdt clip" data-start="7.34" data-duration="1.834" data-track-index="12" >THE FIRST ASIAN.<br><b>THE YOUNGEST EVER.</b></div>
+<div id="sc3" class="shot clip " data-start="9.17" data-duration="3.668" data-track-index="0"><img class="ph dim" id="sc3i" src="img/crowd.jpg"><div class="vig"></div></div>
+<div id="cd3" class="cdt clip" data-start="9.17" data-duration="3.668" data-track-index="13" ><b id="cnt">0</b> PEOPLE TRAINED<br>ACROSS <b>43</b> COUNTRIES.</div>
+<div id="sc4" class="shot clip " data-start="12.84" data-duration="3.668" data-track-index="0"><img class="ph dim" id="sc4i" src="img/panel.jpg"><div class="vig"></div></div>
+<div id="cd4" class="cdt clip" data-start="12.84" data-duration="3.668" data-track-index="14" ><span class="sm">ON STAGE WITH <b>RICHARD BRANSON,</b><br>TONY FERNANDES &amp; <b>BOB GELDOF.</b></span></div>
+<div id="sc5" class="shot clip " data-start="16.51" data-duration="1.834" data-track-index="0"><img class="ph dim" id="sc5i" src="img/insol.jpg"><div class="vig"></div></div>
+<div id="cd5" class="cdt clip" data-start="16.51" data-duration="1.834" data-track-index="15" >TWICE NAMED<br><b>NATIONAL YOUTH ICON.</b></div>
+<div id="sc6" class="shot clip bgs" data-start="18.34" data-duration="1.834" data-track-index="0"><div class="spl"><img id="sc6i" src="img/sp_hr24.jpg"></div><div class="vig2"></div></div>
+<div id="A6" class="capA split clip" data-start="18.44" data-duration="1.684" data-track-index="16" ><span id="A6w0">HR Vendors </span><span id="A6w1">of the Year </span><div class="sub" id="A6s">Best Management Training Provider · 2024</div></div>
+<div id="sc7" class="shot clip bgs" data-start="20.17" data-duration="1.834" data-track-index="0"><div class="spl"><img id="sc7i" src="img/sp_pumm24.jpg"></div><div class="vig2"></div></div>
+<div id="A7" class="capA split clip" data-start="20.27" data-duration="1.684" data-track-index="17" ><span id="A7w0">PUMM Role Model </span><span id="A7w1">Enterprise Award </span><div class="sub" id="A7s">Best Leadership Development Training · 2024</div></div>
+<div id="sc8" class="shot clip bgb" data-start="22.01" data-duration="3.668" data-track-index="0"></div>
+<div id="bq" class="bigq clip" data-start="22.01" data-duration="3.668" data-track-index="18" ><div class="bqm">“</div><div class="bqt">A SCAR THAT<br>BECAME A <b>COMPASS.</b></div><div class="bqa">MICHAEL TEOH</div></div>
+<div id="sc9" class="shot clip bgb" data-start="25.68" data-duration="3.668" data-track-index="0"></div>
+<div id="pw" class="pw clip" data-start="25.78" data-duration="1.734" data-track-index="19" >PLEASE WELCOME</div>
+<div id="mt" class="mt clip" data-start="27.51" data-duration="1.834" data-track-index="20" >MICHAEL<br>TEOH</div>
+<div id="mtb" class="twbar clip" data-start="27.66" data-duration="1.684" data-track-index="21" ></div>
+<video id="v8" class="vm clip" src="vid/iP1.mp4" muted playsinline data-start="29.34" data-duration="41.270" data-track-index="0"></video>
+<div id="v8s" class="scrim2 clip" data-start="29.34" data-duration="41.270" data-track-index="22" ></div>
+<div id="sc9" class="vc vc2 clip" data-start="29.49" data-duration="1.400" data-track-index="23" >I'M MICHAEL <b>TEOH,</b></div>
+<div id="sc10" class="vc vc2 clip" data-start="31.13" data-duration="0.520" data-track-index="24" >AND I'M THE <b>FOUNDER</b></div>
+<div id="sc11" class="vc vc2 clip" data-start="31.67" data-duration="1.460" data-track-index="25" >AND <b>CEO</b> OF <b>THRIVING</b></div>
+<div id="sc12" class="vc vc2 clip" data-start="33.15" data-duration="0.600" data-track-index="26" >TALENTS,</div>
+<div id="sc13" class="vc vc2 clip" data-start="33.77" data-duration="0.600" data-track-index="27" >WHERE WE ARE AN</div>
+<div id="sc14" class="vc vc2 clip" data-start="34.39" data-duration="1.380" data-track-index="28" >INTERNATIONAL TRAINING COMPANY</div>
+<div id="sc15" class="vc vc2 clip" data-start="35.79" data-duration="1.800" data-track-index="29" >DEDICATED TO HELP EMPLOYERS</div>
+<div id="sc16" class="vc vc2 clip" data-start="37.61" data-duration="1.960" data-track-index="30" >TO UNDERSTAND THE YOUNGER</div>
+<div id="sc17" class="vc vc2 clip" data-start="39.59" data-duration="1.660" data-track-index="31" >GENERATION OF THE WORKFORCE.</div>
+<div id="sc18" class="vc vc2 clip" data-start="41.49" data-duration="0.820" data-track-index="32" >I STARTED THIS BUSINESS</div>
+<div id="sc19" class="vc vc2 clip" data-start="42.33" data-duration="1.300" data-track-index="33" >IN THE YEAR <b>2012</b></div>
+<div id="sc20" class="vc vc2 clip" data-start="43.65" data-duration="0.900" data-track-index="34" >AT THE AGE OF</div>
+<div id="sc21" class="vc vc2 clip" data-start="44.57" data-duration="0.660" data-track-index="35" ><b>24,</b></div>
+<div id="sc22" class="vc vc2 clip" data-start="45.43" data-duration="1.000" data-track-index="36" >AT A TIME WHERE</div>
+<div id="sc23" class="vc vc2 clip" data-start="46.45" data-duration="1.700" data-track-index="37" >MANY PEOPLE WOULD <b>UNDERESTIMATE</b></div>
+<div id="sc24" class="vc vc2 clip" data-start="48.17" data-duration="0.680" data-track-index="38" >ME,</div>
+<div id="sc25" class="vc vc2 clip" data-start="48.87" data-duration="1.020" data-track-index="39" >EITHER AS A TRAINER</div>
+<div id="sc26" class="vc vc2 clip" data-start="49.91" data-duration="1.120" data-track-index="40" >OR AN ENTREPRENEUR,</div>
+<div id="sc27" class="vc vc2 clip" data-start="51.09" data-duration="0.900" data-track-index="41" >JUST BECAUSE I WAS</div>
+<div id="sc28" class="vc vc2 clip" data-start="52.01" data-duration="0.300" data-track-index="42" >YOUNG.</div>
+<div id="sc29" class="vc vc2 clip" data-start="52.17" data-duration="1.060" data-track-index="43" >WE HAVE EXPANDED OUR</div>
+<div id="sc30" class="vc vc2 clip" data-start="53.25" data-duration="1.360" data-track-index="44" >BUSINESS SINCE THEN TO</div>
+<div id="sc31" class="vc vc2 clip" data-start="54.63" data-duration="1.240" data-track-index="45" ><b>43</b> <b>COUNTRIES,</b></div>
+<div id="sc32" class="vc vc2 clip" data-start="55.89" data-duration="0.800" data-track-index="46" >WHERE WE WORK WITH</div>
+<div id="sc33" class="vc vc2 clip" data-start="56.71" data-duration="1.260" data-track-index="47" >30 % OF THE</div>
+<div id="sc34" class="vc vc2 clip" data-start="57.99" data-duration="2.100" data-track-index="48" >WORLD'S <b>FORTUNE</b> 500 COMPANIES,</div>
+<div id="sc35" class="vc vc2 clip" data-start="60.37" data-duration="1.260" data-track-index="49" >BRANDS LIKE <b>MICROSOFT,</b></div>
+<div id="sc36" class="vc vc2 clip" data-start="61.85" data-duration="0.700" data-track-index="50" ><b>HSBC,</b></div>
+<div id="sc37" class="vc vc2 clip" data-start="63.09" data-duration="0.220" data-track-index="51" ><b>SHELL.</b></div>
+<div id="sc38" class="vc vc2 clip" data-start="63.43" data-duration="0.660" data-track-index="52" >WE HAVE HAD PRESIDENT</div>
+<div id="sc39" class="vc vc2 clip" data-start="64.11" data-duration="1.540" data-track-index="53" >BARACK <b>OBAMA</b> VISIT OUR</div>
+<div id="sc40" class="vc vc2 clip" data-start="65.67" data-duration="0.560" data-track-index="54" >TRAINING,</div>
+<div id="sc41" class="vc vc2 clip" data-start="66.47" data-duration="0.580" data-track-index="55" >WE HAVE BEEN FEATURED</div>
+<div id="sc42" class="vc vc2 clip" data-start="67.07" data-duration="1.040" data-track-index="56" >ON <b>CNN,</b></div>
+<div id="sc43" class="vc vc2 clip" data-start="68.35" data-duration="0.760" data-track-index="57" >AND THE BEST PART</div>
+<div id="sc44" class="vc vc2 clip" data-start="69.13" data-duration="1.100" data-track-index="58" >IS WE WALK THE</div>
+<div id="sc45" class="vc vc2 clip" data-start="70.25" data-duration="0.360" data-track-index="59" ><b>TALK.</b></div>
+<div id="sc46" class="vc vc2 clip" data-start="70.65" data-duration="0.220" data-track-index="60" >THE</div>
+<div id="sc10" class="shot clip bgb" data-start="70.61" data-duration="0.459" data-track-index="0"></div>
+<div id="d1" class="blk clip" data-start="70.36" data-duration="0.250" data-track-index="61" ></div>
+<div id="d2" class="blk clip" data-start="71.07" data-duration="0.250" data-track-index="62" ></div>
+<video id="v47" class="vm clip" src="vid/iP2.mp4" muted playsinline data-start="71.07" data-duration="35.000" data-track-index="0"></video>
+<div id="v47s" class="scrim2 clip" data-start="71.07" data-duration="35.000" data-track-index="63" ></div>
+<div id="sc48" class="vc vc2 clip" data-start="71.21" data-duration="1.520" data-track-index="64" >BUT MY QUESTION TO</div>
+<div id="sc49" class="vc vc2 clip" data-start="72.75" data-duration="0.960" data-track-index="65" >ALL EMPLOYERS,</div>
+<div id="sc50" class="vc vc2 clip" data-start="74.03" data-duration="0.920" data-track-index="66" >WHAT IF YOU DON'T</div>
+<div id="sc51" class="vc vc2 clip" data-start="74.97" data-duration="1.340" data-track-index="67" >TRAIN AND THEY STAY</div>
+<div id="sc52" class="vc vc2 clip" data-start="76.33" data-duration="1.680" data-track-index="68" >IN YOUR COMPANY AND</div>
+<div id="sc53" class="vc vc2 clip" data-start="78.03" data-duration="1.460" data-track-index="69" >BECOME A COST OR</div>
+<div id="sc54" class="vc vc2 clip" data-start="79.51" data-duration="0.820" data-track-index="70" >A BURDEN TO YOUR</div>
+<div id="sc55" class="vc vc2 clip" data-start="80.35" data-duration="0.460" data-track-index="71" >COMPANY?</div>
+<div id="sc56" class="vc vc2 clip" data-start="80.87" data-duration="1.100" data-track-index="72" >SO WE WORKED HARD</div>
+<div id="sc57" class="vc vc2 clip" data-start="81.99" data-duration="2.460" data-track-index="73" >TO TRAIN TALENTS FOR</div>
+<div id="sc58" class="vc vc2 clip" data-start="84.47" data-duration="1.440" data-track-index="74" >COMPANIES AROUND THE WORLD</div>
+<div id="sc59" class="vc vc2 clip" data-start="85.93" data-duration="1.740" data-track-index="75" >TO UNLEASH THEIR LEADERSHIP</div>
+<div id="sc60" class="vc vc2 clip" data-start="87.69" data-duration="0.600" data-track-index="76" ><b>POTENTIAL,</b></div>
+<div id="sc61" class="vc vc2 clip" data-start="88.31" data-duration="0.760" data-track-index="77" >TO HELP THEM BE</div>
+<div id="sc62" class="vc vc2 clip" data-start="89.09" data-duration="1.220" data-track-index="78" >BETTER SALESPEOPLE.</div>
+<div id="sc63" class="vc vc2 clip" data-start="90.51" data-duration="0.500" data-track-index="79" >SO FOR ME,</div>
+<div id="sc64" class="vc vc2 clip" data-start="91.03" data-duration="0.460" data-track-index="80" >THIS IS WHAT I</div>
+<div id="sc65" class="vc vc2 clip" data-start="91.51" data-duration="0.700" data-track-index="81" >BELIEVE IN,</div>
+<div id="sc66" class="vc vc2 clip" data-start="92.23" data-duration="1.420" data-track-index="82" ><b>NEVER</b> BET AGAINST THE</div>
+<div id="sc67" class="vc vc2 clip" data-start="93.67" data-duration="1.300" data-track-index="83" ><b>POTENTIAL</b> OF PEOPLE,</div>
+<div id="sc68" class="vc vc2 clip" data-start="95.19" data-duration="1.380" data-track-index="84" >HELP PEOPLE UNLEASH THEIR</div>
+<div id="sc69" class="vc vc2 clip" data-start="96.59" data-duration="1.500" data-track-index="85" ><b>POTENTIAL</b> AND THEY WILL</div>
+<div id="sc70" class="vc vc2 clip" data-start="98.11" data-duration="2.000" data-track-index="86" >MAKE YOUR ORGANIZATION GROW</div>
+<div id="sc71" class="vc vc2 clip" data-start="100.13" data-duration="1.000" data-track-index="87" >AND YOU,</div>
+<div id="sc72" class="vc vc2 clip" data-start="101.35" data-duration="1.060" data-track-index="88" >AS THEIR LEADERS AND</div>
+<div id="sc73" class="vc vc2 clip" data-start="102.43" data-duration="0.600" data-track-index="89" >THEMSELVES,</div>
+<div id="sc74" class="vc vc2 clip" data-start="103.21" data-duration="1.300" data-track-index="90" >REALLY <b>RICH.</b></div>
+<div id="d5" class="blk clip" data-start="105.77" data-duration="0.300" data-track-index="91" ></div>
+<div id="sc11" class="shot clip bgs" data-start="106.07" data-duration="4.278" data-track-index="0"><div class="spl"><img id="sc11i" src="img/sp_portrait2.jpg"></div><div class="vig2"></div></div>
+<div id="d6" class="blk clip" data-start="106.07" data-duration="0.300" data-track-index="92" ></div>
+<div id="endk" class="endkick2 clip" data-start="106.47" data-duration="3.878" data-track-index="93" >NEVER BET AGAINST<br>THE <b>POTENTIAL</b><br>OF PEOPLE.</div>
+<div id="endn" class="endname2 clip" data-start="107.67" data-duration="2.678" data-track-index="94" >MICHAEL TEOH</div>
+<div id="ends" class="endsub2 clip" data-start="107.97" data-duration="2.378" data-track-index="95" >Founder · Thriving Talents<br><b>thrivingtalents.com</b></div>
+<div id="fade" class="fadeo clip" data-start="109.35" data-duration="1.000" data-track-index="96" ></div>
+<audio id="music" src="sfx/music.wav" data-start="0" data-duration="110.35" data-volume="0.6"></audio>
+<audio id="hit" src="sfx/sx-impact-bass-2.wav" data-start="27.15" data-duration="1.8" data-volume="0.55"></audio>
+<audio id="vP1" src="sfx/vP1.wav" data-start="29.34" data-duration="41.27" data-volume="1" data-role="voice"></audio>
+<audio id="vP2" src="sfx/vP2.wav" data-start="71.07" data-duration="35" data-volume="1" data-role="voice"></audio>
+</div>
+<script>const tl=gsap.timeline({paused:true});
+tl.fromTo('#cd0',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},0.06);
+tl.fromTo('#sc1i',{scale:1},{scale:1.1,duration:3.67,ease:'none'},3.668);
+tl.fromTo('#cd1',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},3.73);
+tl.fromTo('#sc2i',{scale:1},{scale:1.1,duration:1.83,ease:'none'},7.336);
+tl.fromTo('#cd2',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},7.40);
+tl.fromTo('#sc3i',{scale:1},{scale:1.1,duration:3.67,ease:'none'},9.17);
+tl.fromTo('#cd3',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},9.23);
+{const o={v:0};tl.fromTo(o,{v:0},{v:100000,duration:1.3,ease:'power2.out',onUpdate:()=>{document.getElementById('cnt').textContent=Math.round(o.v).toLocaleString('en-US')+(o.v>=99999?'':'');}},9.27);}
+tl.fromTo('#sc4i',{scale:1},{scale:1.1,duration:3.67,ease:'none'},12.838000000000001);
+tl.fromTo('#cd4',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},12.90);
+tl.fromTo('#sc5i',{scale:1},{scale:1.1,duration:1.83,ease:'none'},16.506);
+tl.fromTo('#cd5',{opacity:0,y:26},{opacity:1,y:0,duration:.4,ease:'power2.out'},16.57);
+tl.fromTo('#sc6i',{scale:1},{scale:1.06,duration:1.83,ease:'none'},18.34);
+tl.fromTo('#A6w0',{opacity:0,y:16},{opacity:1,y:0,duration:.12,ease:'power2.out'},18.49);
+tl.fromTo('#A6w1',{opacity:0,y:16},{opacity:1,y:0,duration:.12,ease:'power2.out'},18.69);
+tl.fromTo('#A6s',{opacity:0},{opacity:1,duration:.25},18.94);
+tl.fromTo('#sc7i',{scale:1},{scale:1.06,duration:1.83,ease:'none'},20.174);
+tl.fromTo('#A7w0',{opacity:0,y:16},{opacity:1,y:0,duration:.12,ease:'power2.out'},20.32);
+tl.fromTo('#A7w1',{opacity:0,y:16},{opacity:1,y:0,duration:.12,ease:'power2.out'},20.52);
+tl.fromTo('#A7s',{opacity:0},{opacity:1,duration:.25},20.77);
+tl.fromTo('#bq .bqt',{opacity:0,y:30},{opacity:1,y:0,duration:.5,ease:'power2.out'},22.11);tl.fromTo('#bq .bqm',{opacity:0},{opacity:.9,duration:.5},22.01);tl.fromTo('#bq .bqa',{opacity:0},{opacity:1,duration:.5},23.21);
+tl.fromTo('#pw',{opacity:0},{opacity:1,duration:.7,ease:'power1.out'},25.78);
+tl.fromTo('#mt',{opacity:0,scale:1.1},{opacity:1,scale:1,duration:.3,ease:'expo.out'},27.51);tl.fromTo('#mtb',{scaleX:0},{scaleX:1,duration:.5,ease:'power3.out'},27.66);
+tl.fromTo('#sc9',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},29.49);
+tl.fromTo('#sc10',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},31.13);
+tl.fromTo('#sc11',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},31.67);
+tl.fromTo('#sc12',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},33.15);
+tl.fromTo('#sc13',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},33.77);
+tl.fromTo('#sc14',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},34.39);
+tl.fromTo('#sc15',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},35.79);
+tl.fromTo('#sc16',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},37.61);
+tl.fromTo('#sc17',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},39.59);
+tl.fromTo('#sc18',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},41.49);
+tl.fromTo('#sc19',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},42.33);
+tl.fromTo('#sc20',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},43.65);
+tl.fromTo('#sc21',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},44.57);
+tl.fromTo('#sc22',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},45.43);
+tl.fromTo('#sc23',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},46.45);
+tl.fromTo('#sc24',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},48.17);
+tl.fromTo('#sc25',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},48.87);
+tl.fromTo('#sc26',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},49.91);
+tl.fromTo('#sc27',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},51.09);
+tl.fromTo('#sc28',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},52.01);
+tl.fromTo('#sc29',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},52.17);
+tl.fromTo('#sc30',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},53.25);
+tl.fromTo('#sc31',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},54.63);
+tl.fromTo('#sc32',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},55.89);
+tl.fromTo('#sc33',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},56.71);
+tl.fromTo('#sc34',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},57.99);
+tl.fromTo('#sc35',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},60.37);
+tl.fromTo('#sc36',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},61.85);
+tl.fromTo('#sc37',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},63.09);
+tl.fromTo('#sc38',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},63.43);
+tl.fromTo('#sc39',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},64.11);
+tl.fromTo('#sc40',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},65.67);
+tl.fromTo('#sc41',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},66.47);
+tl.fromTo('#sc42',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},67.07);
+tl.fromTo('#sc43',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},68.35);
+tl.fromTo('#sc44',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},69.13);
+tl.fromTo('#sc45',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},70.25);
+tl.fromTo('#sc46',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},70.65);
+tl.fromTo('#d1',{opacity:0},{opacity:1,duration:0.25,ease:'none'},70.36);
+tl.fromTo('#d2',{opacity:1},{opacity:0,duration:0.25,ease:'none'},71.07);
+tl.fromTo('#sc48',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},71.21);
+tl.fromTo('#sc49',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},72.75);
+tl.fromTo('#sc50',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},74.03);
+tl.fromTo('#sc51',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},74.97);
+tl.fromTo('#sc52',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},76.33);
+tl.fromTo('#sc53',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},78.03);
+tl.fromTo('#sc54',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},79.51);
+tl.fromTo('#sc55',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},80.35);
+tl.fromTo('#sc56',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},80.87);
+tl.fromTo('#sc57',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},81.99);
+tl.fromTo('#sc58',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},84.47);
+tl.fromTo('#sc59',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},85.93);
+tl.fromTo('#sc60',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},87.69);
+tl.fromTo('#sc61',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},88.31);
+tl.fromTo('#sc62',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},89.09);
+tl.fromTo('#sc63',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},90.51);
+tl.fromTo('#sc64',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},91.03);
+tl.fromTo('#sc65',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},91.51);
+tl.fromTo('#sc66',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},92.23);
+tl.fromTo('#sc67',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},93.67);
+tl.fromTo('#sc68',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},95.19);
+tl.fromTo('#sc69',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},96.59);
+tl.fromTo('#sc70',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},98.11);
+tl.fromTo('#sc71',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},100.13);
+tl.fromTo('#sc72',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},101.35);
+tl.fromTo('#sc73',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},102.43);
+tl.fromTo('#sc74',{opacity:0,y:8},{opacity:1,y:0,duration:.14,ease:'power2.out'},103.21);
+tl.fromTo('#d5',{opacity:0},{opacity:1,duration:0.30,ease:'none'},105.77);
+tl.fromTo('#sc11i',{scale:1},{scale:1.06,duration:4.28,ease:'none'},106.068);
+tl.fromTo('#d6',{opacity:1},{opacity:0,duration:0.30,ease:'none'},106.07);
+tl.fromTo('#endk',{opacity:0,y:20},{opacity:1,y:0,duration:.5,ease:'power2.out'},106.47);tl.fromTo('#endn',{opacity:0,y:20},{opacity:1,y:0,duration:.45,ease:'power2.out'},107.67);tl.fromTo('#ends',{opacity:0},{opacity:1,duration:.4},107.97);
+tl.fromTo('#fade',{opacity:0},{opacity:1,duration:1.0,ease:'none'},109.35);
+
+window.__timelines=window.__timelines||{};window.__timelines['main']=tl;tl.seek(0);</script></body></html>
