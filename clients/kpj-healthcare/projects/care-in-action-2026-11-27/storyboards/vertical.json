@@ -24,7 +24,7 @@
  "logos": [
   {
    "file": "brand/kpj-logo-white.png",
-   "start": 41.038,
+   "start": 41.04,
    "dur": 6.4,
    "width": 760,
    "pos": [
@@ -100,8 +100,8 @@
      "anim": "slide"
     }
    ],
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s02",
    "kind": "video",
    "t_start": 1.935,
@@ -216,8 +216,8 @@
     }
    ],
    "music_cue": "drop",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s05",
    "kind": "video",
    "t_start": 9.676,
@@ -232,8 +232,8 @@
    "audio_gain_db": -14,
    "speed": 1.5,
    "purpose": "C: all hands in",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s06",
    "kind": "video",
    "t_start": 11.611,
@@ -351,8 +351,8 @@
      "gain_db": -10
     }
    ],
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s09",
    "kind": "video",
    "t_start": 21.287,
@@ -370,8 +370,8 @@
     0.4
    ],
    "purpose": "R: listening",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s10",
    "kind": "video",
    "t_start": 23.222,
@@ -386,8 +386,8 @@
    "audio_gain_db": -14,
    "speed": 1.5,
    "purpose": "R: moving together",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s11",
    "kind": "video",
    "t_start": 25.157,
@@ -455,37 +455,126 @@
     0.5
    ],
    "purpose": "E: Lion team anthem",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s13",
    "kind": "video",
    "t_start": 29.028,
    "t_end": 30.963
   },
   {
-   "clip": "m1dd4bda8",
+   "clip": "m466f6022",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 18.0,
-   "out": 19.935,
+   "dur": 0.484,
    "audio_gain_db": -14,
-   "purpose": "E: the room cheers",
    "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 1",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [
+    {
+     "text": "Team creations",
+     "style": "callout",
+     "start": 0.05,
+     "dur": 1.85,
+     "anim": "slide",
+     "pos": [
+      540,
+      1300
+     ]
+    }
+   ],
    "id": "s14",
-   "kind": "video",
+   "kind": "photo",
    "t_start": 30.963,
-   "t_end": 32.898
+   "t_end": 31.447
   },
   {
-   "clip": "m2c2c4614",
+   "clip": "me8f3bee0",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 26.0,
-   "out": 29.128,
+   "dur": 0.484,
    "audio_gain_db": -14,
-   "speed": 1.5,
-   "purpose": "lift: cheering",
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 2",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s15",
+   "kind": "photo",
+   "t_start": 31.447,
+   "t_end": 31.931
+  },
+  {
+   "clip": "m7ff99f4a",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 3",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s16",
+   "kind": "photo",
+   "t_start": 31.931,
+   "t_end": 32.415
+  },
+  {
+   "clip": "mb0f460d5",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 4",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s17",
+   "kind": "photo",
+   "t_start": 32.415,
+   "t_end": 32.899
+  },
+  {
+   "clip": "m506a5205",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.968,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "purpose": "lift: paper-plane laughter",
    "sfx": [
     {
      "file": "sfx/sx-riser.wav",
@@ -494,12 +583,28 @@
      "dur": 1.9
     }
    ],
-   "zoom": 1.07,
+   "id": "s18",
+   "kind": "photo",
+   "t_start": 32.899,
+   "t_end": 33.867
+  },
+  {
+   "clip": "m1598a19c",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 1.118,
+   "audio_gain_db": -14,
+   "zoom": 1.12,
    "zoom_to": 1.0,
-   "id": "s15",
-   "kind": "video",
-   "t_start": 32.898,
-   "t_end": 34.983
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "purpose": "lift: laughter",
+   "id": "s19",
+   "kind": "photo",
+   "t_start": 33.867,
+   "t_end": 34.985
   },
   {
    "clip": "mc76fc6a2",
@@ -522,12 +627,12 @@
      "gain_db": -8
     }
    ],
-   "zoom": 1.0,
-   "zoom_to": 1.07,
-   "id": "s16",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s20",
    "kind": "video",
-   "t_start": 34.833,
-   "t_end": 36.768
+   "t_start": 34.835,
+   "t_end": 36.77
   },
   {
    "clip": "m53a9b5ec",
@@ -537,12 +642,12 @@
    "out": 21.535,
    "audio_gain_db": -14,
    "purpose": "finale: selfie energy",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
-   "id": "s17",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s21",
    "kind": "video",
-   "t_start": 36.768,
-   "t_end": 38.703
+   "t_start": 36.77,
+   "t_end": 38.705
   },
   {
    "clip": "m53a9b5ec",
@@ -563,12 +668,12 @@
      ]
     }
    ],
-   "zoom": 1.0,
-   "zoom_to": 1.07,
-   "id": "s18",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s22",
    "kind": "video",
-   "t_start": 38.703,
-   "t_end": 41.138
+   "t_start": 38.705,
+   "t_end": 41.14
   },
   {
    "clip": "m3917430d",
@@ -626,12 +731,12 @@
      "anim": "fade"
     }
    ],
-   "id": "s19",
+   "id": "s23",
    "kind": "photo",
-   "t_start": 40.638,
-   "t_end": 48.38
+   "t_start": 40.64,
+   "t_end": 48.382
   }
  ],
- "duration": 48.38,
- "validated": "2026-11-27T12:37:43+00:00"
+ "duration": 48.382,
+ "validated": "2026-11-27T17:05:03+00:00"
 }

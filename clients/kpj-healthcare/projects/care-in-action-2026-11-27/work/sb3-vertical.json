@@ -1,0 +1,648 @@
+{
+ "format": "vertical",
+ "fps": 30,
+ "brand": {
+  "accent": "#D4B07A",
+  "text": "#FFFFFF",
+  "box": "#1A1611",
+  "font": "Inter"
+ },
+ "captions": {
+  "enabled": true,
+  "max_words": 3,
+  "y": 1200
+ },
+ "loudness": -14,
+ "music": {
+  "track": "care-anthem-v2-vertical",
+  "start": 0,
+  "gain_db": -9,
+  "fade_out": 2.0,
+  "duck_threshold": 0.03,
+  "duck_ratio": 6
+ },
+ "logos": [
+  {
+   "file": "brand/kpj-logo-white.png",
+   "start": 41.04,
+   "dur": 6.4,
+   "width": 760,
+   "pos": [
+    540,
+    700
+   ],
+   "fade": 0.5
+  }
+ ],
+ "shots": [
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 6.0,
+   "out": 8.085,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "purpose": "hook",
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -6
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONE HEART.\\NONE MISSION.",
+     "style": "hook",
+     "start": 0.05,
+     "dur": 1.85,
+     "highlight": [
+      "HEART.",
+      "MISSION."
+     ],
+     "pos": [
+      540,
+      400
+     ]
+    }
+   ]
+  },
+  {
+   "clip": "ma2b24d1f",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 0.2,
+   "out": 2.135,
+   "audio_gain_db": -14,
+   "purpose": "title: stage",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    }
+   ],
+   "overlay": [
+    {
+     "text": "KPJ Healthcare\\NTeambuilding \u00b7 27.11.2026",
+     "style": "lower",
+     "start": 0.1,
+     "dur": 1.8,
+     "anim": "slide"
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07
+  },
+  {
+   "clip": "m33d8b7ec",
+   "captions": [
+    {
+     "text": "We have to have action.",
+     "start": 0.12,
+     "end": 1.94
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 4.3,
+   "out": 6.435,
+   "audio_gain_db": 0,
+   "zoom": 1.2,
+   "zoom_to": 1.26,
+   "focus": [
+    0.47,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "trainer: Muhaini",
+   "overlay": [
+    {
+     "text": "Muhaini\\NTrainer",
+     "style": "lower",
+     "start": 0.1,
+     "dur": 1.8,
+     "anim": "slide"
+    }
+   ]
+  },
+  {
+   "clip": "m28b989fb",
+   "captions": "none",
+   "in": 0,
+   "out": 4.021,
+   "audio_gain_db": -40,
+   "purpose": "infographic: C.A.R.E reveal",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.0,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.4838709677419355,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.967741935483871,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 2.903225806451613,
+     "gain_db": -12
+    }
+   ]
+  },
+  {
+   "clip": "m89c1e919",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 4.0,
+   "out": 5.935,
+   "audio_gain_db": -14,
+   "purpose": "C: drawing the tribe banner",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}C\\N{\\c&HFFFFFF&\\fs128}Committed",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "music_cue": "drop",
+   "zoom": 1.07,
+   "zoom_to": 1.0
+  },
+  {
+   "clip": "ma3abb7f7",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 8.0,
+   "out": 11.203,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "C: all hands in",
+   "zoom": 1.0,
+   "zoom_to": 1.07
+  },
+  {
+   "clip": "m7904d089",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 30.0,
+   "out": 32.235,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "zoom_to": 1.16,
+   "focus": [
+    0.42,
+    0.5
+   ],
+   "purpose": "A: Reflection Mirror",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}A\\N{\\c&HFFFFFF&\\fs128}Accountable",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ]
+  },
+  {
+   "clip": "mbb58ef0f",
+   "captions": "none",
+   "in": 0,
+   "out": 6.006,
+   "audio_gain_db": -40,
+   "purpose": "infographic: Reflection Mirror questions",
+   "transition": "slide",
+   "transition_dur": 0.3,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 2.4193548387096775,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 3.3870967741935485,
+     "gain_db": -12
+    }
+   ]
+  },
+  {
+   "clip": "meb4f6112",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 8.0,
+   "out": 9.935,
+   "audio_gain_db": -8,
+   "purpose": "R: circle game",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}R\\N{\\c&HFFFFFF&\\fs128}Respectful",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "zoom": 1.07,
+   "zoom_to": 1.0
+  },
+  {
+   "clip": "m62ddce82",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 28.0,
+   "out": 29.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "purpose": "R: listening",
+   "zoom": 1.0,
+   "zoom_to": 1.07
+  },
+  {
+   "clip": "m440343d6",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 18.0,
+   "out": 21.203,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "R: moving together",
+   "zoom": 1.07,
+   "zoom_to": 1.0
+  },
+  {
+   "clip": "mb8f104bd",
+   "captions": [
+    {
+     "text": "One Heart Mission!",
+     "start": 0.12,
+     "end": 1.95
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 3.6,
+   "out": 5.535,
+   "audio_gain_db": -4,
+   "zoom": 1.05,
+   "zoom_to": 1.12,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "E: One Heart Mission",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}E\\N{\\c&HFFFFFF&\\fs128}Excellent",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ]
+  },
+  {
+   "clip": "m792b212d",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "purpose": "E: Lion team anthem",
+   "zoom": 1.0,
+   "zoom_to": 1.07
+  },
+  {
+   "clip": "m466f6022",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 1",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [
+    {
+     "text": "Team creations",
+     "style": "callout",
+     "start": 0.05,
+     "dur": 1.85,
+     "anim": "slide",
+     "pos": [
+      540,
+      1300
+     ]
+    }
+   ]
+  },
+  {
+   "clip": "me8f3bee0",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 2",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "clip": "m7ff99f4a",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 3",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "clip": "mb0f460d5",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 4",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": []
+  },
+  {
+   "clip": "m506a5205",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.968,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "purpose": "lift: paper-plane laughter",
+   "sfx": [
+    {
+     "file": "sfx/sx-riser.wav",
+     "at": 0.0,
+     "gain_db": -14,
+     "dur": 1.9
+    }
+   ]
+  },
+  {
+   "clip": "m1598a19c",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 1.118,
+   "audio_gain_db": -14,
+   "zoom": 1.12,
+   "zoom_to": 1.0,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "purpose": "lift: laughter"
+  },
+  {
+   "clip": "mc76fc6a2",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 56.0,
+   "out": 57.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.55,
+    0.5
+   ],
+   "purpose": "finale: Team 2",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -8
+    }
+   ],
+   "zoom": 1.07,
+   "zoom_to": 1.0
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 19.6,
+   "out": 21.535,
+   "audio_gain_db": -14,
+   "purpose": "finale: selfie energy",
+   "zoom": 1.0,
+   "zoom_to": 1.07
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 0.2,
+   "out": 2.635,
+   "audio_gain_db": -14,
+   "purpose": "finale: everyone",
+   "overlay": [
+    {
+     "text": "ONE TEAM.\\NONE HEART.",
+     "style": "kinetic",
+     "start": 0.1,
+     "dur": 1.8,
+     "highlight": [
+      "ONE HEART."
+     ]
+    }
+   ],
+   "zoom": 1.07,
+   "zoom_to": 1.0
+  },
+  {
+   "clip": "m3917430d",
+   "captions": "none",
+   "grade": "gblur=sigma=22,eq=brightness=-0.24:saturation=0.75,vignette=angle=PI/5",
+   "dur": 7.742,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "transition": "dissolve",
+   "transition_dur": 0.5,
+   "purpose": "end card",
+   "sfx": [
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 0.3,
+     "gain_db": -10
+    }
+   ],
+   "overlay": [
+    {
+     "text": "C.A.R.E\\Nin Action",
+     "style": "kinetic",
+     "start": 0.5,
+     "dur": 6.6,
+     "pos": [
+      540,
+      900
+     ],
+     "anim": "fade",
+     "highlight": [
+      "C.A.R.E"
+     ]
+    },
+    {
+     "text": "Committed \u00b7 Accountable\\NRespectful \u00b7 Excellent",
+     "style": "callout",
+     "start": 0.9,
+     "dur": 6.2,
+     "pos": [
+      540,
+      1110
+     ],
+     "anim": "fade"
+    },
+    {
+     "text": "27.11.2026",
+     "style": "callout",
+     "start": 1.1,
+     "dur": 6.0,
+     "pos": [
+      540,
+      1250
+     ],
+     "anim": "fade"
+    }
+   ]
+  }
+ ]
+}

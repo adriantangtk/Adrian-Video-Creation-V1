@@ -1843,6 +1843,446 @@
     "index": "9a1ca4b5caa4524f0a0a3dcada670320a80af858b76cb4355f7e88827fec8ce4"
    },
    "sha256": "9a1ca4b5caa4524f0a0a3dcada670320a80af858b76cb4355f7e88827fec8ce4"
+  },
+  "m91758a6f": {
+   "id": "m91758a6f",
+   "source_id": "1CU1XUBLEZyq32Hz7xkOTusUNm6uFoC3f",
+   "name": "20261127_144347.jpg",
+   "kind": "photo",
+   "path": "20261127_144347.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "3241537",
+   "modified": "2026-11-27T16:28:29.139Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m91758a6f.jpg",
+   "sha256": "79e3a8deea4f63d7235b88ed5e6308644fb51384c83cbaf2fc8eeb69ad543450",
+   "downloaded": "2026-11-27T17:01:26+00:00",
+   "stages": {
+    "index": "79e3a8deea4f63d7235b88ed5e6308644fb51384c83cbaf2fc8eeb69ad543450"
+   },
+   "duplicate_of": "m93302ffb"
+  },
+  "me62d4855": {
+   "id": "me62d4855",
+   "source_id": "1qqg6pcA-ylEw_fDT-2jBc4oFbv6fdElW",
+   "name": "20261127_144356.jpg",
+   "kind": "photo",
+   "path": "20261127_144356.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2592119",
+   "modified": "2026-11-27T16:28:29.118Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/me62d4855.jpg",
+   "sha256": "22a8cc9729efc653c8346a120a4ae7196c7663d457d48990537c6a57c59120e6",
+   "downloaded": "2026-11-27T17:01:26+00:00",
+   "stages": {
+    "index": "22a8cc9729efc653c8346a120a4ae7196c7663d457d48990537c6a57c59120e6"
+   },
+   "duplicate_of": "m6e4b299a"
+  },
+  "meaff56f0": {
+   "id": "meaff56f0",
+   "source_id": "1if7V8qPnmFGueTCJmhqq-Jq_uPtJosY_",
+   "name": "20261127_144410.jpg",
+   "kind": "photo",
+   "path": "20261127_144410.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2223503",
+   "modified": "2026-11-27T16:28:29.099Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/meaff56f0.jpg",
+   "sha256": "68f089fb674a6cfe88791f860e6e3a5494d24077a55f6cbe6190c164bf10dbad",
+   "downloaded": "2026-11-27T17:01:26+00:00",
+   "stages": {
+    "index": "68f089fb674a6cfe88791f860e6e3a5494d24077a55f6cbe6190c164bf10dbad"
+   },
+   "duplicate_of": "md18892d0"
+  },
+  "m4eb0f3b7": {
+   "id": "m4eb0f3b7",
+   "source_id": "1hgKatwtGgpeJG75h-gSzntO4C5hXlDJp",
+   "name": "20261127_144421.jpg",
+   "kind": "photo",
+   "path": "20261127_144421.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2145347",
+   "modified": "2026-11-27T16:28:29.079Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m4eb0f3b7.jpg",
+   "sha256": "46b4cfd566296e8bd7b5b476ed88d761eb4467562ba825ab4807d72184564a73",
+   "downloaded": "2026-11-27T17:01:29+00:00",
+   "stages": {
+    "index": "46b4cfd566296e8bd7b5b476ed88d761eb4467562ba825ab4807d72184564a73"
+   },
+   "duplicate_of": "mafebe293"
+  },
+  "md80dd937": {
+   "id": "md80dd937",
+   "source_id": "1yw8sF8NRsuKM1kGotUck0hehB99ZmrGL",
+   "name": "20261127_144430.jpg",
+   "kind": "photo",
+   "path": "20261127_144430.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2232292",
+   "modified": "2026-11-27T16:28:29.062Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/md80dd937.jpg",
+   "sha256": "3a2d165a611b5dd130696bca3681bbf24fd601fb08d0897432759624fe435875",
+   "downloaded": "2026-11-27T17:01:29+00:00",
+   "stages": {
+    "index": "3a2d165a611b5dd130696bca3681bbf24fd601fb08d0897432759624fe435875"
+   },
+   "duplicate_of": "me3366177"
+  },
+  "m4718b4af": {
+   "id": "m4718b4af",
+   "source_id": "1BDkMsHVR7z3okAuEbmUgXEUHX73A4L_4",
+   "name": "20261127_144451.mp4",
+   "kind": "video",
+   "path": "20261127_144451.mp4",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "video/mp4",
+   "size": "23279852",
+   "modified": "2026-11-27T16:28:29.043Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m4718b4af.mp4",
+   "sha256": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9",
+   "downloaded": "2026-11-27T17:01:30+00:00",
+   "stages": {
+    "index": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9"
+   },
+   "duplicate_of": "m2ed75814"
+  },
+  "m9222da8d": {
+   "id": "m9222da8d",
+   "source_id": "1fqBSM-Cfp5k4m5vTZN0t-5IhaiE2-NsR",
+   "name": "20261127_144503.mp4",
+   "kind": "video",
+   "path": "20261127_144503.mp4",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "video/mp4",
+   "size": "160075411",
+   "modified": "2026-11-27T16:28:28.969Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m9222da8d.mp4",
+   "sha256": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939"
+   },
+   "duplicate_of": "m2c2c4614"
+  },
+  "mc427ad1e": {
+   "id": "mc427ad1e",
+   "source_id": "1SWMErRZ6CRSgOgrimsNdgO7on8DeOPAI",
+   "name": "20261127_144857.jpg",
+   "kind": "photo",
+   "path": "20261127_144857.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2277576",
+   "modified": "2026-11-27T16:28:28.523Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/mc427ad1e.jpg",
+   "sha256": "c9bd97436cc2719ce196ebf4e142e7d0d14664774af76ca2079b1e490c44d091",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "c9bd97436cc2719ce196ebf4e142e7d0d14664774af76ca2079b1e490c44d091",
+    "annotated": "c9bd97436cc2719ce196ebf4e142e7d0d14664774af76ca2079b1e490c44d091"
+   }
+  },
+  "ma2c09d6a": {
+   "id": "ma2c09d6a",
+   "source_id": "1C1d9OVHiAWFle9q2XhOp9-GfitqX7IEK",
+   "name": "20261127_144858.jpg",
+   "kind": "photo",
+   "path": "20261127_144858.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2250558",
+   "modified": "2026-11-27T16:28:28.506Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/ma2c09d6a.jpg",
+   "sha256": "922f15d560bc5cbc9db7bbc20e32ea6aa8c7d111dbfd4a4938b7ac1b9529694a",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "922f15d560bc5cbc9db7bbc20e32ea6aa8c7d111dbfd4a4938b7ac1b9529694a",
+    "annotated": "922f15d560bc5cbc9db7bbc20e32ea6aa8c7d111dbfd4a4938b7ac1b9529694a"
+   }
+  },
+  "m30241899": {
+   "id": "m30241899",
+   "source_id": "1jkSS1X6DKQSepsKU8XFFeyGoJcKOuaUE",
+   "name": "20261127_144933.jpg",
+   "kind": "photo",
+   "path": "20261127_144933.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2124035",
+   "modified": "2026-11-27T16:28:28.489Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m30241899.jpg",
+   "sha256": "6a3e4eb0daece1faf68f56eb65dafa20cdbbe52b868290d5c2e4170491cbcda4",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "6a3e4eb0daece1faf68f56eb65dafa20cdbbe52b868290d5c2e4170491cbcda4",
+    "annotated": "6a3e4eb0daece1faf68f56eb65dafa20cdbbe52b868290d5c2e4170491cbcda4"
+   }
+  },
+  "m506a5205": {
+   "id": "m506a5205",
+   "source_id": "1E3H0LjFPlWiKVK8dlcwk5M-n_n8xP8y-",
+   "name": "20261127_144936.jpg",
+   "kind": "photo",
+   "path": "20261127_144936.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2168710",
+   "modified": "2026-11-27T16:28:28.471Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m506a5205.jpg",
+   "sha256": "4ae459f14f5f1c57ad9025dbc07b0dd4142509994ccc2ceda346881ad7c13369",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "4ae459f14f5f1c57ad9025dbc07b0dd4142509994ccc2ceda346881ad7c13369",
+    "annotated": "4ae459f14f5f1c57ad9025dbc07b0dd4142509994ccc2ceda346881ad7c13369"
+   }
+  },
+  "m1598a19c": {
+   "id": "m1598a19c",
+   "source_id": "1y6uMIqA22WHQH8Bwu8AeM0HqvxryTlq4",
+   "name": "20261127_145003.jpg",
+   "kind": "photo",
+   "path": "20261127_145003.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "1830679",
+   "modified": "2026-11-27T16:28:28.452Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m1598a19c.jpg",
+   "sha256": "e8d04afb68968bee7175d4898bae56d1a1175248efd6269e2b9f7f58a0b7e255",
+   "downloaded": "2026-11-27T17:01:35+00:00",
+   "stages": {
+    "index": "e8d04afb68968bee7175d4898bae56d1a1175248efd6269e2b9f7f58a0b7e255",
+    "annotated": "e8d04afb68968bee7175d4898bae56d1a1175248efd6269e2b9f7f58a0b7e255"
+   }
+  },
+  "m7ab622cb": {
+   "id": "m7ab622cb",
+   "source_id": "1zIRcxxEtNSpnk8pHq-AWtU3iOhCPiWZU",
+   "name": "20261127_145040.jpg",
+   "kind": "photo",
+   "path": "20261127_145040.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2069430",
+   "modified": "2026-11-27T16:28:28.433Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m7ab622cb.jpg",
+   "sha256": "3749ca3211dae259f002f8ee4e3ba18731f7c41704917c2efc1e335ec53f66d9",
+   "downloaded": "2026-11-27T17:01:36+00:00",
+   "stages": {
+    "index": "3749ca3211dae259f002f8ee4e3ba18731f7c41704917c2efc1e335ec53f66d9",
+    "annotated": "3749ca3211dae259f002f8ee4e3ba18731f7c41704917c2efc1e335ec53f66d9"
+   }
+  },
+  "m918ae1fb": {
+   "id": "m918ae1fb",
+   "source_id": "1ejnUayPRcswiBnh-4LPZUSRSNcQbziHM",
+   "name": "20261127_145043.jpg",
+   "kind": "photo",
+   "path": "20261127_145043.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2074724",
+   "modified": "2026-11-27T16:28:28.404Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m918ae1fb.jpg",
+   "sha256": "774c7cfbe79fe03b5ac3d35d4143272947e65fa2b7e3415c251577aeb3cd82c0",
+   "downloaded": "2026-11-27T17:01:37+00:00",
+   "stages": {
+    "index": "774c7cfbe79fe03b5ac3d35d4143272947e65fa2b7e3415c251577aeb3cd82c0",
+    "annotated": "774c7cfbe79fe03b5ac3d35d4143272947e65fa2b7e3415c251577aeb3cd82c0"
+   }
+  },
+  "m50434b59": {
+   "id": "m50434b59",
+   "source_id": "1CEg8Kx3zzdI4vhspDe243tFTbEkGuhc5",
+   "name": "20261127_145738.mp4",
+   "kind": "video",
+   "path": "20261127_145738.mp4",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "video/mp4",
+   "size": "148084816",
+   "modified": "2026-11-27T16:28:28.367Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m50434b59.mp4",
+   "sha256": "bea324f2ba1f828d3f8fd8b0e991f72a6b756561153405f94247dc84b40b41a9",
+   "downloaded": "2026-11-27T17:01:41+00:00",
+   "stages": {
+    "index": "bea324f2ba1f828d3f8fd8b0e991f72a6b756561153405f94247dc84b40b41a9",
+    "annotated": "bea324f2ba1f828d3f8fd8b0e991f72a6b756561153405f94247dc84b40b41a9"
+   }
+  },
+  "m466f6022": {
+   "id": "m466f6022",
+   "source_id": "1OiLRb5zYm-tjY6b-B4Z0VQT8eOkj5tEn",
+   "name": "20261127_163852.jpg",
+   "kind": "photo",
+   "path": "20261127_163852.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "3629532",
+   "modified": "2026-11-27T16:28:27.833Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m466f6022.jpg",
+   "sha256": "3810e3da9887d0a76574543b7722afe537db02569f3eae4c7f3b818a0d1b27ac",
+   "downloaded": "2026-11-27T17:01:41+00:00",
+   "stages": {
+    "index": "3810e3da9887d0a76574543b7722afe537db02569f3eae4c7f3b818a0d1b27ac",
+    "annotated": "3810e3da9887d0a76574543b7722afe537db02569f3eae4c7f3b818a0d1b27ac"
+   }
+  },
+  "me8f3bee0": {
+   "id": "me8f3bee0",
+   "source_id": "1PIOz1gcBIYrzoFPdWKL0dkUPtOMEE-TX",
+   "name": "20261127_163855.jpg",
+   "kind": "photo",
+   "path": "20261127_163855.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "3314370",
+   "modified": "2026-11-27T16:28:27.798Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/me8f3bee0.jpg",
+   "sha256": "ae56802d88168044c668a29bc834aabf5391b7e02d02c07db82bfb82d01140e2",
+   "downloaded": "2026-11-27T17:01:42+00:00",
+   "stages": {
+    "index": "ae56802d88168044c668a29bc834aabf5391b7e02d02c07db82bfb82d01140e2",
+    "annotated": "ae56802d88168044c668a29bc834aabf5391b7e02d02c07db82bfb82d01140e2"
+   }
+  },
+  "m7ff99f4a": {
+   "id": "m7ff99f4a",
+   "source_id": "1AvXkZ-Fcru5c37nso1WSjeWLzGy4IZhD",
+   "name": "20261127_163902.jpg",
+   "kind": "photo",
+   "path": "20261127_163902.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "3541209",
+   "modified": "2026-11-27T16:28:27.757Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m7ff99f4a.jpg",
+   "sha256": "8cc765ab24774215be2d595c811c5cc9c735959cf6581fdd02d8ef2fdba2cc62",
+   "downloaded": "2026-11-27T17:01:42+00:00",
+   "stages": {
+    "index": "8cc765ab24774215be2d595c811c5cc9c735959cf6581fdd02d8ef2fdba2cc62",
+    "annotated": "8cc765ab24774215be2d595c811c5cc9c735959cf6581fdd02d8ef2fdba2cc62"
+   }
+  },
+  "mb0f460d5": {
+   "id": "mb0f460d5",
+   "source_id": "14pzTli1RBPUdEWuMak9pPFJT4JHJFsbU",
+   "name": "20261127_163904.jpg",
+   "kind": "photo",
+   "path": "20261127_163904.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "3290179",
+   "modified": "2026-11-27T16:28:27.711Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/mb0f460d5.jpg",
+   "sha256": "1f2f4380819bb1609b815380b18c883c6420f261a3240a39df99c2778a276d8f",
+   "downloaded": "2026-11-27T17:01:42+00:00",
+   "stages": {
+    "index": "1f2f4380819bb1609b815380b18c883c6420f261a3240a39df99c2778a276d8f",
+    "annotated": "1f2f4380819bb1609b815380b18c883c6420f261a3240a39df99c2778a276d8f"
+   }
+  },
+  "m495022e2": {
+   "id": "m495022e2",
+   "source_id": "1d-p7DN5hL2WZRW8LwiCstVdkhPU-qVho",
+   "name": "20261127_163908.jpg",
+   "kind": "photo",
+   "path": "20261127_163908.jpg",
+   "parent": "1_AyzKk98zqSoQDUFDmlZEHcFUlqzqRrr",
+   "mime": "image/jpeg",
+   "size": "2993293",
+   "modified": "2026-11-27T16:28:27.607Z",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T17:01:23+00:00",
+   "history": [],
+   "local": "cache/media/m495022e2.jpg",
+   "sha256": "53c89358fd47c88dd1151459c370db9ed382e010a53048f4ce2af73dad50eed9",
+   "downloaded": "2026-11-27T17:01:43+00:00",
+   "stages": {
+    "index": "53c89358fd47c88dd1151459c370db9ed382e010a53048f4ce2af73dad50eed9",
+    "annotated": "53c89358fd47c88dd1151459c370db9ed382e010a53048f4ce2af73dad50eed9"
+   }
   }
  },
  "scans": [
@@ -2027,7 +2467,22 @@
     "unchanged": 0,
     "skipped": 0
    }
+  },
+  {
+   "time": "2026-11-27T17:01:23+00:00",
+   "source": "drive",
+   "complete": true,
+   "summary": {
+    "new": 20,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 77,
+    "skipped": 0
+   },
+   "note": "6 local graphics wrongly flagged removed (toolkit bug, fixed); restored"
   }
  ],
- "updated": "2026-11-27T12:28:13+00:00"
+ "updated": "2026-11-27T17:04:40+00:00"
 }

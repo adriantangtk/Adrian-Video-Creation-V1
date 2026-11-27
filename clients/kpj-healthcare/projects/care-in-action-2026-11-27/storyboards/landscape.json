@@ -24,7 +24,7 @@
  "logos": [
   {
    "file": "brand/kpj-logo-white.png",
-   "start": 79.745,
+   "start": 79.747,
    "dur": 6.4,
    "width": 820,
    "pos": [
@@ -301,17 +301,16 @@
    "t_end": 21.288
   },
   {
-   "clip": "m7bc17175",
+   "clip": "mc427ad1e",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 22.0,
-   "out": 22.968,
+   "dur": 0.968,
    "audio_gain_db": -14,
-   "purpose": "sessions: wide room",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "purpose": "sessions: ARE YOU READY? paper planes",
    "id": "s10",
-   "kind": "video",
+   "kind": "photo",
    "t_start": 21.288,
    "t_end": 22.256
   },
@@ -327,8 +326,8 @@
     0.33
    ],
    "purpose": "sessions: 'Your team needs an identity'",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s11",
    "kind": "video",
    "t_start": 22.256,
@@ -408,8 +407,8 @@
     }
    ],
    "music_cue": "drop",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s13",
    "kind": "video",
    "t_start": 27.095,
@@ -424,8 +423,8 @@
    "audio_gain_db": -14,
    "speed": 1.5,
    "purpose": "C: all hands in",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s14",
    "kind": "video",
    "t_start": 29.03,
@@ -439,8 +438,8 @@
    "out": 16.135,
    "audio_gain_db": -14,
    "purpose": "C: identity takes shape",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s15",
    "kind": "video",
    "t_start": 30.965,
@@ -554,8 +553,8 @@
      "gain_db": -10
     }
    ],
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s18",
    "kind": "video",
    "t_start": 40.641,
@@ -573,8 +572,8 @@
     0.4
    ],
    "purpose": "R: listening",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s19",
    "kind": "video",
    "t_start": 42.576,
@@ -589,8 +588,8 @@
    "audio_gain_db": -14,
    "speed": 1.5,
    "purpose": "R: everyone moves together",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s20",
    "kind": "video",
    "t_start": 44.511,
@@ -658,19 +657,104 @@
    "t_end": 50.317
   },
   {
-   "clip": "m4926c44a",
+   "clip": "m466f6022",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 8.0,
-   "out": 10.435,
+   "dur": 0.484,
    "audio_gain_db": -14,
-   "purpose": "E: presenting the banner",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 1",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [
+    {
+     "text": "Team creations",
+     "style": "callout",
+     "start": 0.05,
+     "dur": 1.85,
+     "anim": "slide",
+     "pos": [
+      960,
+      940
+     ]
+    }
+   ],
    "id": "s23",
-   "kind": "video",
+   "kind": "photo",
    "t_start": 50.317,
-   "t_end": 52.752
+   "t_end": 50.801
+  },
+  {
+   "clip": "me8f3bee0",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 2",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s24",
+   "kind": "photo",
+   "t_start": 50.801,
+   "t_end": 51.285
+  },
+  {
+   "clip": "m7ff99f4a",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.484,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 3",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s25",
+   "kind": "photo",
+   "t_start": 51.285,
+   "t_end": 51.769
+  },
+  {
+   "clip": "mb0f460d5",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 0.984,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.12,
+   "purpose": "E: team creations board 4",
+   "sfx": [
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.02,
+     "gain_db": -11
+    }
+   ],
+   "overlay": [],
+   "id": "s26",
+   "kind": "photo",
+   "t_start": 51.769,
+   "t_end": 52.753
   },
   {
    "clip": "m5fa6dffe",
@@ -700,10 +784,10 @@
    "purpose": "anthem: Team 3 'Respect Shield'",
    "transition": "dissolve",
    "transition_dur": 0.5,
-   "id": "s24",
+   "id": "s27",
    "kind": "video",
-   "t_start": 52.252,
-   "t_end": 56.123
+   "t_start": 52.253,
+   "t_end": 56.124
   },
   {
    "clip": "m5fa6dffe",
@@ -731,10 +815,10 @@
    ],
    "speech": true,
    "purpose": "anthem: Team 3 'Respect Shield'",
-   "id": "s25",
+   "id": "s28",
    "kind": "video",
-   "t_start": 56.123,
-   "t_end": 59.994
+   "t_start": 56.124,
+   "t_end": 59.995
   },
   {
    "clip": "m5fa6dffe",
@@ -757,10 +841,10 @@
    ],
    "speech": true,
    "purpose": "anthem: Team 3 'Respect Shield'",
-   "id": "s26",
+   "id": "s29",
    "kind": "video",
-   "t_start": 59.994,
-   "t_end": 64.015
+   "t_start": 59.995,
+   "t_end": 64.016
   },
   {
    "clip": "mc76fc6a2",
@@ -782,45 +866,57 @@
    "music_cue": "drop 2",
    "zoom": 1.0,
    "zoom_to": 1.07,
-   "id": "s27",
+   "id": "s30",
    "kind": "video",
-   "t_start": 63.865,
-   "t_end": 65.8
+   "t_start": 63.866,
+   "t_end": 65.801
   },
   {
-   "clip": "m2c2c4614",
+   "clip": "m506a5205",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 26.0,
-   "out": 28.903,
+   "dur": 0.968,
    "audio_gain_db": -14,
-   "speed": 1.5,
-   "purpose": "finale: crowd cheering",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
-   "id": "s28",
-   "kind": "video",
-   "t_start": 65.8,
-   "t_end": 67.735
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "purpose": "finale: paper-plane laughter",
+   "id": "s31",
+   "kind": "photo",
+   "t_start": 65.801,
+   "t_end": 66.769
   },
   {
-   "clip": "m1dd4bda8",
+   "clip": "m1598a19c",
    "captions": "none",
    "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
-   "in": 18.0,
-   "out": 19.935,
+   "dur": 0.968,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "zoom_to": 1.0,
+   "purpose": "finale: paper-plane laughter",
+   "id": "s32",
+   "kind": "photo",
+   "t_start": 66.769,
+   "t_end": 67.737
+  },
+  {
+   "clip": "m50434b59",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 9.0,
+   "out": 10.935,
    "audio_gain_db": -14,
    "focus": [
-    0.5,
-    0.45
+    0.6,
+    0.5
    ],
-   "purpose": "finale: cards up",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
-   "id": "s29",
+   "purpose": "finale: paper planes up",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s33",
    "kind": "video",
-   "t_start": 67.735,
-   "t_end": 69.67
+   "t_start": 67.737,
+   "t_end": 69.672
   },
   {
    "clip": "mcd305bb8",
@@ -830,12 +926,12 @@
    "out": 46.185,
    "audio_gain_db": -14,
    "purpose": "finale: hearts banner",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
-   "id": "s30",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s34",
    "kind": "video",
-   "t_start": 69.67,
-   "t_end": 71.855
+   "t_start": 69.672,
+   "t_end": 71.857
   },
   {
    "clip": "m53a9b5ec",
@@ -866,12 +962,12 @@
      ]
     }
    ],
-   "zoom": 1.0,
-   "zoom_to": 1.07,
-   "id": "s31",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s35",
    "kind": "video",
-   "t_start": 71.605,
-   "t_end": 73.54
+   "t_start": 71.607,
+   "t_end": 73.542
   },
   {
    "clip": "m53a9b5ec",
@@ -881,12 +977,12 @@
    "out": 8.335,
    "audio_gain_db": -14,
    "purpose": "finale: close-up joy",
-   "zoom": 1.07,
-   "zoom_to": 1.0,
-   "id": "s32",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s36",
    "kind": "video",
-   "t_start": 73.54,
-   "t_end": 75.475
+   "t_start": 73.542,
+   "t_end": 75.477
   },
   {
    "clip": "mb95fb3a1",
@@ -897,10 +993,10 @@
    "zoom": 1.12,
    "zoom_to": 1.0,
    "purpose": "finale: the photo",
-   "id": "s33",
+   "id": "s37",
    "kind": "photo",
-   "t_start": 75.475,
-   "t_end": 77.41
+   "t_start": 75.477,
+   "t_end": 77.412
   },
   {
    "clip": "m53a9b5ec",
@@ -910,12 +1006,12 @@
    "out": 22.135,
    "audio_gain_db": -14,
    "purpose": "finale: selfie energy",
-   "zoom": 1.0,
-   "zoom_to": 1.07,
-   "id": "s34",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s38",
    "kind": "video",
-   "t_start": 77.41,
-   "t_end": 79.945
+   "t_start": 77.412,
+   "t_end": 79.947
   },
   {
    "clip": "m192e86db",
@@ -973,12 +1069,12 @@
      "anim": "fade"
     }
    ],
-   "id": "s35",
+   "id": "s39",
    "kind": "photo",
-   "t_start": 79.345,
-   "t_end": 87.087
+   "t_start": 79.347,
+   "t_end": 87.089
   }
  ],
- "duration": 87.087,
- "validated": "2026-11-27T12:37:43+00:00"
+ "duration": 87.089,
+ "validated": "2026-11-27T17:05:03+00:00"
 }

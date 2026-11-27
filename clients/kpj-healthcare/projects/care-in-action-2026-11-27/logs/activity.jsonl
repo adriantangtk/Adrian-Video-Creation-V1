@@ -23,3 +23,7 @@
 {"time": "2026-11-27T12:28:20+00:00", "kind": "version", "version": "v002", "note": "v002: longer cuts, beat-locked transitions, infographics, enhanced grade, new longer score"}
 {"time": "2026-11-27T12:42:13+00:00", "kind": "render", "version": "v002", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v002.mp4"}
 {"time": "2026-11-27T12:50:29+00:00", "kind": "render", "version": "v002", "format": "landscape", "file": "kpj-healthcare-care-in-action-2026-11-27-landscape-v002.mp4"}
+{"time": "2026-11-27T17:01:23+00:00", "kind": "scan", "summary": {"new": 20, "changed": 0, "moved": 0, "removed": 6, "duplicate": 0, "unchanged": 77, "skipped": 0}, "new": ["m91758a6f", "me62d4855", "meaff56f0", "m4eb0f3b7", "md80dd937", "m4718b4af", "m9222da8d", "mc427ad1e", "ma2c09d6a", "m30241899", "m506a5205", "m1598a19c", "m7ab622cb", "m918ae1fb", "m50434b59", "m466f6022", "me8f3bee0", "m7ff99f4a", "mb0f460d5", "m495022e2"], "changed": [], "removed": ["me32b8112", "m28b989fb", "m81d20c93", "mbb58ef0f", "mcff1ad2a", "mff746690"]}
+{"time": "2026-11-27T17:01:43+00:00", "kind": "fetch", "ok": 20, "failed": []}
+{"time": "2026-11-27T17:03:28+00:00", "kind": "index", "done": 20, "errors": []}
+{"time": "2026-11-27T17:05:08+00:00", "kind": "version", "version": "v003", "note": "v003 (DIG 2026-11-27): paper-plane activity + team clay creations added; v002 kept"}

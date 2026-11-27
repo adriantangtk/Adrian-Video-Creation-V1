@@ -1,0 +1,12 @@
+{"scan": "Drive folder relisted (1 page, 97 items, complete). Toolkit sync: 20 new, 0 changed, 0 moved, 0 removed from Drive.",
+ "corrections": ["6 local infographic renders were wrongly flagged 'removed' (they are not Drive files): toolkit bug fixed, entries restored",
+                 "7 'new' items are exact re-uploads (same checksum) of existing media: m91758a6f, me62d4855, meaff56f0, m4eb0f3b7, md80dd937 (photos), m4718b4af, m9222da8d (videos); marked duplicate, not used"],
+ "genuinely_new": ["m50434b59 video 14:57 paper-plane activity", "mc427ad1e ma2c09d6a m30241899 m506a5205 m1598a19c m7ab622cb m918ae1fb photos 14:48-14:50 paper-plane activity", "m466f6022 me8f3bee0 m7ff99f4a mb0f460d5 m495022e2 photos 16:38 team clay creations boards 1-5"],
+ "selected": {"landscape": ["mc427ad1e replaces m7bc17175 in sessions (stronger 'ARE YOU READY?' moment)",
+                            "m466f6022 me8f3bee0 m7ff99f4a mb0f460d5 replace m4926c44a in E: 4-beat team-creations flash, pop on each beat",
+                            "m506a5205 + m1598a19c replace m2c2c4614 in finale (closer, stronger laughter)",
+                            "m50434b59 9.0-10.9 replaces m1dd4bda8 in finale (paper planes up)"],
+              "vertical": ["clay boards 1-4 replace m1dd4bda8 in E", "m506a5205 + m1598a19c replace m2c2c4614 in the lift"]},
+ "rejected": {"m495022e2": "board 5: four boards fill the 4-beat flash", "ma2c09d6a m7ab622cb m918ae1fb m30241899": "similar to selected photos; kept as alternates",
+              "m50434b59 rest": "mostly seated rear angles"},
+ "timeline": "beat counts unchanged; music tracks care-anthem-v2-* reused; v002 preserved; new version v003"}

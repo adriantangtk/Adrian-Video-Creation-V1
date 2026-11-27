@@ -407,5 +407,117 @@
   ],
   "annotated": "2026-11-27T11:53:04+00:00",
   "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m50434b59": {
+  "summary": "Paper-plane activity: seated participants launch paper planes, laughing",
+  "use": [
+   "energy",
+   "reaction",
+   "finale"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "mc427ad1e": {
+  "summary": "Photo: paper planes up, ARE YOU READY? screen, trainer (batik) leading",
+  "use": [
+   "energy"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "ma2c09d6a": {
+  "summary": "Photo: paper planes ready under ARE YOU READY? screen",
+  "use": [
+   "energy"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m30241899": {
+  "summary": "Photo: participants laughing holding paper planes",
+  "use": [
+   "reaction"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m506a5205": {
+  "summary": "Photo: close laughter with paper planes",
+  "use": [
+   "reaction",
+   "finale"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m1598a19c": {
+  "summary": "Photo: laughing group, planes up",
+  "use": [
+   "reaction"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m7ab622cb": {
+  "summary": "Photo: planes raised near Reflection Mirror boards",
+  "use": [
+   "energy"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m918ae1fb": {
+  "summary": "Photo: planes held, smiles",
+  "use": [
+   "energy"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m466f6022": {
+  "summary": "Photo: Team 1 clay food creations board",
+  "use": [
+   "excellent",
+   "broll"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "me8f3bee0": {
+  "summary": "Photo: Team 2 clay food creations board",
+  "use": [
+   "excellent",
+   "broll"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m7ff99f4a": {
+  "summary": "Photo: Team 3 clay food creations board",
+  "use": [
+   "excellent",
+   "broll"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "mb0f460d5": {
+  "summary": "Photo: Team 4 clay food creations board",
+  "use": [
+   "excellent",
+   "broll"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
+ },
+ "m495022e2": {
+  "summary": "Photo: Team 5 clay food creations board",
+  "use": [
+   "excellent",
+   "broll"
+  ],
+  "annotated": "2026-11-27T17:04:40+00:00",
+  "coverage": "sampled thumbnails/contact sheet (semantic notes are not per-frame)"
  }
 }

@@ -119,7 +119,8 @@ def _diff(pr, listed, complete, source_type):
             e["local"] = f["local"]
     if complete:
         for sid, mid in by_src.items():
-            if sid not in listed and media[mid].get("status") != "removed":
+            # only items that come from this source can disappear from it (uploads/rendered graphics never do)
+            if sid not in listed and not sid.startswith("file:") and media[mid].get("status") != "removed":
                 media[mid]["status"] = "removed"
                 media[mid]["removed_seen"] = now()
                 out["removed"].append(mid)
@@ -230,6 +231,22 @@ def _download(pr, e):
     return e["id"], dest
 
 
+def mark_duplicates(man):
+    """After downloads every file has a sha256: mark exact copies (re-uploads) of earlier media."""
+    first, dups = {}, []
+    for mid, e in sorted(man["media"].items(), key=lambda kv: kv[1].get("first_seen", "")):
+        h = e.get("sha256")
+        if not h or e.get("status") == "removed":
+            continue
+        if h in first and first[h] != mid:
+            if e.get("duplicate_of") != first[h]:
+                dups.append(mid)
+            e["duplicate_of"] = first[h]
+        else:
+            first[h] = mid
+    return dups
+
+
 def cmd_fetch(a):
     pr = active_project(a.project)
     man = pr.manifest()
@@ -255,8 +272,11 @@ def cmd_fetch(a):
             else:
                 e["last_error"] = res
                 bad.append((e["name"], res))
+    dups = mark_duplicates(man)
     pr.save_manifest(man)
-    pr.log("fetch", {"ok": ok, "failed": [b[0] for b in bad]})
+    pr.log("fetch", {"ok": ok, "failed": [b[0] for b in bad], "duplicates": dups})
+    if dups:
+        print(f"duplicates (same checksum as existing media, skipped): {' '.join(dups)}")
     print(f"downloaded {ok}/{len(todo)}")
     for n, err in bad:
         print(f"  FAILED {n}: {err}")
