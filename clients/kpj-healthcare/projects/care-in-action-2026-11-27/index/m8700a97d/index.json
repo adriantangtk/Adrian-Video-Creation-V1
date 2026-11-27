@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 4000,
+  "h": 3000,
+  "taken": "2026:11:27 10:25:06",
+  "luma_mean": 127.3
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "m8700a97d",
+ "name": "20261127_102506.jpg",
+ "kind": "photo",
+ "sha256": "be98144d29dd71e43c2eb1877faa99d7c0c3086a18841d529887771b152ae4fd",
+ "indexed": "2026-11-27T11:32:41+00:00"
+}

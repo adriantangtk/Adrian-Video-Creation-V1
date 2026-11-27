@@ -1,0 +1,58 @@
+{
+ "probe": {
+  "duration": 2.175958,
+  "size": 10932754,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T01:30:08.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 30.013,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 63,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 2.176
+  }
+ ],
+ "quality": {
+  "frames_decoded": 62,
+  "luma_mean": 656.2,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 5.9,
+  "audio": {
+   "lufs": -18.0,
+   "true_peak": "-5.9",
+   "silences": []
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m24f0a300",
+ "name": "20261127_093005.mp4",
+ "kind": "video",
+ "sha256": "ef95c41f662073d27c27b75c5ccea583ea373038d37320590a39ff29f4b8a784",
+ "indexed": "2026-11-27T11:27:20+00:00"
+}

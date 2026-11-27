@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 8192,
+  "h": 6144,
+  "taken": "2026:11:27 10:06:06",
+  "luma_mean": 122.8
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "m25fc7825",
+ "name": "IMG_20261127_100603_454.jpg",
+ "kind": "photo",
+ "sha256": "fab178508c7d1e336225033c1898afb79048146b422a06b878b1d949aede1cdd",
+ "indexed": "2026-11-27T11:37:51+00:00"
+}

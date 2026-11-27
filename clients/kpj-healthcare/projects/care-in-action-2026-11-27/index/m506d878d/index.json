@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 8192,
+  "h": 6144,
+  "taken": "2026:11:27 10:06:35",
+  "luma_mean": 125.7
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "m506d878d",
+ "name": "IMG_20261127_100632_456.jpg",
+ "kind": "photo",
+ "sha256": "ba428c91cfcbbda9205326e9f5da26311dc301ace6d0a503fd1c7bf46605f272",
+ "indexed": "2026-11-27T11:37:48+00:00"
+}

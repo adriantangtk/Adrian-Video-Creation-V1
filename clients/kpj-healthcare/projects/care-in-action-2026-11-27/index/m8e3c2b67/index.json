@@ -1,0 +1,140 @@
+{
+ "probe": {
+  "duration": 29.588875,
+  "size": 127799616,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T01:18:57.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 30.015,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 888,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 29.589
+  }
+ ],
+ "quality": {
+  "frames_decoded": 888,
+  "luma_mean": 592.0,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 15.6,
+  "audio": {
+   "lufs": -21.1,
+   "true_peak": "-1.3",
+   "silences": [
+    [
+     3.72,
+     4.58
+    ],
+    [
+     6.64,
+     7.4
+    ],
+    [
+     13.69,
+     14.27
+    ],
+    [
+     21.76,
+     22.48
+    ]
+   ]
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.0,
+   "file": "thumbs/t0014000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 18.0,
+   "file": "thumbs/t0018000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.0,
+   "file": "thumbs/t0022000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 24.0,
+   "file": "thumbs/t0024000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 26.0,
+   "file": "thumbs/t0026000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 28.0,
+   "file": "thumbs/t0028000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m8e3c2b67",
+ "name": "20261127_091826.mp4",
+ "kind": "video",
+ "sha256": "7aa83d0b30fca69a9951c4053be578d9ddfe822427d03957e1a2570710311cae",
+ "indexed": "2026-11-27T11:29:10+00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 8192,
+  "h": 6144,
+  "taken": "2026:11:27 10:05:55",
+  "luma_mean": 126.0
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "m318c5e58",
+ "name": "IMG_20261127_100552_453.jpg",
+ "kind": "photo",
+ "sha256": "de4a56fd4e0cb24859cc1d82932d58de602dc90a63842d41f5eb3a43ac00a578",
+ "indexed": "2026-11-27T11:37:50+00:00"
+}

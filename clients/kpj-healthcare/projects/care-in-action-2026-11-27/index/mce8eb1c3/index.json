@@ -1,0 +1,273 @@
+{
+ "probe": {
+  "duration": 68.222938,
+  "size": 296110797,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T06:23:08.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 3840,
+   "h": 2160,
+   "fps": 29.982,
+   "rotation": 0,
+   "pix_fmt": "yuv420p10le",
+   "frames": 2043,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 16.465
+  },
+  {
+   "start": 16.465,
+   "end": 42.886
+  },
+  {
+   "start": 42.886,
+   "end": 68.223
+  }
+ ],
+ "quality": {
+  "frames_decoded": 2040,
+  "luma_mean": 570.3,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 16.5,
+  "audio": {
+   "lufs": -12.9,
+   "true_peak": "-0.5",
+   "silences": [
+    [
+     7.76,
+     8.19
+    ],
+    [
+     9.48,
+     9.93
+    ],
+    [
+     10.23,
+     10.93
+    ],
+    [
+     11.21,
+     11.92
+    ],
+    [
+     24.59,
+     24.99
+    ],
+    [
+     25.09,
+     27.14
+    ],
+    [
+     39.9,
+     40.29
+    ],
+    [
+     40.77,
+     41.52
+    ],
+    [
+     44.39,
+     44.83
+    ],
+    [
+     45.18,
+     45.62
+    ],
+    [
+     46.15,
+     46.57
+    ],
+    [
+     46.65,
+     47.39
+    ],
+    [
+     47.71,
+     48.09
+    ],
+    [
+     48.32,
+     48.92
+    ],
+    [
+     48.96,
+     49.42
+    ],
+    [
+     49.42,
+     50.78
+    ],
+    [
+     51.27,
+     52.25
+    ],
+    [
+     52.45,
+     52.99
+    ],
+    [
+     53.03,
+     53.76
+    ],
+    [
+     54.05,
+     54.63
+    ],
+    [
+     54.9,
+     55.28
+    ],
+    [
+     57.42,
+     58.24
+    ],
+    [
+     58.25,
+     58.83
+    ],
+    [
+     58.85,
+     59.51
+    ],
+    [
+     59.96,
+     60.62
+    ],
+    [
+     60.62,
+     61.61
+    ],
+    [
+     61.64,
+     62.31
+    ],
+    [
+     62.44,
+     63.56
+    ],
+    [
+     64.08,
+     65.21
+    ]
+   ]
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.61,
+   "file": "thumbs/t0016610.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 24.0,
+   "file": "thumbs/t0024000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 28.0,
+   "file": "thumbs/t0028000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 32.0,
+   "file": "thumbs/t0032000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 36.0,
+   "file": "thumbs/t0036000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 40.0,
+   "file": "thumbs/t0040000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 43.04,
+   "file": "thumbs/t0043040.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 44.0,
+   "file": "thumbs/t0044000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 48.0,
+   "file": "thumbs/t0048000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 52.0,
+   "file": "thumbs/t0052000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 56.0,
+   "file": "thumbs/t0056000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 60.0,
+   "file": "thumbs/t0060000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 64.0,
+   "file": "thumbs/t0064000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 68.0,
+   "file": "thumbs/t0068000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "mce8eb1c3",
+ "name": "20261127_142132.mp4",
+ "kind": "video",
+ "sha256": "525c628f9b58ff34da66f48cd3da027d76a5b57c080c1b4cd827853523af4bf5",
+ "indexed": "2026-11-27T11:27:05+00:00"
+}

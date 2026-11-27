@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 8192,
+  "h": 6144,
+  "taken": "2026:11:27 10:10:06",
+  "luma_mean": 128.1
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "mc99bc456",
+ "name": "IMG_20261127_101003_458.jpg",
+ "kind": "photo",
+ "sha256": "ef8a1734c966aaa3ed976245564dc43f1a1e9c9e02c2b69ff4dd5ec606fe3d5e",
+ "indexed": "2026-11-27T11:37:47+00:00"
+}

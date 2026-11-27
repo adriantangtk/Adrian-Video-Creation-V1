@@ -1,0 +1,93 @@
+{
+ "probe": {
+  "duration": 16.19175,
+  "size": 69230018,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T01:36:01.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 30.013,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 484,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 16.192
+  }
+ ],
+ "quality": {
+  "frames_decoded": 481,
+  "luma_mean": 573.8,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 16.7,
+  "audio": {
+   "lufs": -16.2,
+   "true_peak": "-0.7",
+   "silences": []
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.0,
+   "file": "thumbs/t0014000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "mee765814",
+ "name": "20261127_093543.mp4",
+ "kind": "video",
+ "sha256": "2df0721a86455950d103d6f556b2e4096b27513d902dc2bd2117ea5e329d30bc",
+ "indexed": "2026-11-27T11:30:27+00:00"
+}

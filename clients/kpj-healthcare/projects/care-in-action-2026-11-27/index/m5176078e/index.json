@@ -1,0 +1,137 @@
+{
+ "probe": {
+  "duration": 23.679625,
+  "size": 101787907,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T01:40:33.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 30.084,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 710,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 23.68
+  }
+ ],
+ "quality": {
+  "frames_decoded": 707,
+  "luma_mean": 580.9,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 16.5,
+  "audio": {
+   "lufs": -35.3,
+   "true_peak": "-13.4",
+   "silences": [
+    [
+     3.3,
+     3.65
+    ],
+    [
+     6.83,
+     7.52
+    ],
+    [
+     7.77,
+     8.15
+    ],
+    [
+     8.36,
+     9.14
+    ],
+    [
+     19.2,
+     20.7
+    ],
+    [
+     20.82,
+     21.93
+    ],
+    [
+     22.54,
+     23.55
+    ]
+   ]
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.0,
+   "file": "thumbs/t0014000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 18.0,
+   "file": "thumbs/t0018000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.0,
+   "file": "thumbs/t0022000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m5176078e",
+ "name": "20261127_094008.mp4",
+ "kind": "video",
+ "sha256": "e7bca2dde48db29868c20008d9bb23ac043712d29522172039430cdc20fbcb49",
+ "indexed": "2026-11-27T11:32:40+00:00"
+}

@@ -1,0 +1,91 @@
+{
+ "probe": {
+  "duration": 11.327833,
+  "size": 48286414,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T02:57:20.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 3840,
+   "h": 2160,
+   "fps": 30.012,
+   "rotation": 0,
+   "pix_fmt": "yuv420p10le",
+   "frames": 337,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 11.328
+  }
+ ],
+ "quality": {
+  "frames_decoded": 335,
+  "luma_mean": 561.3,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 49.0,
+  "audio": {
+   "lufs": -46.8,
+   "true_peak": "-24.8",
+   "silences": [
+    [
+     0.0,
+     0.51
+    ],
+    [
+     0.56,
+     2.31
+    ],
+    [
+     2.36,
+     11.33
+    ]
+   ]
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m298798b7",
+ "name": "20261127_105707.mp4",
+ "kind": "video",
+ "sha256": "ecbdd7d0a7f101c1a673d48d0dc69693f60809258a27adb81938cd320f61487e",
+ "indexed": "2026-11-27T11:37:20+00:00"
+}

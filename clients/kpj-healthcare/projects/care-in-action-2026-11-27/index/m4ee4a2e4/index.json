@@ -1,0 +1,169 @@
+{
+ "probe": {
+  "duration": 35.476771,
+  "size": 152550831,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T03:37:36.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 29.99,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 1055,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 6.715
+  },
+  {
+   "start": 6.715,
+   "end": 16.809
+  },
+  {
+   "start": 16.809,
+   "end": 22.685
+  },
+  {
+   "start": 22.685,
+   "end": 29.581
+  },
+  {
+   "start": 29.581,
+   "end": 35.477
+  }
+ ],
+ "quality": {
+  "frames_decoded": 1051,
+  "luma_mean": 541.9,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 27.5,
+  "audio": {
+   "lufs": -20.7,
+   "true_peak": "-6.5",
+   "silences": []
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.87,
+   "file": "thumbs/t0006870.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.0,
+   "file": "thumbs/t0014000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 16.96,
+   "file": "thumbs/t0016960.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 18.0,
+   "file": "thumbs/t0018000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.0,
+   "file": "thumbs/t0022000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.83,
+   "file": "thumbs/t0022830.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 24.0,
+   "file": "thumbs/t0024000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 26.0,
+   "file": "thumbs/t0026000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 28.0,
+   "file": "thumbs/t0028000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 29.73,
+   "file": "thumbs/t0029730.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 32.0,
+   "file": "thumbs/t0032000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 34.0,
+   "file": "thumbs/t0034000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m4ee4a2e4",
+ "name": "20261127_113621.mp4",
+ "kind": "video",
+ "sha256": "37ff28ea66d28cc1f80d42d53199bc28f43e2d8dce89619c93b433fe8b0e7cb5",
+ "indexed": "2026-11-27T11:27:26+00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "probe": {
+  "kind": "photo",
+  "w": 8192,
+  "h": 6144,
+  "taken": "2026:11:27 10:06:20",
+  "luma_mean": 118.4
+ },
+ "thumbs": [
+  {
+   "t": 0,
+   "file": "thumbs/t0000000.jpg",
+   "why": "photo"
+  }
+ ],
+ "scenes": [],
+ "quality": {},
+ "id": "m67560dcd",
+ "name": "IMG_20261127_100617_455.jpg",
+ "kind": "photo",
+ "sha256": "8e7c37a6367c6417453bbf7ea4d84b5a016e430a5a0f712c6cdaa8f635d1eb6c",
+ "indexed": "2026-11-27T11:37:50+00:00"
+}
