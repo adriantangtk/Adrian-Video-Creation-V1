@@ -663,10 +663,10 @@
    "dur": 0.484,
    "audio_gain_db": -14,
    "zoom": 1.0,
-   "zoom_to": 1.12,
+   "zoom_to": 1.0,
    "focus": [
     0.5,
-    0.22
+    0.0
    ],
    "purpose": "E: team creations board 1",
    "sfx": [
@@ -701,10 +701,10 @@
    "dur": 0.484,
    "audio_gain_db": -14,
    "zoom": 1.0,
-   "zoom_to": 1.12,
+   "zoom_to": 1.0,
    "focus": [
     0.5,
-    0.22
+    0.0
    ],
    "purpose": "E: team creations board 2",
    "sfx": [
@@ -727,10 +727,10 @@
    "dur": 0.484,
    "audio_gain_db": -14,
    "zoom": 1.0,
-   "zoom_to": 1.12,
+   "zoom_to": 1.0,
    "focus": [
     0.5,
-    0.22
+    0.0
    ],
    "purpose": "E: team creations board 3",
    "sfx": [
@@ -753,10 +753,10 @@
    "dur": 0.984,
    "audio_gain_db": -14,
    "zoom": 1.0,
-   "zoom_to": 1.12,
+   "zoom_to": 1.0,
    "focus": [
     0.5,
-    0.22
+    0.0
    ],
    "purpose": "E: team creations board 4",
    "sfx": [
@@ -1092,5 +1092,5 @@
   }
  ],
  "duration": 87.089,
- "validated": "2026-11-27T17:14:16+00:00"
+ "validated": "2026-11-27T17:19:26+00:00"
 }
