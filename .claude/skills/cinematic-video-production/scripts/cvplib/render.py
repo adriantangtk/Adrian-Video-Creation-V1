@@ -122,13 +122,17 @@ def _ts(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
 
+def _vis(s):
+    return len(re.sub(r"\{[^}]*\}", "", s))
+
+
 def _wrap(text, size, width):
     maxc = max(8, int(width / (size * 0.56)))
     out = []
     for para in text.split("\\N"):
         line = ""
         for w in para.split():
-            if line and len(line) + 1 + len(w) > maxc:
+            if line and _vis(line) + 1 + _vis(w) > maxc:
                 out.append(line); line = w
             else:
                 line = f"{line} {w}".strip()
@@ -207,11 +211,9 @@ def build_ass(pr, sb, fmt, shots_t):
         px, py = o.get("pos", {"Hook": [W / 2, 420 if vert else 200], "Kinetic": [W / 2, 860 if vert else 540],
                                "Lower": [x0 + 10, 1380 if vert else 990], "Callout": [W / 2, 700 if vert else 300]}[style])
         px, py = min(max(px, x0), x1), min(max(py, y0), y1)
-        text = o["text"]
-        hl = o.get("highlight", [])
-        for h_ in hl:
+        text = _wrap(o["text"], size, (x1 - x0) if style != "Lower" else (x1 - x0) * 0.8)
+        for h_ in o.get("highlight", []):
             text = re.sub(re.escape(h_), lambda m: "{\\c" + acc + "}" + m.group(0) + "{\\r}", text, flags=re.I)
-        text = _wrap(text, size, (x1 - x0) if style != "Lower" else (x1 - x0) * 0.8)
         an = o.get("anim", "pop")
         align = "\\an1" if style == "Lower" else "\\an5"
         if an == "slide":

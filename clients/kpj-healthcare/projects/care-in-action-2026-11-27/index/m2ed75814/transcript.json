@@ -1,0 +1,20 @@
+{
+ "model": "small.en",
+ "words": [
+  {
+   "w": "♪♪♪",
+   "s": 0.15,
+   "e": 5.36
+  }
+ ],
+ "segments": [
+  {
+   "s": 0.15,
+   "e": 5.36,
+   "text": "♪♪♪"
+  }
+ ],
+ "made": "2026-11-27T11:43:59+00:00",
+ "dropped_as_hallucination": [],
+ "note": "machine transcript: verify names and quotes before use"
+}

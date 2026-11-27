@@ -107,8 +107,9 @@ def contact_sheet(images, labels, dest, cols=6, cell=320, title=""):
         im.thumbnail((cell - 6, cellh - 22))
         x, y = (i % cols) * cell, (i // cols) * cellh + top
         sheet.paste(im, (x + (cell - im.width) // 2, y + 3))
-        d.rectangle([x + 3, y + cellh - 19, x + 3 + 7 * len(lab) + 6, y + cellh - 4], fill=(0, 0, 0))
-        d.text((x + 6, y + cellh - 18), lab, fill=(255, 214, 10))
+        ly = y + 3 + im.height - 18  # label sits on the image's own bottom edge
+        d.rectangle([x + (cell - im.width) // 2, ly, x + (cell - im.width) // 2 + 7 * len(lab) + 6, ly + 15], fill=(0, 0, 0))
+        d.text((x + (cell - im.width) // 2 + 3, ly + 1), lab, fill=(255, 214, 10))
     sheet.save(dest, quality=82)
     return dest
 

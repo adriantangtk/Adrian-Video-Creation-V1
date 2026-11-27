@@ -1,0 +1,60 @@
+{
+ "model": "small.en",
+ "words": [
+  {
+   "w": "Happy",
+   "s": 0.17,
+   "e": 0.62
+  },
+  {
+   "w": "gay,",
+   "s": 0.62,
+   "e": 1.39
+  },
+  {
+   "w": "gay,",
+   "s": 1.39,
+   "e": 2.66
+  },
+  {
+   "w": "gay,",
+   "s": 2.66,
+   "e": 4.32
+  },
+  {
+   "w": "gay,",
+   "s": 4.32,
+   "e": 5.98
+  },
+  {
+   "w": "gay,",
+   "s": 5.98,
+   "e": 8.76
+  },
+  {
+   "w": "gay,",
+   "s": 8.79,
+   "e": 13.28
+  },
+  {
+   "w": "gay,",
+   "s": 13.28,
+   "e": 17.77
+  },
+  {
+   "w": "gay.",
+   "s": 17.77,
+   "e": 22.73
+  }
+ ],
+ "segments": [
+  {
+   "s": 0.17,
+   "e": 22.73,
+   "text": "Happy gay, gay, gay, gay, gay, gay, gay, gay."
+  }
+ ],
+ "made": "2026-11-27T11:43:51+00:00",
+ "dropped_as_hallucination": [],
+ "note": "machine transcript: verify names and quotes before use"
+}

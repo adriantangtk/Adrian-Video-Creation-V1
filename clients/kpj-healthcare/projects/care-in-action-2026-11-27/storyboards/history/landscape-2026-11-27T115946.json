@@ -1,0 +1,746 @@
+{
+ "format": "landscape",
+ "fps": 30,
+ "brand": {
+  "accent": "#D4B07A",
+  "text": "#FFFFFF",
+  "box": "#1A1611",
+  "font": "Inter"
+ },
+ "captions": {
+  "enabled": true,
+  "max_words": 4,
+  "size": 62
+ },
+ "loudness": -14,
+ "music": {
+  "track": "care-anthem-landscape",
+  "start": 0,
+  "gain_db": -9,
+  "fade_out": 2.5,
+  "duck_threshold": 0.03,
+  "duck_ratio": 6
+ },
+ "logos": [
+  {
+   "file": "brand/kpj-logo-white.png",
+   "start": 57.855,
+   "dur": 6.0,
+   "width": 820,
+   "pos": [
+    960,
+    400
+   ],
+   "fade": 0.5
+  }
+ ],
+ "shots": [
+  {
+   "clip": "m53a9b5ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 6.0,
+   "out": 7.935,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.08,
+   "purpose": "hook: group close-up waving, ONE HEART shirts",
+   "overlay": [
+    {
+     "text": "ONE HEART.",
+     "style": "hook",
+     "start": 0.05,
+     "dur": 1.85,
+     "highlight": [
+      "HEART"
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -6
+    }
+   ],
+   "id": "s01",
+   "kind": "video",
+   "t_start": 0.0,
+   "t_end": 1.935
+  },
+  {
+   "clip": "mc76fc6a2",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 44.0,
+   "out": 45.935,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "focus": [
+    0.55,
+    0.55
+   ],
+   "purpose": "hook: Team 2 with C.A.R.E heart banner",
+   "overlay": [
+    {
+     "text": "ONE MISSION.",
+     "style": "hook",
+     "start": 0.05,
+     "dur": 1.85,
+     "highlight": [
+      "MISSION"
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    }
+   ],
+   "id": "s02",
+   "kind": "video",
+   "t_start": 1.935,
+   "t_end": 3.87
+  },
+  {
+   "clip": "m298798b7",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 1.0,
+   "out": 2.452,
+   "audio_gain_db": -14,
+   "purpose": "arrival: venue by the lake",
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    }
+   ],
+   "id": "s03",
+   "kind": "video",
+   "t_start": 3.87,
+   "t_end": 5.322
+  },
+  {
+   "clip": "mf764b2dc",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 0.3,
+   "out": 1.752,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.05,
+   "focus": [
+    0.78,
+    0.5
+   ],
+   "purpose": "arrival: LET'S GO screen",
+   "id": "s04",
+   "kind": "video",
+   "t_start": 5.322,
+   "t_end": 6.774
+  },
+  {
+   "clip": "m33d8b7ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "We have to have action.",
+     "start": 0.12,
+     "end": 2.75
+    }
+   ],
+   "in": 4.3,
+   "out": 7.203,
+   "audio_gain_db": 0,
+   "zoom": 1.35,
+   "focus": [
+    0.6,
+    0.5
+   ],
+   "speech": true,
+   "overlay": [
+    {
+     "text": "Muhaini\\NTrainer",
+     "style": "lower",
+     "start": 0.3,
+     "dur": 2.5,
+     "anim": "slide"
+    }
+   ],
+   "purpose": "trainer: Muhaini sets the tone",
+   "dialogue": "We have to have action. (Muhaini; machine transcript, verify)",
+   "id": "s05",
+   "kind": "video",
+   "t_start": 6.774,
+   "t_end": 9.677
+  },
+  {
+   "clip": "m33d8b7ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 13.4,
+   "out": 15.335,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "purpose": "title: C.A.R.E IN ACTION screen",
+   "overlay": [
+    {
+     "text": "KPJ Healthcare Teambuilding\\N27.11.2026",
+     "style": "lower",
+     "start": 0.15,
+     "dur": 1.75,
+     "anim": "slide"
+    }
+   ],
+   "id": "s06",
+   "kind": "video",
+   "t_start": 9.677,
+   "t_end": 11.612
+  },
+  {
+   "clip": "m33d8b7ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "purpose": "sessions: room engaged",
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    }
+   ],
+   "id": "s07",
+   "kind": "video",
+   "t_start": 11.612,
+   "t_end": 13.547
+  },
+  {
+   "clip": "m6dda40ef",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 10.0,
+   "out": 11.935,
+   "audio_gain_db": -14,
+   "zoom": 1.05,
+   "purpose": "sessions: tables at work",
+   "id": "s08",
+   "kind": "video",
+   "t_start": 13.547,
+   "t_end": 15.482
+  },
+  {
+   "clip": "m7904d089",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 0.5,
+   "out": 2.435,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.08,
+   "purpose": "sessions: Reflection Mirror brief on screen",
+   "id": "s09",
+   "kind": "video",
+   "t_start": 15.482,
+   "t_end": 17.417
+  },
+  {
+   "clip": "m7bc17175",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 22.0,
+   "out": 23.935,
+   "audio_gain_db": -14,
+   "purpose": "sessions: wide room energy",
+   "id": "s10",
+   "kind": "video",
+   "t_start": 17.417,
+   "t_end": 19.352
+  },
+  {
+   "clip": "m89c1e919",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 4.0,
+   "out": 5.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "purpose": "C: teams drawing their tribe banner",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}C{\\r}\\NCommitted",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "music_cue": "drop",
+   "id": "s11",
+   "kind": "video",
+   "t_start": 19.352,
+   "t_end": 21.287
+  },
+  {
+   "clip": "ma3abb7f7",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 8.0,
+   "out": 9.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "purpose": "C: commitment to the team identity",
+   "id": "s12",
+   "kind": "video",
+   "t_start": 21.287,
+   "t_end": 23.222
+  },
+  {
+   "clip": "m7904d089",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 30.0,
+   "out": 31.935,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "purpose": "A: teams writing on the Reflection Mirror",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}A{\\r}\\NAccountable",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s13",
+   "kind": "video",
+   "t_start": 23.222,
+   "t_end": 25.157
+  },
+  {
+   "clip": "m93302ffb",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "dur": 1.935,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "purpose": "A: Reflection Mirror sticky notes",
+   "id": "s14",
+   "kind": "photo",
+   "t_start": 25.157,
+   "t_end": 27.092
+  },
+  {
+   "clip": "m5e0e4909",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 2.0,
+   "out": 3.935,
+   "audio_gain_db": -8,
+   "purpose": "R: circle game, everyone in",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}R{\\r}\\NRespectful",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s15",
+   "kind": "video",
+   "t_start": 27.092,
+   "t_end": 29.027
+  },
+  {
+   "clip": "m62ddce82",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 28.0,
+   "out": 29.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "purpose": "R: listening to a teammate",
+   "id": "s16",
+   "kind": "video",
+   "t_start": 29.027,
+   "t_end": 30.962
+  },
+  {
+   "clip": "m792b212d",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "purpose": "E: Lion team performs the anthem",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}E{\\r}\\NExcellent",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s17",
+   "kind": "video",
+   "t_start": 30.962,
+   "t_end": 32.897
+  },
+  {
+   "clip": "mb8f104bd",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "One Heart Mission!",
+     "start": 0.12,
+     "end": 1.95
+    }
+   ],
+   "in": 3.6,
+   "out": 5.535,
+   "audio_gain_db": -4,
+   "zoom": 1.1,
+   "speech": true,
+   "purpose": "E: One Heart Mission",
+   "dialogue": "1 Heart Mission! (machine transcript, verify)",
+   "id": "s18",
+   "kind": "video",
+   "t_start": 32.897,
+   "t_end": 34.832
+  },
+  {
+   "clip": "m5fa6dffe",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "We are the shield",
+     "start": 0.1,
+     "end": 2.9
+    },
+    {
+     "text": "that protect our nation",
+     "start": 2.9,
+     "end": 3.87
+    }
+   ],
+   "in": 23.05,
+   "out": 26.921,
+   "audio_gain_db": 0,
+   "zoom": 1.0,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "dialogue": "We are the shield that protect our nation with respect and care. (verify)",
+   "music_cue": "breakdown",
+   "id": "s19",
+   "kind": "video",
+   "t_start": 34.832,
+   "t_end": 38.703
+  },
+  {
+   "clip": "m5fa6dffe",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "that protect our nation",
+     "start": 0.0,
+     "end": 3.2
+    },
+    {
+     "text": "with respect",
+     "start": 3.2,
+     "end": 3.87
+    }
+   ],
+   "in": 26.921,
+   "out": 30.792,
+   "audio_gain_db": 0,
+   "zoom": 1.3,
+   "focus": [
+    0.5,
+    0.6
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "dialogue": "We are the shield that protect our nation with respect and care. (verify)",
+   "music_cue": "",
+   "id": "s20",
+   "kind": "video",
+   "t_start": 38.703,
+   "t_end": 42.574
+  },
+  {
+   "clip": "m5fa6dffe",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "with respect and care.",
+     "start": 0.0,
+     "end": 3.4
+    }
+   ],
+   "in": 30.792,
+   "out": 34.663,
+   "audio_gain_db": 0,
+   "zoom": 1.12,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "dialogue": "We are the shield that protect our nation with respect and care. (verify)",
+   "music_cue": "lift",
+   "id": "s21",
+   "kind": "video",
+   "t_start": 42.574,
+   "t_end": 46.445
+  },
+  {
+   "clip": "mc76fc6a2",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 56.0,
+   "out": 57.935,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "purpose": "finale: Team 2 celebrates",
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    }
+   ],
+   "music_cue": "drop 2",
+   "id": "s22",
+   "kind": "video",
+   "t_start": 46.445,
+   "t_end": 48.38
+  },
+  {
+   "clip": "m2c2c4614",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 26.0,
+   "out": 27.935,
+   "audio_gain_db": -14,
+   "purpose": "finale: crowd cheering",
+   "id": "s23",
+   "kind": "video",
+   "t_start": 48.38,
+   "t_end": 50.315
+  },
+  {
+   "clip": "mcd305bb8",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 44.0,
+   "out": 45.935,
+   "audio_gain_db": -14,
+   "zoom": 1.1,
+   "purpose": "finale: hearts banner",
+   "id": "s24",
+   "kind": "video",
+   "t_start": 50.315,
+   "t_end": 52.25
+  },
+  {
+   "clip": "m53a9b5ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 0.2,
+   "out": 2.135,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "purpose": "finale: everyone, every banner",
+   "overlay": [
+    {
+     "text": "ONE TEAM. ONE HEART.",
+     "style": "kinetic",
+     "start": 0.1,
+     "dur": 1.8,
+     "highlight": [
+      "ONE HEART."
+     ]
+    }
+   ],
+   "id": "s25",
+   "kind": "video",
+   "t_start": 52.25,
+   "t_end": 54.185
+  },
+  {
+   "clip": "m53a9b5ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 6.4,
+   "out": 8.335,
+   "audio_gain_db": -14,
+   "purpose": "finale: close-up joy",
+   "id": "s26",
+   "kind": "video",
+   "t_start": 54.185,
+   "t_end": 56.12
+  },
+  {
+   "clip": "m53a9b5ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 19.6,
+   "out": 21.535,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.08,
+   "purpose": "finale: selfie energy",
+   "id": "s27",
+   "kind": "video",
+   "t_start": 56.12,
+   "t_end": 58.055
+  },
+  {
+   "clip": "m192e86db",
+   "grade": "gblur=sigma=22,eq=brightness=-0.22:saturation=0.75",
+   "captions": "none",
+   "dur": 7.258,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "transition": "dissolve",
+   "transition_dur": 0.5,
+   "purpose": "end card",
+   "sfx": [
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 0.4,
+     "gain_db": -10
+    }
+   ],
+   "overlay": [
+    {
+     "text": "C.A.R.E in Action",
+     "style": "kinetic",
+     "start": 0.6,
+     "dur": 6.2,
+     "pos": [
+      960,
+      600
+     ],
+     "anim": "fade",
+     "highlight": [
+      "C.A.R.E"
+     ]
+    },
+    {
+     "text": "Committed · Accountable · Respectful · Excellent",
+     "style": "callout",
+     "start": 1.0,
+     "dur": 5.8,
+     "pos": [
+      960,
+      740
+     ],
+     "anim": "fade"
+    },
+    {
+     "text": "27.11.2026",
+     "style": "callout",
+     "start": 1.2,
+     "dur": 5.6,
+     "pos": [
+      960,
+      830
+     ],
+     "anim": "fade"
+    }
+   ],
+   "id": "s28",
+   "kind": "photo",
+   "t_start": 57.555,
+   "t_end": 64.813
+  }
+ ],
+ "duration": 64.813,
+ "validated": "2026-11-27T11:59:39+00:00"
+}

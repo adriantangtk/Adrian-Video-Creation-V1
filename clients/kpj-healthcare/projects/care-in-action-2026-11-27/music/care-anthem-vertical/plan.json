@@ -1,0 +1,28 @@
+{
+ "bpm": 124,
+ "seed": 11,
+ "title": "C.A.R.E in Action (Reel cut)",
+ "tail": 2.0,
+ "sections": [
+  {
+   "type": "sting",
+   "bars": 1,
+   "name": "hook"
+  },
+  {
+   "type": "build",
+   "bars": 3,
+   "name": "sessions"
+  },
+  {
+   "type": "drop",
+   "bars": 8,
+   "name": "care-values"
+  },
+  {
+   "type": "outro",
+   "bars": 3,
+   "name": "endcard"
+  }
+ ]
+}

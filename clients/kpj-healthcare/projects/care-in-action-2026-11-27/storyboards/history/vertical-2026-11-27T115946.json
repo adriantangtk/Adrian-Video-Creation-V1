@@ -1,0 +1,437 @@
+{
+ "format": "vertical",
+ "fps": 30,
+ "brand": {
+  "accent": "#D4B07A",
+  "text": "#FFFFFF",
+  "box": "#1A1611",
+  "font": "Inter"
+ },
+ "captions": {
+  "enabled": true,
+  "max_words": 3,
+  "y": 1200
+ },
+ "loudness": -14,
+ "music": {
+  "track": "care-anthem-vertical",
+  "start": 0,
+  "gain_db": -9,
+  "fade_out": 2.0,
+  "duck_threshold": 0.03,
+  "duck_ratio": 6
+ },
+ "logos": [
+  {
+   "file": "brand/kpj-logo-white.png",
+   "start": 23.12,
+   "dur": 6.0,
+   "width": 760,
+   "pos": [
+    540,
+    700
+   ],
+   "fade": 0.5
+  }
+ ],
+ "shots": [
+  {
+   "clip": "m53a9b5ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 6.0,
+   "out": 7.935,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "purpose": "hook: ONE HEART shirts waving",
+   "overlay": [
+    {
+     "text": "ONE HEART.\\NONE MISSION.",
+     "style": "hook",
+     "start": 0.05,
+     "dur": 1.85,
+     "highlight": [
+      "HEART.",
+      "MISSION."
+     ],
+     "pos": [
+      540,
+      400
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -6
+    }
+   ],
+   "id": "s01",
+   "kind": "video",
+   "t_start": 0.0,
+   "t_end": 1.935
+  },
+  {
+   "clip": "ma2b24d1f",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 0.2,
+   "out": 2.135,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.08,
+   "purpose": "title: C.A.R.E in Action stage",
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    }
+   ],
+   "overlay": [
+    {
+     "text": "KPJ Healthcare\\NTeambuilding · 27.11.2026",
+     "style": "lower",
+     "start": 0.1,
+     "dur": 1.8,
+     "anim": "slide"
+    }
+   ],
+   "id": "s02",
+   "kind": "video",
+   "t_start": 1.935,
+   "t_end": 3.87
+  },
+  {
+   "clip": "m33d8b7ec",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "We have to have action.",
+     "start": 0.12,
+     "end": 1.94
+    }
+   ],
+   "in": 4.3,
+   "out": 6.235,
+   "audio_gain_db": 0,
+   "zoom": 1.2,
+   "focus": [
+    0.47,
+    0.5
+   ],
+   "speech": true,
+   "overlay": [
+    {
+     "text": "Muhaini\\NTrainer",
+     "style": "lower",
+     "start": 0.1,
+     "dur": 1.8,
+     "anim": "slide"
+    }
+   ],
+   "purpose": "trainer: Muhaini",
+   "id": "s03",
+   "kind": "video",
+   "t_start": 3.87,
+   "t_end": 5.805
+  },
+  {
+   "clip": "md9a4245e",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 6.0,
+   "out": 7.935,
+   "audio_gain_db": -14,
+   "purpose": "sessions: the room",
+   "id": "s04",
+   "kind": "video",
+   "t_start": 5.805,
+   "t_end": 7.74
+  },
+  {
+   "clip": "m89c1e919",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 4.0,
+   "out": 5.935,
+   "audio_gain_db": -14,
+   "purpose": "C: drawing the tribe banner",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}C{\\r}\\NCommitted",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "music_cue": "drop",
+   "id": "s05",
+   "kind": "video",
+   "t_start": 7.74,
+   "t_end": 9.675
+  },
+  {
+   "clip": "m4ee4a2e4",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "purpose": "C: heads down, all in",
+   "id": "s06",
+   "kind": "video",
+   "t_start": 9.675,
+   "t_end": 11.61
+  },
+  {
+   "clip": "m7cd19df8",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 0.5,
+   "out": 2.435,
+   "audio_gain_db": -14,
+   "purpose": "A: Reflection Mirror",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}A{\\r}\\NAccountable",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s07",
+   "kind": "video",
+   "t_start": 11.61,
+   "t_end": 13.545
+  },
+  {
+   "clip": "m2106bc1c",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 28.0,
+   "out": 29.935,
+   "audio_gain_db": -14,
+   "purpose": "A: owning the takeaways",
+   "id": "s08",
+   "kind": "video",
+   "t_start": 13.545,
+   "t_end": 15.48
+  },
+  {
+   "clip": "meb4f6112",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 8.0,
+   "out": 9.935,
+   "audio_gain_db": -8,
+   "purpose": "R: circle game",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}R{\\r}\\NRespectful",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s09",
+   "kind": "video",
+   "t_start": 15.48,
+   "t_end": 17.415
+  },
+  {
+   "clip": "m62ddce82",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 28.0,
+   "out": 29.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "purpose": "R: one voice, everyone listening",
+   "id": "s10",
+   "kind": "video",
+   "t_start": 17.415,
+   "t_end": 19.35
+  },
+  {
+   "clip": "mb8f104bd",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": [
+    {
+     "text": "One Heart Mission!",
+     "start": 0.12,
+     "end": 1.95
+    }
+   ],
+   "in": 3.6,
+   "out": 5.535,
+   "audio_gain_db": -4,
+   "zoom": 1.05,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "E: One Heart Mission",
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs240}E{\\r}\\NExcellent",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.4,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": -0.12,
+     "gain_db": -12,
+     "dur": 0.6
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s11",
+   "kind": "video",
+   "t_start": 19.35,
+   "t_end": 21.285
+  },
+  {
+   "clip": "m1dd4bda8",
+   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "captions": "none",
+   "in": 18.0,
+   "out": 19.935,
+   "audio_gain_db": -14,
+   "purpose": "E: the room cheers",
+   "id": "s12",
+   "kind": "video",
+   "t_start": 21.285,
+   "t_end": 23.22
+  },
+  {
+   "clip": "m53a9b5ec",
+   "grade": "gblur=sigma=22,eq=brightness=-0.22:saturation=0.75",
+   "captions": "none",
+   "in": 0.2,
+   "out": 7.458,
+   "audio_gain_db": -20,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "transition": "dissolve",
+   "transition_dur": 0.4,
+   "purpose": "end card over group photo",
+   "sfx": [
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 0.3,
+     "gain_db": -10
+    }
+   ],
+   "overlay": [
+    {
+     "text": "C.A.R.E\\Nin Action",
+     "style": "kinetic",
+     "start": 0.5,
+     "dur": 6.2,
+     "pos": [
+      540,
+      900
+     ],
+     "anim": "fade",
+     "highlight": [
+      "C.A.R.E"
+     ]
+    },
+    {
+     "text": "Committed · Accountable\\NRespectful · Excellent",
+     "style": "callout",
+     "start": 0.9,
+     "dur": 5.8,
+     "pos": [
+      540,
+      1110
+     ],
+     "anim": "fade"
+    },
+    {
+     "text": "27.11.2026",
+     "style": "callout",
+     "start": 1.1,
+     "dur": 5.6,
+     "pos": [
+      540,
+      1250
+     ],
+     "anim": "fade"
+    }
+   ],
+   "id": "s13",
+   "kind": "video",
+   "t_start": 22.82,
+   "t_end": 30.078
+  }
+ ],
+ "duration": 30.078,
+ "validated": "2026-11-27T11:59:39+00:00"
+}

@@ -11,12 +11,15 @@
    "size": "2533235",
    "modified": "2026-11-27T06:48:05.730Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mb95fb3a1.jpg",
    "sha256": "a3241ce4b441cbd8206f334894e9c861de59e9a434c8dba563c87725fe41d624",
-   "downloaded": "2026-11-27T11:13:49+00:00"
+   "downloaded": "2026-11-27T11:13:49+00:00",
+   "stages": {
+    "index": "a3241ce4b441cbd8206f334894e9c861de59e9a434c8dba563c87725fe41d624"
+   }
   },
   "m3917430d": {
    "id": "m3917430d",
@@ -29,12 +32,15 @@
    "size": "2568948",
    "modified": "2026-11-27T06:48:05.693Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m3917430d.jpg",
    "sha256": "ecb1b40b3c90ea9bb66557df8746563497fbb81632392396f3f7bb3a91d4c08a",
-   "downloaded": "2026-11-27T11:13:49+00:00"
+   "downloaded": "2026-11-27T11:13:49+00:00",
+   "stages": {
+    "index": "ecb1b40b3c90ea9bb66557df8746563497fbb81632392396f3f7bb3a91d4c08a"
+   }
   },
   "me91d0a9b": {
    "id": "me91d0a9b",
@@ -47,12 +53,15 @@
    "size": "2577812",
    "modified": "2026-11-27T06:48:05.654Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/me91d0a9b.jpg",
    "sha256": "9f3f0771c2e8858cd5ab488220d4dd59d8dcc3878d05a1c47cb5dbb3b1008e68",
-   "downloaded": "2026-11-27T11:13:49+00:00"
+   "downloaded": "2026-11-27T11:13:49+00:00",
+   "stages": {
+    "index": "9f3f0771c2e8858cd5ab488220d4dd59d8dcc3878d05a1c47cb5dbb3b1008e68"
+   }
   },
   "m192e86db": {
    "id": "m192e86db",
@@ -65,12 +74,15 @@
    "size": "2580964",
    "modified": "2026-11-27T06:48:05.578Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m192e86db.jpg",
    "sha256": "2c159f969266c073f01465dead3de791109b9570a4665660bc5a3cd1563a4c5d",
-   "downloaded": "2026-11-27T11:13:51+00:00"
+   "downloaded": "2026-11-27T11:13:51+00:00",
+   "stages": {
+    "index": "2c159f969266c073f01465dead3de791109b9570a4665660bc5a3cd1563a4c5d"
+   }
   },
   "m5eac2e38": {
    "id": "m5eac2e38",
@@ -83,12 +95,15 @@
    "size": "2609382",
    "modified": "2026-11-27T06:48:05.537Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m5eac2e38.jpg",
    "sha256": "0692d8873b6365ed38c676b7743531c83897670a62c64fc764a82f6284249fb7",
-   "downloaded": "2026-11-27T11:13:51+00:00"
+   "downloaded": "2026-11-27T11:13:51+00:00",
+   "stages": {
+    "index": "0692d8873b6365ed38c676b7743531c83897670a62c64fc764a82f6284249fb7"
+   }
   },
   "mb0b487e7": {
    "id": "mb0b487e7",
@@ -101,12 +116,15 @@
    "size": "2553700",
    "modified": "2026-11-27T06:48:05.495Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mb0b487e7.jpg",
    "sha256": "6a1444bfa0d2222de193eb8415527ba348fc6ad3286f761e556cf6350995cad8",
-   "downloaded": "2026-11-27T11:13:51+00:00"
+   "downloaded": "2026-11-27T11:13:51+00:00",
+   "stages": {
+    "index": "6a1444bfa0d2222de193eb8415527ba348fc6ad3286f761e556cf6350995cad8"
+   }
   },
   "m72aa76db": {
    "id": "m72aa76db",
@@ -119,12 +137,15 @@
    "size": "2664119",
    "modified": "2026-11-27T06:48:05.453Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m72aa76db.jpg",
    "sha256": "cd0a7f5527594c0c115e7cd87cd776afb13f126cd89f1def6d09830289e25871",
-   "downloaded": "2026-11-27T11:13:53+00:00"
+   "downloaded": "2026-11-27T11:13:53+00:00",
+   "stages": {
+    "index": "cd0a7f5527594c0c115e7cd87cd776afb13f126cd89f1def6d09830289e25871"
+   }
   },
   "m56080181": {
    "id": "m56080181",
@@ -137,12 +158,15 @@
    "size": "2662222",
    "modified": "2026-11-27T06:48:05.408Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m56080181.jpg",
    "sha256": "40c5a8c0747aab6ab9308e434bbfd192d805355e52b35cf5879497a0b707849c",
-   "downloaded": "2026-11-27T11:13:53+00:00"
+   "downloaded": "2026-11-27T11:13:53+00:00",
+   "stages": {
+    "index": "40c5a8c0747aab6ab9308e434bbfd192d805355e52b35cf5879497a0b707849c"
+   }
   },
   "m53a9b5ec": {
    "id": "m53a9b5ec",
@@ -155,12 +179,17 @@
    "size": "100965318",
    "modified": "2026-11-27T06:48:05.367Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m53a9b5ec.mp4",
    "sha256": "8fa92b86fb87912c8bc5c1d7ecc66010568a7b32e1059bee7435aa9a71532b7d",
-   "downloaded": "2026-11-27T11:13:59+00:00"
+   "downloaded": "2026-11-27T11:13:59+00:00",
+   "stages": {
+    "index": "8fa92b86fb87912c8bc5c1d7ecc66010568a7b32e1059bee7435aa9a71532b7d",
+    "transcribe": "8fa92b86fb87912c8bc5c1d7ecc66010568a7b32e1059bee7435aa9a71532b7d",
+    "annotated": "8fa92b86fb87912c8bc5c1d7ecc66010568a7b32e1059bee7435aa9a71532b7d"
+   }
   },
   "m1dd4bda8": {
    "id": "m1dd4bda8",
@@ -173,12 +202,17 @@
    "size": "110283134",
    "modified": "2026-11-27T06:48:05.063Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m1dd4bda8.mp4",
    "sha256": "ae13c722e529ef541cc13f5cd6d3aa2050b56441c90946fb409b4c3e913ac0e5",
-   "downloaded": "2026-11-27T11:13:59+00:00"
+   "downloaded": "2026-11-27T11:13:59+00:00",
+   "stages": {
+    "index": "ae13c722e529ef541cc13f5cd6d3aa2050b56441c90946fb409b4c3e913ac0e5",
+    "transcribe": "ae13c722e529ef541cc13f5cd6d3aa2050b56441c90946fb409b4c3e913ac0e5",
+    "annotated": "ae13c722e529ef541cc13f5cd6d3aa2050b56441c90946fb409b4c3e913ac0e5"
+   }
   },
   "m93302ffb": {
    "id": "m93302ffb",
@@ -191,12 +225,15 @@
    "size": "3241537",
    "modified": "2026-11-27T06:48:04.731Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m93302ffb.jpg",
    "sha256": "79e3a8deea4f63d7235b88ed5e6308644fb51384c83cbaf2fc8eeb69ad543450",
-   "downloaded": "2026-11-27T11:13:59+00:00"
+   "downloaded": "2026-11-27T11:13:59+00:00",
+   "stages": {
+    "index": "79e3a8deea4f63d7235b88ed5e6308644fb51384c83cbaf2fc8eeb69ad543450"
+   }
   },
   "m6e4b299a": {
    "id": "m6e4b299a",
@@ -209,12 +246,15 @@
    "size": "2592119",
    "modified": "2026-11-27T06:48:04.685Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m6e4b299a.jpg",
    "sha256": "22a8cc9729efc653c8346a120a4ae7196c7663d457d48990537c6a57c59120e6",
-   "downloaded": "2026-11-27T11:13:59+00:00"
+   "downloaded": "2026-11-27T11:13:59+00:00",
+   "stages": {
+    "index": "22a8cc9729efc653c8346a120a4ae7196c7663d457d48990537c6a57c59120e6"
+   }
   },
   "md18892d0": {
    "id": "md18892d0",
@@ -227,12 +267,15 @@
    "size": "2223503",
    "modified": "2026-11-27T06:48:04.636Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/md18892d0.jpg",
    "sha256": "68f089fb674a6cfe88791f860e6e3a5494d24077a55f6cbe6190c164bf10dbad",
-   "downloaded": "2026-11-27T11:14:00+00:00"
+   "downloaded": "2026-11-27T11:14:00+00:00",
+   "stages": {
+    "index": "68f089fb674a6cfe88791f860e6e3a5494d24077a55f6cbe6190c164bf10dbad"
+   }
   },
   "mafebe293": {
    "id": "mafebe293",
@@ -245,12 +288,15 @@
    "size": "2145347",
    "modified": "2026-11-27T06:48:04.596Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mafebe293.jpg",
    "sha256": "46b4cfd566296e8bd7b5b476ed88d761eb4467562ba825ab4807d72184564a73",
-   "downloaded": "2026-11-27T11:14:01+00:00"
+   "downloaded": "2026-11-27T11:14:01+00:00",
+   "stages": {
+    "index": "46b4cfd566296e8bd7b5b476ed88d761eb4467562ba825ab4807d72184564a73"
+   }
   },
   "me3366177": {
    "id": "me3366177",
@@ -263,12 +309,15 @@
    "size": "2232292",
    "modified": "2026-11-27T06:48:04.552Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/me3366177.jpg",
    "sha256": "3a2d165a611b5dd130696bca3681bbf24fd601fb08d0897432759624fe435875",
-   "downloaded": "2026-11-27T11:14:02+00:00"
+   "downloaded": "2026-11-27T11:14:02+00:00",
+   "stages": {
+    "index": "3a2d165a611b5dd130696bca3681bbf24fd601fb08d0897432759624fe435875"
+   }
   },
   "m2ed75814": {
    "id": "m2ed75814",
@@ -281,12 +330,17 @@
    "size": "23279852",
    "modified": "2026-11-27T06:48:04.493Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m2ed75814.mp4",
    "sha256": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9",
-   "downloaded": "2026-11-27T11:14:03+00:00"
+   "downloaded": "2026-11-27T11:14:03+00:00",
+   "stages": {
+    "index": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9",
+    "transcribe": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9",
+    "annotated": "1ecdf00e65f70362d54e18c0867014e382a76cbb0ba99e8e9b6121e6c28b7cc9"
+   }
   },
   "m2c2c4614": {
    "id": "m2c2c4614",
@@ -299,12 +353,17 @@
    "size": "160075411",
    "modified": "2026-11-27T06:48:04.391Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m2c2c4614.mp4",
    "sha256": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939",
-   "downloaded": "2026-11-27T11:14:08+00:00"
+   "downloaded": "2026-11-27T11:14:08+00:00",
+   "stages": {
+    "index": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939",
+    "transcribe": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939",
+    "annotated": "505a4f8b32c9d79c6c336dd9215ec561961c8f9449b0deec9b23c5d053344939"
+   }
   },
   "mcfc94dc3": {
    "id": "mcfc94dc3",
@@ -317,12 +376,15 @@
    "size": "2325259",
    "modified": "2026-11-27T06:26:03.683Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mcfc94dc3.jpg",
    "sha256": "930347457f259288197d4a5d2d83bad228771faf714cf2aa623e5c3d6321bf3e",
-   "downloaded": "2026-11-27T11:14:08+00:00"
+   "downloaded": "2026-11-27T11:14:08+00:00",
+   "stages": {
+    "index": "930347457f259288197d4a5d2d83bad228771faf714cf2aa623e5c3d6321bf3e"
+   }
   },
   "m89c1e919": {
    "id": "m89c1e919",
@@ -335,12 +397,17 @@
    "size": "100249571",
    "modified": "2026-11-27T06:26:03.653Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m89c1e919.mp4",
    "sha256": "4e1e9ae8c48574a799929d7a6cfd4d2e4286086003c15d1d72116d798742cb64",
-   "downloaded": "2026-11-27T11:14:10+00:00"
+   "downloaded": "2026-11-27T11:14:10+00:00",
+   "stages": {
+    "index": "4e1e9ae8c48574a799929d7a6cfd4d2e4286086003c15d1d72116d798742cb64",
+    "transcribe": "4e1e9ae8c48574a799929d7a6cfd4d2e4286086003c15d1d72116d798742cb64",
+    "annotated": "4e1e9ae8c48574a799929d7a6cfd4d2e4286086003c15d1d72116d798742cb64"
+   }
   },
   "mfae75360": {
    "id": "mfae75360",
@@ -353,12 +420,15 @@
    "size": "2320882",
    "modified": "2026-11-27T06:26:03.383Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mfae75360.jpg",
    "sha256": "4c1489222e74d1a4e83988a19834225e67119569069517f3f15c561b03858234",
-   "downloaded": "2026-11-27T11:14:10+00:00"
+   "downloaded": "2026-11-27T11:14:10+00:00",
+   "stages": {
+    "index": "4c1489222e74d1a4e83988a19834225e67119569069517f3f15c561b03858234"
+   }
   },
   "m4926c44a": {
    "id": "m4926c44a",
@@ -371,12 +441,17 @@
    "size": "111385017",
    "modified": "2026-11-27T06:26:03.356Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m4926c44a.mp4",
    "sha256": "3bf380dbaad37d1d35a94f4c5241562f6c80c2515df7e9f887594c28f8227cf1",
-   "downloaded": "2026-11-27T11:14:12+00:00"
+   "downloaded": "2026-11-27T11:14:12+00:00",
+   "stages": {
+    "index": "3bf380dbaad37d1d35a94f4c5241562f6c80c2515df7e9f887594c28f8227cf1",
+    "transcribe": "3bf380dbaad37d1d35a94f4c5241562f6c80c2515df7e9f887594c28f8227cf1",
+    "annotated": "3bf380dbaad37d1d35a94f4c5241562f6c80c2515df7e9f887594c28f8227cf1"
+   }
   },
   "m1d2fe27a": {
    "id": "m1d2fe27a",
@@ -389,12 +464,15 @@
    "size": "2769562",
    "modified": "2026-11-27T06:26:03.042Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m1d2fe27a.jpg",
    "sha256": "74cd52c5d6d8d8490bb5e19256da28119a7fe65af818aa3da8973507fd08327e",
-   "downloaded": "2026-11-27T11:14:12+00:00"
+   "downloaded": "2026-11-27T11:14:12+00:00",
+   "stages": {
+    "index": "74cd52c5d6d8d8490bb5e19256da28119a7fe65af818aa3da8973507fd08327e"
+   }
   },
   "m5fa6dffe": {
    "id": "m5fa6dffe",
@@ -407,12 +485,17 @@
    "size": "161010736",
    "modified": "2026-11-27T06:26:02.988Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m5fa6dffe.mp4",
    "sha256": "8c042990ff744907fb0cfb4d6505995597726ce303cc9ff79825ff6ca7c14809",
-   "downloaded": "2026-11-27T11:14:17+00:00"
+   "downloaded": "2026-11-27T11:14:17+00:00",
+   "stages": {
+    "index": "8c042990ff744907fb0cfb4d6505995597726ce303cc9ff79825ff6ca7c14809",
+    "transcribe": "8c042990ff744907fb0cfb4d6505995597726ce303cc9ff79825ff6ca7c14809",
+    "annotated": "8c042990ff744907fb0cfb4d6505995597726ce303cc9ff79825ff6ca7c14809"
+   }
   },
   "mcd305bb8": {
    "id": "mcd305bb8",
@@ -425,12 +508,17 @@
    "size": "331342289",
    "modified": "2026-11-27T06:26:02.564Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mcd305bb8.mp4",
    "sha256": "bda61ed48a4da2b1f53111dc543fb391cea94c55dc6d4e3e3c007c5cf07c5311",
-   "downloaded": "2026-11-27T11:14:23+00:00"
+   "downloaded": "2026-11-27T11:14:23+00:00",
+   "stages": {
+    "index": "bda61ed48a4da2b1f53111dc543fb391cea94c55dc6d4e3e3c007c5cf07c5311",
+    "transcribe": "bda61ed48a4da2b1f53111dc543fb391cea94c55dc6d4e3e3c007c5cf07c5311",
+    "annotated": "bda61ed48a4da2b1f53111dc543fb391cea94c55dc6d4e3e3c007c5cf07c5311"
+   }
   },
   "m792b212d": {
    "id": "m792b212d",
@@ -443,12 +531,17 @@
    "size": "117726089",
    "modified": "2026-11-27T06:26:01.740Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m792b212d.mp4",
    "sha256": "bb7cebcfcfe1d3405c1a8441ea44cc1e09437b7dff4de5af403ac64646382046",
-   "downloaded": "2026-11-27T11:14:23+00:00"
+   "downloaded": "2026-11-27T11:14:23+00:00",
+   "stages": {
+    "index": "bb7cebcfcfe1d3405c1a8441ea44cc1e09437b7dff4de5af403ac64646382046",
+    "transcribe": "bb7cebcfcfe1d3405c1a8441ea44cc1e09437b7dff4de5af403ac64646382046",
+    "annotated": "bb7cebcfcfe1d3405c1a8441ea44cc1e09437b7dff4de5af403ac64646382046"
+   }
   },
   "mb8f104bd": {
    "id": "mb8f104bd",
@@ -461,12 +554,17 @@
    "size": "162503463",
    "modified": "2026-11-27T06:26:01.425Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mb8f104bd.mp4",
    "sha256": "1efc2386253ceb19bfbe451627d7d3a6fbf912229727a79f4925a65f8d6d7025",
-   "downloaded": "2026-11-27T11:14:25+00:00"
+   "downloaded": "2026-11-27T11:14:25+00:00",
+   "stages": {
+    "index": "1efc2386253ceb19bfbe451627d7d3a6fbf912229727a79f4925a65f8d6d7025",
+    "transcribe": "1efc2386253ceb19bfbe451627d7d3a6fbf912229727a79f4925a65f8d6d7025",
+    "annotated": "1efc2386253ceb19bfbe451627d7d3a6fbf912229727a79f4925a65f8d6d7025"
+   }
   },
   "mc76fc6a2": {
    "id": "mc76fc6a2",
@@ -479,12 +577,17 @@
    "size": "339586646",
    "modified": "2026-11-27T06:26:00.983Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mc76fc6a2.mp4",
    "sha256": "c7fb18302e8b6e1b104793ad72983c9332a683f660ed3d2f17316d6b9b354dcb",
-   "downloaded": "2026-11-27T11:14:33+00:00"
+   "downloaded": "2026-11-27T11:14:33+00:00",
+   "stages": {
+    "index": "c7fb18302e8b6e1b104793ad72983c9332a683f660ed3d2f17316d6b9b354dcb",
+    "transcribe": "c7fb18302e8b6e1b104793ad72983c9332a683f660ed3d2f17316d6b9b354dcb",
+    "annotated": "c7fb18302e8b6e1b104793ad72983c9332a683f660ed3d2f17316d6b9b354dcb"
+   }
   },
   "meb4f6112": {
    "id": "meb4f6112",
@@ -497,12 +600,16 @@
    "size": "98713173",
    "modified": "2026-11-27T06:26:00.130Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/meb4f6112.mp4",
    "sha256": "4792442c68065602121081104fe414be64cd7fd6c841211e0cdc2b02cdac5b98",
-   "downloaded": "2026-11-27T11:14:33+00:00"
+   "downloaded": "2026-11-27T11:14:33+00:00",
+   "stages": {
+    "index": "4792442c68065602121081104fe414be64cd7fd6c841211e0cdc2b02cdac5b98",
+    "annotated": "4792442c68065602121081104fe414be64cd7fd6c841211e0cdc2b02cdac5b98"
+   }
   },
   "mce8eb1c3": {
    "id": "mce8eb1c3",
@@ -515,12 +622,17 @@
    "size": "296110797",
    "modified": "2026-11-27T06:25:59.823Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mce8eb1c3.mp4",
    "sha256": "525c628f9b58ff34da66f48cd3da027d76a5b57c080c1b4cd827853523af4bf5",
-   "downloaded": "2026-11-27T11:14:37+00:00"
+   "downloaded": "2026-11-27T11:14:37+00:00",
+   "stages": {
+    "index": "525c628f9b58ff34da66f48cd3da027d76a5b57c080c1b4cd827853523af4bf5",
+    "transcribe": "525c628f9b58ff34da66f48cd3da027d76a5b57c080c1b4cd827853523af4bf5",
+    "annotated": "525c628f9b58ff34da66f48cd3da027d76a5b57c080c1b4cd827853523af4bf5"
+   }
   },
   "m5e0e4909": {
    "id": "m5e0e4909",
@@ -533,12 +645,17 @@
    "size": "77845839",
    "modified": "2026-11-27T06:25:58.908Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m5e0e4909.mp4",
    "sha256": "82947e5b03325adaaa0eeabc74662aab5c177f9b71e83831bb368af3d955d6cf",
-   "downloaded": "2026-11-27T11:14:37+00:00"
+   "downloaded": "2026-11-27T11:14:37+00:00",
+   "stages": {
+    "index": "82947e5b03325adaaa0eeabc74662aab5c177f9b71e83831bb368af3d955d6cf",
+    "transcribe": "82947e5b03325adaaa0eeabc74662aab5c177f9b71e83831bb368af3d955d6cf",
+    "annotated": "82947e5b03325adaaa0eeabc74662aab5c177f9b71e83831bb368af3d955d6cf"
+   }
   },
   "ma3abb7f7": {
    "id": "ma3abb7f7",
@@ -551,12 +668,16 @@
    "size": "82626272",
    "modified": "2026-11-27T03:42:12.755Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/ma3abb7f7.mp4",
    "sha256": "ab413fc2c462dc80e94df12b25ad8219026c304f3a5d47daa6b50fe3cba60388",
-   "downloaded": "2026-11-27T11:14:39+00:00"
+   "downloaded": "2026-11-27T11:14:39+00:00",
+   "stages": {
+    "index": "ab413fc2c462dc80e94df12b25ad8219026c304f3a5d47daa6b50fe3cba60388",
+    "annotated": "ab413fc2c462dc80e94df12b25ad8219026c304f3a5d47daa6b50fe3cba60388"
+   }
   },
   "mcb2640b4": {
    "id": "mcb2640b4",
@@ -569,12 +690,16 @@
    "size": "76177730",
    "modified": "2026-11-27T03:38:02.388Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mcb2640b4.mp4",
    "sha256": "aa2cf69c301e2a9f65e6570a319202fced1ad55490d9e46a19ef4e49eeccd36f",
-   "downloaded": "2026-11-27T11:14:43+00:00"
+   "downloaded": "2026-11-27T11:14:43+00:00",
+   "stages": {
+    "index": "aa2cf69c301e2a9f65e6570a319202fced1ad55490d9e46a19ef4e49eeccd36f",
+    "annotated": "aa2cf69c301e2a9f65e6570a319202fced1ad55490d9e46a19ef4e49eeccd36f"
+   }
   },
   "m4ee4a2e4": {
    "id": "m4ee4a2e4",
@@ -587,12 +712,16 @@
    "size": "152550831",
    "modified": "2026-11-27T03:38:02.152Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m4ee4a2e4.mp4",
    "sha256": "37ff28ea66d28cc1f80d42d53199bc28f43e2d8dce89619c93b433fe8b0e7cb5",
-   "downloaded": "2026-11-27T11:14:43+00:00"
+   "downloaded": "2026-11-27T11:14:43+00:00",
+   "stages": {
+    "index": "37ff28ea66d28cc1f80d42d53199bc28f43e2d8dce89619c93b433fe8b0e7cb5",
+    "annotated": "37ff28ea66d28cc1f80d42d53199bc28f43e2d8dce89619c93b433fe8b0e7cb5"
+   }
   },
   "ma2b24d1f": {
    "id": "ma2b24d1f",
@@ -605,12 +734,16 @@
    "size": "79473660",
    "modified": "2026-11-27T03:10:19.382Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/ma2b24d1f.mp4",
    "sha256": "b4988e935f5b08934353b5e16ccbfbe43c5c84be70e5b4272f0a045ecad0c633",
-   "downloaded": "2026-11-27T11:14:45+00:00"
+   "downloaded": "2026-11-27T11:14:45+00:00",
+   "stages": {
+    "index": "b4988e935f5b08934353b5e16ccbfbe43c5c84be70e5b4272f0a045ecad0c633",
+    "annotated": "b4988e935f5b08934353b5e16ccbfbe43c5c84be70e5b4272f0a045ecad0c633"
+   }
   },
   "m67250204": {
    "id": "m67250204",
@@ -623,12 +756,16 @@
    "size": "59134969",
    "modified": "2026-11-27T03:10:19.097Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m67250204.mp4",
    "sha256": "ba52c6270eada210babfdeef885698c2e869d525babeda75c210fc88baeadda5",
-   "downloaded": "2026-11-27T11:14:48+00:00"
+   "downloaded": "2026-11-27T11:14:48+00:00",
+   "stages": {
+    "index": "ba52c6270eada210babfdeef885698c2e869d525babeda75c210fc88baeadda5",
+    "annotated": "ba52c6270eada210babfdeef885698c2e869d525babeda75c210fc88baeadda5"
+   }
   },
   "mbb55df68": {
    "id": "mbb55df68",
@@ -641,12 +778,15 @@
    "size": "2866670",
    "modified": "2026-11-27T03:10:18.869Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mbb55df68.jpg",
    "sha256": "ab29e02f416a345c5e378e1dbc19ac45ca9aca0ec6950d047905d536eb467485",
-   "downloaded": "2026-11-27T11:14:48+00:00"
+   "downloaded": "2026-11-27T11:14:48+00:00",
+   "stages": {
+    "index": "ab29e02f416a345c5e378e1dbc19ac45ca9aca0ec6950d047905d536eb467485"
+   }
   },
   "md9a4245e": {
    "id": "md9a4245e",
@@ -659,12 +799,16 @@
    "size": "74286948",
    "modified": "2026-11-27T03:10:18.819Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/md9a4245e.mp4",
    "sha256": "4120b588c874c540aa5c5da1a87aefa714ab27948a488af098d037aa210b048b",
-   "downloaded": "2026-11-27T11:14:51+00:00"
+   "downloaded": "2026-11-27T11:14:51+00:00",
+   "stages": {
+    "index": "4120b588c874c540aa5c5da1a87aefa714ab27948a488af098d037aa210b048b",
+    "annotated": "4120b588c874c540aa5c5da1a87aefa714ab27948a488af098d037aa210b048b"
+   }
   },
   "m8e3c2b67": {
    "id": "m8e3c2b67",
@@ -677,12 +821,16 @@
    "size": "127799616",
    "modified": "2026-11-27T03:10:18.551Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m8e3c2b67.mp4",
    "sha256": "7aa83d0b30fca69a9951c4053be578d9ddfe822427d03957e1a2570710311cae",
-   "downloaded": "2026-11-27T11:14:51+00:00"
+   "downloaded": "2026-11-27T11:14:51+00:00",
+   "stages": {
+    "index": "7aa83d0b30fca69a9951c4053be578d9ddfe822427d03957e1a2570710311cae",
+    "annotated": "7aa83d0b30fca69a9951c4053be578d9ddfe822427d03957e1a2570710311cae"
+   }
   },
   "m24f0a300": {
    "id": "m24f0a300",
@@ -695,12 +843,16 @@
    "size": "10932754",
    "modified": "2026-11-27T03:10:18.130Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m24f0a300.mp4",
    "sha256": "ef95c41f662073d27c27b75c5ccea583ea373038d37320590a39ff29f4b8a784",
-   "downloaded": "2026-11-27T11:14:51+00:00"
+   "downloaded": "2026-11-27T11:14:51+00:00",
+   "stages": {
+    "index": "ef95c41f662073d27c27b75c5ccea583ea373038d37320590a39ff29f4b8a784",
+    "annotated": "ef95c41f662073d27c27b75c5ccea583ea373038d37320590a39ff29f4b8a784"
+   }
   },
   "mb207c28f": {
    "id": "mb207c28f",
@@ -713,12 +865,16 @@
    "size": "609983576",
    "modified": "2026-11-27T03:10:18.060Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mb207c28f.mp4",
    "sha256": "7f256e8969e23f1a8e2f9039e63763ecec987edbffaee896a783faa522f02beb",
-   "downloaded": "2026-11-27T11:15:18+00:00"
+   "downloaded": "2026-11-27T11:15:18+00:00",
+   "stages": {
+    "index": "7f256e8969e23f1a8e2f9039e63763ecec987edbffaee896a783faa522f02beb",
+    "annotated": "7f256e8969e23f1a8e2f9039e63763ecec987edbffaee896a783faa522f02beb"
+   }
   },
   "m1669ebfa": {
    "id": "m1669ebfa",
@@ -731,12 +887,16 @@
    "size": "254758613",
    "modified": "2026-11-27T03:10:16.332Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m1669ebfa.mp4",
    "sha256": "9be842a4b607f9e50682080c5bae9d0564a676bf5e798bd41fe34ba64947ad8c",
-   "downloaded": "2026-11-27T11:15:19+00:00"
+   "downloaded": "2026-11-27T11:15:19+00:00",
+   "stages": {
+    "index": "9be842a4b607f9e50682080c5bae9d0564a676bf5e798bd41fe34ba64947ad8c",
+    "annotated": "9be842a4b607f9e50682080c5bae9d0564a676bf5e798bd41fe34ba64947ad8c"
+   }
   },
   "m440343d6": {
    "id": "m440343d6",
@@ -749,12 +909,16 @@
    "size": "137411746",
    "modified": "2026-11-27T03:10:15.584Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m440343d6.mp4",
    "sha256": "346521949a2afbd4892322cf199ea51c837b0f1dd05db060bab3ccb73c879d98",
-   "downloaded": "2026-11-27T11:15:19+00:00"
+   "downloaded": "2026-11-27T11:15:19+00:00",
+   "stages": {
+    "index": "346521949a2afbd4892322cf199ea51c837b0f1dd05db060bab3ccb73c879d98",
+    "annotated": "346521949a2afbd4892322cf199ea51c837b0f1dd05db060bab3ccb73c879d98"
+   }
   },
   "mee765814": {
    "id": "mee765814",
@@ -767,12 +931,16 @@
    "size": "69230018",
    "modified": "2026-11-27T03:10:15.163Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mee765814.mp4",
    "sha256": "2df0721a86455950d103d6f556b2e4096b27513d902dc2bd2117ea5e329d30bc",
-   "downloaded": "2026-11-27T11:15:19+00:00"
+   "downloaded": "2026-11-27T11:15:19+00:00",
+   "stages": {
+    "index": "2df0721a86455950d103d6f556b2e4096b27513d902dc2bd2117ea5e329d30bc",
+    "annotated": "2df0721a86455950d103d6f556b2e4096b27513d902dc2bd2117ea5e329d30bc"
+   }
   },
   "m62ddce82": {
    "id": "m62ddce82",
@@ -785,12 +953,17 @@
    "size": "638291897",
    "modified": "2026-11-27T03:10:14.930Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m62ddce82.mp4",
    "sha256": "a21dc40f864c46864f25b958c9dd2be0aa309b03a133b1e2976e60e53c7d806b",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "a21dc40f864c46864f25b958c9dd2be0aa309b03a133b1e2976e60e53c7d806b",
+    "transcribe": "a21dc40f864c46864f25b958c9dd2be0aa309b03a133b1e2976e60e53c7d806b",
+    "annotated": "a21dc40f864c46864f25b958c9dd2be0aa309b03a133b1e2976e60e53c7d806b"
+   }
   },
   "m5176078e": {
    "id": "m5176078e",
@@ -803,12 +976,17 @@
    "size": "101787907",
    "modified": "2026-11-27T03:10:13.155Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m5176078e.mp4",
    "sha256": "e7bca2dde48db29868c20008d9bb23ac043712d29522172039430cdc20fbcb49",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "e7bca2dde48db29868c20008d9bb23ac043712d29522172039430cdc20fbcb49",
+    "transcribe": "e7bca2dde48db29868c20008d9bb23ac043712d29522172039430cdc20fbcb49",
+    "annotated": "e7bca2dde48db29868c20008d9bb23ac043712d29522172039430cdc20fbcb49"
+   }
   },
   "m0c0fd4ec": {
    "id": "m0c0fd4ec",
@@ -821,12 +999,15 @@
    "size": "2190106",
    "modified": "2026-11-27T03:10:12.858Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m0c0fd4ec.jpg",
    "sha256": "1b518102ceb763153f0f8bc08168d218c39cf937348447d58757ad301726cb0d",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "1b518102ceb763153f0f8bc08168d218c39cf937348447d58757ad301726cb0d"
+   }
   },
   "mf9def007": {
    "id": "mf9def007",
@@ -839,12 +1020,15 @@
    "size": "2404622",
    "modified": "2026-11-27T03:10:12.827Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mf9def007.jpg",
    "sha256": "c9dad6c00e5ec6e2842f632ce0f581ae582a1d0f8807075b4ab231ff1184fdb4",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "c9dad6c00e5ec6e2842f632ce0f581ae582a1d0f8807075b4ab231ff1184fdb4"
+   }
   },
   "m0c548c03": {
    "id": "m0c548c03",
@@ -857,12 +1041,15 @@
    "size": "2112999",
    "modified": "2026-11-27T03:10:12.797Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m0c548c03.jpg",
    "sha256": "5c6c10427a3ce3ec36323d0f3fa6531fa1a4cf537dd760a1f8a5f84af69f6ca3",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "5c6c10427a3ce3ec36323d0f3fa6531fa1a4cf537dd760a1f8a5f84af69f6ca3"
+   }
   },
   "maf192ddd": {
    "id": "maf192ddd",
@@ -875,12 +1062,15 @@
    "size": "2118165",
    "modified": "2026-11-27T03:10:12.764Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/maf192ddd.jpg",
    "sha256": "c3ceaeb18601de2d23afd5eb73db05eebee1a982f0cb419439560926e422b0da",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "c3ceaeb18601de2d23afd5eb73db05eebee1a982f0cb419439560926e422b0da"
+   }
   },
   "m6dda40ef": {
    "id": "m6dda40ef",
@@ -893,12 +1083,16 @@
    "size": "118136579",
    "modified": "2026-11-27T03:10:12.729Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m6dda40ef.mp4",
    "sha256": "4c4430e2f3d4624f5652081081df501ffeb9f574db169ec364130f9f433e90e8",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "4c4430e2f3d4624f5652081081df501ffeb9f574db169ec364130f9f433e90e8",
+    "annotated": "4c4430e2f3d4624f5652081081df501ffeb9f574db169ec364130f9f433e90e8"
+   }
   },
   "m9cc296de": {
    "id": "m9cc296de",
@@ -911,12 +1105,15 @@
    "size": "3562586",
    "modified": "2026-11-27T03:10:12.390Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m9cc296de.jpg",
    "sha256": "12cb4c8885ec809138c656ba020bb4f0288ac269789fcb1a70beb559cab1e58e",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "12cb4c8885ec809138c656ba020bb4f0288ac269789fcb1a70beb559cab1e58e"
+   }
   },
   "mcb307297": {
    "id": "mcb307297",
@@ -929,12 +1126,15 @@
    "size": "3154461",
    "modified": "2026-11-27T03:10:12.355Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mcb307297.jpg",
    "sha256": "475b5b1c825a6da1eebe63dccc43d5fc9412d2fc818d7a1c9ea0d0186f8cc338",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "475b5b1c825a6da1eebe63dccc43d5fc9412d2fc818d7a1c9ea0d0186f8cc338"
+   }
   },
   "mf84dad43": {
    "id": "mf84dad43",
@@ -947,12 +1147,15 @@
    "size": "3091404",
    "modified": "2026-11-27T03:10:12.317Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mf84dad43.jpg",
    "sha256": "8ea99eece4b36ef8b5382b6f0cc0bc6a2cd6f2c654461886e58ab5e6a62187da",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "8ea99eece4b36ef8b5382b6f0cc0bc6a2cd6f2c654461886e58ab5e6a62187da"
+   }
   },
   "m8700a97d": {
    "id": "m8700a97d",
@@ -965,12 +1168,15 @@
    "size": "2965687",
    "modified": "2026-11-27T03:10:12.284Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m8700a97d.jpg",
    "sha256": "be98144d29dd71e43c2eb1877faa99d7c0c3086a18841d529887771b152ae4fd",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "be98144d29dd71e43c2eb1877faa99d7c0c3086a18841d529887771b152ae4fd"
+   }
   },
   "m1c669037": {
    "id": "m1c669037",
@@ -983,12 +1189,15 @@
    "size": "2258152",
    "modified": "2026-11-27T03:10:12.248Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m1c669037.jpg",
    "sha256": "49415d0c99153f4ec883c809083fca85a30c2ab4e7d64faf1bf03dab71304ede",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "49415d0c99153f4ec883c809083fca85a30c2ab4e7d64faf1bf03dab71304ede"
+   }
   },
   "m0ef070b0": {
    "id": "m0ef070b0",
@@ -1001,12 +1210,15 @@
    "size": "2457539",
    "modified": "2026-11-27T03:10:12.214Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m0ef070b0.jpg",
    "sha256": "60b6e5d3fb30d024b5ac635ef451d910b281c100bc9531bb812cc0064ee269b6",
-   "downloaded": "2026-11-27T11:15:27+00:00"
+   "downloaded": "2026-11-27T11:15:27+00:00",
+   "stages": {
+    "index": "60b6e5d3fb30d024b5ac635ef451d910b281c100bc9531bb812cc0064ee269b6"
+   }
   },
   "m484db350": {
    "id": "m484db350",
@@ -1019,12 +1231,15 @@
    "size": "2069375",
    "modified": "2026-11-27T03:10:12.179Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m484db350.jpg",
    "sha256": "840fd910596195c483eba59534c84bbcb49f1195f237195e971b88eee3311329",
-   "downloaded": "2026-11-27T11:15:28+00:00"
+   "downloaded": "2026-11-27T11:15:28+00:00",
+   "stages": {
+    "index": "840fd910596195c483eba59534c84bbcb49f1195f237195e971b88eee3311329"
+   }
   },
   "m889cf9cc": {
    "id": "m889cf9cc",
@@ -1037,12 +1252,15 @@
    "size": "2031986",
    "modified": "2026-11-27T03:10:12.147Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m889cf9cc.jpg",
    "sha256": "5cee69bce9f6997e0ab4471180f2200ef832fc72563da3bb1e2e74861c449768",
-   "downloaded": "2026-11-27T11:15:28+00:00"
+   "downloaded": "2026-11-27T11:15:28+00:00",
+   "stages": {
+    "index": "5cee69bce9f6997e0ab4471180f2200ef832fc72563da3bb1e2e74861c449768"
+   }
   },
   "mb06ab9ef": {
    "id": "mb06ab9ef",
@@ -1055,12 +1273,15 @@
    "size": "2528633",
    "modified": "2026-11-27T03:10:12.116Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mb06ab9ef.jpg",
    "sha256": "9ab5f995b2f2e93eacc4963519c73c6ed2ed7802e40476bdb3272ac4418b9400",
-   "downloaded": "2026-11-27T11:15:30+00:00"
+   "downloaded": "2026-11-27T11:15:30+00:00",
+   "stages": {
+    "index": "9ab5f995b2f2e93eacc4963519c73c6ed2ed7802e40476bdb3272ac4418b9400"
+   }
   },
   "m848796de": {
    "id": "m848796de",
@@ -1073,12 +1294,16 @@
    "size": "82641885",
    "modified": "2026-11-27T03:10:12.079Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m848796de.mp4",
    "sha256": "db170b61a8b487600c9856f3257721b67458f1f6a7d564686a03d92458cd8263",
-   "downloaded": "2026-11-27T11:15:36+00:00"
+   "downloaded": "2026-11-27T11:15:36+00:00",
+   "stages": {
+    "index": "db170b61a8b487600c9856f3257721b67458f1f6a7d564686a03d92458cd8263",
+    "annotated": "db170b61a8b487600c9856f3257721b67458f1f6a7d564686a03d92458cd8263"
+   }
   },
   "m2106bc1c": {
    "id": "m2106bc1c",
@@ -1091,12 +1316,17 @@
    "size": "158429112",
    "modified": "2026-11-27T03:10:11.842Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m2106bc1c.mp4",
    "sha256": "96420008389ef9264a5407c483f12b0b39381c0c36493a7dc2dd8171f77ac075",
-   "downloaded": "2026-11-27T11:15:36+00:00"
+   "downloaded": "2026-11-27T11:15:36+00:00",
+   "stages": {
+    "index": "96420008389ef9264a5407c483f12b0b39381c0c36493a7dc2dd8171f77ac075",
+    "transcribe": "96420008389ef9264a5407c483f12b0b39381c0c36493a7dc2dd8171f77ac075",
+    "annotated": "96420008389ef9264a5407c483f12b0b39381c0c36493a7dc2dd8171f77ac075"
+   }
   },
   "m7cd19df8": {
    "id": "m7cd19df8",
@@ -1109,12 +1339,16 @@
    "size": "180361094",
    "modified": "2026-11-27T03:10:11.417Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m7cd19df8.mp4",
    "sha256": "e2f0c2ad2cf33fddb765484212d87f80c35e258e625ffaf6a12af933477ba8af",
-   "downloaded": "2026-11-27T11:15:37+00:00"
+   "downloaded": "2026-11-27T11:15:37+00:00",
+   "stages": {
+    "index": "e2f0c2ad2cf33fddb765484212d87f80c35e258e625ffaf6a12af933477ba8af",
+    "annotated": "e2f0c2ad2cf33fddb765484212d87f80c35e258e625ffaf6a12af933477ba8af"
+   }
   },
   "mafe0eaf2": {
    "id": "mafe0eaf2",
@@ -1127,12 +1361,16 @@
    "size": "4808357",
    "modified": "2026-11-27T03:10:10.951Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mafe0eaf2.mp4",
    "sha256": "aa0772b76f3c19645d4003dfc8e783360a830a56a4d05b2e77a974f17b900390",
-   "downloaded": "2026-11-27T11:15:37+00:00"
+   "downloaded": "2026-11-27T11:15:37+00:00",
+   "stages": {
+    "index": "aa0772b76f3c19645d4003dfc8e783360a830a56a4d05b2e77a974f17b900390",
+    "annotated": "aa0772b76f3c19645d4003dfc8e783360a830a56a4d05b2e77a974f17b900390"
+   }
   },
   "m298798b7": {
    "id": "m298798b7",
@@ -1145,12 +1383,16 @@
    "size": "48286414",
    "modified": "2026-11-27T03:10:10.909Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m298798b7.mp4",
    "sha256": "ecbdd7d0a7f101c1a673d48d0dc69693f60809258a27adb81938cd320f61487e",
-   "downloaded": "2026-11-27T11:15:40+00:00"
+   "downloaded": "2026-11-27T11:15:40+00:00",
+   "stages": {
+    "index": "ecbdd7d0a7f101c1a673d48d0dc69693f60809258a27adb81938cd320f61487e",
+    "annotated": "ecbdd7d0a7f101c1a673d48d0dc69693f60809258a27adb81938cd320f61487e"
+   }
   },
   "mf51d0766": {
    "id": "mf51d0766",
@@ -1163,12 +1405,16 @@
    "size": "32972712",
    "modified": "2026-11-27T03:10:10.760Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mf51d0766.mp4",
    "sha256": "195641cb441b24b6e8c2fad6b72c6c60a597dfe21b7b0e3977eed32338b1309c",
-   "downloaded": "2026-11-27T11:15:40+00:00"
+   "downloaded": "2026-11-27T11:15:40+00:00",
+   "stages": {
+    "index": "195641cb441b24b6e8c2fad6b72c6c60a597dfe21b7b0e3977eed32338b1309c",
+    "annotated": "195641cb441b24b6e8c2fad6b72c6c60a597dfe21b7b0e3977eed32338b1309c"
+   }
   },
   "m09e5bc95": {
    "id": "m09e5bc95",
@@ -1181,12 +1427,16 @@
    "size": "56642007",
    "modified": "2026-11-27T03:10:10.664Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m09e5bc95.mp4",
    "sha256": "7c9587df2a117d764eec1707508dfd58133c38a5b57b4a524c435f3bd41000cb",
-   "downloaded": "2026-11-27T11:15:43+00:00"
+   "downloaded": "2026-11-27T11:15:43+00:00",
+   "stages": {
+    "index": "7c9587df2a117d764eec1707508dfd58133c38a5b57b4a524c435f3bd41000cb",
+    "annotated": "7c9587df2a117d764eec1707508dfd58133c38a5b57b4a524c435f3bd41000cb"
+   }
   },
   "mf764b2dc": {
    "id": "mf764b2dc",
@@ -1199,12 +1449,16 @@
    "size": "299388233",
    "modified": "2026-11-27T03:10:10.522Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mf764b2dc.mp4",
    "sha256": "7451451aa02b3ef730c7b464949bbbba094b0c0aff7c844f3250fd4c83a7e266",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "7451451aa02b3ef730c7b464949bbbba094b0c0aff7c844f3250fd4c83a7e266",
+    "annotated": "7451451aa02b3ef730c7b464949bbbba094b0c0aff7c844f3250fd4c83a7e266"
+   }
   },
   "mc99bc456": {
    "id": "mc99bc456",
@@ -1217,12 +1471,15 @@
    "size": "5170783",
    "modified": "2026-11-27T03:10:09.901Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mc99bc456.jpg",
    "sha256": "ef8a1734c966aaa3ed976245564dc43f1a1e9c9e02c2b69ff4dd5ec606fe3d5e",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "ef8a1734c966aaa3ed976245564dc43f1a1e9c9e02c2b69ff4dd5ec606fe3d5e"
+   }
   },
   "m506d878d": {
    "id": "m506d878d",
@@ -1235,12 +1492,15 @@
    "size": "4925864",
    "modified": "2026-11-27T03:10:09.866Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m506d878d.jpg",
    "sha256": "ba428c91cfcbbda9205326e9f5da26311dc301ace6d0a503fd1c7bf46605f272",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "ba428c91cfcbbda9205326e9f5da26311dc301ace6d0a503fd1c7bf46605f272"
+   }
   },
   "m67560dcd": {
    "id": "m67560dcd",
@@ -1253,12 +1513,15 @@
    "size": "4739482",
    "modified": "2026-11-27T03:10:09.832Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m67560dcd.jpg",
    "sha256": "8e7c37a6367c6417453bbf7ea4d84b5a016e430a5a0f712c6cdaa8f635d1eb6c",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "8e7c37a6367c6417453bbf7ea4d84b5a016e430a5a0f712c6cdaa8f635d1eb6c"
+   }
   },
   "m318c5e58": {
    "id": "m318c5e58",
@@ -1271,12 +1534,15 @@
    "size": "5498131",
    "modified": "2026-11-27T03:10:09.802Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m318c5e58.jpg",
    "sha256": "de4a56fd4e0cb24859cc1d82932d58de602dc90a63842d41f5eb3a43ac00a578",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "de4a56fd4e0cb24859cc1d82932d58de602dc90a63842d41f5eb3a43ac00a578"
+   }
   },
   "m25fc7825": {
    "id": "m25fc7825",
@@ -1289,12 +1555,15 @@
    "size": "4822456",
    "modified": "2026-11-27T03:10:09.771Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m25fc7825.jpg",
    "sha256": "fab178508c7d1e336225033c1898afb79048146b422a06b878b1d949aede1cdd",
-   "downloaded": "2026-11-27T11:15:53+00:00"
+   "downloaded": "2026-11-27T11:15:53+00:00",
+   "stages": {
+    "index": "fab178508c7d1e336225033c1898afb79048146b422a06b878b1d949aede1cdd"
+   }
   },
   "m7904d089": {
    "id": "m7904d089",
@@ -1307,12 +1576,16 @@
    "size": "587630219",
    "modified": "2026-11-27T03:10:09.736Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m7904d089.mp4",
    "sha256": "c11a8f8c1c8d7e0395499dc270766ebf48b82d22eb84a212ae6a5863e38a6c05",
-   "downloaded": "2026-11-27T11:16:15+00:00"
+   "downloaded": "2026-11-27T11:16:15+00:00",
+   "stages": {
+    "index": "c11a8f8c1c8d7e0395499dc270766ebf48b82d22eb84a212ae6a5863e38a6c05",
+    "annotated": "c11a8f8c1c8d7e0395499dc270766ebf48b82d22eb84a212ae6a5863e38a6c05"
+   }
   },
   "m7bc17175": {
    "id": "m7bc17175",
@@ -1325,12 +1598,16 @@
    "size": "272139915",
    "modified": "2026-11-27T03:10:08.652Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m7bc17175.mp4",
    "sha256": "0b4667b580f0d06a325069fc98a0c299f964a0120a741185e86f113e417d1523",
-   "downloaded": "2026-11-27T11:16:15+00:00"
+   "downloaded": "2026-11-27T11:16:15+00:00",
+   "stages": {
+    "index": "0b4667b580f0d06a325069fc98a0c299f964a0120a741185e86f113e417d1523",
+    "annotated": "0b4667b580f0d06a325069fc98a0c299f964a0120a741185e86f113e417d1523"
+   }
   },
   "ma1e10905": {
    "id": "ma1e10905",
@@ -1343,12 +1620,16 @@
    "size": "151029383",
    "modified": "2026-11-27T03:10:08.154Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/ma1e10905.mp4",
    "sha256": "991bfd461b93bbb44cf4ce7465fefdfa7b7ce9f0bb0424d53b4d50709e9a44e9",
-   "downloaded": "2026-11-27T11:16:15+00:00"
+   "downloaded": "2026-11-27T11:16:15+00:00",
+   "stages": {
+    "index": "991bfd461b93bbb44cf4ce7465fefdfa7b7ce9f0bb0424d53b4d50709e9a44e9",
+    "annotated": "991bfd461b93bbb44cf4ce7465fefdfa7b7ce9f0bb0424d53b4d50709e9a44e9"
+   }
   },
   "m33d8b7ec": {
    "id": "m33d8b7ec",
@@ -1361,12 +1642,17 @@
    "size": "299533960",
    "modified": "2026-11-27T03:10:07.832Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/m33d8b7ec.mp4",
    "sha256": "85b95607f02c153050f8875b4b2ab2f23384635003b3cbeff544686f5a976d8d",
-   "downloaded": "2026-11-27T11:16:16+00:00"
+   "downloaded": "2026-11-27T11:16:16+00:00",
+   "stages": {
+    "index": "85b95607f02c153050f8875b4b2ab2f23384635003b3cbeff544686f5a976d8d",
+    "transcribe": "85b95607f02c153050f8875b4b2ab2f23384635003b3cbeff544686f5a976d8d",
+    "annotated": "85b95607f02c153050f8875b4b2ab2f23384635003b3cbeff544686f5a976d8d"
+   }
   },
   "mcea00300": {
    "id": "mcea00300",
@@ -1379,12 +1665,16 @@
    "size": "219055754",
    "modified": "2026-11-27T03:10:07.209Z",
    "md5": null,
-   "status": "ready",
+   "status": "indexed",
    "first_seen": "2026-11-27T11:13:47+00:00",
    "history": [],
    "local": "cache/media/mcea00300.mp4",
    "sha256": "9669baac93627a0b411515d9f836feac5f032c75cc5e1659648147263a109f56",
-   "downloaded": "2026-11-27T11:16:16+00:00"
+   "downloaded": "2026-11-27T11:16:16+00:00",
+   "stages": {
+    "index": "9669baac93627a0b411515d9f836feac5f032c75cc5e1659648147263a109f56",
+    "annotated": "9669baac93627a0b411515d9f836feac5f032c75cc5e1659648147263a109f56"
+   }
   }
  },
  "scans": [
@@ -1403,5 +1693,5 @@
    }
   }
  ],
- "updated": "2026-11-27T11:16:16+00:00"
+ "updated": "2026-11-27T11:53:04+00:00"
 }

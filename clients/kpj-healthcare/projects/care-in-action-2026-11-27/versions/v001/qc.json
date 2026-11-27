@@ -1,0 +1,68 @@
+{
+ "landscape": {
+  "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v001/kpj-healthcare-care-in-action-2026-11-27-landscape-v001.mp4",
+  "format": "landscape",
+  "checked": "2026-11-27T12:09:07+00:00",
+  "probe": {
+   "duration": 64.81,
+   "size": 78928984,
+   "format": "mov,mp4,m4a,3gp,3g2,mj2",
+   "created": null,
+   "video": {
+    "codec": "h264",
+    "w": 1920,
+    "h": 1080,
+    "fps": 30.0,
+    "rotation": 0,
+    "pix_fmt": "yuv420p",
+    "frames": 1944,
+    "hdr": false
+   },
+   "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2
+   }
+  },
+  "lufs": -14.2,
+  "true_peak": -1.2,
+  "black": [],
+  "freeze_starts": [],
+  "issues": [],
+  "size_mb": 78.93,
+  "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v001/stills/landscape-review.jpg"
+ },
+ "vertical": {
+  "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v001/kpj-healthcare-care-in-action-2026-11-27-vertical-v001.mp4",
+  "format": "vertical",
+  "checked": "2026-11-27T12:09:13+00:00",
+  "probe": {
+   "duration": 30.1,
+   "size": 24381480,
+   "format": "mov,mp4,m4a,3gp,3g2,mj2",
+   "created": null,
+   "video": {
+    "codec": "h264",
+    "w": 1080,
+    "h": 1920,
+    "fps": 30.0,
+    "rotation": 0,
+    "pix_fmt": "yuv420p",
+    "frames": 903,
+    "hdr": false
+   },
+   "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2
+   }
+  },
+  "lufs": -14.2,
+  "true_peak": -1.2,
+  "black": [],
+  "freeze_starts": [],
+  "issues": [],
+  "size_mb": 24.38,
+  "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v001/stills/vertical-review.jpg"
+ }
+}

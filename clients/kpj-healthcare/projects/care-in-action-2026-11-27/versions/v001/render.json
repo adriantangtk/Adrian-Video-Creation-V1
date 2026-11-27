@@ -1,0 +1,44 @@
+{
+ "vertical": {
+  "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v001.mp4",
+  "fps": 30.0,
+  "size": [
+   1080,
+   1920
+  ],
+  "duration": 30.067,
+  "shots": 13,
+  "captions_events": 12,
+  "music": {
+   "id": "care-anthem-vertical",
+   "title": "C.A.R.E in Action (Reel cut)",
+   "artist": "Original composition (cvp compose)",
+   "source": "generated in this project",
+   "license": "Original work composed for this project; no third-party samples or loops; cleared for commercial and social use",
+   "license_verified": true
+  },
+  "rendered": "2026-11-27T12:03:00+00:00",
+  "renderer": "cvp-render-1"
+ },
+ "landscape": {
+  "file": "kpj-healthcare-care-in-action-2026-11-27-landscape-v001.mp4",
+  "fps": 30.0,
+  "size": [
+   1920,
+   1080
+  ],
+  "duration": 64.8,
+  "shots": 28,
+  "captions_events": 19,
+  "music": {
+   "id": "care-anthem-landscape",
+   "title": "C.A.R.E in Action (landscape cut)",
+   "artist": "Original composition (cvp compose)",
+   "source": "generated in this project",
+   "license": "Original work composed for this project; no third-party samples or loops; cleared for commercial and social use",
+   "license_verified": true
+  },
+  "rendered": "2026-11-27T12:08:58+00:00",
+  "renderer": "cvp-render-1"
+ }
+}
