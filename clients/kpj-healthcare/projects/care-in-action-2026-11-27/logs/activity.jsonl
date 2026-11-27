@@ -22,3 +22,4 @@
 {"time": "2026-11-27T12:28:13+00:00", "kind": "index", "done": 6, "errors": []}
 {"time": "2026-11-27T12:28:20+00:00", "kind": "version", "version": "v002", "note": "v002: longer cuts, beat-locked transitions, infographics, enhanced grade, new longer score"}
 {"time": "2026-11-27T12:42:13+00:00", "kind": "render", "version": "v002", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v002.mp4"}
+{"time": "2026-11-27T12:50:29+00:00", "kind": "render", "version": "v002", "format": "landscape", "file": "kpj-healthcare-care-in-action-2026-11-27-landscape-v002.mp4"}

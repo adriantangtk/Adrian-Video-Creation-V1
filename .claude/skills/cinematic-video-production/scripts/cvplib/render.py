@@ -269,7 +269,7 @@ def _loudness_trim(path, target):
     gain = target - float(i[-1])
     tmp = path.with_name(path.stem + ".lt.mp4")
     run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-i", str(path), "-c:v", "copy", "-af",
-         f"volume={gain:.2f}dB,alimiter=limit=0.84:level=false,aresample=48000", "-c:a", "aac", "-b:a", "192k",
+         f"volume={gain:.2f}dB,alimiter=limit=0.79:level=false,aresample=48000", "-c:a", "aac", "-b:a", "192k",
          "-movflags", "+faststart", str(tmp)])
     tmp.replace(path)
 
@@ -409,13 +409,13 @@ def cmd_render(a):
     else:
         g.append(f"{vbase}null[vout]")
     g.append(f"{''.join(mixes)}amix=inputs={len(mixes)}:normalize=0:duration=first,"
-             f"loudnorm=I={sb.get('loudness', -14)}:TP=-1.5:LRA=11,alimiter=limit=0.84:level=false,aresample=48000[aout]")
+             f"loudnorm=I={sb.get('loudness', -14)}:TP=-1.5:LRA=11,alimiter=limit=0.79:level=false,aresample=48000[aout]")
     script = (vdir / "drafts" if a.draft else vdir) / f"{fmt}-graph.txt"
     script.write_text(";\n".join(g))
     crf = {"landscape": 19, "vertical": 20}[fmt]
-    maxrate = {"landscape": "14M", "vertical": "10M"}[fmt] if not sb.get("maxrate") else sb["maxrate"]
+    maxrate = {"landscape": "6M", "vertical": "6M"}[fmt] if not sb.get("maxrate") else sb["maxrate"]
     venc = (["-preset", "veryfast", "-crf", "27"] if a.draft else
-            ["-preset", "slow", "-crf", str(sb.get("crf", crf)), "-maxrate", maxrate, "-bufsize", "20M"])
+            ["-preset", "slow", "-crf", str(sb.get("crf", crf)), "-maxrate", maxrate, "-bufsize", "12M"])
     cmd = ["ffmpeg", "-v", "error", "-nostdin", "-y", *inputs, "-filter_complex_script", str(script), "-map", "[vout]", "-map", "[aout]",
            "-c:v", "libx264", *venc, "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", str(fps), "-g", str(int(round(fps * 2))),
            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart",

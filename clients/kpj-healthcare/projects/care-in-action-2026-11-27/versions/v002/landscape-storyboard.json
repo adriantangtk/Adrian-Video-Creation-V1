@@ -1,0 +1,984 @@
+{
+ "format": "landscape",
+ "fps": 30,
+ "brand": {
+  "accent": "#D4B07A",
+  "text": "#FFFFFF",
+  "box": "#1A1611",
+  "font": "Inter"
+ },
+ "captions": {
+  "enabled": true,
+  "max_words": 4,
+  "size": 62
+ },
+ "loudness": -14,
+ "music": {
+  "track": "care-anthem-v2-landscape",
+  "start": 0,
+  "gain_db": -9,
+  "fade_out": 2.5,
+  "duck_threshold": 0.03,
+  "duck_ratio": 6
+ },
+ "logos": [
+  {
+   "file": "brand/kpj-logo-white.png",
+   "start": 79.745,
+   "dur": 6.4,
+   "width": 820,
+   "pos": [
+    960,
+    400
+   ],
+   "fade": 0.5
+  }
+ ],
+ "shots": [
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 6.0,
+   "out": 8.085,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.1,
+   "purpose": "hook: ONE HEART shirts",
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -6
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONE HEART.",
+     "style": "hook",
+     "start": 0.05,
+     "dur": 1.85,
+     "highlight": [
+      "HEART."
+     ]
+    }
+   ],
+   "id": "s01",
+   "kind": "video",
+   "t_start": 0.0,
+   "t_end": 2.085
+  },
+  {
+   "clip": "mc76fc6a2",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 44.0,
+   "out": 46.435,
+   "audio_gain_db": -14,
+   "focus": [
+    0.55,
+    0.55
+   ],
+   "purpose": "hook: Team 2 cheer",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh.wav",
+     "at": 0.0,
+     "gain_db": -12,
+     "dur": 0.8
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONE MISSION.",
+     "style": "hook",
+     "start": 0.1,
+     "dur": 1.75,
+     "highlight": [
+      "MISSION."
+     ]
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s02",
+   "kind": "video",
+   "t_start": 1.935,
+   "t_end": 4.37
+  },
+  {
+   "clip": "m298798b7",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 1.0,
+   "out": 4.153,
+   "audio_gain_db": -14,
+   "focus": [
+    0.4,
+    0.5
+   ],
+   "focus_to": [
+    0.6,
+    0.5
+   ],
+   "purpose": "arrival: lake venue",
+   "transition": "dissolve",
+   "transition_dur": 0.5,
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s03",
+   "kind": "video",
+   "t_start": 3.87,
+   "t_end": 7.023
+  },
+  {
+   "clip": "mf764b2dc",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 0.1,
+   "out": 2.035,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.0,
+   "focus": [
+    1.0,
+    0.5
+   ],
+   "purpose": "arrival: LET'S GO",
+   "transition": "zoom",
+   "transition_dur": 0.25,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    }
+   ],
+   "id": "s04",
+   "kind": "video",
+   "t_start": 6.773,
+   "t_end": 8.708
+  },
+  {
+   "clip": "m33d8b7ec",
+   "captions": [
+    {
+     "text": "We have to have action.",
+     "start": 0.12,
+     "end": 2.75
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 4.3,
+   "out": 7.203,
+   "audio_gain_db": 0,
+   "zoom": 1.35,
+   "zoom_to": 1.42,
+   "focus": [
+    0.6,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "trainer: Muhaini",
+   "dialogue": "We have to have action. (verify)",
+   "overlay": [
+    {
+     "text": "Muhaini\\NTrainer",
+     "style": "lower",
+     "start": 0.3,
+     "dur": 2.4,
+     "anim": "slide"
+    }
+   ],
+   "id": "s05",
+   "kind": "video",
+   "t_start": 8.708,
+   "t_end": 11.611
+  },
+  {
+   "clip": "m33d8b7ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 13.4,
+   "out": 15.635,
+   "audio_gain_db": -14,
+   "purpose": "title: C.A.R.E IN ACTION screen",
+   "overlay": [
+    {
+     "text": "KPJ Healthcare Teambuilding\\N27.11.2026",
+     "style": "lower",
+     "start": 0.15,
+     "dur": 1.75,
+     "anim": "slide"
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s06",
+   "kind": "video",
+   "t_start": 11.611,
+   "t_end": 13.846
+  },
+  {
+   "clip": "mcff1ad2a",
+   "captions": "none",
+   "in": 0,
+   "out": 6.006,
+   "audio_gain_db": -40,
+   "purpose": "infographic: the programme (from session screens)",
+   "transition": "slide",
+   "transition_dur": 0.3,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 2.4193548387096775,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 3.3870967741935485,
+     "gain_db": -10
+    }
+   ],
+   "id": "s07",
+   "kind": "video",
+   "t_start": 13.546,
+   "t_end": 19.552
+  },
+  {
+   "clip": "m33d8b7ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 20.0,
+   "out": 21.452,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "sessions: hands up",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    }
+   ],
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s08",
+   "kind": "video",
+   "t_start": 19.352,
+   "t_end": 20.32
+  },
+  {
+   "clip": "m6dda40ef",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 10.0,
+   "out": 10.968,
+   "audio_gain_db": -14,
+   "purpose": "sessions: tables",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s09",
+   "kind": "video",
+   "t_start": 20.32,
+   "t_end": 21.288
+  },
+  {
+   "clip": "m7bc17175",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 22.0,
+   "out": 22.968,
+   "audio_gain_db": -14,
+   "purpose": "sessions: wide room",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s10",
+   "kind": "video",
+   "t_start": 21.288,
+   "t_end": 22.256
+  },
+  {
+   "clip": "mcb2640b4",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 0.3,
+   "out": 1.468,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.33
+   ],
+   "purpose": "sessions: 'Your team needs an identity'",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s11",
+   "kind": "video",
+   "t_start": 22.256,
+   "t_end": 23.424
+  },
+  {
+   "clip": "me32b8112",
+   "captions": "none",
+   "in": 0,
+   "out": 4.021,
+   "audio_gain_db": -40,
+   "purpose": "infographic: C.A.R.E reveal",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.0,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.4838709677419355,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.967741935483871,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 2.903225806451613,
+     "gain_db": -12
+    }
+   ],
+   "id": "s12",
+   "kind": "video",
+   "t_start": 23.224,
+   "t_end": 27.245
+  },
+  {
+   "clip": "m89c1e919",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 4.0,
+   "out": 5.935,
+   "audio_gain_db": -14,
+   "purpose": "C: drawing the tribe banner",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}C\\N{\\c&HFFFFFF&\\fs110}Committed",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "music_cue": "drop",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s13",
+   "kind": "video",
+   "t_start": 27.095,
+   "t_end": 29.03
+  },
+  {
+   "clip": "ma3abb7f7",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 8.0,
+   "out": 10.903,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "C: all hands in",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s14",
+   "kind": "video",
+   "t_start": 29.03,
+   "t_end": 30.965
+  },
+  {
+   "clip": "m4ee4a2e4",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 14.0,
+   "out": 16.135,
+   "audio_gain_db": -14,
+   "purpose": "C: identity takes shape",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s15",
+   "kind": "video",
+   "t_start": 30.965,
+   "t_end": 33.1
+  },
+  {
+   "clip": "m7904d089",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 30.0,
+   "out": 32.235,
+   "audio_gain_db": -14,
+   "zoom": 1.08,
+   "zoom_to": 1.15,
+   "purpose": "A: writing on the Reflection Mirror",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}A\\N{\\c&HFFFFFF&\\fs110}Accountable",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s16",
+   "kind": "video",
+   "t_start": 32.9,
+   "t_end": 35.135
+  },
+  {
+   "clip": "m81d20c93",
+   "captions": "none",
+   "in": 0,
+   "out": 6.006,
+   "audio_gain_db": -40,
+   "purpose": "infographic: the Reflection Mirror questions (from screen)",
+   "transition": "slide",
+   "transition_dur": 0.3,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 2.4193548387096775,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 3.3870967741935485,
+     "gain_db": -12
+    }
+   ],
+   "id": "s17",
+   "kind": "video",
+   "t_start": 34.835,
+   "t_end": 40.841
+  },
+  {
+   "clip": "m5e0e4909",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 2.0,
+   "out": 3.935,
+   "audio_gain_db": -8,
+   "purpose": "R: circle game",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}R\\N{\\c&HFFFFFF&\\fs110}Respectful",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s18",
+   "kind": "video",
+   "t_start": 40.641,
+   "t_end": 42.576
+  },
+  {
+   "clip": "m62ddce82",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 28.0,
+   "out": 29.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "purpose": "R: listening",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s19",
+   "kind": "video",
+   "t_start": 42.576,
+   "t_end": 44.511
+  },
+  {
+   "clip": "mce8eb1c3",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 24.0,
+   "out": 27.203,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "R: everyone moves together",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s20",
+   "kind": "video",
+   "t_start": 44.511,
+   "t_end": 46.647
+  },
+  {
+   "clip": "m792b212d",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "zoom": 1.08,
+   "zoom_to": 1.15,
+   "purpose": "E: Lion team anthem",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "overlay": [
+    {
+     "text": "{\\c&H7AB0D4&\\fs200}E\\N{\\c&HFFFFFF&\\fs110}Excellent",
+     "style": "kinetic",
+     "start": 0.15,
+     "dur": 3.0,
+     "anim": "pop"
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 0.15,
+     "gain_db": -10
+    }
+   ],
+   "id": "s21",
+   "kind": "video",
+   "t_start": 46.447,
+   "t_end": 48.382
+  },
+  {
+   "clip": "mb8f104bd",
+   "captions": [
+    {
+     "text": "One Heart Mission!",
+     "start": 0.12,
+     "end": 1.95
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 3.6,
+   "out": 5.535,
+   "audio_gain_db": -4,
+   "zoom": 1.1,
+   "zoom_to": 1.04,
+   "speech": true,
+   "purpose": "E: One Heart Mission",
+   "id": "s22",
+   "kind": "video",
+   "t_start": 48.382,
+   "t_end": 50.317
+  },
+  {
+   "clip": "m4926c44a",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 8.0,
+   "out": 10.435,
+   "audio_gain_db": -14,
+   "purpose": "E: presenting the banner",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s23",
+   "kind": "video",
+   "t_start": 50.317,
+   "t_end": 52.752
+  },
+  {
+   "clip": "m5fa6dffe",
+   "captions": [
+    {
+     "text": "We are the shield",
+     "start": 0.1,
+     "end": 2.9
+    },
+    {
+     "text": "that protect our nation",
+     "start": 2.9,
+     "end": 3.87
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 23.05,
+   "out": 26.921,
+   "audio_gain_db": 0,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "transition": "dissolve",
+   "transition_dur": 0.5,
+   "id": "s24",
+   "kind": "video",
+   "t_start": 52.252,
+   "t_end": 56.123
+  },
+  {
+   "clip": "m5fa6dffe",
+   "captions": [
+    {
+     "text": "that protect our nation",
+     "start": 0.0,
+     "end": 3.2
+    },
+    {
+     "text": "with respect",
+     "start": 3.2,
+     "end": 3.87
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 26.921,
+   "out": 30.792,
+   "audio_gain_db": 0,
+   "zoom": 1.3,
+   "zoom_to": 1.36,
+   "focus": [
+    0.5,
+    0.6
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "id": "s25",
+   "kind": "video",
+   "t_start": 56.123,
+   "t_end": 59.994
+  },
+  {
+   "clip": "m5fa6dffe",
+   "captions": [
+    {
+     "text": "with respect and care.",
+     "start": 0.0,
+     "end": 3.4
+    }
+   ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 30.792,
+   "out": 34.813,
+   "audio_gain_db": 0,
+   "zoom": 1.12,
+   "zoom_to": 1.2,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "speech": true,
+   "purpose": "anthem: Team 3 'Respect Shield'",
+   "id": "s26",
+   "kind": "video",
+   "t_start": 59.994,
+   "t_end": 64.015
+  },
+  {
+   "clip": "mc76fc6a2",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 56.0,
+   "out": 57.935,
+   "audio_gain_db": -14,
+   "purpose": "finale: Team 2 celebrates",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -8
+    }
+   ],
+   "music_cue": "drop 2",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s27",
+   "kind": "video",
+   "t_start": 63.865,
+   "t_end": 65.8
+  },
+  {
+   "clip": "m2c2c4614",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 26.0,
+   "out": 28.903,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "finale: crowd cheering",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s28",
+   "kind": "video",
+   "t_start": 65.8,
+   "t_end": 67.735
+  },
+  {
+   "clip": "m1dd4bda8",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 18.0,
+   "out": 19.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "purpose": "finale: cards up",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s29",
+   "kind": "video",
+   "t_start": 67.735,
+   "t_end": 69.67
+  },
+  {
+   "clip": "mcd305bb8",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 44.0,
+   "out": 46.185,
+   "audio_gain_db": -14,
+   "purpose": "finale: hearts banner",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s30",
+   "kind": "video",
+   "t_start": 69.67,
+   "t_end": 71.855
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 0.2,
+   "out": 2.135,
+   "audio_gain_db": -14,
+   "purpose": "finale: everyone, every banner",
+   "transition": "zoom",
+   "transition_dur": 0.25,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONE TEAM. ONE HEART.",
+     "style": "kinetic",
+     "start": 0.1,
+     "dur": 1.8,
+     "highlight": [
+      "ONE HEART."
+     ]
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s31",
+   "kind": "video",
+   "t_start": 71.605,
+   "t_end": 73.54
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 6.4,
+   "out": 8.335,
+   "audio_gain_db": -14,
+   "purpose": "finale: close-up joy",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s32",
+   "kind": "video",
+   "t_start": 73.54,
+   "t_end": 75.475
+  },
+  {
+   "clip": "mb95fb3a1",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "dur": 1.935,
+   "audio_gain_db": -14,
+   "zoom": 1.12,
+   "zoom_to": 1.0,
+   "purpose": "finale: the photo",
+   "id": "s33",
+   "kind": "photo",
+   "t_start": 75.475,
+   "t_end": 77.41
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 19.6,
+   "out": 22.135,
+   "audio_gain_db": -14,
+   "purpose": "finale: selfie energy",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s34",
+   "kind": "video",
+   "t_start": 77.41,
+   "t_end": 79.945
+  },
+  {
+   "clip": "m192e86db",
+   "captions": "none",
+   "grade": "gblur=sigma=22,eq=brightness=-0.24:saturation=0.75,vignette=angle=PI/5",
+   "dur": 7.742,
+   "audio_gain_db": -14,
+   "zoom": 1.0,
+   "zoom_to": 1.06,
+   "transition": "dissolve",
+   "transition_dur": 0.6,
+   "purpose": "end card",
+   "sfx": [
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 0.4,
+     "gain_db": -10
+    }
+   ],
+   "overlay": [
+    {
+     "text": "C.A.R.E in Action",
+     "style": "kinetic",
+     "start": 0.6,
+     "dur": 6.6,
+     "pos": [
+      960,
+      600
+     ],
+     "anim": "fade",
+     "highlight": [
+      "C.A.R.E"
+     ]
+    },
+    {
+     "text": "Committed · Accountable · Respectful · Excellent",
+     "style": "callout",
+     "start": 1.0,
+     "dur": 6.2,
+     "pos": [
+      960,
+      740
+     ],
+     "anim": "fade"
+    },
+    {
+     "text": "27.11.2026",
+     "style": "callout",
+     "start": 1.2,
+     "dur": 6.0,
+     "pos": [
+      960,
+      830
+     ],
+     "anim": "fade"
+    }
+   ],
+   "id": "s35",
+   "kind": "photo",
+   "t_start": 79.345,
+   "t_end": 87.087
+  }
+ ],
+ "duration": 87.087,
+ "validated": "2026-11-27T12:37:43+00:00"
+}

@@ -1,0 +1,76 @@
+{
+ "landscape": {
+  "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v002/kpj-healthcare-care-in-action-2026-11-27-landscape-v002.mp4",
+  "format": "landscape",
+  "checked": "2026-11-27T12:55:05+00:00",
+  "probe": {
+   "duration": 87.1,
+   "size": 56721473,
+   "format": "mov,mp4,m4a,3gp,3g2,mj2",
+   "created": null,
+   "video": {
+    "codec": "h264",
+    "w": 1920,
+    "h": 1080,
+    "fps": 30.0,
+    "rotation": 0,
+    "pix_fmt": "yuv420p",
+    "frames": 2613,
+    "hdr": false
+   },
+   "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2
+   }
+  },
+  "lufs": -14.1,
+  "true_peak": -1.2,
+  "black": [],
+  "freeze_starts": [
+   "38.9"
+  ],
+  "issues": [
+   "frozen picture from 38.9 s (fine if it is a photo or hold)"
+  ],
+  "size_mb": 56.72,
+  "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v002/stills/landscape-review.jpg"
+ },
+ "vertical": {
+  "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v002/kpj-healthcare-care-in-action-2026-11-27-vertical-v002.mp4",
+  "format": "vertical",
+  "checked": "2026-11-27T12:55:15+00:00",
+  "probe": {
+   "duration": 48.401,
+   "size": 27998851,
+   "format": "mov,mp4,m4a,3gp,3g2,mj2",
+   "created": null,
+   "video": {
+    "codec": "h264",
+    "w": 1080,
+    "h": 1920,
+    "fps": 30.0,
+    "rotation": 0,
+    "pix_fmt": "yuv420p",
+    "frames": 1452,
+    "hdr": false
+   },
+   "audio": {
+    "codec": "aac",
+    "rate": 48000,
+    "channels": 2
+   }
+  },
+  "lufs": -15.0,
+  "true_peak": -1.8,
+  "black": [],
+  "freeze_starts": [
+   "19.5333"
+  ],
+  "issues": [
+   "frozen picture from 19.5333 s (fine if it is a photo or hold)"
+  ],
+  "size_mb": 28.0,
+  "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v002/stills/vertical-review.jpg"
+ }
+}
