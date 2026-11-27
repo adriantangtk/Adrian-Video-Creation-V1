@@ -23,6 +23,7 @@ Drive downloads use `drive.usercontent.google.com`, so files must be shared "Any
 | `index [--ids] [--jobs N] [--force]` | `index/<id>/index.json` (probe, scenes, quality, audio loudness/silences, thumb list), `frames.jsonl.gz` (EVERY decoded frame: `n`, `t` pts, `scene` score, `y` luma, `sat`), `thumbs/t<ms>.jpg` (scene boundaries + regular interval, ≤48), `contact.jpg` |
 | `transcribe [--ids] [--model small.en] [--language en] [--force]` | `index/<id>/transcript.json` words `{w,s,e}` + segments; stock whisper hallucinations over music/noise are dropped and listed. Machine transcript: verify names and quotes by ear before using them. |
 | `digest [--new] [--all]` / `digest <id> [--since T]` | one line per clip / one clip's probe, quality, scenes, transcript, annotations, sheet paths |
+| `overview [--kind video\|photo] [--per-page 8] [--frames 6]` | paged sheets, one row per clip (or a photo grid): the cheapest first look at a whole shoot |
 | `find "<words>"` | search all transcripts, prints clip id + time + context |
 | `frame <id> <t> [<t> ...] [--full]` | 1280px (or full-res) stills into `cache/frames/` |
 | `sheet <id> <from> <to> [--step 0.5]` | contact sheet of a time range (≤36 frames) |
@@ -82,6 +83,8 @@ Notes: `focus` is the subject position (0-1) used to crop/reframe for each forma
 |---|---|
 | `music-add <file> --id ID --title T --artist A --source URL --license L [--verified]` | copies into the cache, records licence (UNVERIFIED unless `--verified`), builds `music/<id>/beats.json` |
 | `beats <id> [--force]` | prints BPM, phrases, sections (build/drop/breakdown/climax), accents |
+| `compose <id> <plan.json or JSON>` | composes an ORIGINAL instrumental (numpy synthesis, no samples: project-owned, licence verified) to an exact section plan, writes the exact beat grid. Plan: `{"bpm":122,"seed":3,"title":"...","tail":2.5,"sections":[{"type":"intro\|build\|drop\|break\|lift\|outro\|sting","bars":4,"name":"..."}]}`; any preset field (`kick`, `clap`, `hats`, `bass`, `pad`, `arp`, `lead`, `piano`, `riser`, `impact`, `energy`) can be overridden per section. Use when no licensed track is available; you cannot hear it, so check the spectrogram and review in the draft. |
+
 Write the three ranked recommendations to `music/recommendations.json` as `{"ranked":[{"title","why","license"}]}` so they appear in the artifact.
 
 ## Versions, render, QC, artifact

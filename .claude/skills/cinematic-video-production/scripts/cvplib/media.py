@@ -448,3 +448,38 @@ def cmd_sheet(a):
     contact_sheet(imgs, [fmt_t(t) for t in ts], dest, cols=min(6, len(ts)), title=f"{a.id} {e['name']}")
     shutil.rmtree(tmp)
     print(dest)
+
+
+def cmd_overview(a):
+    """Paged overview sheets: one row of N frames per clip (videos) or a grid (photos). Cheapest first look."""
+    pr = active_project(a.project)
+    man = pr.manifest()
+    out = pr.cache / "overview"
+    out.mkdir(parents=True, exist_ok=True)
+    items = sorted((e for e in man["media"].values() if e.get("status") != "removed" and not e.get("duplicate_of")
+                    and e["kind"] == a.kind), key=lambda e: e.get("path", ""))
+    if a.kind == "video":
+        per, cols = a.per_page, a.frames
+        for pg in range(0, len(items), per):
+            imgs, labs = [], []
+            for e in items[pg:pg + per]:
+                ix = rj(pr.idx(e["id"]) / "index.json", {})
+                th = ix.get("thumbs", [])
+                if not th:
+                    continue
+                pick = [th[int(i * (len(th) - 1) / max(1, cols - 1))] for i in range(cols)] if len(th) >= cols else th + [th[-1]] * (cols - len(th))
+                for k, t in enumerate(pick):
+                    imgs.append(pr.idx(e["id"]) / t["file"])
+                    dur = ix.get("probe", {}).get("duration", 0)
+                    labs.append(f"{e['id']} {fmt_t(t['t'])}/{dur:.0f}s" if k == 0 else fmt_t(t["t"]))
+            dest = out / f"videos-{pg // per + 1:02d}.jpg"
+            contact_sheet(imgs, labs, dest, cols=cols, cell=a.cell, title=f"videos {pg + 1}-{min(len(items), pg + per)} of {len(items)}")
+            print(dest)
+    else:
+        per = a.per_page * a.frames
+        for pg in range(0, len(items), per):
+            chunk = items[pg:pg + per]
+            imgs = [pr.idx(e["id"]) / "thumbs" / "t0000000.jpg" for e in chunk]
+            dest = out / f"photos-{pg // per + 1:02d}.jpg"
+            contact_sheet(imgs, [e["id"] for e in chunk], dest, cols=a.frames, cell=a.cell, title=f"photos {pg + 1}-{min(len(items), pg + per)} of {len(items)}")
+            print(dest)

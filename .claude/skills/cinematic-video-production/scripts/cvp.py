@@ -9,7 +9,7 @@ import argparse, json, os, shutil, subprocess, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from cvplib import common, store, media, beats, creative, render, qc, artifact  # noqa: E402
+from cvplib import common, store, media, beats, creative, render, qc, artifact, compose  # noqa: E402
 
 
 def cmd_doctor(a):
@@ -129,6 +129,9 @@ def main():
     p = add("digest", media.cmd_digest, "compact table of media, or one item's details")
     p.add_argument("id", nargs="?"); p.add_argument("--new", action="store_true", help="only items not yet annotated")
     p.add_argument("--all", action="store_true"); p.add_argument("--since", type=float)
+    p = add("overview", media.cmd_overview, "paged overview sheets of all clips (cheapest first look)")
+    p.add_argument("--kind", choices=["video", "photo"], default="video"); p.add_argument("--per-page", type=int, default=8)
+    p.add_argument("--frames", type=int, default=6); p.add_argument("--cell", type=int, default=260)
     p = add("find", media.cmd_find, "search transcripts for words"); p.add_argument("text")
     p = add("frame", media.cmd_frame, "extract stills at times"); p.add_argument("id"); p.add_argument("times", type=float, nargs="+")
     p.add_argument("--full", action="store_true")
@@ -143,6 +146,8 @@ def main():
     for f in ("--id", "--title", "--artist", "--source", "--license"):
         p.add_argument(f)
     p.add_argument("--verified", action="store_true", help="licence checked for commercial/social use")
+    p = add("compose", compose.cmd_compose, "compose an original instrumental to a section plan (project-owned)")
+    p.add_argument("id"); p.add_argument("plan", help="JSON file or string: {bpm, seed, title, sections:[{type,bars,name}]}")
     p = add("beats", beats.cmd_beats, "show a track's beat map"); p.add_argument("track"); p.add_argument("--force", action="store_true")
     p = add("version-new", render.cmd_version_new, "open the next version folder"); p.add_argument("--note")
     p = add("render", render.cmd_render, "render a storyboard with FFmpeg"); p.add_argument("format", choices=list(common.FORMATS))
