@@ -47,6 +47,14 @@ project instruction that says to run `hyperframes render`.
    in the unsafe zones.
 6. Final render into `exports/<name>.mp4`, commit, push. Then send the MP4 to the owner with SendUserFile.
 
+## Client videos: default workflow
+
+For any client video from raw footage (event recaps, trainer showcases, interviews, promo films) and whenever the
+owner says **DIG**, use the `cinematic-video-production` skill and its script toolkit
+(`python3 .claude/skills/cinematic-video-production/scripts/cvp.py`). Client records live in `clients/<client>/projects/<project>/`
+(footage cache git-ignored); commit and push the record and new `versions/` at the end of every session, since the container is wiped.
+Its FFmpeg renderer (`cvp.py render`) is allowed; the RENDER RULE above applies to HyperFrames only.
+
 ## Talking-head edits (footage from the owner)
 
 - Footage usually comes as a Google Drive link (shared as "Anyone with the link"): download with

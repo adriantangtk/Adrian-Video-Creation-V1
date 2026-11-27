@@ -1,0 +1,4 @@
+# heavy, re-creatable data stays out of git
+*/projects/*/cache/
+*/projects/*/versions/*/drafts/
+.doctor.json
