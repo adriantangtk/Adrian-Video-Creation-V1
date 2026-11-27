@@ -1,0 +1,58 @@
+{
+ "probe": {
+  "duration": 6.3,
+  "size": 1060271,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": null,
+  "video": {
+   "codec": "h264",
+   "w": 1920,
+   "h": 1080,
+   "fps": 30.0,
+   "rotation": 0,
+   "pix_fmt": "yuv420p",
+   "frames": 189,
+   "hdr": false
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 6.3
+  }
+ ],
+ "quality": {
+  "frames_decoded": 189,
+  "luma_mean": 70.4,
+  "dark_pct": 0.0,
+  "bright_pct": 0.0,
+  "sat_mean": 2.5
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m81d20c93",
+ "name": "mirror-landscape.mp4",
+ "kind": "video",
+ "sha256": "caffca5ccaea2dcb10966b66a5ebb57b87dd94dfd697cedf36389a4142884de1",
+ "indexed": "2026-11-27T12:28:11+00:00"
+}

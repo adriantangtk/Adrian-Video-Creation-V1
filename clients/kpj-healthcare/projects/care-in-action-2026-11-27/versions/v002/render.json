@@ -1,0 +1,23 @@
+{
+ "vertical": {
+  "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v002.mp4",
+  "fps": 30.0,
+  "size": [
+   1080,
+   1920
+  ],
+  "duration": 48.383,
+  "shots": 19,
+  "captions_events": 13,
+  "music": {
+   "id": "care-anthem-v2-vertical",
+   "title": "C.A.R.E in Action v2 (Reel)",
+   "artist": "Original composition (cvp compose)",
+   "source": "generated in this project",
+   "license": "Original work composed for this project; no third-party samples or loops; cleared for commercial and social use",
+   "license_verified": true
+  },
+  "rendered": "2026-11-27T12:42:13+00:00",
+  "renderer": "cvp-render-1"
+ }
+}

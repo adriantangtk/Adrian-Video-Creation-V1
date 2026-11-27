@@ -1,0 +1,58 @@
+{
+ "probe": {
+  "duration": 6.3,
+  "size": 1310409,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": null,
+  "video": {
+   "codec": "h264",
+   "w": 1920,
+   "h": 1080,
+   "fps": 30.0,
+   "rotation": 0,
+   "pix_fmt": "yuv420p",
+   "frames": 189,
+   "hdr": false
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 6.3
+  }
+ ],
+ "quality": {
+  "frames_decoded": 189,
+  "luma_mean": 60.6,
+  "dark_pct": 0.0,
+  "bright_pct": 0.0,
+  "sat_mean": 3.8
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "mcff1ad2a",
+ "name": "programme-landscape.mp4",
+ "kind": "video",
+ "sha256": "b1a27dc145ee72ff68f13f6dbcde2dc9c80c5aef8799119c90841a78beafd536",
+ "indexed": "2026-11-27T12:28:13+00:00"
+}

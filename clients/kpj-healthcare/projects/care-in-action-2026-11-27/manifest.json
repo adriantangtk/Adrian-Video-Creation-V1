@@ -1675,6 +1675,174 @@
     "index": "9669baac93627a0b411515d9f836feac5f032c75cc5e1659648147263a109f56",
     "annotated": "9669baac93627a0b411515d9f836feac5f032c75cc5e1659648147263a109f56"
    }
+  },
+  "me32b8112": {
+   "id": "me32b8112",
+   "source_id": "file:care-landscape.mp4",
+   "name": "care-landscape.mp4",
+   "kind": "video",
+   "path": "uploads/care-landscape.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "911113",
+   "modified": "1795782473",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "833249",
+     "modified": "1795782129",
+     "md5": null,
+     "sha256": "f1109bd0280b0feff3e95df7e5eb330f41fcf2cf991ded836fc665053ba7d0ee",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/me32b8112.mp4",
+   "stages": {
+    "index": "7eb7c405fceeeabee0178b4142c62e704f5695abaefc1ee13aa3822e188d2a42"
+   },
+   "sha256": "7eb7c405fceeeabee0178b4142c62e704f5695abaefc1ee13aa3822e188d2a42"
+  },
+  "m28b989fb": {
+   "id": "m28b989fb",
+   "source_id": "file:care-vertical.mp4",
+   "name": "care-vertical.mp4",
+   "kind": "video",
+   "path": "uploads/care-vertical.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "919487",
+   "modified": "1795782488",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "838830",
+     "modified": "1795782142",
+     "md5": null,
+     "sha256": "8def60b403b7a8c8dfa138e16beee6ac394ccce4cce275e16580fef5949628aa",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/m28b989fb.mp4",
+   "stages": {
+    "index": "1ab980ca159b7d567dc120ecd90c7a03d006e870c6887c7881c2788be9ef5865"
+   },
+   "sha256": "1ab980ca159b7d567dc120ecd90c7a03d006e870c6887c7881c2788be9ef5865"
+  },
+  "m81d20c93": {
+   "id": "m81d20c93",
+   "source_id": "file:mirror-landscape.mp4",
+   "name": "mirror-landscape.mp4",
+   "kind": "video",
+   "path": "uploads/mirror-landscape.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "1060271",
+   "modified": "1795782437",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "1047101",
+     "modified": "1795782096",
+     "md5": null,
+     "sha256": "4bab26010f9f8e74f1804d42d9595240bc6225429251960f7ee96bb0843fa534",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/m81d20c93.mp4",
+   "stages": {
+    "index": "caffca5ccaea2dcb10966b66a5ebb57b87dd94dfd697cedf36389a4142884de1"
+   },
+   "sha256": "caffca5ccaea2dcb10966b66a5ebb57b87dd94dfd697cedf36389a4142884de1"
+  },
+  "mbb58ef0f": {
+   "id": "mbb58ef0f",
+   "source_id": "file:mirror-vertical.mp4",
+   "name": "mirror-vertical.mp4",
+   "kind": "video",
+   "path": "uploads/mirror-vertical.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "1167991",
+   "modified": "1795782458",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "1125481",
+     "modified": "1795782115",
+     "md5": null,
+     "sha256": "96385633108ffd9e0068b2245b811672623bec7fcf9d36e6bc7d08d8f660049c",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/mbb58ef0f.mp4",
+   "stages": {
+    "index": "792ba306359768d368d6ac1f5afe67a6460759b93af86db64d25223c1ca3c422"
+   },
+   "sha256": "792ba306359768d368d6ac1f5afe67a6460759b93af86db64d25223c1ca3c422"
+  },
+  "mcff1ad2a": {
+   "id": "mcff1ad2a",
+   "source_id": "file:programme-landscape.mp4",
+   "name": "programme-landscape.mp4",
+   "kind": "video",
+   "path": "uploads/programme-landscape.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "1310409",
+   "modified": "1795782397",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "1267088",
+     "modified": "1795782056",
+     "md5": null,
+     "sha256": "f472e2299bf519ef4579e8146a8b91435e704018ec91fd3c491531c4431c4b37",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/mcff1ad2a.mp4",
+   "stages": {
+    "index": "b1a27dc145ee72ff68f13f6dbcde2dc9c80c5aef8799119c90841a78beafd536"
+   },
+   "sha256": "b1a27dc145ee72ff68f13f6dbcde2dc9c80c5aef8799119c90841a78beafd536"
+  },
+  "mff746690": {
+   "id": "mff746690",
+   "source_id": "file:programme-vertical.mp4",
+   "name": "programme-vertical.mp4",
+   "kind": "video",
+   "path": "uploads/programme-vertical.mp4",
+   "parent": "uploads",
+   "mime": null,
+   "size": "1133366",
+   "modified": "1795782417",
+   "md5": null,
+   "status": "indexed",
+   "first_seen": "2026-11-27T12:23:12+00:00",
+   "history": [
+    {
+     "size": "1119098",
+     "modified": "1795782184",
+     "md5": null,
+     "sha256": "458ffd26b14eec15f28aa29892250948e55eeb8511d073e276d0ccc9b00d14b5",
+     "replaced": "2026-11-27T12:28:08+00:00"
+    }
+   ],
+   "local": "cache/media/mff746690.mp4",
+   "stages": {
+    "index": "9a1ca4b5caa4524f0a0a3dcada670320a80af858b76cb4355f7e88827fec8ce4"
+   },
+   "sha256": "9a1ca4b5caa4524f0a0a3dcada670320a80af858b76cb4355f7e88827fec8ce4"
   }
  },
  "scans": [
@@ -1691,7 +1859,175 @@
     "unchanged": 0,
     "skipped": 0
    }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:23:12+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 1,
+    "changed": 0,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
+  },
+  {
+   "time": "2026-11-27T12:28:08+00:00",
+   "source": "upload",
+   "complete": false,
+   "summary": {
+    "new": 0,
+    "changed": 1,
+    "moved": 0,
+    "removed": 0,
+    "duplicate": 0,
+    "unchanged": 0,
+    "skipped": 0
+   }
   }
  ],
- "updated": "2026-11-27T11:53:04+00:00"
+ "updated": "2026-11-27T12:28:13+00:00"
 }

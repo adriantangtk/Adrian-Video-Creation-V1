@@ -6,3 +6,19 @@
 {"time": "2026-11-27T11:53:15+00:00", "kind": "version", "version": "v001", "note": "v001: first cut, both formats, original score (care-anthem)"}
 {"time": "2026-11-27T12:03:00+00:00", "kind": "render", "version": "v001", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v001.mp4"}
 {"time": "2026-11-27T12:08:58+00:00", "kind": "render", "version": "v001", "format": "landscape", "file": "kpj-healthcare-care-in-action-2026-11-27-landscape-v001.mp4"}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["me32b8112"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["m28b989fb"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["m81d20c93"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["mbb58ef0f"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["mcff1ad2a"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:12+00:00", "kind": "scan", "summary": {"new": 1, "changed": 0, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": ["mff746690"], "changed": [], "removed": []}
+{"time": "2026-11-27T12:23:16+00:00", "kind": "index", "done": 6, "errors": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["me32b8112"], "removed": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["m28b989fb"], "removed": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["m81d20c93"], "removed": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["mbb58ef0f"], "removed": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["mcff1ad2a"], "removed": []}
+{"time": "2026-11-27T12:28:08+00:00", "kind": "scan", "summary": {"new": 0, "changed": 1, "moved": 0, "removed": 0, "duplicate": 0, "unchanged": 0, "skipped": 0}, "new": [], "changed": ["mff746690"], "removed": []}
+{"time": "2026-11-27T12:28:13+00:00", "kind": "index", "done": 6, "errors": []}
+{"time": "2026-11-27T12:28:20+00:00", "kind": "version", "version": "v002", "note": "v002: longer cuts, beat-locked transitions, infographics, enhanced grade, new longer score"}
+{"time": "2026-11-27T12:42:13+00:00", "kind": "render", "version": "v002", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v002.mp4"}

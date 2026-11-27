@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="vendor/gsap.min.js"></script>
+<style>
+
+@font-face { font-family: Inter; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format("woff2"); }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1920px; height:1080px; overflow:hidden; background:#14100C; }
+#root { position:relative; width:100%; height:100%; font-family: Inter, sans-serif; color:#fff; }
+#bg { position:absolute; inset:-40px; background:url(bg.jpg) center/cover; }
+#shade { position:absolute; inset:0; background: radial-gradient(ellipse at 50% 45%, rgba(20,16,12,.45), rgba(20,16,12,.88)); }
+.kicker { position:absolute; color:#D4B07A; font-weight:600; letter-spacing:.32em; text-transform:uppercase; }
+.title { position:absolute; font-weight:700; letter-spacing:-.01em; line-height:1.05; }
+.gold { color:#D4B07A; }
+.rule { position:absolute; background:#D4B07A; transform-origin:left center; }
+
+#k { left:80px; top:110px; font-size:26px; width:1700px; line-height:1.5; }
+#t { left:80px; top:160px; font-size:92px; }
+#line { left:180px; top:560px; width:1560px; height:6px; transform-origin:left center; }
+.node { position:absolute; width:110px; height:110px; border-radius:50%; background:#14100C; border:5px solid #D4B07A;
+  color:#D4B07A; font-weight:700; font-size:40px; display:flex; align-items:center; justify-content:center; }
+.card { position:absolute; width:480px; }
+.card h3 { font-size:44px; font-weight:700; line-height:1.1; }
+.card p { margin-top:14px; font-size:28px; color:#F4EBDD; opacity:.85; line-height:1.3; }
+
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="6.306" data-fps="30" data-width="1920" data-height="1080">
+<div id="bg" class="clip" data-start="0" data-duration="6.306" data-track-index="0"></div>
+<div id="shade" class="clip" data-start="0" data-duration="6.306" data-track-index="1"></div>
+<div id="k" class="clip kicker" data-start="0" data-duration="6.306" data-track-index="2">KPJ Healthcare Teambuilding · 27.11.2026</div>
+<div id="t" class="clip title" data-start="0" data-duration="6.306" data-track-index="3">The <span class="gold">Programme</span></div>
+<div id="line" class="clip rule" data-start="0" data-duration="6.306" data-track-index="4"></div>
+<div id="n0" class="clip node" style="left:128px;top:511px" data-start="0" data-duration="6.306" data-track-index="5">01</div>
+<div id="c0" class="clip card" style="left:128px;top:700px" data-start="0" data-duration="6.306" data-track-index="6"><h3>Reflection Mirror</h3><p>What happened? What will we do differently?</p></div>
+<div id="n1" class="clip node" style="left:688px;top:511px" data-start="0" data-duration="6.306" data-track-index="7">02</div>
+<div id="c1" class="clip card" style="left:688px;top:700px" data-start="0" data-duration="6.306" data-track-index="8"><h3>Team Identity</h3><p>Your team needs an identity</p></div>
+<div id="n2" class="clip node" style="left:1248px;top:511px" data-start="0" data-duration="6.306" data-track-index="9">03</div>
+<div id="c2" class="clip card" style="left:1248px;top:700px" data-start="0" data-duration="6.306" data-track-index="10"><h3>Tribe of C.A.R.E. &amp; Service Anthem</h3><p>Represent your value. Perform the anthem.</p></div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  const B = 0.483871;
+  tl.fromTo('#bg', {scale:1.0}, {scale:1.06, duration:6.306, ease:'none'}, 0);
+  tl.from('#k', {opacity:0, y:20, duration:.35, ease:'power2.out'}, 0.05);
+  tl.from('#t', {opacity:0, y:40, duration:.45, ease:'expo.out'}, B*1);
+  tl.from('#line', {scaleX:0, duration:B*2, ease:'power2.inOut'}, B*2);
+  tl.from('#n0', {scale:0, duration:.32, ease:'back.out(2.2)'}, B*3);
+  tl.from('#c0', {opacity:0, y:30, duration:.4, ease:'power3.out'}, B*3 + .08);
+  tl.from('#n1', {scale:0, duration:.32, ease:'back.out(2.2)'}, B*5);
+  tl.from('#c1', {opacity:0, y:30, duration:.4, ease:'power3.out'}, B*5 + .08);
+  tl.from('#n2', {scale:0, duration:.32, ease:'back.out(2.2)'}, B*7);
+  tl.from('#c2', {opacity:0, y:30, duration:.4, ease:'power3.out'}, B*7 + .08);
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

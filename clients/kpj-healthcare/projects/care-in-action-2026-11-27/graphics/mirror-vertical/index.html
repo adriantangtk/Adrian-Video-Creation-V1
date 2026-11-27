@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="vendor/gsap.min.js"></script>
+<style>
+
+@font-face { font-family: Inter; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format("woff2"); }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1920px; overflow:hidden; background:#14100C; }
+#root { position:relative; width:100%; height:100%; font-family: Inter, sans-serif; color:#fff; }
+#bg { position:absolute; inset:-40px; background:url(bg.jpg) center/cover; }
+#shade { position:absolute; inset:0; background: radial-gradient(ellipse at 50% 45%, rgba(20,16,12,.45), rgba(20,16,12,.88)); }
+.kicker { position:absolute; color:#D4B07A; font-weight:600; letter-spacing:.32em; text-transform:uppercase; }
+.title { position:absolute; font-weight:700; letter-spacing:-.01em; line-height:1.05; }
+.gold { color:#D4B07A; }
+.rule { position:absolute; background:#D4B07A; transform-origin:left center; }
+
+#k { left:70px; top:420px; font-size:30px; }
+#t { left:70px; top:480px; font-size:96px; }
+.q { position:absolute; left:70px; display:flex; align-items:center; gap:30px; }
+.q b { color:#D4B07A; font-size:68px; font-weight:700; width:110px; }
+.q span { font-size:56px; font-weight:600; line-height:1.15; max-width:800px; }
+.qbar { position:absolute; left:70px; height:3px; width:940px; background:rgba(212,176,122,.35); transform-origin:left center; }
+
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="6.306" data-fps="30" data-width="1080" data-height="1920">
+<div id="bg" class="clip" data-start="0" data-duration="6.306" data-track-index="0"></div>
+<div id="shade" class="clip" data-start="0" data-duration="6.306" data-track-index="1"></div>
+<div id="k" class="clip kicker" data-start="0" data-duration="6.306" data-track-index="2">Accountable</div>
+<div id="t" class="clip title" data-start="0" data-duration="6.306" data-track-index="3">The Reflection <span class="gold">Mirror</span></div>
+<div id="qb0" class="clip qbar" style="top:730px" data-start="0" data-duration="6.306" data-track-index="4"></div>
+<div id="q0" class="clip q" style="top:760px" data-start="0" data-duration="6.306" data-track-index="5"><b>01</b><span>What happened?</span></div>
+<div id="qb1" class="clip qbar" style="top:980px" data-start="0" data-duration="6.306" data-track-index="6"></div>
+<div id="q1" class="clip q" style="top:1010px" data-start="0" data-duration="6.306" data-track-index="7"><b>02</b><span>What did others experience?</span></div>
+<div id="qb2" class="clip qbar" style="top:1230px" data-start="0" data-duration="6.306" data-track-index="8"></div>
+<div id="q2" class="clip q" style="top:1260px" data-start="0" data-duration="6.306" data-track-index="9"><b>03</b><span>What will we do differently?</span></div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  const B = 0.483871;
+  tl.fromTo('#bg', {scale:1.0}, {scale:1.06, duration:6.306, ease:'none'}, 0);
+  tl.from('#k', {opacity:0, y:20, duration:.35, ease:'power2.out'}, 0.05);
+  tl.from('#t', {opacity:0, y:40, duration:.45, ease:'expo.out'}, B*1);
+  tl.from('#qb0', {scaleX:0, duration:B, ease:'power2.out'}, B*3 - .1);
+  tl.from('#q0', {opacity:0, x:-40, duration:.4, ease:'power3.out'}, B*3);
+  tl.from('#qb1', {scaleX:0, duration:B, ease:'power2.out'}, B*5 - .1);
+  tl.from('#q1', {opacity:0, x:-40, duration:.4, ease:'power3.out'}, B*5);
+  tl.from('#qb2', {scaleX:0, duration:B, ease:'power2.out'}, B*7 - .1);
+  tl.from('#q2', {opacity:0, x:-40, duration:.4, ease:'power3.out'}, B*7);
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

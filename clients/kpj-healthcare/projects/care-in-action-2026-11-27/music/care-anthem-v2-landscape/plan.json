@@ -1,0 +1,48 @@
+{
+ "bpm": 124,
+ "seed": 11,
+ "title": "C.A.R.E in Action v2 (landscape)",
+ "tail": 2.5,
+ "sections": [
+  {
+   "type": "sting",
+   "bars": 2,
+   "name": "hook"
+  },
+  {
+   "type": "intro",
+   "bars": 8,
+   "name": "arrival+programme"
+  },
+  {
+   "type": "build",
+   "bars": 4,
+   "name": "sessions+care-reveal"
+  },
+  {
+   "type": "drop",
+   "bars": 13,
+   "name": "care-values"
+  },
+  {
+   "type": "break",
+   "bars": 4,
+   "name": "anthem-moment"
+  },
+  {
+   "type": "lift",
+   "bars": 2,
+   "name": "lift"
+  },
+  {
+   "type": "drop",
+   "bars": 8,
+   "name": "finale"
+  },
+  {
+   "type": "outro",
+   "bars": 3,
+   "name": "endcard"
+  }
+ ]
+}

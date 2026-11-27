@@ -1,0 +1,53 @@
+{
+ "probe": {
+  "duration": 4.366667,
+  "size": 911113,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": null,
+  "video": {
+   "codec": "h264",
+   "w": 1920,
+   "h": 1080,
+   "fps": 30.0,
+   "rotation": 0,
+   "pix_fmt": "yuv420p",
+   "frames": 131,
+   "hdr": false
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 4.367
+  }
+ ],
+ "quality": {
+  "frames_decoded": 131,
+  "luma_mean": 56.5,
+  "dark_pct": 0.0,
+  "bright_pct": 0.0,
+  "sat_mean": 3.8
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "me32b8112",
+ "name": "care-landscape.mp4",
+ "kind": "video",
+ "sha256": "7eb7c405fceeeabee0178b4142c62e704f5695abaefc1ee13aa3822e188d2a42",
+ "indexed": "2026-11-27T12:28:11+00:00"
+}

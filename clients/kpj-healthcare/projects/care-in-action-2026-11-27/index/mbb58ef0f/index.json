@@ -1,0 +1,58 @@
+{
+ "probe": {
+  "duration": 6.3,
+  "size": 1167991,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": null,
+  "video": {
+   "codec": "h264",
+   "w": 1080,
+   "h": 1920,
+   "fps": 30.0,
+   "rotation": 0,
+   "pix_fmt": "yuv420p",
+   "frames": 189,
+   "hdr": false
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 6.3
+  }
+ ],
+ "quality": {
+  "frames_decoded": 189,
+  "luma_mean": 69.0,
+  "dark_pct": 0.0,
+  "bright_pct": 0.0,
+  "sat_mean": 2.7
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "mbb58ef0f",
+ "name": "mirror-vertical.mp4",
+ "kind": "video",
+ "sha256": "792ba306359768d368d6ac1f5afe67a6460759b93af86db64d25223c1ca3c422",
+ "indexed": "2026-11-27T12:28:11+00:00"
+}

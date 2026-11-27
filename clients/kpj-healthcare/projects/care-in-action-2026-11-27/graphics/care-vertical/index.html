@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="vendor/gsap.min.js"></script>
+<style>
+
+@font-face { font-family: Inter; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: Inter; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format("woff2"); }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1920px; overflow:hidden; background:#14100C; }
+#root { position:relative; width:100%; height:100%; font-family: Inter, sans-serif; color:#fff; }
+#bg { position:absolute; inset:-40px; background:url(bg.jpg) center/cover; }
+#shade { position:absolute; inset:0; background: radial-gradient(ellipse at 50% 45%, rgba(20,16,12,.45), rgba(20,16,12,.88)); }
+.kicker { position:absolute; color:#D4B07A; font-weight:600; letter-spacing:.32em; text-transform:uppercase; }
+.title { position:absolute; font-weight:700; letter-spacing:-.01em; line-height:1.05; }
+.gold { color:#D4B07A; }
+.rule { position:absolute; background:#D4B07A; transform-origin:left center; }
+
+.L { position:absolute; font-weight:700; color:#D4B07A; font-size:230px; line-height:1; text-align:center; }
+.Wd { position:absolute; font-weight:600; color:#fff; font-size:64px; letter-spacing:.04em; }
+#k { left:0; width:100%; text-align:center; top:300px; font-size:32px; }
+#u { left:120px; top:1520px; width:840px; height:6px; }
+
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="4.371" data-fps="30" data-width="1080" data-height="1920">
+<div id="bg" class="clip" data-start="0" data-duration="4.371" data-track-index="0"></div>
+<div id="shade" class="clip" data-start="0" data-duration="4.371" data-track-index="1"></div>
+<div id="k" class="clip kicker" data-start="0" data-duration="4.371" data-track-index="2">Our values in action</div>
+<div id="l0" class="clip L" style="left:120px;top:420px;width:220px" data-start="0" data-duration="4.371" data-track-index="3">C</div>
+<div id="w0" class="clip Wd" style="left:380px;top:500px;width:600px" data-start="0" data-duration="4.371" data-track-index="4">Committed</div>
+<div id="l1" class="clip L" style="left:120px;top:690px;width:220px" data-start="0" data-duration="4.371" data-track-index="5">A</div>
+<div id="w1" class="clip Wd" style="left:380px;top:770px;width:600px" data-start="0" data-duration="4.371" data-track-index="6">Accountable</div>
+<div id="l2" class="clip L" style="left:120px;top:960px;width:220px" data-start="0" data-duration="4.371" data-track-index="7">R</div>
+<div id="w2" class="clip Wd" style="left:380px;top:1040px;width:600px" data-start="0" data-duration="4.371" data-track-index="8">Respectful</div>
+<div id="l3" class="clip L" style="left:120px;top:1230px;width:220px" data-start="0" data-duration="4.371" data-track-index="9">E</div>
+<div id="w3" class="clip Wd" style="left:380px;top:1310px;width:600px" data-start="0" data-duration="4.371" data-track-index="10">Excellent</div>
+<div id="u" class="clip rule" data-start="0" data-duration="4.371" data-track-index="11"></div>
+</div>
+<script>
+  const tl = gsap.timeline({ paused: true });
+  const B = 0.483871;
+  tl.fromTo('#bg', {scale:1.0}, {scale:1.06, duration:4.371, ease:'none'}, 0);
+  tl.from('#k', {opacity:0, y:20, duration:.3, ease:'power2.out'}, 0.02);
+  tl.from('#l0', {scale:1.8, opacity:0, duration:.28, ease:'expo.out'}, B*0);
+  tl.from('#w0', {opacity:0, y:24, duration:.35, ease:'power3.out'}, B*4.0);
+  tl.from('#l1', {scale:1.8, opacity:0, duration:.28, ease:'expo.out'}, B*1);
+  tl.from('#w1', {opacity:0, y:24, duration:.35, ease:'power3.out'}, B*4.5);
+  tl.from('#l2', {scale:1.8, opacity:0, duration:.28, ease:'expo.out'}, B*2);
+  tl.from('#w2', {opacity:0, y:24, duration:.35, ease:'power3.out'}, B*5.0);
+  tl.from('#l3', {scale:1.8, opacity:0, duration:.28, ease:'expo.out'}, B*3);
+  tl.from('#w3', {opacity:0, y:24, duration:.35, ease:'power3.out'}, B*5.5);
+  tl.from('#u', {scaleX:0, duration:B*1.5, ease:'power2.inOut'}, B*6);
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  tl.seek(0);
+</script>
+</body>
+</html>

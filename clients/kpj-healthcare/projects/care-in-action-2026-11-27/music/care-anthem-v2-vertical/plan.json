@@ -1,0 +1,38 @@
+{
+ "bpm": 124,
+ "seed": 11,
+ "title": "C.A.R.E in Action v2 (Reel)",
+ "tail": 2.0,
+ "sections": [
+  {
+   "type": "sting",
+   "bars": 1,
+   "name": "hook"
+  },
+  {
+   "type": "build",
+   "bars": 4,
+   "name": "title+care-reveal"
+  },
+  {
+   "type": "drop",
+   "bars": 12,
+   "name": "care-values"
+  },
+  {
+   "type": "lift",
+   "bars": 1,
+   "name": "lift"
+  },
+  {
+   "type": "drop",
+   "bars": 3,
+   "name": "finale"
+  },
+  {
+   "type": "outro",
+   "bars": 3,
+   "name": "endcard"
+  }
+ ]
+}

@@ -14,7 +14,7 @@
  },
  "loudness": -14,
  "music": {
-  "track": "care-anthem-vertical",
+  "track": "care-anthem-v2-vertical",
   "start": 0,
   "gain_db": -9,
   "fade_out": 2.0,
@@ -24,8 +24,8 @@
  "logos": [
   {
    "file": "brand/kpj-logo-white.png",
-   "start": 23.12,
-   "dur": 6.0,
+   "start": 41.038,
+   "dur": 6.4,
    "width": 760,
    "pos": [
     540,
@@ -37,18 +37,21 @@
  "shots": [
   {
    "clip": "m53a9b5ec",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 6.0,
-   "out": 7.935,
+   "out": 8.085,
    "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.1,
-   "focus": [
-    0.5,
-    0.5
+   "purpose": "hook",
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -6
+    }
    ],
-   "purpose": "hook: ONE HEART shirts waving",
    "overlay": [
     {
      "text": "ONE HEART.\\NONE MISSION.",
@@ -65,34 +68,27 @@
      ]
     }
    ],
-   "sfx": [
-    {
-     "file": "sfx/sx-impact-bass-2.wav",
-     "at": 0.0,
-     "gain_db": -6
-    }
-   ],
    "id": "s01",
    "kind": "video",
    "t_start": 0.0,
-   "t_end": 1.935
+   "t_end": 2.085
   },
   {
    "clip": "ma2b24d1f",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 0.2,
    "out": 2.135,
    "audio_gain_db": -14,
-   "zoom": 1.0,
-   "zoom_to": 1.08,
-   "purpose": "title: C.A.R.E in Action stage",
+   "purpose": "title: stage",
+   "transition": "flash",
+   "transition_dur": 0.15,
    "sfx": [
     {
      "file": "sfx/sx-whoosh-soft.wav",
-     "at": -0.12,
-     "gain_db": -12,
-     "dur": 0.6
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
     }
    ],
    "overlay": [
@@ -104,6 +100,8 @@
      "anim": "slide"
     }
    ],
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s02",
    "kind": "video",
    "t_start": 1.935,
@@ -111,7 +109,6 @@
   },
   {
    "clip": "m33d8b7ec",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": [
     {
      "text": "We have to have action.",
@@ -119,15 +116,18 @@
      "end": 1.94
     }
    ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 4.3,
-   "out": 6.235,
+   "out": 6.435,
    "audio_gain_db": 0,
    "zoom": 1.2,
+   "zoom_to": 1.26,
    "focus": [
     0.47,
     0.5
    ],
    "speech": true,
+   "purpose": "trainer: Muhaini",
    "overlay": [
     {
      "text": "Muhaini\\NTrainer",
@@ -137,49 +137,78 @@
      "anim": "slide"
     }
    ],
-   "purpose": "trainer: Muhaini",
    "id": "s03",
    "kind": "video",
    "t_start": 3.87,
-   "t_end": 5.805
+   "t_end": 6.005
   },
   {
-   "clip": "md9a4245e",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "clip": "m28b989fb",
    "captions": "none",
-   "in": 6.0,
-   "out": 7.935,
-   "audio_gain_db": -14,
-   "purpose": "sessions: the room",
+   "in": 0,
+   "out": 4.021,
+   "audio_gain_db": -40,
+   "purpose": "infographic: C.A.R.E reveal",
+   "transition": "whip",
+   "transition_dur": 0.2,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
+    },
+    {
+     "file": "sfx/sx-pop.wav",
+     "at": 0.0,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-2.wav",
+     "at": 0.4838709677419355,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-3.wav",
+     "at": 0.967741935483871,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-pop-4.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -10
+    },
+    {
+     "file": "sfx/sx-sparkle.wav",
+     "at": 2.903225806451613,
+     "gain_db": -12
+    }
+   ],
    "id": "s04",
    "kind": "video",
    "t_start": 5.805,
-   "t_end": 7.74
+   "t_end": 9.826
   },
   {
    "clip": "m89c1e919",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 4.0,
    "out": 5.935,
    "audio_gain_db": -14,
    "purpose": "C: drawing the tribe banner",
+   "transition": "flash",
+   "transition_dur": 0.15,
    "overlay": [
     {
      "text": "{\\c&H7AB0D4&\\fs240}C\\N{\\c&HFFFFFF&\\fs128}Committed",
      "style": "kinetic",
      "start": 0.15,
-     "dur": 3.4,
+     "dur": 3.0,
      "anim": "pop"
     }
    ],
    "sfx": [
-    {
-     "file": "sfx/sx-whoosh-soft.wav",
-     "at": -0.12,
-     "gain_db": -12,
-     "dur": 0.6
-    },
     {
      "file": "sfx/sx-pop.wav",
      "at": 0.15,
@@ -187,52 +216,60 @@
     }
    ],
    "music_cue": "drop",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s05",
    "kind": "video",
-   "t_start": 7.74,
-   "t_end": 9.675
+   "t_start": 9.676,
+   "t_end": 11.611
   },
   {
-   "clip": "m4ee4a2e4",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "clip": "ma3abb7f7",
    "captions": "none",
-   "in": 20.0,
-   "out": 21.935,
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 8.0,
+   "out": 11.203,
    "audio_gain_db": -14,
-   "purpose": "C: heads down, all in",
+   "speed": 1.5,
+   "purpose": "C: all hands in",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s06",
    "kind": "video",
-   "t_start": 9.675,
-   "t_end": 11.61
+   "t_start": 11.611,
+   "t_end": 13.746
   },
   {
    "clip": "m7904d089",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 30.0,
-   "out": 31.935,
+   "out": 32.235,
    "audio_gain_db": -14,
    "zoom": 1.1,
+   "zoom_to": 1.16,
    "focus": [
     0.42,
     0.5
    ],
-   "purpose": "A: teams writing on the Reflection Mirror",
+   "purpose": "A: Reflection Mirror",
+   "transition": "whip",
+   "transition_dur": 0.2,
    "overlay": [
     {
      "text": "{\\c&H7AB0D4&\\fs240}A\\N{\\c&HFFFFFF&\\fs128}Accountable",
      "style": "kinetic",
      "start": 0.15,
-     "dur": 3.4,
+     "dur": 3.0,
      "anim": "pop"
     }
    ],
    "sfx": [
     {
-     "file": "sfx/sx-whoosh-soft.wav",
-     "at": -0.12,
-     "gain_db": -12,
-     "dur": 0.6
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
     },
     {
      "file": "sfx/sx-pop-2.wav",
@@ -242,45 +279,71 @@
    ],
    "id": "s07",
    "kind": "video",
-   "t_start": 11.61,
-   "t_end": 13.545
+   "t_start": 13.546,
+   "t_end": 15.781
   },
   {
-   "clip": "m2106bc1c",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
+   "clip": "mbb58ef0f",
    "captions": "none",
-   "in": 28.0,
-   "out": 29.935,
-   "audio_gain_db": -14,
-   "purpose": "A: owning the takeaways",
+   "in": 0,
+   "out": 6.006,
+   "audio_gain_db": -40,
+   "purpose": "infographic: Reflection Mirror questions",
+   "transition": "slide",
+   "transition_dur": 0.3,
+   "sfx": [
+    {
+     "file": "sfx/sx-whoosh-soft.wav",
+     "at": 0.0,
+     "gain_db": -13,
+     "dur": 0.7
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 1.4516129032258065,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 2.4193548387096775,
+     "gain_db": -12
+    },
+    {
+     "file": "sfx/sx-click-hi.wav",
+     "at": 3.3870967741935485,
+     "gain_db": -12
+    }
+   ],
    "id": "s08",
    "kind": "video",
-   "t_start": 13.545,
-   "t_end": 15.48
+   "t_start": 15.481,
+   "t_end": 21.487
   },
   {
    "clip": "meb4f6112",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 8.0,
    "out": 9.935,
    "audio_gain_db": -8,
    "purpose": "R: circle game",
+   "transition": "whip",
+   "transition_dur": 0.2,
    "overlay": [
     {
      "text": "{\\c&H7AB0D4&\\fs240}R\\N{\\c&HFFFFFF&\\fs128}Respectful",
      "style": "kinetic",
      "start": 0.15,
-     "dur": 3.4,
+     "dur": 3.0,
      "anim": "pop"
     }
    ],
    "sfx": [
     {
-     "file": "sfx/sx-whoosh-soft.wav",
-     "at": -0.12,
-     "gain_db": -12,
-     "dur": 0.6
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
     },
     {
      "file": "sfx/sx-pop-3.wav",
@@ -288,15 +351,17 @@
      "gain_db": -10
     }
    ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
    "id": "s09",
    "kind": "video",
-   "t_start": 15.48,
-   "t_end": 17.415
+   "t_start": 21.287,
+   "t_end": 23.222
   },
   {
    "clip": "m62ddce82",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 28.0,
    "out": 29.935,
    "audio_gain_db": -14,
@@ -304,15 +369,32 @@
     0.5,
     0.4
    ],
-   "purpose": "R: one voice, everyone listening",
+   "purpose": "R: listening",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
    "id": "s10",
    "kind": "video",
-   "t_start": 17.415,
-   "t_end": 19.35
+   "t_start": 23.222,
+   "t_end": 25.157
+  },
+  {
+   "clip": "m440343d6",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 18.0,
+   "out": 21.203,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "R: moving together",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s11",
+   "kind": "video",
+   "t_start": 25.157,
+   "t_end": 27.293
   },
   {
    "clip": "mb8f104bd",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": [
     {
      "text": "One Heart Mission!",
@@ -320,31 +402,35 @@
      "end": 1.95
     }
    ],
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 3.6,
    "out": 5.535,
    "audio_gain_db": -4,
    "zoom": 1.05,
+   "zoom_to": 1.12,
    "focus": [
     0.45,
     0.5
    ],
    "speech": true,
    "purpose": "E: One Heart Mission",
+   "transition": "whip",
+   "transition_dur": 0.2,
    "overlay": [
     {
      "text": "{\\c&H7AB0D4&\\fs240}E\\N{\\c&HFFFFFF&\\fs128}Excellent",
      "style": "kinetic",
      "start": 0.15,
-     "dur": 3.4,
+     "dur": 3.0,
      "anim": "pop"
     }
    ],
    "sfx": [
     {
-     "file": "sfx/sx-whoosh-soft.wav",
-     "at": -0.12,
-     "gain_db": -12,
-     "dur": 0.6
+     "file": "sfx/sx-whoosh-cinematic.wav",
+     "at": 0.0,
+     "gain_db": -11,
+     "dur": 0.9
     },
     {
      "file": "sfx/sx-pop-4.wav",
@@ -352,40 +438,149 @@
      "gain_db": -10
     }
    ],
-   "id": "s11",
+   "id": "s12",
    "kind": "video",
-   "t_start": 19.35,
-   "t_end": 21.285
+   "t_start": 27.093,
+   "t_end": 29.028
+  },
+  {
+   "clip": "m792b212d",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 20.0,
+   "out": 21.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.45,
+    0.5
+   ],
+   "purpose": "E: Lion team anthem",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s13",
+   "kind": "video",
+   "t_start": 29.028,
+   "t_end": 30.963
   },
   {
    "clip": "m1dd4bda8",
-   "grade": "eq=contrast=1.06:saturation=1.08:gamma=0.97,colorbalance=rm=0.02:bm=-0.02",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 18.0,
    "out": 19.935,
    "audio_gain_db": -14,
    "purpose": "E: the room cheers",
-   "id": "s12",
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s14",
    "kind": "video",
-   "t_start": 21.285,
-   "t_end": 23.22
+   "t_start": 30.963,
+   "t_end": 32.898
+  },
+  {
+   "clip": "m2c2c4614",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 26.0,
+   "out": 29.128,
+   "audio_gain_db": -14,
+   "speed": 1.5,
+   "purpose": "lift: cheering",
+   "sfx": [
+    {
+     "file": "sfx/sx-riser.wav",
+     "at": 0.0,
+     "gain_db": -14,
+     "dur": 1.9
+    }
+   ],
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s15",
+   "kind": "video",
+   "t_start": 32.898,
+   "t_end": 34.983
+  },
+  {
+   "clip": "mc76fc6a2",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 56.0,
+   "out": 57.935,
+   "audio_gain_db": -14,
+   "focus": [
+    0.55,
+    0.5
+   ],
+   "purpose": "finale: Team 2",
+   "transition": "flash",
+   "transition_dur": 0.15,
+   "sfx": [
+    {
+     "file": "sfx/sx-impact-bass-2.wav",
+     "at": 0.0,
+     "gain_db": -8
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s16",
+   "kind": "video",
+   "t_start": 34.833,
+   "t_end": 36.768
   },
   {
    "clip": "m53a9b5ec",
-   "grade": "gblur=sigma=22,eq=brightness=-0.22:saturation=0.75",
    "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
+   "in": 19.6,
+   "out": 21.535,
+   "audio_gain_db": -14,
+   "purpose": "finale: selfie energy",
+   "zoom": 1.07,
+   "zoom_to": 1.0,
+   "id": "s17",
+   "kind": "video",
+   "t_start": 36.768,
+   "t_end": 38.703
+  },
+  {
+   "clip": "m53a9b5ec",
+   "captions": "none",
+   "grade": "eq=contrast=1.09:saturation=1.13:gamma=0.96,colorbalance=rm=0.03:bm=-0.03:rh=0.02:bh=-0.02,unsharp=5:5:0.55,vignette=angle=PI/6",
    "in": 0.2,
-   "out": 7.458,
-   "audio_gain_db": -20,
+   "out": 2.635,
+   "audio_gain_db": -14,
+   "purpose": "finale: everyone",
+   "overlay": [
+    {
+     "text": "ONE TEAM.\\NONE HEART.",
+     "style": "kinetic",
+     "start": 0.1,
+     "dur": 1.8,
+     "highlight": [
+      "ONE HEART."
+     ]
+    }
+   ],
+   "zoom": 1.0,
+   "zoom_to": 1.07,
+   "id": "s18",
+   "kind": "video",
+   "t_start": 38.703,
+   "t_end": 41.138
+  },
+  {
+   "clip": "m3917430d",
+   "captions": "none",
+   "grade": "gblur=sigma=22,eq=brightness=-0.24:saturation=0.75,vignette=angle=PI/5",
+   "dur": 7.742,
+   "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.06,
-   "focus": [
-    0.5,
-    0.5
-   ],
    "transition": "dissolve",
-   "transition_dur": 0.4,
-   "purpose": "end card over group photo",
+   "transition_dur": 0.5,
+   "purpose": "end card",
    "sfx": [
     {
      "file": "sfx/sx-sparkle.wav",
@@ -398,7 +593,7 @@
      "text": "C.A.R.E\\Nin Action",
      "style": "kinetic",
      "start": 0.5,
-     "dur": 6.2,
+     "dur": 6.6,
      "pos": [
       540,
       900
@@ -412,7 +607,7 @@
      "text": "Committed · Accountable\\NRespectful · Excellent",
      "style": "callout",
      "start": 0.9,
-     "dur": 5.8,
+     "dur": 6.2,
      "pos": [
       540,
       1110
@@ -423,7 +618,7 @@
      "text": "27.11.2026",
      "style": "callout",
      "start": 1.1,
-     "dur": 5.6,
+     "dur": 6.0,
      "pos": [
       540,
       1250
@@ -431,12 +626,12 @@
      "anim": "fade"
     }
    ],
-   "id": "s13",
-   "kind": "video",
-   "t_start": 22.82,
-   "t_end": 30.078
+   "id": "s19",
+   "kind": "photo",
+   "t_start": 40.638,
+   "t_end": 48.38
   }
  ],
- "duration": 30.078,
- "validated": "2026-11-27T12:00:28+00:00"
+ "duration": 48.38,
+ "validated": "2026-11-27T12:37:43+00:00"
 }
