@@ -342,10 +342,7 @@ def cmd_render(a):
     ass_path = (vdir / "drafts" if a.draft else vdir) / f"{fmt}-captions.ass"
     ass_path.parent.mkdir(exist_ok=True)
     ass_path.write_text(ass)
-    if nev:
-        g.append(f"{curv}ass=filename='{ass_path}':fontsdir='/usr/share/fonts'[vout]")
-    else:
-        g.append(f"{curv}null[vout]")
+    vbase = curv
     # audio: natural sound per shot, speech bus for ducking, music, sfx
     nat, speech = [], []
     duck = bool((sb.get("music") or {}).get("track"))
@@ -391,6 +388,24 @@ def cmd_render(a):
         g.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo{trim},volume={x.get('gain_db', -6)}dB,adelay={dl}|{dl}[fx{j}]")
         mixes.append(f"[fx{j}]")
         k += 1
+    # logo / image overlays (e.g. end card): {"file","start","dur","width","pos":[cx,cy],"fade"}
+    for j, lg in enumerate(sb.get("logos", [])):
+        f = Path(lg["file"])
+        f = f if f.is_absolute() else pr.dir / f
+        if not f.exists():
+            die(f"logo file not found: {lg['file']}")
+        inputs += ["-loop", "1", "-framerate", str(fps), "-t", f"{total:.3f}", "-i", str(f)]
+        st, du, fd = float(lg.get("start", 0)), float(lg.get("dur", 3)), float(lg.get("fade", 0.4))
+        cx, cy = lg.get("pos", [FORMATS[fmt][0] / 2, FORMATS[fmt][1] / 2])
+        g.append(f"[{k}:v]format=rgba,scale={int(lg.get('width', 600))}:-1:flags=lanczos,"
+                 f"fade=t=in:st={st:.3f}:d={fd}:alpha=1,fade=t=out:st={st + du - fd:.3f}:d={fd}:alpha=1[lg{j}]")
+        g.append(f"{vbase}[lg{j}]overlay=x={cx}-w/2:y={cy}-h/2:enable='between(t,{st:.3f},{st + du:.3f})'[vl{j}]")
+        vbase = f"[vl{j}]"
+        k += 1
+    if nev:
+        g.append(f"{vbase}ass=filename='{ass_path}':fontsdir='/usr/share/fonts'[vout]")
+    else:
+        g.append(f"{vbase}null[vout]")
     g.append(f"{''.join(mixes)}amix=inputs={len(mixes)}:normalize=0:duration=first,"
              f"loudnorm=I={sb.get('loudness', -14)}:TP=-1.5:LRA=11,alimiter=limit=0.84:level=false,aresample=48000[aout]")
     script = (vdir / "drafts" if a.draft else vdir) / f"{fmt}-graph.txt"

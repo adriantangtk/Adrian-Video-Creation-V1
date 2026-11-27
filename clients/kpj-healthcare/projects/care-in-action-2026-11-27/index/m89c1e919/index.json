@@ -1,0 +1,124 @@
+{
+ "probe": {
+  "duration": 23.359604,
+  "size": 100249571,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T03:49:35.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 2160,
+   "h": 3840,
+   "fps": 29.976,
+   "rotation": -90,
+   "pix_fmt": "yuv420p10le",
+   "frames": 693,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 2.327
+  },
+  {
+   "start": 2.327,
+   "end": 8.326
+  },
+  {
+   "start": 8.326,
+   "end": 13.828
+  },
+  {
+   "start": 13.828,
+   "end": 18.287
+  },
+  {
+   "start": 18.287,
+   "end": 23.36
+  }
+ ],
+ "quality": {
+  "frames_decoded": 689,
+  "luma_mean": 516.0,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 32.0,
+  "audio": {
+   "lufs": -19.4,
+   "true_peak": "-6.9",
+   "silences": []
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 13.98,
+   "file": "thumbs/t0013980.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 18.0,
+   "file": "thumbs/t0018000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.0,
+   "file": "thumbs/t0022000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m89c1e919",
+ "name": "20261127_114815.mp4",
+ "kind": "video",
+ "sha256": "4e1e9ae8c48574a799929d7a6cfd4d2e4286086003c15d1d72116d798742cb64",
+ "indexed": "2026-11-27T11:18:40+00:00"
+}

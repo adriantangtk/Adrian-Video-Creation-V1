@@ -1,0 +1,126 @@
+{
+ "probe": {
+  "duration": 23.359604,
+  "size": 100965318,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "created": "2026-11-27T06:31:56.000000Z",
+  "video": {
+   "codec": "hevc",
+   "w": 3840,
+   "h": 2160,
+   "fps": 29.948,
+   "rotation": 0,
+   "pix_fmt": "yuv420p10le",
+   "frames": 697,
+   "hdr": true
+  },
+  "audio": {
+   "codec": "aac",
+   "rate": 48000,
+   "channels": 2
+  }
+ },
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 14.786
+  },
+  {
+   "start": 14.786,
+   "end": 23.36
+  }
+ ],
+ "quality": {
+  "frames_decoded": 694,
+  "luma_mean": 559.6,
+  "dark_pct": 0.0,
+  "bright_pct": 100.0,
+  "sat_mean": 20.9,
+  "audio": {
+   "lufs": -10.0,
+   "true_peak": "-0.8",
+   "silences": [
+    [
+     0.0,
+     0.56
+    ],
+    [
+     15.6,
+     16.06
+    ]
+   ]
+  }
+ },
+ "thumbs": [
+  {
+   "t": 0.1,
+   "file": "thumbs/t0000100.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 2.0,
+   "file": "thumbs/t0002000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 4.0,
+   "file": "thumbs/t0004000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 6.0,
+   "file": "thumbs/t0006000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 8.0,
+   "file": "thumbs/t0008000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 10.0,
+   "file": "thumbs/t0010000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 12.0,
+   "file": "thumbs/t0012000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.0,
+   "file": "thumbs/t0014000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 14.94,
+   "file": "thumbs/t0014940.jpg",
+   "why": "scene"
+  },
+  {
+   "t": 16.0,
+   "file": "thumbs/t0016000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 18.0,
+   "file": "thumbs/t0018000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 20.0,
+   "file": "thumbs/t0020000.jpg",
+   "why": "interval"
+  },
+  {
+   "t": 22.0,
+   "file": "thumbs/t0022000.jpg",
+   "why": "interval"
+  }
+ ],
+ "id": "m53a9b5ec",
+ "name": "20261127_143127.mp4",
+ "kind": "video",
+ "sha256": "8fa92b86fb87912c8bc5c1d7ecc66010568a7b32e1059bee7435aa9a71532b7d",
+ "indexed": "2026-11-27T11:18:17+00:00"
+}
