@@ -27,3 +27,6 @@
 {"time": "2026-11-27T17:01:43+00:00", "kind": "fetch", "ok": 20, "failed": []}
 {"time": "2026-11-27T17:03:28+00:00", "kind": "index", "done": 20, "errors": []}
 {"time": "2026-11-27T17:05:08+00:00", "kind": "version", "version": "v003", "note": "v003 (DIG 2026-11-27): paper-plane activity + team clay creations added; v002 kept"}
+{"time": "2026-11-27T17:08:28+00:00", "kind": "render", "version": "v003", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v003.mp4"}
+{"time": "2026-11-27T17:13:17+00:00", "kind": "render", "version": "v003", "format": "landscape", "file": "kpj-healthcare-care-in-action-2026-11-27-landscape-v003.mp4"}
+{"time": "2026-11-27T17:15:48+00:00", "kind": "render", "version": "v003", "format": "vertical", "file": "kpj-healthcare-care-in-action-2026-11-27-vertical-v003.mp4"}

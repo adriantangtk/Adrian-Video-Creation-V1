@@ -120,7 +120,7 @@ def landscape():
     S.append(shot("mb8f104bd", 3.6, 4, zoom=1.1, zoom_to=1.04, audio_gain_db=-4, speech=True, purpose="E: One Heart Mission",
                   captions=[{"text": "One Heart Mission!", "start": 0.12, "end": 1.95}]))
     for k, (cid, pp) in enumerate([("m466f6022", "pop"), ("me8f3bee0", "pop-2"), ("m7ff99f4a", "pop-3"), ("mb0f460d5", "pop-4")]):
-        S.append(shot(cid, 0, 1, photo=True, zoom=1.0, zoom_to=1.12, purpose=f"E: team creations board {k + 1}", sfx=[sfx(pp, 0.02, -11)],
+        S.append(shot(cid, 0, 1, photo=True, zoom=1.0, zoom_to=1.12, focus=[0.5, 0.22], purpose=f"E: team creations board {k + 1}", sfx=[sfx(pp, 0.02, -11)],
                       overlay=[ov("Team creations", "callout", 0.05, 1.85, anim="slide", pos=[960, 940])] if k == 0 else []))
     # ANTHEM (24): Team 3 line, continuous audio across punch-ins
     caps = [[{"text": "We are the shield", "start": 0.1, "end": 2.9}, {"text": "that protect our nation", "start": 2.9, "end": 3.87}],

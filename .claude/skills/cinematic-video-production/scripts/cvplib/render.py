@@ -260,6 +260,20 @@ def build_edl(sb, shots_t, fps, man, title):
 
 # ---------------------------------------------------------------- versions
 
+def _true_peak_guard(path, ceiling=-1.2):
+    """AAC encoding and late gain can overshoot the limiter: measure the true peak and pull it under the ceiling."""
+    for _ in range(2):
+        r = run(["ffmpeg", "-v", "info", "-nostdin", "-i", str(path), "-vn", "-af", "ebur128=peak=true", "-f", "null", "-"], check=False)
+        tp = re.findall(r"Peak:\s+(-?[\d.]+) dBFS", r.stderr)
+        if not tp or float(tp[-1]) <= ceiling:
+            return
+        cut = ceiling - float(tp[-1]) - 0.2
+        tmp = path.with_name(path.stem + ".tp.mp4")
+        run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-i", str(path), "-c:v", "copy", "-af",
+             f"volume={cut:.2f}dB,aresample=48000", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(tmp)])
+        tmp.replace(path)
+
+
 def _loudness_trim(path, target):
     """Single-pass loudnorm undershoots on short edits: measure, then apply the remaining gain (video stream copied)."""
     r = run(["ffmpeg", "-v", "info", "-nostdin", "-i", str(path), "-vn", "-af", "ebur128=peak=true", "-f", "null", "-"], check=False)
@@ -422,6 +436,7 @@ def cmd_render(a):
            "-metadata", f"title={meta.get('title', '')} ({fmt}, {v})", "-t", f"{total:.4f}", str(out)]
     run(cmd)
     _loudness_trim(out, float(sb.get("loudness", -14)))
+    _true_peak_guard(out)
     if not a.draft:
         shutil.copy(pr.p("storyboards", f"{fmt}.json"), vdir / f"{fmt}-storyboard.json")
         (vdir / f"{fmt}.edl").write_text(build_edl(sb, shots_t, fps, man, base))

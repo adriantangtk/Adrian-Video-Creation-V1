@@ -576,6 +576,10 @@
    "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.12,
+   "focus": [
+    0.5,
+    0.22
+   ],
    "purpose": "E: team creations board 1",
    "sfx": [
     {
@@ -606,6 +610,10 @@
    "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.12,
+   "focus": [
+    0.5,
+    0.22
+   ],
    "purpose": "E: team creations board 2",
    "sfx": [
     {
@@ -624,6 +632,10 @@
    "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.12,
+   "focus": [
+    0.5,
+    0.22
+   ],
    "purpose": "E: team creations board 3",
    "sfx": [
     {
@@ -642,6 +654,10 @@
    "audio_gain_db": -14,
    "zoom": 1.0,
    "zoom_to": 1.12,
+   "focus": [
+    0.5,
+    0.22
+   ],
    "purpose": "E: team creations board 4",
    "sfx": [
     {
