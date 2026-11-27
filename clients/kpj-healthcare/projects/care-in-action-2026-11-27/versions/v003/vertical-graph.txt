@@ -99,4 +99,4 @@
 [50:v]format=rgba,scale=760:-1:flags=lanczos,fade=t=in:st=41.040:d=0.5:alpha=1,fade=t=out:st=46.940:d=0.5:alpha=1[lg0];
 [c22][lg0]overlay=x=540-w/2:y=700-h/2:enable='between(t,41.040,47.440)'[vl0];
 [vl0]ass=filename='/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v003/vertical-captions.ass':fontsdir='/usr/share/fonts'[vout];
-[nat][musd][fx0][fx1][fx2][fx3][fx4][fx5][fx6][fx7][fx8][fx9][fx10][fx11][fx12][fx13][fx14][fx15][fx16][fx17][fx18][fx19][fx20][fx21][fx22][fx23][fx24][fx25]amix=inputs=28:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.79:level=false,aresample=48000[aout]
+[nat][musd][fx0][fx1][fx2][fx3][fx4][fx5][fx6][fx7][fx8][fx9][fx10][fx11][fx12][fx13][fx14][fx15][fx16][fx17][fx18][fx19][fx20][fx21][fx22][fx23][fx24][fx25]amix=inputs=28:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.71:level=false,aresample=48000[aout]

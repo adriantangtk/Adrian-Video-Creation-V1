@@ -2,10 +2,10 @@
  "landscape": {
   "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v003/kpj-healthcare-care-in-action-2026-11-27-landscape-v003.mp4",
   "format": "landscape",
-  "checked": "2026-11-27T17:13:27+00:00",
+  "checked": "2026-11-27T17:19:07+00:00",
   "probe": {
    "duration": 87.166667,
-   "size": 59329154,
+   "size": 59330625,
    "format": "mov,mp4,m4a,3gp,3g2,mj2",
    "created": null,
    "video": {
@@ -28,10 +28,10 @@
   "true_peak": -1.6,
   "black": [],
   "freeze_starts": [
-   "38.9333"
+   "38.9667"
   ],
   "issues": [
-   "frozen picture from 38.9333 s (fine if it is a photo or hold)"
+   "frozen picture from 38.9667 s (fine if it is a photo or hold)"
   ],
   "size_mb": 59.33,
   "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v003/stills/landscape-review.jpg"
@@ -39,10 +39,10 @@
  "vertical": {
   "file": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v003/kpj-healthcare-care-in-action-2026-11-27-vertical-v003.mp4",
   "format": "vertical",
-  "checked": "2026-11-27T17:13:35+00:00",
+  "checked": "2026-11-27T17:19:14+00:00",
   "probe": {
    "duration": 48.466667,
-   "size": 30035899,
+   "size": 29960663,
    "format": "mov,mp4,m4a,3gp,3g2,mj2",
    "created": null,
    "video": {
@@ -61,17 +61,17 @@
     "channels": 2
    }
   },
-  "lufs": -14.4,
-  "true_peak": 0.2,
+  "lufs": -16.1,
+  "true_peak": -1.4,
   "black": [],
   "freeze_starts": [
    "19.6"
   ],
   "issues": [
    "frozen picture from 19.6 s (fine if it is a photo or hold)",
-   "true peak 0.2 dBFS (risk of clipping)"
+   "loudness -16.1 LUFS (target -14)"
   ],
-  "size_mb": 30.04,
+  "size_mb": 29.96,
   "review_sheet": "/home/user/Adrian-Video-Creation-V1/clients/kpj-healthcare/projects/care-in-action-2026-11-27/versions/v003/stills/vertical-review.jpg"
  }
 }
